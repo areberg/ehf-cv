@@ -1,0 +1,5 @@
+= Introduction
+
+The purpose of this document is to define and describe a common format for the curriculum vitae messages
+in the European procurement market, and increase use of electronic communication between the supplier and contracting
+authority. 
