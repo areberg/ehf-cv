@@ -1,6 +1,7 @@
 = Detailed Descriptions
 
-== Parties and Roles
+
+include::roles.adoc[]
 
 == Education
 
