@@ -8,4 +8,54 @@ image::images/processdiagram.png[align="center",1200, 800]
 
 == Use Cases
 
+=== Use Case 1
+
+The Norwegian Digitalisation Agency needs developer expertise for one of its projects. They have decided to acquire this
+expertise through Dynamic Procurement System (DPS) procedure. In order to streamline the processing and evaluation of
+incoming CVs from all suppliers located in the supplier database, they have decided to set requirements and criteria for
+the consultant's competence in their tender system based on EHF CV. Thus, requirements that can be set can be automatically
+evaluated against the submitted CVs.
+
+Tenderer logs into the tender system and finds the template for CV request. He wants the consultant to answer the
+following areas:
+
+
+* Education:
+
+** Achieved relevant master's degree related to the development assignment
+** Long and particularly relevant experience can to some extent compensate for the education requirement:
+
+*** Relevant courses
+*** Certifications that are relevant
+*** Language (fluent English written and oral)
+*** Relevant assignments
+*** Work Experience
+**** References
+*** Other reference
+*** Other skills
+*** Personal characteristics
+*** Availability
+
+
+The fields in the form links to the evaluation model in order to rank the candidates automatically.
+
+EHF pre-award catalogue request is been used for the suppliers to be able to set the hourly rate for the different
+developer profiles. Rest of the procurement documents are been attached.
+
+The entire package is sent to all suppliers located in the supplier register for DPS via the Peppol network.
+
+The supplier receives the tender documents and upload the CV request in their own system where requirements for
+competence are shown. The supplier fills in the various fields and pastes links to proof or uploads PDF attachments
+as proof of the competence of the candidate. Hourly rates are filled in the EHF pre-award catalogue. When the tender
+document is been filled out it will be sent, via the Peppol network, to Norwegian Digitalisation Agency access point.
+
+Norwegian Digitalisation Agency receives 49 CVs from 15 different suppliers. The competition system sorts, evaluates
+the different fields and comes out with a ranking. Tender staff checks some of the CVs that need this especially those
+who do not meet the education requirement but have filled in long and particularly relevant experience to compensate
+for lack of education. The offers are also ranked in terms of hourly rates against the competence requirements. When
+the selected supplier is decided, a message from the competition system is sent to Doffin informing about which supplier
+is selected.
+
+
+
 
