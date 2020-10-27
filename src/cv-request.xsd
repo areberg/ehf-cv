@@ -27,7 +27,7 @@
             
             <xs:element name="Certification" type="CertificationType" minOccurs="0" maxOccurs="unbounded"/>
             
-            <xs:element name="Language" type="LanguageType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="LanguageSkills" type="LanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
             
             <xs:element name="ProjectExperience" type="ProjectExperinceType" minOccurs="0" maxOccurs="unbounded"/>         
             
@@ -150,18 +150,18 @@
         </xs:sequence>
     </xs:complexType>
     
-    <xs:complexType name="LanguageType">
+    <xs:complexType name="LanguageSkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
             <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
             <xs:element name="Language" type="xs:token" minOccurs="0"/>
             <xs:element name="OralSkill" type="xs:token" minOccurs="0"/>
             <xs:element name="WrittenSkill" type="xs:token" minOccurs="0"/>
-            <xs:element name="AlternativeLanguage" type="AlternativeLanguageType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="AlternativeLanguageSkills" type="AlternativeLanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     
-    <xs:complexType name="AlternativeLanguageType">
+    <xs:complexType name="AlternativeLanguageSkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
             <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
@@ -298,7 +298,7 @@
     
     <xs:complexType name="SkillsPracticeType">
         <xs:sequence>
-            <xs:element name="LastPractice" type="xs:date"/>
+            <xs:element name="LastPractice" type="xs:date" minOccurs="0"/>
             <xs:element name="MinimumLengthPractice" type="xs:integer" minOccurs="0"/>
             <xs:element name="SkillsReference" type="xs:token" minOccurs="0"/>
         </xs:sequence>
