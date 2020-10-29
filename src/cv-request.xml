@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+    
+    <Term>cv-request</Term>
+    <Name>EHF CV Request 1.0</Name>
+    
+    <Namespace prefix="cv-req">urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1</Namespace>
+    
+    <Document>
+        <Term>cv-req:CVRequest</Term>
+        <Name>CV Request document</Name>
+        
+        <Element>
+            <Term>cv-req:CustomizationID</Term>
+            <Name>Document Identifier</Name>
+            <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+            <Value type="FIXED">...</Value>
+        </Element>
+        
+        <Element>
+            <Term>cv-req:ProfileID</Term>
+            <Name>Process Identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears.</Description>
+            <Value type="FIXED">...</Value>
+        </Element>
+        
+        <Element>
+            <Term>cv-req:ID</Term>
+            <Name>CV request identifier</Name>
+            <Description>Document identifier for referencing the document instance.</Description>
+            <Value type="EXAMPLE">1</Value>
+        </Element>
+        
+        <Element>
+            <Term>cv-req:IssueDate</Term>
+            <Name>Issue Date</Name>
+            <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
+            <Value type="EXAMPLE">2020-02-02</Value>
+        </Element>
+        
+        <Element>
+            <Term>cv-req:IssueTime</Term>
+            <Name>Issue Time</Name>
+            <Description>The time on which the transaction instance was issued.</Description>
+            <Value type="EXAMPLE">08:30:00</Value>
+        </Element>
+        
+        <Element>
+            <Term>cv-req:FolderReference</Term>
+            <Name>Folder Reference</Name>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Doffin Reference</Name>
+                <Description>The Doffin Reference number.</Description>
+                
+                <Attribute>
+                <Term>scheme</Term>
+                <Name>Doffin scheme identifier</Name>
+                <Value type="FIXED">DOFFIN</Value>
+                </Attribute>
+                
+                <Value type="EXAMPLE">14789</Value>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cv-req:ReceiverParty</Term>
+            <Name>Economic operator</Name>
+            
+            <Element>
+                <Term>cv-req:EndpointID</Term>
+                <Name>Electronic Address Identifier</Name>
+                <Description>The electronic address identifier of the economic operator.</Description>
+                
+                <Attribute>
+                    <Term>scheme</Term>
+                    <Name>Scheme identifier</Name>
+                    <Value type="FIXED">0192</Value>
+                </Attribute>
+                <Value type="EXAMPLE">987654325</Value>
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Name</Term>
+                <Name>Name</Name>
+                <Description>The name of the Economic operator.</Description>
+                <Value type="EXAMPLE">Digitaliseringsdirektoratet</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Contact</Term>
+                <Name>Contact Information</Name>
+                
+                <Element>
+                    <Term>cv-req:Name</Term>
+                    <Name>Contact Name</Name>
+                    <Description>Contact person's name.</Description>
+                    <Value type="EXAMPLE">Ola Nordmann</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Telephone</Term>
+                    <Name>Contact Telephone Number</Name>
+                    <Description>Contact person's telephone number.</Description>
+                    <Value type="EXAMPLE">22224444</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:ElectronicMail</Term>
+                    <Name>Contact Email Address</Name>
+                    <Description>Contact person's e-mail address.</Description>
+                    <Value type="EXAMPLE">ola.nordmann@dgidir.no</Value>
+                </Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cv-req:ProviderParty</Term>
+            <Name>Contracting Authority</Name>
+            
+            <Element>
+                <Term>cv-req:EndpointID</Term>
+                <Name>Electronic Address Identifier</Name>
+                <Description>The electronic address identifier of the Contracting Authority.</Description>
+                
+                <Attribute>
+                    <Term>scheme</Term>
+                    <Name>Scheme identifier</Name>
+                    <Value type="FIXED">0192</Value>
+                </Attribute>
+                <Value type="EXAMPLE">987654325</Value>
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Name</Term>
+                <Name>Name</Name>
+                <Description>The name of the Contracting Authority.</Description>
+                <Value type="EXAMPLE">X company</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Contact</Term>
+                <Name>Contact Information</Name>
+                
+                <Element>
+                    <Term>cv-req:Name</Term>
+                    <Name>Contact Name</Name>
+                    <Description>Contact person's name.</Description>
+                    <Value type="EXAMPLE">John Johnsen</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Telephone</Term>
+                    <Name>Contact Telephone Number</Name>
+                    <Description>Contact person's telephone number.</Description>
+                    <Value type="EXAMPLE">99998888</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:ElectronicMail</Term>
+                    <Name>Contact Email Address</Name>
+                    <Description>Contact person's e-mail address.</Description>
+                    <Value type="EXAMPLE">john.johnsen@x.com</Value>
+                </Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="1..n">
+            <Term>cv-req:Education</Term>
+            <Name>Education requirement</Name>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Education identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Requirement type</Name>
+                <Description>Requirement related to the specific education</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:EducationGrade</Term>
+                <Name>Education grade</Name>
+                <Description>A specific requirement of education grade. Use codelist eduGrade.</Description>
+                <!--<Reference type="CODE_LIST">eduGrade</Reference>-->
+                <!--<Value type="EXAMPLE">Master</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:SubjectArea</Term>
+                <Name>Educational Subject Area</Name>
+                <Description>A specific requirement of educational subject area. Use codelist subArea.</Description>
+                <!--<Reference type="CODE_LIST">subArea</Reference>-->
+                <!--<Value type="EXAMPLE">IT</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:RegistrationType</Term>
+                <Name>Registration type</Name>
+                <Description>A specific requirement of registration type, e.g. HPR-number.</Description>
+                <Value type="EXAMPLE">HPR</Value>
+            </Element>
+            
+            <Element cardinality="0..n">
+                <Term>cv-req:RelevantExperience</Term>
+                <Name>Relavant experience</Name>
+                <Description>If formel education is not necessary and accept relevant experiences.</Description>
+                
+                <Element>
+                    <Term>cv-req:Type</Term>
+                    <Name>Type Experience</Name>
+                    <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
+                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <!--<Value type="EXAMPLE"></Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:MinYear</Term>
+                    <Name>Minimum year</Name>
+                    <Description>A specific requirement about minimum year of experience.</Description>
+                    <Value type="EXAMPLE">2</Value>
+                </Element>
+            </Element>
+            
+            <Element cardinality="0..n">
+                <Term>cv-req:AlternativeEducation</Term>
+                <Name>Alternative education requirement</Name>
+                <Description>If alternative education requirement is accepted.</Description>
+                
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Alternative education identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Requirement type</Name>
+                    <Description>Requirement related to the specific education</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:EducationGrade</Term>
+                    <Name>Education grade</Name>
+                    <Description>A specific requirement of education grade. Use codelist eduGrade.</Description>
+                    <!--<Reference type="CODE_LIST">eduGrade</Reference>-->
+                    <!--<Value type="EXAMPLE">Master</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:SubjectArea</Term>
+                    <Name>Educational Subject Area</Name>
+                    <Description>A specific requirement of educational subject area. Use codelist subArea.</Description>
+                    <!--<Reference type="CODE_LIST">subArea</Reference>-->
+                    <!--<Value type="EXAMPLE">IT</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:RegistrationType</Term>
+                    <Name>Registration type</Name>
+                    <Description>A specific requirement of registration type, e.g. HPR-number.</Description>
+                    <Value type="EXAMPLE">HMS</Value>
+                </Element>
+                
+                <Element cardinality="0..n">
+                    <Term>cv-req:RelevantExperience</Term>
+                    <Name>Relavant experience</Name>
+                    <Description>If formel education is not necessary and accept relevant experiences.</Description>
+                    
+                    <Element>
+                        <Term>cv-req:Type</Term>
+                        <Name>Type Experience</Name>
+                        <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
+                        <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                        <!--<Value type="EXAMPLE"></Value>-->
+                    </Element>
+                    
+                    <Element>
+                        <Term>cv-req:MinYear</Term>
+                        <Name>Minimum year</Name>
+                        <Description>A specific requirement about minimum year of experience.</Description>
+                        <Value type="EXAMPLE">5</Value>
+                    </Element>
+                </Element>
+            </Element>
+            
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cv-req:Course</Term>
+            <Name>Course requirements</Name>
+            <Description>Course related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Course identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            -<Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Requirement type</Name>
+                <Description>Requirement related to the specific course.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Title</Term>
+                <Name>Course title</Name>
+                <Description>The specific name of the course.</Description>
+                <Value type="EXAMPLE">HMS</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Type</Term>
+                <Name>Type course</Name>
+                <Description>The specific name of the course expressed as code.</Description>
+                <!--<Reference type="CODE_LIST">course</Reference>-->
+                <!--<Value type="EXAMPLE">Dykkerkurs</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Version</Term>
+                <Name>Course version</Name>
+                <Description>The version of the course.</Description>
+                <Value type="EXAMPLE">1.0</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Period</Term>
+                <Name>Period</Name>
+                <Description>The period the course has been completed.</Description>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:StartDate</Term>
+                    <Name>Course version</Name>
+                    <Description>Course start date.</Description>
+                    <Value type="EXAMPLE">2020-01-10</Value>
+                </Element>
+                
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:EndDate</Term>
+                    <Name>Course version</Name>
+                    <Description>Course end date. This may be a date in future.</Description>
+                    <Value type="EXAMPLE">2020-05-05</Value>
+                </Element>
+            </Element>
+            
+            <Element cardinality="0..n">
+                <Term>cv-req:AlternativeCourse</Term>
+                <Name>Alternative course requirements</Name>
+                <Description>If alternative course requirement is accepted.</Description>
+                             
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Alternative course identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                -<Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Requirement type</Name>
+                    <Description>Requirement related to the specific course.</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:Title</Term>
+                    <Name>Course title</Name>
+                    <Description>The specific name of the course.</Description>
+                    <Value type="EXAMPLE">HMS</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Type</Term>
+                    <Name>Type course</Name>
+                    <Description>The specific name of the course expressed as code.</Description>
+                    <!--<Reference type="CODE_LIST">course</Reference>-->
+                    <!--<Value type="EXAMPLE">Dykkerkurs</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Version</Term>
+                    <Name>Course version</Name>
+                    <Description>The version of the course.</Description>
+                    <Value type="EXAMPLE">1.0</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Period</Term>
+                    <Name>Period</Name>
+                    <Description>The period the course has been completed.</Description>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:StartDate</Term>
+                        <Name>Period start date</Name>
+                        <Description>Course start date.</Description>
+                        <Value type="EXAMPLE">2020-01-10</Value>
+                    </Element>
+                    
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:EndDate</Term>
+                        <Name>Period end date</Name>
+                        <Description>Course end date. This may be a date in future.</Description>
+                        <Value type="EXAMPLE">2020-05-05</Value>
+                    </Element>
+                </Element>
+            </Element>                 
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cv-req:Certification</Term>
+            <Name>Crtification requirements</Name>
+            <Description>Certification related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Certification Identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            -<Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Certification Requirement</Name>
+                <Description>Requirement related to the specific course.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Title</Term>
+                <Name>Certification title</Name>
+                <Description>The specific name of the certification.</Description>
+                <Value type="EXAMPLE">HMS</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Type</Term>
+                <Name>Certification type</Name>
+                <Description>The specific name of the certification expressed as code.</Description>
+                <!--<Reference type="CODE_LIST">course</Reference>-->
+                <!--<Value type="EXAMPLE">Dykkerkurs</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Version</Term>
+                <Name>Cerrtification version</Name>
+                <Description>The version of the certfication.</Description>
+                <Value type="EXAMPLE">1.0</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:ValidTo</Term>
+                <Name>Cerrtification valid date</Name>
+                <Description>The certification need to be valid to a spesific date.</Description>
+                <Value type="EXAMPLE">2020-12-01</Value>
+            </Element>
+     
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:AlternativeCertification</Term>
+                <Name>Alternative certification requirements</Name>
+                <Description>If alternative certification requirement is accepted.</Description>
+                
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Certification Identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                -<Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Certification Requirement</Name>
+                    <Description>Requirement related to the specific course.</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:Title</Term>
+                    <Name>Certification title</Name>
+                    <Description>The specific name of the certification.</Description>
+                    <Value type="EXAMPLE">HMS</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Type</Term>
+                    <Name>Certification type</Name>
+                    <Description>The specific name of the certification expressed as code.</Description>
+                    <!--<Reference type="CODE_LIST">course</Reference>-->
+                    <!--<Value type="EXAMPLE">Dykkerkurs</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Version</Term>
+                    <Name>Cerrtification version</Name>
+                    <Description>The version of the certfication.</Description>
+                    <Value type="EXAMPLE">1.0</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:ValidTo</Term>
+                    <Name>Cerrtification valid date</Name>
+                    <Description>The certification need to be valid to a spesific date.</Description>
+                    <Value type="EXAMPLE">2025-05-01</Value>
+                </Element>
+            </Element>
+            
+        </Element>    
+        
+    </Document>
+    
+</Syntax>
