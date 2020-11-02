@@ -37,7 +37,7 @@
             
             <xs:element name="Clearance" type="ClearanceType" minOccurs="0" maxOccurs="unbounded"/>
             
-            <xs:element name="Reference" type="ReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Reference" type="ReferenceType" minOccurs="0"/>
             
             <xs:element name="Skills" type="SkillsType" minOccurs="0" maxOccurs="unbounded"/>
             
@@ -49,7 +49,7 @@
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
             <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="EducationGrade" type="xs:token" minOccurs="0"/>
+            <xs:element name="EducationDegree" type="xs:token" minOccurs="0"/>
             <xs:element name="SubjectArea" type="xs:token" minOccurs="0"/>
             <xs:element name="RegistrationType" type="xs:string" minOccurs="0"/>
             <xs:element name="RelevantExperience" type="RelevantExperienceType" minOccurs="0" maxOccurs="unbounded"/>
@@ -150,7 +150,7 @@
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="SkillsPractice" type="SkillsPracticeType" minOccurs="0"/>
-            <xs:element name="AlternativeSkillsPractice" type="AlternativeSkillsPracticeType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="AlternativeSkills" type="AlternativeSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     
@@ -245,7 +245,7 @@
         </xs:sequence>
     </xs:complexType>
     
-    <xs:complexType name="AlternativeSkillsPracticeType">
+    <xs:complexType name="AlternativeSkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
             <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
@@ -260,6 +260,14 @@
         <xs:simpleContent>
             <xs:extension base="xs:token">
                 <xs:attribute name="scheme" type="xs:token"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="CurrencyType">
+        <xs:simpleContent>
+            <xs:extension base="xs:token">
+                <xs:attribute name="currencyID" type="xs:token"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -313,7 +321,7 @@
         <xs:sequence>
             <xs:element name="ProjectParticipation" type="xs:integer" minOccurs="0"/>
             <xs:element name="ProjectSize" type="xs:integer" minOccurs="0"/>
-            <xs:element name="ProjectValue" type="xs:integer" minOccurs="0"/>
+            <xs:element name="ProjectValue" type="CurrencyType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     

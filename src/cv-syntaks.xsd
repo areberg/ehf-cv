@@ -54,7 +54,7 @@
     <xs:complexType name="EducationType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
-            <xs:element name="EducationGrade" type="xs:token" minOccurs="0"/>
+            <xs:element name="EducationDegree" type="xs:token" minOccurs="0"/>
             <xs:element name="SubjectArea" type="xs:token" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="Documentation" type="DocumentationType" minOccurs="0"/>
@@ -107,7 +107,7 @@
             <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
             <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
             <!--<xs:element name="JobSector" type="xs:token" minOccurs="0"/> --> <!-- Skal vi ta dette med? -->
-            <xs:element name="Party" type="PartyType" minOccurs="0"/> <!-- Navn og endpointID -->
+            <xs:element name="CompanyParty" type="PartyType" minOccurs="0"/> <!-- Navn og endpointID -->
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="ExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
             <xs:element name="ExperienceValue" type="ExperienceValueType" minOccurs="0"/>
@@ -124,7 +124,7 @@
             <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
             <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
             <!--<xs:element name="JobSector" type="xs:token" minOccurs="0"/> --> <!-- Skal vi ta dette med? -->
-            <xs:element name="Party" type="PartyType" minOccurs="0"/> <!-- Navn og endpointID -->
+            <xs:element name="CompanyParty" type="PartyType" minOccurs="0"/> <!-- Navn og endpointID -->
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="WorkExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
@@ -169,6 +169,17 @@
             <xs:element name="SkillsReference" type="IdentifierType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
+    
+    <xs:complexType name="PersonalSkillsType">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="Title" type="xs:string" minOccurs="0"/>
+            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Description" type="xs:string" minOccurs="0"/>
+            <xs:element name="Contact" type="ContactType" minOccurs="0"/>
+            <xs:element name="PersonalSkillsReference" type="IdentifierType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
        
     <xs:complexType name="PersonalInformationType">
         <xs:sequence>
@@ -184,23 +195,13 @@
     
     <xs:complexType name="SocialMediaType">
         <xs:sequence>
+            <xs:element name="ID" type="xs:token"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
             <xs:element name="Documentation" type="DocumentationType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
-    <xs:complexType name="PersonalSkillsType">
-        <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
-            <xs:element name="Description" type="xs:string" minOccurs="0"/>
-            <xs:element name="Contact" type="ContactType" minOccurs="0"/>
-            <xs:element name="PersonalSkillsReference" type="IdentifierType" minOccurs="0"/>
-        </xs:sequence>
-    </xs:complexType>
-    
+
     <xs:complexType name="InterestType">
         <xs:sequence>
             <xs:element name="ID" type="IdentifierType" minOccurs="0"/>
@@ -283,8 +284,7 @@
             <xs:element name="ProjectValue" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
-     
+
     <xs:complexType name="PostalAdressType">
         <xs:sequence>
             <xs:element name="StreetName" type="xs:string" minOccurs="0"></xs:element>

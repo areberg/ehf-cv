@@ -2,7 +2,7 @@
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
     
     <Term>cv-request</Term>
-    <Name>EHF CV Request 1.0</Name>
+    <Name>EHF CV Request 1.0 RC1</Name>
     
     <Namespace prefix="cv-req">urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1</Namespace>
     
@@ -76,7 +76,8 @@
                 <Attribute>
                     <Term>scheme</Term>
                     <Name>Scheme identifier</Name>
-                    <Value type="FIXED">0192</Value>
+                    <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                    <Value type="EXAMPLE">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">987654325</Value>
             </Element>
@@ -127,7 +128,8 @@
                 <Attribute>
                     <Term>scheme</Term>
                     <Name>Scheme identifier</Name>
-                    <Value type="FIXED">0192</Value>
+                    <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                    <Value type="EXAMPLE">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">987654325</Value>
             </Element>
@@ -166,7 +168,7 @@
             </Element>
         </Element>
         
-        <Element cardinality="1..n">
+        <Element cardinality="0..n">
             <Term>cv-req:Education</Term>
             <Name>Education requirement</Name>
             
@@ -180,17 +182,17 @@
             
             <Element cardinality="0..1">
                 <Term>cv-req:Requirement</Term>
-                <Name>Requirement type</Name>
+                <Name>Education requirement</Name>
                 <Description>Requirement related to the specific education</Description>
                 <!--<Reference type="CODE_LIST">req</Reference>-->
                 <!--<Value type="EXAMPLE">MUST</Value>-->
             </Element>
             
             <Element>
-                <Term>cv-req:EducationGrade</Term>
-                <Name>Education grade</Name>
-                <Description>A specific requirement of education grade. Use codelist eduGrade.</Description>
-                <!--<Reference type="CODE_LIST">eduGrade</Reference>-->
+                <Term>cv-req:EducationDegree</Term>
+                <Name>Education degree</Name>
+                <Description>A specific requirement of education degree. Use codelist eduDegree.</Description>
+                <!--<Reference type="CODE_LIST">eduDegree</Reference>-->
                 <!--<Value type="EXAMPLE">Master</Value>-->
             </Element>
             
@@ -245,7 +247,7 @@
                 
                 <Element cardinality="0..1">
                     <Term>cv-req:Requirement</Term>
-                    <Name>Requirement type</Name>
+                    <Name>Education requirement</Name>
                     <Description>Requirement related to the specific education</Description>
                     <!--<Reference type="CODE_LIST">req</Reference>-->
                     <!--<Value type="EXAMPLE">MUST</Value>-->
@@ -281,7 +283,7 @@
                     
                     <Element>
                         <Term>cv-req:Type</Term>
-                        <Name>Type Experience</Name>
+                        <Name>Experience Type</Name>
                         <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
                         <!--<Reference type="CODE_LIST">styrk98</Reference>-->
                         <!--<Value type="EXAMPLE"></Value>-->
@@ -290,7 +292,7 @@
                     <Element>
                         <Term>cv-req:MinYear</Term>
                         <Name>Minimum year</Name>
-                        <Description>A specific requirement about minimum year of experience.</Description>
+                        <Description>A requirement about minimum year of experience.</Description>
                         <Value type="EXAMPLE">5</Value>
                     </Element>
                 </Element>
@@ -313,7 +315,7 @@
             
             -<Element cardinality="0..1">
                 <Term>cv-req:Requirement</Term>
-                <Name>Requirement type</Name>
+                <Name>Course requirement</Name>
                 <Description>Requirement related to the specific course.</Description>
                 <!--<Reference type="CODE_LIST">req</Reference>-->
                 <!--<Value type="EXAMPLE">MUST</Value>-->
@@ -328,7 +330,7 @@
             
             <Element cardinality="0..1">
                 <Term>cv-req:Type</Term>
-                <Name>Type course</Name>
+                <Name>Course type</Name>
                 <Description>The specific name of the course expressed as code.</Description>
                 <!--<Reference type="CODE_LIST">course</Reference>-->
                 <!--<Value type="EXAMPLE">Dykkerkurs</Value>-->
@@ -348,7 +350,7 @@
                 
                 <Element cardinality="0..1">
                     <Term>cv-req:StartDate</Term>
-                    <Name>Course version</Name>
+                    <Name>Start date</Name>
                     <Description>Course start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
                 </Element>
@@ -356,7 +358,7 @@
                 
                 <Element cardinality="0..1">
                     <Term>cv-req:EndDate</Term>
-                    <Name>Course version</Name>
+                    <Name>End date</Name>
                     <Description>Course end date. This may be a date in future.</Description>
                     <Value type="EXAMPLE">2020-05-05</Value>
                 </Element>
@@ -377,7 +379,7 @@
                 
                 -<Element cardinality="0..1">
                     <Term>cv-req:Requirement</Term>
-                    <Name>Requirement type</Name>
+                    <Name>Course requirement</Name>
                     <Description>Requirement related to the specific course.</Description>
                     <!--<Reference type="CODE_LIST">req</Reference>-->
                     <!--<Value type="EXAMPLE">MUST</Value>-->
@@ -392,7 +394,7 @@
                 
                 <Element cardinality="0..1">
                     <Term>cv-req:Type</Term>
-                    <Name>Type course</Name>
+                    <Name>Course type</Name>
                     <Description>The specific name of the course expressed as code.</Description>
                     <!--<Reference type="CODE_LIST">course</Reference>-->
                     <!--<Value type="EXAMPLE">Dykkerkurs</Value>-->
@@ -416,7 +418,6 @@
                         <Description>Course start date.</Description>
                         <Value type="EXAMPLE">2020-01-10</Value>
                     </Element>
-                    
                     
                     <Element cardinality="0..1">
                         <Term>cv-req:EndDate</Term>
@@ -477,9 +478,8 @@
                 <Description>The certification need to be valid to a spesific date.</Description>
                 <Value type="EXAMPLE">2020-12-01</Value>
             </Element>
-     
-            
-            <Element cardinality="0..1">
+          
+            <Element cardinality="0..n">
                 <Term>cv-req:AlternativeCertification</Term>
                 <Name>Alternative certification requirements</Name>
                 <Description>If alternative certification requirement is accepted.</Description>
@@ -528,10 +528,901 @@
                     <Description>The certification need to be valid to a spesific date.</Description>
                     <Value type="EXAMPLE">2025-05-01</Value>
                 </Element>
+            </Element>  
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cv-req:LanguageSkills</Term>
+            <Name>Language requirements</Name>
+            <Description>Language related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Language Identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
             </Element>
             
-        </Element>    
+            <Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Language Requirement</Name>
+                <Description>Requirement related to the specific course.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Language</Term>
+                <Name>Language</Name>
+                <Description>The specific language. Use code list ISO639.</Description>
+                <!--<Reference type="CODE_LIST">ISO639</Reference>-->
+                <!--<Value type="EXAMPLE">NO</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:OralSkill</Term>
+                <Name>Language</Name>
+                <Description>Minimum requirement about the oral skill related to the specific language. Use EU Global Scale code list.</Description>
+                <!--<Reference type="CODE_LIST">LangScale</Reference>-->
+                <!--<Value type="EXAMPLE">A1</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:WrittenSkill</Term>
+                <Name>Language</Name>
+                <Description>Minimum requirement about the written skill related to the specific language. Use EU Global Scale code list.</Description>
+                <!--<Reference type="CODE_LIST">LangScale</Reference>-->
+                <!--<Value type="EXAMPLE">A1</Value>-->
+            </Element>
+            
+            
+            <Element cardinality="0..n">
+                <Term>cv-req:AlternativeLanguageSkills</Term>
+                <Name>Alternative language skills requirements</Name>
+                <Description>If alternative language skills requirement is accepted.</Description>
+                  
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Language Identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Language Requirement</Name>
+                    <Description>Requirement related to the specific course.</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:Language</Term>
+                    <Name>Language</Name>
+                    <Description>The specific language. Use code list ISO639.</Description>
+                    <!--<Reference type="CODE_LIST">ISO639</Reference>-->
+                    <!--<Value type="EXAMPLE">NO</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:OralSkill</Term>
+                    <Name>Language</Name>
+                    <Description>Minimum requirement about the oral skill related to the specific language. Use EU Global Scale code list.</Description>
+                    <!--<Reference type="CODE_LIST">LangScale</Reference>-->
+                    <!--<Value type="EXAMPLE">A1</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:WrittenSkill</Term>
+                    <Name>Language</Name>
+                    <Description>Minimum requirement about the written skill related to the specific language. Use EU Global Scale code list.</Description>
+                    <!--<Reference type="CODE_LIST">LangScale</Reference>-->
+                    <!--<Value type="EXAMPLE">A1</Value>-->
+                </Element>
+            </Element>
+        </Element>¨
         
-    </Document>
-    
+        <Element cardinality="0..n">
+            <Term>cv-req:ProjectExperience</Term>
+            <Name>Project experience requirements</Name>
+            <Description>Project experience related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Project experience Identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            -<Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Project experience Requirement</Name>
+                <Description>Requirement related to the specific project experience.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:ExperienceType</Term>
+                <Name>Experience type</Name>
+                <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
+                <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                <!--<Value type="EXAMPLE"></Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:IndustryType</Term>
+                <Name>Industry type</Name>
+                <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
+                <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                <!--<Value type="EXAMPLE">A01</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:WorkPlace</Term>
+                <Name>Work place</Name>
+                <Description>A project experience related to a work place, country. Use code list ISO3166.</Description>
+                <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
+                <!--<Value type="EXAMPLE">AI</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:JobSector</Term>
+                <Name>Job sector</Name>
+                <Description>A project experience related to a job sector. Use code list sector.</Description>
+                <!--<Reference type="CODE_LIST">sector</Reference>-->
+                <!--<Value type="EXAMPLE">private</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:RequiredTotalExperience</Term>
+                <Name>Required total experience</Name>
+                <Description>A requirement about total exeperience. Need to provide a amount of either minimum or maximum experience.</Description>
+               
+                <Element>
+                    <Term>cv-req:MinimumExperience</Term>
+                    <Name>Minimum experience</Name>
+                    <Description>A specific requirement about minimum year of experience.</Description>
+                    <Value type="EXAMPLE">2</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:Maximum</Term>
+                    <Name>Maximum experience</Name>
+                    <Description>A specific requirement about maximum year of experience.</Description>
+                    <Value type="EXAMPLE">2</Value>
+                </Element>               
+            </Element>
+            
+            <Element>
+                <Term>cv-req:ExperienceDescription</Term>
+                <Name>Project experience description</Name>
+                <Description>Detailed description about the requirement of project experion</Description>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:PositionPercent</Term>
+                    <Name>Position percent</Name>
+                    <Description>A specific requirement about the percent of the project exeperience position.</Description>
+                    <Value type="EXAMPLE">100</Value>
+                </Element>     
+                
+                <Element>
+                    <Term>cv-req:Role</Term>
+                    <Name>Role</Name>
+                    <Description>A specific requirement about the role of the project experience.</Description>
+                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <!--<Value type="EXAMPLE"></Value>-->
+                </Element>     
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Activities</Term>
+                    <Name>Activities</Name>
+                    <Description>Detailed description about what the cancdidate need to have done in the specific project experience. E.g. Finance analysis</Description>
+                    <Value type="EXAMPLE">Must have done financial analysis by using R.</Value>
+                </Element>     
+                
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:ExperienceValue</Term>
+                <Name>Experience value</Name>
+                <Description>Detailed description about the project value</Description>
+                
+                <Element>
+                    <Term>cv-req:ProjectParticipation</Term>
+                    <Name>Project participation</Name>
+                    <Description>A specific requirement about candidate's project participation, stated as months.</Description>
+                    <Value type="EXAMPLE">5</Value>
+                </Element>     
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:ProjectSize</Term>
+                    <Name>Project size</Name>
+                    <Description>A specific requirement about the total size of the project, stated as months.</Description>
+                    <Value type="EXAMPLE">5</Value>
+                </Element>     
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:ProjectValue</Term>
+                    <Name>Project Value</Name>
+                    <Description>Total value of the project.</Description>
+                                     
+                    <Attribute>
+                        <Term>currencyID</Term>
+                        <Name>Currencyidentifier</Name>
+                        <!--<Reference type="CODE_LIST">ISO4217</Reference>-->
+                        <!--<Value type="EXAMPLE">NOK</Value>-->
+                    </Attribute>
+                    <!--<Value type="EXAMPLE">100</Value>-->
+                </Element>                   
+            </Element>   
+                        
+            <Element cardinality="0..n">
+                <Term>cv-req:AlternativeProjectExperience</Term>
+                <Name>Alternative project experience requirements</Name>
+                <Description>If alternative project experience requirement is accepted.</Description>
+                      
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Project experience Identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                -<Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Project experience Requirement</Name>
+                    <Description>Requirement related to the specific project experience.</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:ExperienceType</Term>
+                    <Name>Experience type</Name>
+                    <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
+                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <!--<Value type="EXAMPLE"></Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:IndustryType</Term>
+                    <Name>Industry type</Name>
+                    <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
+                    <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                    <!--<Value type="EXAMPLE">A01</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:WorkPlace</Term>
+                    <Name>Work place</Name>
+                    <Description>A project experience related to a work place, country. Use code list ISO3166.</Description>
+                    <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
+                    <!--<Value type="EXAMPLE">AI</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:JobSector</Term>
+                    <Name>Job sector</Name>
+                    <Description>A project experience related to a job sector. Use code list sector.</Description>
+                    <!--<Reference type="CODE_LIST">sector</Reference>-->
+                    <!--<Value type="EXAMPLE">private</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:RequiredTotalExperience</Term>
+                    <Name>Required total experience</Name>
+                    <Description>A requirement about total exeperience. Need to provide a amount of either minimum or maximum experience.</Description>
+                    
+                    <Element>
+                        <Term>cv-req:MinimumExperience</Term>
+                        <Name>Minimum experience</Name>
+                        <Description>A specific requirement about minimum year of experience.</Description>
+                        <Value type="EXAMPLE">2</Value>
+                    </Element>
+                    
+                    <Element>
+                        <Term>cv-req:Maximum</Term>
+                        <Name>Maximum experience</Name>
+                        <Description>A specific requirement about maximum year of experience.</Description>
+                        <Value type="EXAMPLE">2</Value>
+                    </Element>               
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:ExperienceDescription</Term>
+                    <Name>Project experience description</Name>
+                    <Description>Detailed description about the requirement of project experion</Description>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:PositionPercent</Term>
+                        <Name>Position percent</Name>
+                        <Description>A specific requirement about the percent of the project exeperience position.</Description>
+                        <Value type="EXAMPLE">100</Value>
+                    </Element>     
+                    
+                    <Element>
+                        <Term>cv-req:Role</Term>
+                        <Name>Role</Name>
+                        <Description>A specific requirement about the role of the project experience.</Description>
+                        <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                        <!--<Value type="EXAMPLE"></Value>-->
+                    </Element>     
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:Activities</Term>
+                        <Name>Activities</Name>
+                        <Description>Detailed description about what the cancdidate need to have done in the specific project experience. E.g. Finance analysis</Description>
+                        <Value type="EXAMPLE">Must have done financial analysis by using R.</Value>
+                    </Element>           
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:ExperienceValueType</Term>
+                    <Name>Experience value type</Name>
+                    <Description>Detailed description about the project value</Description>
+                    
+                    <Element>
+                        <Term>cv-req:ProjectParticipation</Term>
+                        <Name>Project participation</Name>
+                        <Description>A specific requirement about candidate's project participation, stated as months.</Description>
+                        <Value type="EXAMPLE">5</Value>
+                    </Element>     
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:ProjectSize</Term>
+                        <Name>Project size</Name>
+                        <Description>A specific requirement about the total size of the project, stated as months.</Description>
+                        <Value type="EXAMPLE">5</Value>
+                    </Element>     
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:ProjectValue</Term>
+                        <Name>Project Value</Name>
+                        <Description>Total value of the project.</Description>
+                        
+                        <Attribute>
+                            <Term>currencyID</Term>
+                            <Name>Currencyidentifier</Name>
+                            <!--<Reference type="CODE_LIST">ISO4217</Reference>-->
+                            <!--<Value type="EXAMPLE">NOK</Value>-->
+                        </Attribute>
+                        <!--<Value type="EXAMPLE">100</Value>-->
+                    </Element>                   
+                </Element>        
+            </Element>
+        </Element>
+        
+        
+        <Element cardinality="0..n">
+            <Term>cv-req:WorkExperience</Term>
+            <Name>Work experience requirements</Name>
+            <Description>Work experience related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Work experience Identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Work experience Requirement</Name>
+                <Description>Requirement related to the specific work experience.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:PositionLevel</Term>
+                <Name>Position level</Name>
+                <Description>A specific requirement about candidates position level. Use code list.</Description>
+                <!--<Reference type="CODE_LIST">posLevel</Reference>-->
+                <!--<Value type="EXAMPLE">Leader</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:IndustryType</Term>
+                <Name>Industry type</Name>
+                <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
+                <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                <!--<Value type="EXAMPLE">A01</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:WorkPlace</Term>
+                <Name>Work place</Name>
+                <Description>A project experience related to a work place, country. Use code list ISO3166.</Description>
+                <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
+                <!--<Value type="EXAMPLE">AI</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:JobSector</Term>
+                <Name>Job sector</Name>
+                <Description>A project experience related to a job sector. Use code list sector.</Description>
+                <!--<Reference type="CODE_LIST">sector</Reference>-->
+                <!--<Value type="EXAMPLE">private</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:MinimumTotalExperience</Term>
+                <Name>Minimum total experience</Name>
+                <Description>Requirement about minum total year of work experience.</Description>
+                <Value type="EXAMPLE">5</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Period</Term>
+                <Name>Period</Name>
+                <Description>The period the work experience need to been completed.</Description>
+                
+                <Element>
+                    <Term>cv-req:StartDate</Term>
+                    <Name>Course version</Name>
+                    <Description>Work experience start date.</Description>
+                    <Value type="EXAMPLE">2020-01-19</Value>
+                </Element>
+                
+                
+                <Element>
+                    <Term>cv-req:EndDate</Term>
+                    <Name>Course version</Name>
+                    <Description>Work experience end date.</Description>
+                    <Value type="EXAMPLE">2020-10-02</Value>
+                </Element>
+            </Element>
+            
+            <Element>
+                <Term>cv-req:WorkExperienceDescription</Term>
+                <Name>Work experience description</Name>
+                <Description>Detailed description about the requirement of work experion</Description>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:PositionPercent</Term>
+                    <Name>Position percent</Name>
+                    <Description>A specific requirement about the percent of the work exeperience position.</Description>
+                    <Value type="EXAMPLE">100</Value>
+                </Element>     
+                
+                <Element>
+                    <Term>cv-req:Role</Term>
+                    <Name>Role</Name>
+                    <Description>A specific requirement about the role of the work experience.</Description>
+                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <!--<Value type="EXAMPLE"></Value>-->
+                </Element>     
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Activities</Term>
+                    <Name>Activities</Name>
+                    <Description>Detailed description about what the cancdidate need to have done in the specific work experience. E.g. Mathematical analysis</Description>
+                    <Value type="EXAMPLE">Must have done mathemathical analysis by using Python.</Value>
+                </Element>           
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cv-req:AlternativeWorkExperience</Term>
+                <Name>Alternative project experience requirements</Name>
+                <Description>If alternative project experience requirement is accepted.</Description>
+                
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Work experience Identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                -<Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Work experience Requirement</Name>
+                    <Description>Requirement related to the specific work experience.</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:PositionLevel</Term>
+                    <Name>Position level</Name>
+                    <Description>A specific requirement about candidates position level. Use code list.</Description>
+                    <!--<Reference type="CODE_LIST">posLevel</Reference>-->
+                    <!--<Value type="EXAMPLE">Leader</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:IndustryType</Term>
+                    <Name>Industry type</Name>
+                    <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
+                    <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                    <!--<Value type="EXAMPLE">A01</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:WorkPlace</Term>
+                    <Name>Work place</Name>
+                    <Description>A project experience related to a work place, country. Use code list ISO3166.</Description>
+                    <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
+                    <!--<Value type="EXAMPLE">AI</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:JobSector</Term>
+                    <Name>Job sector</Name>
+                    <Description>A project experience related to a job sector. Use code list sector.</Description>
+                    <!--<Reference type="CODE_LIST">sector</Reference>-->
+                    <!--<Value type="EXAMPLE">private</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:MinimumTotalExperience</Term>
+                    <Name>Minimum total experience</Name>
+                    <Description>Requirement about minum total year of work experience.</Description>
+                    <Value type="EXAMPLE">5</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Period</Term>
+                    <Name>Period</Name>
+                    <Description>The period the work experience need to been completed.</Description>
+                    
+                    <Element>
+                        <Term>cv-req:StartDate</Term>
+                        <Name>Course version</Name>
+                        <Description>Work experience start date.</Description>
+                        <Value type="EXAMPLE">2020-01-19</Value>
+                    </Element>
+                    
+                    
+                    <Element>
+                        <Term>cv-req:EndDate</Term>
+                        <Name>Course version</Name>
+                        <Description>Work experience end date.</Description>
+                        <Value type="EXAMPLE">2020-10-02</Value>
+                    </Element>
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:WorkExperienceDescription</Term>
+                    <Name>Work experience description</Name>
+                    <Description>Detailed description about the requirement of work experion</Description>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:PositionPercent</Term>
+                        <Name>Position percent</Name>
+                        <Description>A specific requirement about the percent of the work exeperience position.</Description>
+                        <Value type="EXAMPLE">100</Value>
+                    </Element>     
+                    
+                    <Element>
+                        <Term>cv-req:Role</Term>
+                        <Name>Role</Name>
+                        <Description>A specific requirement about the role of the work experience.</Description>
+                        <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                        <!--<Value type="EXAMPLE"></Value>-->
+                    </Element>     
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:Activities</Term>
+                        <Name>Activities</Name>
+                        <Description>Detailed description about what the cancdidate need to have done in the specific work experience. E.g. Mathematical analysis</Description>
+                        <Value type="EXAMPLE">Must have done mathemathical analysis by using Python.</Value>
+                    </Element>           
+                </Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cv-req:Clearance</Term>
+            <Name>Clearance requirements</Name>
+            <Description>Clearance related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Clearance Identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            -<Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Clearance Requirement</Name>
+                <Description>Requirement related to the specific clearance.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Title</Term>
+                <Name>Clearance title</Name>
+                <Description>The specific name of the clearance.</Description>
+                <Value type="EXAMPLE">HMS</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Type</Term>
+                <Name>Clearance type</Name>
+                <Description>The specific name of the clearance expressed as code.</Description>
+                <!--<Reference type="CODE_LIST">clearance</Reference>-->
+                <!--<Value type="EXAMPLE">politi</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Level</Term>
+                <Name>Clearance level</Name>
+                <Description>The level of the clearance requirement.</Description>
+                <!--<Reference type="CODE_LIST">clea-level</Reference>-->
+                <!--<Value type="EXAMPLE">secret</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:ExpirationDate</Term>
+                <Name>Clearance expiration date</Name>
+                <Description>A specific requirement about the clearance expiration date.</Description>
+                <Value type="EXAMPLE">2025-05-05</Value>
+            </Element>
+            
+            <Element cardinality="0..n">
+                <Term>cv-req:AlternativeClearance</Term>
+                <Name>Alternative clearance requirements</Name>
+                <Description>If alternative clearance requirement is accepted.</Description>
+                
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Clearance Identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                -<Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Clearance Requirement</Name>
+                    <Description>Requirement related to the specific clearance.</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:Title</Term>
+                    <Name>Clearance title</Name>
+                    <Description>The specific name of the clearance.</Description>
+                    <Value type="EXAMPLE">HMS</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Type</Term>
+                    <Name>Clearance type</Name>
+                    <Description>The specific name of the clearance expressed as code.</Description>
+                    <!--<Reference type="CODE_LIST">clearance</Reference>-->
+                    <!--<Value type="EXAMPLE">politi</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:Level</Term>
+                    <Name>Clearance level</Name>
+                    <Description>The level of the clearance requirement.</Description>
+                    <!--<Reference type="CODE_LIST">clea-level</Reference>-->
+                    <!--<Value type="EXAMPLE">secret</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:ExpirationDate</Term>
+                    <Name>Clearance expiration date</Name>
+                    <Description>A specific requirement about the clearance expiration date.</Description>
+                    <Value type="EXAMPLE">2025-05-05</Value>
+                </Element>
+            </Element> 
+        </Element>
+        
+        
+        <Element cardinality="0..1">
+            <Term>cv-req:Referance</Term>
+            <Name>Reference requirements</Name>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Reference Identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            <Element>
+                <Term>cv-req:MinimumTotalReference</Term>
+                <Name>Minimum total reference</Name>
+                <Description>Requirement about total minimum references, that need to be provided by the candidate.</Description>
+                <Value type="EXAMPLE">3</Value>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cv-req:Skills</Term>
+            <Name>Skills requirements</Name>
+            <Description>Skills related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Skills identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            -<Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Skills requirement</Name>
+                <Description>Requirement related to the specific skill.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Title</Term>
+                <Name>Skill title</Name>
+                <Description>The specific name of the skill.</Description>
+                <Value type="EXAMPLE">HMS</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Type</Term>
+                <Name>Skill type</Name>
+                <Description>The specific name of the skill expressed as code.</Description>
+                <!--<Reference type="CODE_LIST">skills</Reference>-->
+                <!--<Value type="EXAMPLE">Java</Value>-->
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Version</Term>
+                <Name>Skill version</Name>
+                <Description>The version of the skill.</Description>
+                <Value type="EXAMPLE">11</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:SkillPractice</Term>
+                <Name>Skill practice</Name>
+                <Description>Detailed descrption about the skill practices</Description>
+
+                <Element>
+                    <Term>cv-req:LastPractice</Term>
+                    <Name>Skill last practice</Name>
+                    <Description>Last time the skill need to be practice.</Description>
+                    <Value type="EXAMPLE">2020-03-03</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:MinimumLengthPractice</Term>
+                    <Name>Skill minimum length practice</Name>
+                    <Description>How long the skill need to be practiced continously, state the minimum length as months.</Description>
+                    <Value type="EXAMPLE">5</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:SkillsReference</Term>
+                    <Name>Skill reference</Name>
+                    <Description>If the skill need a reference or not. State true or false.</Description>
+                    <!--<Reference type="CODE_LIST">skillsRef</Reference>-->
+                    <Value type="EXAMPLE">True</Value>
+                </Element>
+            </Element>
+            
+            <Element cardinality="0..n">
+                <Term>cv-req:AlternativeSkill</Term>
+                <Name>Alternative skill requirements</Name>
+                <Description>If alternative skill requirement is accepted.</Description>
+                
+                <Element>
+                    <Term>cv-req:ID</Term>
+                    <Name>Skills identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                -<Element cardinality="0..1">
+                    <Term>cv-req:Requirement</Term>
+                    <Name>Skills requirement</Name>
+                    <Description>Requirement related to the specific skill.</Description>
+                    <!--<Reference type="CODE_LIST">req</Reference>-->
+                    <!--<Value type="EXAMPLE">MUST</Value>-->
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:Title</Term>
+                    <Name>Skill title</Name>
+                    <Description>The specific name of the skill.</Description>
+                    <Value type="EXAMPLE">HMS</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Type</Term>
+                    <Name>Skill type</Name>
+                    <Description>The specific name of the skill expressed as code.</Description>
+                    <!--<Reference type="CODE_LIST">skills</Reference>-->
+                    <!--<Value type="EXAMPLE">Java</Value>-->
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Version</Term>
+                    <Name>Skill version</Name>
+                    <Description>The version of the skill.</Description>
+                    <Value type="EXAMPLE">11</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:SkillPractice</Term>
+                    <Name>Skill practice</Name>
+                    <Description>Detailed descrption about the skill practices</Description>
+                    
+                    <Element>
+                        <Term>cv-req:LastPractice</Term>
+                        <Name>Skill last practice</Name>
+                        <Description>Last time the skill need to be practice.</Description>
+                        <Value type="EXAMPLE">2020-03-03</Value>
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cv-req:MinimumLengthPractice</Term>
+                        <Name>Skill minimum length practice</Name>
+                        <Description>How long the skill need to be practiced continously, state the minimum length as months.</Description>
+                        <Value type="EXAMPLE">5</Value>
+                    </Element>
+                    
+                    <Element>
+                        <Term>cv-req:SkillsReference</Term>
+                        <Name>Skill reference</Name>
+                        <Description>If the skill need a reference or not. State true or false.</Description>
+                        <!--<Reference type="CODE_LIST">skillsRef</Reference>-->
+                        <Value type="EXAMPLE">True</Value>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cv-req:PersonalSkills</Term>
+            <Name>Skills requirements</Name>
+            <Description>Skills related requirements.</Description>
+            
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Personal skills identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                    For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+            
+            -<Element cardinality="0..1">
+                <Term>cv-req:Requirement</Term>
+                <Name>Personal skills requirement</Name>
+                <Description>Requirement related to the specific personal skill.</Description>
+                <!--<Reference type="CODE_LIST">req</Reference>-->
+                <!--<Value type="EXAMPLE">MUST</Value>-->
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Title</Term>
+                <Name>Personal skill title</Name>
+                <Description>The specific name of the personal skill.</Description>
+                <Value type="EXAMPLE">HMS</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Type</Term>
+                <Name>Personal skill type</Name>
+                <Description>The specific name of the personal skill expressed as code.</Description>
+                <!--<Reference type="CODE_LIST">personalSkills</Reference>-->
+                <!--<Value type="EXAMPLE">Leadership</Value>-->
+            </Element>
+        </Element>
+        
+    </Document>  
 </Syntax>
