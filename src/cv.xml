@@ -1,113 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
-    
+
     <Term>cvuest</Term>
     <Name>EHF CV 1.0 RC1</Name>
-    
+
     <Namespace prefix="cv">urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1</Namespace>
-    
+
     <Document>
         <Term>cv:CV</Term>
         <Name>CV document</Name>
-        
+
         <Element>
             <Term>cv:CustomizationID</Term>
             <Name>Document Identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
             <Value type="FIXED">...</Value>
         </Element>
-        
+
         <Element>
             <Term>cv:ProfileID</Term>
             <Name>Process Identifier</Name>
             <Description>Identifies the business process context in which the transaction appears.</Description>
             <Value type="FIXED">...</Value>
         </Element>
-        
+
         <Element>
             <Term>cv:ID</Term>
             <Name>CV identifier</Name>
             <Description>Document identifier for referencing the document instance.</Description>
             <Value type="EXAMPLE">1</Value>
         </Element>
-        
+
         <Element>
             <Term>cv:IssueDate</Term>
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2020-10-05</Value>
         </Element>
-        
+
         <Element>
             <Term>cv:IssueTime</Term>
             <Name>Issue Time</Name>
             <Description>The time on which the transaction instance was issued.</Description>
             <Value type="EXAMPLE">10:30:00</Value>
         </Element>
-        
+
         <Element>
             <Term>cv:FolderReference</Term>
             <Name>Folder Reference</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Doffin Reference</Name>
                 <Description>The Doffin Reference number.</Description>
-                
+
                 <Attribute>
                 <Term>scheme</Term>
                 <Name>Doffin scheme identifier</Name>
                 <Value type="FIXED">DOFFIN</Value>
                 </Attribute>
-                
+
                 <Value type="EXAMPLE">147</Value>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..1">
             <Term>cv:ReceiverParty</Term>
             <Name>contracting Authority</Name>
-            
+
             <Element>
                 <Term>cv:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the contracting authority.</Description>
-                
+
                 <Attribute>
                     <Term>scheme</Term>
                     <Name>Scheme identifier</Name>
-                    <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                    <Reference type="CODE_LIST">eaid</Reference>
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">987654325</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:Name</Term>
                 <Name>Name</Name>
                 <Description>The name of the contracting authority.</Description>
                 <Value type="EXAMPLE">X company</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -116,50 +116,50 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..1">
             <Term>cv:ProviderParty</Term>
             <Name>Economic operator or the candidate</Name>
-            
+
             <Element cardinality="0..1"> <!-- obs obs -->
                 <Term>cv:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the economic operator or the candidate.</Description>
-                
+
                 <Attribute>
                     <Term>scheme</Term>
                     <Name>Scheme identifier</Name>
-                    <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                    <Reference type="CODE_LIST">eaid</Reference>
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
                 <Value type="EXAMPLE">987654325</Value>
             </Element>
-            
+
             <Element cardinality="0..1"> <!-- obs obs -->
                 <Term>cv:Name</Term>
                 <Name>Name</Name>
                 <Description>The party name of the Contracting Authority.</Description>
                 <Value type="EXAMPLE">Y company</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">John Johnsen</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">99998888</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -168,49 +168,47 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:Education</Term>
             <Name>Education information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Education identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:EducationDegree</Term>
-                <Name>Education grade</Name>
+                <Name>Education degree</Name>
                 <Description>The candidate's education degree. Use codelist eduDegree.</Description>
-                <!--<Reference type="CODE_LIST">eduDegree</Reference>-->
-                <!--<Value type="EXAMPLE">Master</Value>-->
+                <Reference type="CODE_LIST">educationDegree</Reference>
+                <Value type="EXAMPLE">bachelor</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:SubjectArea</Term>
                 <Name>Educational Subject Area</Name>
                 <Description>The candidate's educational subject area. Use codelist subArea.</Description>
                 <!--<Reference type="CODE_LIST">subArea</Reference>-->
-                <!--<Value type="EXAMPLE">IT</Value>-->
+                <Value type="EXAMPLE">IT</Value>
             </Element>
-            
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Period</Term>
                 <Name>Period</Name>
                 <Description>The period the candidate completed the education.</Description>
-                
+
                 <Element>
                     <Term>cv:StartDate</Term>
                     <Name>Start date</Name>
                     <Description>Education start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
                 </Element>
-                
-                
+
                 <Element>
                     <Term>cv:EndDate</Term>
                     <Name>End date</Name>
@@ -223,7 +221,7 @@
                 <Term>cv:Documentation</Term>
                 <Name>Educational documentation</Name>
                 <Description>The candidate's educational documentation</Description>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:RegistrationType</Term>
                     <Name>Registration type</Name>
@@ -237,7 +235,7 @@
                     <Description>Specific number of the registration type.</Description>
                     <Value type="EXAMPLE">154725</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
@@ -246,47 +244,47 @@
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Mime code</Name>
-                        <!--<Reference type="CODE_LIST">MimeCode</Reference>-->
+                        <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">application/pdf</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">bWFzdGVyIG9mIHNjaWVuY2Ugdml0bmVtw6VsCg==</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:URI</Term>
                     <Name>Education documentation URI</Name>
                     <Description>Education documentation URI reference, e.g. from vitnemålsportalen</Description>
                     <Value type="EXAMPLE">https://www.vitnemalsportalen.no/</Value>
-                </Element>   
+                </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
+                    <Value type="EXAMPLE">projectmanager</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -294,66 +292,66 @@
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:EducationReference</Term>
                 <Name>Education Reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Education reference Identifier</Name>
                     <Description>Education reference identifier connected to CV request.</Description>
                     <Value type="EXAMPLE">1457</Value>
                 </Element>
-            </Element>    
+            </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:Course</Term>
             <Name>Course information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Course identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:Title</Term>
                 <Name>Course title</Name>
                 <Description>The specific name of the course.</Description>
                 <Value type="EXAMPLE">HMS</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Type</Term>
                 <Name>Course type</Name>
                 <Description>The specific name of the course expressed as code.</Description>
-                <!--<Reference type="CODE_LIST">course</Reference>-->
-                <!--<Value type="EXAMPLE">Dykkerkurs</Value>-->
+                <Reference type="CODE_LIST">courseType</Reference>
+                <Value type="EXAMPLE">Dykkerkurs</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Version</Term>
                 <Name>Course version</Name>
                 <Description>The version of the course.</Description>
                 <Value type="EXAMPLE">1.0</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Period</Term>
                 <Name>Period</Name>
                 <Description>The period the course has been completed.</Description>
-                
+
                 <Element>
                     <Term>cv:StartDate</Term>
                     <Name>Course version</Name>
                     <Description>Course start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
                 </Element>
-    
+
                 <Element>
                     <Term>cv:EndDate</Term>
                     <Name>Course version</Name>
@@ -361,49 +359,54 @@
                     <Value type="EXAMPLE">2020-05-05</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:SupplierParty</Term>
                 <Name>Course supplier party</Name>
                 <Description>The party who organized the course.</Description>
-                
+
                 <Element cardinality="0..1"> <!-- obs obs -->
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the supplier party.</Description>
-                    
+
                     <Attribute>
                         <Term>scheme</Term>
                         <Name>Scheme identifier</Name>
-                        <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                        <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
                 </Element>
-                
-                <Element> 
+
+                <Element>
                     <Term>cv:Name</Term>
                     <Name>Name</Name>
                     <Description>The party name of the supplier party.</Description>
                     <Value type="EXAMPLE">Z company</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
-                    <Term>cv:ElectronicMail</Term>
-                    <Name>Supplier Party Email Address</Name>
-                    <Description>Supplier party's e-mail address.</Description>
-                    <Value type="EXAMPLE">alf.alfsen@z.no</Value>
+                    <Term>cv:Contact</Term>
+                    <Name>Contact Information</Name>
+
+                    <Element>
+                        <Term>cv:ElectronicMail</Term>
+                        <Name>Supplier Party Email Address</Name>
+                        <Description>Supplier party's e-mail address.</Description>
+                        <Value type="EXAMPLE">alf.alfsen@z.no</Value>
+                    </Element>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Country</Term>
                     <Name>Supplier party country</Name>
                     <Description>Supplier party's country of registration.</Description>
-                    <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
+                    <Reference type="CODE_LIST">ISO3166</Reference>
                     <Value type="EXAMPLE">NO</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Documentation</Term>
                 <Name>Course documentation</Name>
@@ -413,29 +416,29 @@
                     <Term>cv:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
                     <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
-                    
+
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Mime code</Name>
-                        <!--<Reference type="CODE_LIST">MimeCode</Reference>-->
+                        <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">application/pdf</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">a3VycyBkb2t1bWVudGFzam9uCg==</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:URI</Term>
                     <Name>Course documentation URI</Name>
                     <Description>Course documentation URI reference.</Description>
                     <Value type="EXAMPLE">https://www.kurssportalen.no/</Value>
-                </Element>   
+                </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:CourseReference</Term>
                 <Name>Course Reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Course reference Identifier</Name>
@@ -444,122 +447,127 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:Certification</Term>
             <Name>Certification information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Certification identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:Title</Term>
                 <Name>Certification title</Name>
                 <Description>The specific name of the course.</Description>
                 <Value type="EXAMPLE">Archimate</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Type</Term>
                 <Name>Certification type</Name>
                 <Description>The specific name of the certfication expressed as code.</Description>
-                <!--<Reference type="CODE_LIST">course</Reference>-->
-                <!--<Value type="EXAMPLE">TOGAF</Value>-->
+                <Reference type="CODE_LIST">certificationType</Reference>
+                <Value type="EXAMPLE">TOGAF</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Version</Term>
                 <Name>Course version</Name>
                 <Description>The version of the certification.</Description>
                 <Value type="EXAMPLE">3.0</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:ValidTo</Term>
                 <Name>Cerrtification valid date</Name>
                 <Description>The date certication is valid to.</Description>
                 <Value type="EXAMPLE">2020-05-14</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:SupplierParty</Term>
                 <Name>Course supplier party</Name>
                 <Description>The party who organized the certification.</Description>
-                
+
                 <Element cardinality="0..1"> <!-- obs obs -->
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the supplier party.</Description>
-                    
+
                     <Attribute>
                         <Term>scheme</Term>
                         <Name>Scheme identifier</Name>
-                        <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                        <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
                 </Element>
-                
-                <Element> 
+
+                <Element>
                     <Term>cv:Name</Term>
                     <Name>Name</Name>
                     <Description>The party name of the supplier party.</Description>
                     <Value type="EXAMPLE">U company</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
-                    <Term>cv:ElectronicMail</Term>
-                    <Name>Supplier Party Email Address</Name>
-                    <Description>Supplier party's e-mail address.</Description>
-                    <Value type="EXAMPLE">alf.alfsen@u.no</Value>
+                    <Term>cv:Contact</Term>
+                    <Name>Contact Information</Name>
+
+                    <Element>
+                        <Term>cv:ElectronicMail</Term>
+                        <Name>Supplier Party Email Address</Name>
+                        <Description>Supplier party's e-mail address.</Description>
+                        <Value type="EXAMPLE">alf.alfsen@u.no</Value>
+                    </Element>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Country</Term>
                     <Name>Supplier party country</Name>
                     <Description>Supplier party's country of registration.</Description>
-                    <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
+                    <Reference type="CODE_LIST">ISO3166</Reference>
                     <Value type="EXAMPLE">NO</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Documentation</Term>
                 <Name>Course documentation</Name>
                 <Description>The candidate's certification documentation</Description>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
                     <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
-                    
+
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Mime code</Name>
-                        <!--<Reference type="CODE_LIST">MimeCode</Reference>-->
+                        <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">application/pdf</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:URI</Term>
                     <Name>Certification documentation URI</Name>
                     <Description>Certification documentation URI reference.</Description>
                     <Value type="EXAMPLE">https://www.sertifiseringsportalen.no/</Value>
-                </Element>   
+                </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:CertificationReference</Term>
                 <Name>Certification reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Certification reference Identifier</Name>
@@ -568,69 +576,69 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:LanguageSkills</Term>
             <Name>Language information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Language Identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:Language</Term>
                 <Name>Language</Name>
                 <Description>The specific language. Use code list ISO639.</Description>
-                <!--<Reference type="CODE_LIST">ISO639</Reference>-->
-                <!--<Value type="EXAMPLE">NO</Value>-->
+                <Reference type="CODE_LIST">ISO639</Reference>
+                <Value type="EXAMPLE">sq</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:OralSkill</Term>
                 <Name>Oral skill</Name>
                 <Description>Oral skill related to the specific language. Use EU Global Scale code list.</Description>
-                <!--<Reference type="CODE_LIST">LangScale</Reference>-->
-                <!--<Value type="EXAMPLE">A1</Value>-->
+                <Reference type="CODE_LIST">languageScale</Reference>
+                <Value type="EXAMPLE">A1</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:WrittenSkill</Term>
                 <Name>Weitten skill</Name>
                 <Description>Written skill related to the specific language. Use EU Global Scale code list.</Description>
-                <!--<Reference type="CODE_LIST">LangScale</Reference>-->
-                <!--<Value type="EXAMPLE">A1</Value>-->
+                <Reference type="CODE_LIST">languageScale</Reference>
+                <Value type="EXAMPLE">A1</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
+                    <Value type="EXAMPLE">arhitecture</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -638,102 +646,102 @@
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:LanguageSkillsReference</Term>
                 <Name>Language skills reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Language skills reference Identifier</Name>
                     <Description>Language skills reference identifier connected to CV request.</Description>
                     <Value type="EXAMPLE">req-65</Value>
                 </Element>
-            </Element>    
+            </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:ProjectExperience</Term>
             <Name>Project experience information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Project experience Identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:ExperienceType</Term>
                 <Name>Experience type</Name>
                 <Description>The experience type, expressed by using classification of occupations code.</Description>
                 <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                <!--<Value type="EXAMPLE"></Value>-->
+                <Value type="EXAMPLE">projectleader</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:IndustryType</Term>
                 <Name>Industry type</Name>
                 <Description>The industry type related to project experience. Use code list NACE.</Description>
                 <!--<Reference type="CODE_LIST">NACE</Reference>-->
-                <!--<Value type="EXAMPLE">A01</Value>-->
+                <Value type="EXAMPLE">A01</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
-                <Term>cv:WorkPlace</Term>
+                <Term>cv:Workplace</Term>
                 <Name>Work place</Name>
                 <Description>A project experience related to a work place, i.e. country. Use code list ISO3166.</Description>
-                <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
-                <!--<Value type="EXAMPLE">AI</Value>-->
+                <Reference type="CODE_LIST">ISO3166</Reference>
+                <Value type="EXAMPLE">AI</Value>
             </Element>
-            
+
             <Element cardinality="0..1"> <!-- skal tas bort ? -->
                 <Term>cv:JobSector</Term>
                 <Name>Job sector</Name>
                 <Description>A project experience related to a job sector. Use code list sector.</Description>
-                <!--<Reference type="CODE_LIST">sector</Reference>-->
-                <!--<Value type="EXAMPLE">private</Value>-->
+                <Reference type="CODE_LIST">sector</Reference>
+                <Value type="EXAMPLE">private</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:CompanyParty</Term>
                 <Name>COmpany party information</Name>
                 <Description>General information about the company.</Description>
-                
+
                 <Element cardinality="0..1"> <!-- obs obs -->
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the company party.</Description>
-                    
+
                     <Attribute>
                         <Term>scheme</Term>
                         <Name>Scheme identifier</Name>
-                        <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                        <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
                 </Element>
-                
-                <Element> 
+
+                <Element>
                     <Term>cv:Name</Term>
                     <Name>Name</Name>
                     <Description>The party name of the company party.</Description>
                     <Value type="EXAMPLE">AZ company</Value>
                 </Element>
             </Element>
-            
+
             <Element>
                 <Term>cv:Period</Term>
                 <Name>Project exeroence period</Name>
-                
+
                 <Element>
                     <Term>cv:StartDate</Term>
                     <Name>Project experience start date</Name>
                     <Description>Project experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-01</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:EndDate</Term>
                     <Name>Project experience end date</Name>
@@ -741,95 +749,95 @@
                     <Value type="EXAMPLE">2020-12-01</Value>
                 </Element>
             </Element>
-            
+
             <Element>
                 <Term>cv:ExperienceDescription</Term>
                 <Name>Project experience description</Name>
                 <Description>Detailed description about the project experience</Description>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:PositionPercent</Term>
                     <Name>Position percent</Name>
                     <Description>The candidate's work percentage in the specific project experience.</Description>
                     <Value type="EXAMPLE">100</Value>
-                </Element>     
-                
+                </Element>
+
                 <Element>
                     <Term>cv:Role</Term>
                     <Name>Role</Name>
                     <Description>The candidate's role in the project experience.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
-                </Element>     
-                
+                    <Value type="EXAMPLE">leader</Value>
+                </Element>
+
                 <Element>
                     <Term>cv:Activities</Term>
                     <Name>Activities</Name>
                     <Description>Detailed description about what the cancdidate have done in the specific project experience. E.g. Finance analysis</Description>
                     <Value type="EXAMPLE">Financial analysis by using R.</Value>
-                </Element>           
+                </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:ExperienceValue</Term>
                 <Name>Experience value</Name>
                 <Description>Detailed description about the project value</Description>
-                
+
                 <Element>
                     <Term>cv:ProjectParticipation</Term>
                     <Name>Project participation</Name>
                     <Description>The candidate's project participation, stated as months.</Description>
                     <Value type="EXAMPLE">5</Value>
-                </Element>     
-                
+                </Element>
+
                 <Element cardinality="0..1">
                     <Term>cv:ProjectSize</Term>
                     <Name>Project size</Name>
                     <Description>The total size of the project, stated as months.</Description>
                     <Value type="EXAMPLE">5</Value>
-                </Element>     
-                
+                </Element>
+
                 <Element cardinality="0..1">
                     <Term>cv:ProjectValue</Term>
                     <Name>Project Value</Name>
                     <Description>Total value of the project.</Description>
-                                     
+
                     <Attribute>
                         <Term>currencyID</Term>
                         <Name>Currencyidentifier</Name>
-                        <!--<Reference type="CODE_LIST">ISO4217</Reference>-->
-                        <!--<Value type="EXAMPLE">NOK</Value>-->
+                        <Reference type="CODE_LIST">ISO4217</Reference>
+                        <Value type="EXAMPLE">NOK</Value>
                     </Attribute>
-                    <!--<Value type="EXAMPLE">100</Value>-->
-                </Element>                   
-            </Element>   
-                        
+                    <Value type="EXAMPLE">100</Value>
+                </Element>
+            </Element>
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
+                    <Value type="EXAMPLE">projectmanager</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -837,11 +845,11 @@
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:EducationReference</Term>
                 <Name>Education reference linked to EHF CV Request requirement about education</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Education reference Identifier</Name>
@@ -849,22 +857,21 @@
                     only if RelevantExperience element is stated in education-part of EHF CV Request.</Description>
                     <Value type="EXAMPLE">req-edu-45</Value>
                 </Element>
-            </Element>    
-            
+            </Element>
+
             <Element cardinality="0..1">
                 <Term>cv:ProjectExperienceReference</Term>
                 <Name>Project experience reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Project experience reference Identifier</Name>
                     <Description>Project experience reference identifier connected to CV request.</Description>
                     <Value type="EXAMPLE">req-25</Value>
                 </Element>
-            </Element>    
+            </Element>
         </Element>
-        
-        
+
         <Element cardinality="0..n">
             <Term>cv:WorkExperience</Term>
             <Name>Work experience information</Name>
@@ -872,81 +879,81 @@
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Work experience Identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">3</Value>
             </Element>
-            
+
             <Element>
-                <Term>cv-req:PositionLevel</Term>
+                <Term>cv:PositionLevel</Term>
                 <Name>Position level</Name>
                 <Description>The candidate's position level. Use code list.</Description>
-                <!--<Reference type="CODE_LIST">posLevel</Reference>-->
-                <!--<Value type="EXAMPLE">Leader</Value>-->
+                <Reference type="CODE_LIST">positionLevel</Reference>
+                <Value type="EXAMPLE">leader</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:IndustryType</Term>
                 <Name>Industry type</Name>
                 <Description>The industry type related to work experience. Use code list NACE.</Description>
                 <!--<Reference type="CODE_LIST">NACE</Reference>-->
-                <!--<Value type="EXAMPLE">A01</Value>-->
+                <Value type="EXAMPLE">A01</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
-                <Term>cv:WorkPlace</Term>
+                <Term>cv:Workplace</Term>
                 <Name>Work place</Name>
                 <Description>A work experience related to a work place, i.e. country. Use code list ISO3166.</Description>
-                <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
-                <!--<Value type="EXAMPLE">AI</Value>-->
+                <Reference type="CODE_LIST">ISO3166</Reference>
+                <Value type="EXAMPLE">CF</Value>
             </Element>
-            
+
             <Element cardinality="0..1"> <!-- skal tas bort ?-->
                 <Term>cv:JobSector</Term>
                 <Name>Job sector</Name>
                 <Description>A work experience related to a job sector. Use code list sector.</Description>
-                <!--<Reference type="CODE_LIST">sector</Reference>-->
-                <!--<Value type="EXAMPLE">private</Value>-->
+                <Reference type="CODE_LIST">sector</Reference>
+                <Value type="EXAMPLE">private</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:CompanyParty</Term>
                 <Name>Company party information</Name>
                 <Description>General information about the company.</Description>
-                
+
                 <Element cardinality="0..1"> <!-- obs obs -->
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the company party.</Description>
-                    
+
                     <Attribute>
                         <Term>scheme</Term>
                         <Name>Scheme identifier</Name>
-                        <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                        <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
                 </Element>
-                
-                <Element> 
+
+                <Element>
                     <Term>cv:Name</Term>
                     <Name>Name</Name>
                     <Description>The party name of the company party.</Description>
                     <Value type="EXAMPLE">XYZ company</Value>
                 </Element>
             </Element>
-            
+
             <Element>
                 <Term>cv:Period</Term>
                 <Name>Work experience period</Name>
-                
+
                 <Element>
                     <Term>cv:StartDate</Term>
                     <Name>Work experience start date</Name>
                     <Description>Work experience start date.</Description>
                     <Value type="EXAMPLE">2013-05-05</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:EndDate</Term>
                     <Name>Work experience end date</Name>
@@ -954,62 +961,61 @@
                     <Value type="EXAMPLE">2017-08-01</Value>
                 </Element>
             </Element>
-            
+
             <Element>
                 <Term>cv:WorkExperienceDescription</Term>
                 <Name>Work experience description</Name>
                 <Description>Detailed description about the work experience</Description>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:PositionPercent</Term>
                     <Name>Position percent</Name>
                     <Description>Worked percentage in the specific work experience.</Description>
                     <Value type="EXAMPLE">100</Value>
-                </Element>     
-               
+                </Element>
+
                 <Element>
                     <Term>cv:Role</Term>
                     <Name>Role</Name>
                     <Description>The candidate's role in the work experience.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
-                </Element>         
-                
+                    <Value type="EXAMPLE">financialexpert</Value>
+                </Element>
+
                 <Element>
                     <Term>cv:Activities</Term>
                     <Name>Activities</Name>
                     <Description>Detailed description about what the cancdidate have done in the specific project experience. E.g. statistical analysis</Description>
                     <Value type="EXAMPLE">Statistical analysis by using R and Python.</Value>
-                </Element>     
-                
+                </Element>
             </Element>
-    
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
+                    <Value type="EXAMPLE">teamleader</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -1017,11 +1023,11 @@
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:EducationReference</Term>
                 <Name>Education reference linked to EHF CV Request requirement about education</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Education reference Identifier</Name>
@@ -1029,29 +1035,29 @@
                         only if RelevantExperience element is stated in education-part of EHF CV Request.</Description>
                     <Value type="EXAMPLE">req-edu-45</Value>
                 </Element>
-            </Element>    
-            
+            </Element>
+
             <Element cardinality="0..1">
                 <Term>cv:ProjectExperienceReference</Term>
                 <Name>Project experience reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Project experience reference Identifier</Name>
                     <Description>Project experience reference identifier connected to CV request.</Description>
                     <Value type="EXAMPLE">req-25</Value>
                 </Element>
-            </Element>    
+            </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:Clearance</Term>
             <Name>Clearance information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Clearance Identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
@@ -1062,69 +1068,69 @@
                 <Description>The specific name of the clearance.</Description>
                 <Value type="EXAMPLE">Politiattest</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Type</Term>
                 <Name>Clearance type</Name>
                 <Description>The specific name of the clearance expressed as code.</Description>
-                <!--<Reference type="CODE_LIST">clearance</Reference>-->
-                <!--<Value type="EXAMPLE">politi</Value>-->
+                <Reference type="CODE_LIST">clearanceType</Reference>
+                <Value type="EXAMPLE">civil</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:Level</Term>
                 <Name>Clearance level</Name>
                 <Description>The level of the specific clearance.</Description>
-                <!--<Reference type="CODE_LIST">clea-level</Reference>-->
-                <!--<Value type="EXAMPLE">secret</Value>-->
+                <Reference type="CODE_LIST">clearanceLevel</Reference>
+                <Value type="EXAMPLE">secret</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:ExpirationDate</Term>
                 <Name>Clearance expiration date</Name>
                 <Description>The clearance's expiration date.</Description>
                 <Value type="EXAMPLE">2025-08-08</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Documentation</Term>
                 <Name>Clearance documentation</Name>
                 <Description>The candidate's clearance documentation</Description>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
                     <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
-                    
+
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Mime code</Name>
-                        <!--<Reference type="CODE_LIST">MimeCode</Reference>-->
+                        <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">application/pdf</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:URI</Term>
                     <Name>Clearance documentation URI</Name>
                     <Description>Clearance documentation URI reference.</Description>
                     <Value type="EXAMPLE">https://www.politiet.no/</Value>
-                </Element>   
+                </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Description</Term>
                 <Name>Clearance description</Name>
                 <Description>A description of why the candidate has not been cleared, and whether it is possible to be cleared before the job begins.</Description>
                 <Value type="EXAMPLE">Can bli cleared before 2020-05-01.</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:ClearanceReference</Term>
                 <Name>CLearance reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Clearance reference Identifier</Name>
@@ -1133,72 +1139,71 @@
                 </Element>
             </Element>
         </Element>
-        
-        
+
         <Element cardinality="0..1">
-            <Term>cv:Referance</Term>
+            <Term>cv:Reference</Term>
             <Name>Reference requirements</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Reference Identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Party</Term>
                 <Name>Party information</Name>
                 <Description>General information about the party.</Description>
-                
+
                 <Element cardinality="0..1"> <!-- obs obs -->
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the party.</Description>
-                    
+
                     <Attribute>
                         <Term>scheme</Term>
                         <Name>Scheme identifier</Name>
-                        <!--<Reference type="CODE_LIST">eaid</Reference>-->
+                        <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">123456785</Value>
                 </Element>
-                
-                <Element> 
+
+                <Element>
                     <Term>cv:Name</Term>
                     <Name>Name</Name>
                     <Description>The party name of the party.</Description>
                     <Value type="EXAMPLE">Frivilling organisasjon</Value>
                 </Element>
             </Element>
-            
+
             <Element>
                 <Term>cv:Relation</Term>
                 <Name>Relation type</Name>
                 <Description>Relation type to the reference. State e.g. role, positionlevel, profession</Description>
                 <Value type="EXAMPLE">Math teacher</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-    
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -1206,11 +1211,11 @@
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:RequestReference</Term>
                 <Name>References linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Reference Identifier</Name>
@@ -1219,81 +1224,81 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:Skills</Term>
             <Name>Skills information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Skills identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-      
+
             <Element>
                 <Term>cv:Title</Term>
                 <Name>Skill title</Name>
                 <Description>The specific name of the skill.</Description>
                 <Value type="EXAMPLE">HMS</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Type</Term>
                 <Name>Skill type</Name>
                 <Description>The specific name of the skill expressed as code.</Description>
-                <!--<Reference type="CODE_LIST">skills</Reference>-->
-                <!--<Value type="EXAMPLE">Java</Value>-->
+                <Reference type="CODE_LIST">skillsType</Reference>
+                <Value type="EXAMPLE">Java</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Version</Term>
                 <Name>Skill version</Name>
                 <Description>The version of the skill.</Description>
                 <Value type="EXAMPLE">11</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:LastPractice</Term>
                 <Name>Skill last practice</Name>
                 <Description>Last time the skill was practiced.</Description>
                 <Value type="EXAMPLE">2020-03-03</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:MinimumLengthPractice</Term>
                 <Name>Skill minimum length practice</Name>
                 <Description>How long the skill was practiced continously, state the minimum length as months.</Description>
                 <Value type="EXAMPLE">5</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
+                    <Value type="EXAMPLE">leader</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -1301,11 +1306,11 @@
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
                 </Element>
             </Element>
-   
+
             <Element cardinality="0..1">
                 <Term>cv:SkillsAppliedReference</Term>
                 <Name>Skills applied reference</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Skills reference Identifier</Name>
@@ -1314,11 +1319,11 @@
                     <Value type="EXAMPLE">edu-1234</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:SkillsReference</Term>
                 <Name>Skills reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Skills reference Identifier</Name>
@@ -1327,15 +1332,15 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:PersonalSkills</Term>
             <Name>Personal skills information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Personal skills identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
@@ -1346,41 +1351,41 @@
                 <Description>The specific name of the personal skill.</Description>
                 <Value type="EXAMPLE">HMS</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Type</Term>
                 <Name>Personal skill type</Name>
                 <Description>The specific name of the personal skill expressed as code.</Description>
-                <!--<Reference type="CODE_LIST">personalSkills</Reference>-->
-                <!--<Value type="EXAMPLE">Leadership</Value>-->
+                <Reference type="CODE_LIST">personalSkills</Reference>
+                <Value type="EXAMPLE">Leadership</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Contact</Term>
                 <Name>Contact Information</Name>
-                
+
                 <Element>
                     <Term>cv:Name</Term>
                     <Name>Contact Name</Name>
                     <Description>Contact person's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <!--<Reference type="CODE_LIST">styrk98</Reference>-->
-                    <!--<Value type="EXAMPLE"></Value>-->
+                    <Value type="EXAMPLE">teammember</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Telephone</Term>
                     <Name>Contact Telephone Number</Name>
                     <Description>Contact person's telephone number.</Description>
                     <Value type="EXAMPLE">22221111</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
@@ -1388,11 +1393,11 @@
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
                 </Element>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:PersonalSkillsReference</Term>
                 <Name>Personal skills reference linked to CV Request</Name>
-                
+
                 <Element>
                     <Term>cv:ID</Term>
                     <Name>Personal skills reference Identifier</Name>
@@ -1401,147 +1406,148 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element>
-            <Term>cv:PersonalInformationType</Term>
+            <Term>cv:PersonalInformation</Term>
             <Name>Personal information information</Name>
-            
+
             <Element> <!-- Er dette relevant, da vi kun trenger 1 av dette? -->
                 <Term>cv:ID</Term>
                 <Name>Personal information identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
             <Element>
                 <Term>cv:Name</Term>
                 <Name>Candidate name</Name>
                 <Description>The candidate's full name.</Description>
                 <Value type="EXAMPLE">Ola Nordmann</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:DateOfBirth</Term>
                 <Name>Candidate date of birth</Name>
                 <Description>The candidate's date of birth.</Description>
                 <Value type="EXAMPLE">1991-01-01</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:PostalAddress</Term>
                 <Name>Postal address</Name>
-               
+
                 <Element>
                     <Term>cv:StreetName</Term>
                     <Name>Address line</Name>
                     <Description>The main address line in an address.</Description>
                     <Value type="EXAMPLE">Oslobukta 20</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:AdditionalStreetName</Term>
                     <Name>Additional street line</Name>
                     <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                     <Value type="EXAMPLE">2. building</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:CityName</Term>
                     <Name>City Name</Name>
                     <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                     <Value type="EXAMPLE">Oslo</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cv:PostalZone</Term>
                     <Name>Post code</Name>
                     <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                     <Value type="EXAMPLE">0342</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:Country</Term>
                     <Name>Country</Name>
-                    
+
                     <Element>
                         <Term>cv:IdentificationCode</Term>
                         <Name>Country code</Name>
                         <Description>The country where the address is. The country should always be given by using ISO code 3166 alpha 2</Description>
-                        <!--<Reference type="CODE_LIST">ISO3166</Reference>-->
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">NO</Value>
-                    </Element>    
+                    </Element>
                 </Element>
-            </Element>           
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cv:SocialMedia</Term>
+                <Name>Social media information</Name>
+
+                <Element>
+                    <Term>cv:ID</Term>
+                    <Name>Social media identifier</Name>
+                    <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
+                        For example, from other documents.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+
+                <Element>
+                    <Term>cv:Title</Term>
+                    <Name>Social media title</Name>
+                    <Description>The specific name of the social media.</Description>
+                    <Value type="EXAMPLE">fotballblogg</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cv:Type</Term>
+                    <Name>Social media type</Name>
+                    <Description>The specific name of the social media expressed as code.</Description>
+                    <Reference type="CODE_LIST">socialMedia</Reference>
+                    <Value type="EXAMPLE">vlog</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cv:Documentation</Term>
+                    <Name>Social medium documentation</Name>
+
+
+                    <Element cardinality="0..1">
+                        <Term>cv:EmbeddedDocumentBinaryObject</Term>
+                        <Name>Attached picure of candidate</Name>
+                        <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
+
+                        <Attribute>
+                            <Term>mimeCode</Term>
+                            <Name>Mime code</Name>
+                            <Reference type="CODE_LIST">MimeCode</Reference>
+                            <Value type="EXAMPLE">application/pdf</Value>
+                        </Attribute>
+
+                        <Value type="EXAMPLE">c2Nob29sIHBpY3R1cmU=</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cv:URI</Term>
+                        <Name>Socail medium URI</Name>
+                        <Description>A specific sociam medium URI reference</Description>
+                        <Value type="EXAMPLE">https://www.linkedin.no</Value>
+                    </Element>
+                </Element>
+            </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
-            <Term>cv:SocialMedia</Term>
-            <Name>Social media information</Name>
-            
+            <Term>cv:Interest</Term>
+            <Name>Interest information</Name>
+
             <Element>
                 <Term>cv:ID</Term>
-                <Name>Social media identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Name>Interest identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
 
-            <Element>
-                <Term>cv:Title</Term>
-                <Name>Social media title</Name>
-                <Description>The specific name of the social media.</Description>
-                <Value type="EXAMPLE">fotballblogg</Value>
-            </Element>
-            
-            <Element cardinality="0..1">
-                <Term>cv:Type</Term>
-                <Name>Social media type</Name>
-                <Description>The specific name of the social media expressed as code.</Description>
-                <!--<Reference type="CODE_LIST">socialMedia</Reference>-->
-                <!--<Value type="EXAMPLE">vlog</Value>-->
-            </Element>
-            
-            <Element cardinality="0..1">
-                <Term>cv:Documentation</Term>
-                <Name>Social medium documentation</Name>
-    
-                <Element cardinality="0..1">
-                    <Term>cv:URI</Term>
-                    <Name>Socail medium URI</Name>
-                    <Description>A specific sociam medium URI reference</Description>
-                    <Value type="EXAMPLE">https://www.linkedin.no</Value>
-                </Element>   
-            </Element>
-            
-            <Element cardinality="0..1">
-                <Term>cv:EmbeddedDocumentBinaryObject</Term>
-                <Name>Attached picure of candidate</Name>
-                <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
-                
-                <Attribute>
-                    <Term>mimeCode</Term>
-                    <Name>Mime code</Name>
-                    <!--<Reference type="CODE_LIST">MimeCode</Reference>-->
-                    <Value type="EXAMPLE">application/pdf</Value>
-                </Attribute>
-                
-                <Value type="EXAMPLE">c2Nob29sIHBpY3R1cmU=</Value>
-            </Element> 
-        </Element>
-        
-        <Element cardinality="0..n">
-            <Term>cv:Interest</Term>
-            <Name>Interest information</Name>
-   
-            <Element>
-                <Term>cv:ID</Term>
-                <Name>Interest identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
-                    For example, from other documents.</Description>
-                <Value type="EXAMPLE">1</Value>
-            </Element>
-            
             <Element>
                 <Term>cv:Description</Term>
                 <Name>Interest descrption</Name>
@@ -1549,52 +1555,59 @@
                 <Value type="EXAMPLE">Interest in playing football.</Value>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..n">
             <Term>cv:AdditionalInformation</Term>
             <Name>Additional information</Name>
-            
+
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Additional information identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line. 
+                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
                     For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
-            
+
+            <Element>
+                <Term>cv:Title</Term>
+                <Name>Additional information title</Name>
+                <Description>A short title of the additional information.</Description>
+                <Value type="EXAMPLE">Footballcoach</Value>
+            </Element>
+
             <Element>
                 <Term>cv:Description</Term>
-                <Name>Interest descrption</Name>
+                <Name>Additional information descrption</Name>
                 <Description>A textual description of the specific information.</Description>
                 <Value type="EXAMPLE">Worked as footballcoach for young girls.</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cv:Documentation</Term>
                 <Name>Additionl information documentation</Name>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:EmbeddedDocumentBinaryObject</Term>
                     <Name>Attached document</Name>
                     <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
-                    
+
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Mime code</Name>
-                        <!--<Reference type="CODE_LIST">MimeCode</Reference>-->
+                        <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">application/pdf</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">YXBwcm92ZWQgZm9vdGJhbGwgcmVmZXJlZSBpbiBub3J3YXk=</Value>
                 </Element>
-                
+
                 <Element cardinality="0..1">
                     <Term>cv:URI</Term>
                     <Name>Documentation URI</Name>
                     <Description>Additional information documentation URI reference.</Description>
                     <Value type="EXAMPLE">https://www.fotballdommer.no/</Value>
-                </Element>   
+                </Element>
             </Element>
         </Element>
-    </Document>  
+    </Document>
 </Syntax>

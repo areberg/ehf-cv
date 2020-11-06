@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Certification type codelist</Title>
+    <Identifier>certicationType</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+
+    <!-- category : IT -->
+    <Code>
+        <Id>TOGAF</Id>
+        <Name>TOGAF</Name>
+    </Code>
+
+    <Code>
+        <Id>archimate</Id>
+        <Name>Archimate</Name>
+    </Code>
+
+    <Code>
+        <Id>ITIL</Id>
+        <Name>Information Techonology Infrastructure Library Foundation</Name>
+    </Code>
+
+    <Code>
+        <Id>CSM</Id>
+        <Name>Certified Scrum master</Name>
+    </Code>
+
+    <Code>
+        <Id>agile</Id>
+        <Name>Agile</Name>
+    </Code>
+
+    <Code>
+        <Id>OracleCloud</Id>
+        <Name>Oracle Cloud</Name>
+    </Code>
+
+    <Code>
+        <Id>OracleDatabase</Id>
+        <Name>Oracle Database</Name>
+    </Code>
+
+    <Code>
+        <Id>OracleJava</Id>
+        <Name>Oracle Java</Name>
+    </Code>
+
+    <Code>
+        <Id>OracleCertified</Id>
+        <Name>Oracle Certified Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>SQL</Id>
+        <Name>SQL</Name>
+    </Code>
+
+    <Code>
+        <Id>EA</Id>
+        <Name>Enterprise Architecture</Name>
+    </Code>
+
+    <Code>
+        <Id>SAP</Id>
+        <Name>SAP</Name>
+    </Code>
+
+    <Code>
+        <Id>CISM</Id>
+        <Name>Certified Solution Security Manager</Name>
+    </Code>
+
+    <Code>
+        <Id>CISA</Id>
+        <Name>Certified Information Systems Auditor</Name>
+    </Code>
+
+    <Code>
+        <Id>GCP</Id>
+        <Name>Google Certified Professional Cloud Architect</Name>
+    </Code>
+
+    <Code>
+        <Id>AWS</Id>
+        <Name>AWS Certified Solutionss Architect</Name>
+    </Code>
+
+    <Code>
+        <Id>CRISC</Id>
+        <Name>Certified in Risk and Information Systems Control</Name>
+    </Code>
+
+    <Code>
+        <Id>CISSP</Id>
+        <Name>Certified Information Systems Security Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>MTA</Id>
+        <Name>Microsoft Techonology Associate</Name>
+    </Code>
+
+    <Code>
+        <Id>AzureFundamentals</Id>
+        <Name>Microsoft Certified Azure Fundamentals</Name>
+    </Code>
+
+    <Code>
+        <Id>AzureAdministrator</Id>
+        <Name>Microsoft Certified Azure Administrator Associate</Name>
+    </Code>
+
+    <Code>
+        <Id>CCA-N</Id>
+        <Name>Citrix Certified Associate - Networking</Name>
+    </Code>
+
+    <Code>
+        <Id>CCNP</Id>
+        <Name>Routing and switching</Name>
+    </Code>
+
+    <Code>
+        <Id>CCP-V</Id>
+        <Name>Citrix Certified Professional - Virtualization</Name>
+    </Code>
+
+    <Code>
+        <Id>VCP-DCV</Id>
+        <Name>VMware Certified Professional 6 - Data Center Virualization</Name>
+    </Code>
+
+    <Code>
+        <Id>CDP</Id>
+        <Name>Certified Data Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>CCIE</Id>
+        <Name>Cisco Certified Internetwork Expert</Name>
+    </Code>
+
+    <Code>
+        <Id>CCNA</Id>
+        <Name>Cisco Certified Network Associate</Name>
+    </Code>
+
+    <Code>
+        <Id>CCIE</Id>
+        <Name>Cisco Certified Internetwork Expert</Name>
+    </Code>
+
+    <Code>
+        <Id>CCIE</Id>
+        <Name>Cisco Certified Internetwork Expert</Name>
+    </Code>
+
+    <Code>
+        <Id>GIAC</Id>
+        <Name>Gloabal information assurance certification</Name>
+    </Code>
+
+    <Code>
+        <Id>CompTIA</Id>
+        <Name>CompTIA A+</Name>
+    </Code>
+
+    <Code>
+        <Id>DSOF</Id>
+        <Name>DevSecOps Foundation</Name>
+    </Code>
+
+    <!-- category: Economic -->
+
+    <Code>
+        <Id>CFA</Id>
+        <Name>Charted FInancial Analyst</Name>
+    </Code>
+
+    <Code>
+        <Id>CPA</Id>
+        <Name>Certified Public Accountant</Name>
+    </Code>
+
+    <Code>
+        <Id>CFP</Id>
+        <Name>Certified Financial Planner designation</Name>
+    </Code>
+
+    <Code>
+        <Id>FRM</Id>
+        <Name>Financial Risk Manager</Name>
+    </Code>
+
+    <Code>
+        <Id>FMVA</Id>
+        <Name>Financial Modeling and Valuation Analyst</Name>
+    </Code>
+
+    <!-- category: other -->
+
+    <Code>
+        <Id>Prince2</Id>
+        <Name>Prince2</Name>
+    </Code>
+
+    <Code>
+        <Id>PMP</Id>
+        <Name>Project Management Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>PgMP</Id>
+        <Name>Program Management Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>PMI-RMP</Id>
+        <Name>PMI Risk Management Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>PfMP</Id>
+        <Name>Portfolio Management Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>PMI-PBA</Id>
+        <Name>PMI Professional in Business Analysis</Name>
+    </Code>
+
+    <Code>
+        <Id>PMI-SP</Id>
+        <Name>PMI Scheduling Professional</Name>
+    </Code>
+
+    <Code>
+        <Id>SOA</Id>
+        <Name>Public procurement certification</Name>
+    </Code>
+
+    <Code>
+        <Id>license</Id>
+        <Name>Car license</Name>
+    </Code>
+
+
+</CodeList>

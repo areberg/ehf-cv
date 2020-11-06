@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    
+    <Title>Clearance type code</Title>
+    <Identifier>clearanceType</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+    
+    <Code>
+        <Id>civil</Id>
+        <Name>civil</Name>
+        <Description>Civil clearance</Description>
+    </Code>
+    
+    <Code>
+        <Id>police</Id>
+        <Name>police</Name>
+        <Description>Police clearance</Description>
+    </Code>
+ 
+    <Code>
+        <Id>military</Id>
+        <Name>military</Name>
+        <Description>Military clearance</Description>
+    </Code>
+    
+</CodeList>
+
+

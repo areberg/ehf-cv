@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    
+    <Title>Requirement code</Title>
+    <Identifier>requirement</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+    
+    <Code>
+        <Id>must</Id>
+        <Name>Must requirement</Name>
+        <Description>This requirement need to be fullfilled.</Description>
+    </Code>
+    
+    <Code>
+        <Id>should</Id>
+        <Name>Should requirement</Name>
+        <Description>This requirement should be fullfilled.</Description>
+    </Code>
+    
+    <Code>
+        <Id>desirable</Id>
+        <Name>Desirable requirement</Name>
+        <Description>Positive score if the requirement is fullfilled.</Description>
+    </Code>
+    
+    <Code>
+        <Id>advantage</Id>
+        <Name>Advantage requirement</Name>
+        <Description>An advantage in evaluation process if this requirement is fullfilled.</Description>
+    </Code>
+
+</CodeList>
+
+

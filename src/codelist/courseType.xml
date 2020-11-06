@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Course type code list</Title>
+    <Identifier>courseType</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+
+    <!-- cateory: IT -->
+    <Code>
+        <Id>java</Id>
+        <Name>Java</Name>
+    </Code>
+
+    <Code>
+        <Id>python</Id>
+        <Name>Python</Name>
+    </Code>
+
+    <Code>
+        <Id>xml</Id>
+        <Name>XML</Name>
+    </Code>
+
+    <Code>
+        <Id>html</Id>
+        <Name>HTML</Name>
+    </Code>
+
+    <Code>
+        <Id>XSLT</Id>
+        <Name>XSLT</Name>
+    </Code>
+
+    <Code>
+        <Id>JIRA</Id>
+        <Name>JIRA</Name>
+    </Code>
+
+    <Code>
+        <Id>scrum</Id>
+        <Name>Scrum</Name>
+    </Code>
+
+    <Code>
+        <Id>agile</Id>
+        <Name>Agile</Name>
+    </Code>
+
+    <Code>
+        <Id>SQL</Id>
+        <Name>SQL</Name>
+    </Code>
+
+    <Code>
+        <Id>CSS</Id>
+        <Name>CSS</Name>
+    </Code>
+
+    <Code>
+        <Id>JIRA</Id>
+        <Name>JIRA</Name>
+    </Code>
+
+    <Code>
+        <Id>bigdata</Id>
+        <Name>Big data</Name>
+    </Code>
+
+    <Code>
+        <Id>jQuery</Id>
+        <Name>jQuery</Name>
+    </Code>
+
+    <Code>
+        <Id>react</Id>
+        <Name>React</Name>
+    </Code>
+
+    <Code>
+        <Id>springboot</Id>
+        <Name>Spring boot</Name>
+    </Code>
+
+    <Code>
+        <Id>SAP</Id>
+        <Name>SAP</Name>
+    </Code>
+
+    <Code>
+        <Id>BI</Id>
+        <Name>BI</Name>
+    </Code>
+
+    <Code>
+        <Id>IATQB</Id>
+        <Name>ISTQB</Name>
+    </Code>
+
+    <Code>
+        <Id>ML</Id>
+        <Name>Machine learning</Name>
+    </Code>
+
+    <Code>
+        <Id>dataScience</Id>
+        <Name>Data science</Name>
+    </Code>
+
+    <Code>
+        <Id>googleAnalytics</Id>
+        <Name>Google Analytics</Name>
+    </Code>
+
+    <!-- category: economic -->
+    <Code>
+        <Id>microeconomic</Id>
+        <Name>Microeconomic</Name>
+    </Code>
+
+    <Code>
+        <Id>macroeconomic</Id>
+        <Name>Macroeconomic</Name>
+    </Code>
+
+    <Code>
+        <Id>econometric</Id>
+        <Name>Econometric</Name>
+    </Code>
+
+    <Code>
+        <Id>corporateGovernance</Id>
+        <Name>Corporate Governance</Name>
+    </Code>
+
+    <Code>
+        <Id>trade</Id>
+        <Name>Trade</Name>
+    </Code>
+
+    <Code>
+        <Id>socialEconomics</Id>
+        <Name>Social Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>businessEconomics</Id>
+        <Name>Business Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>politicalEconomics</Id>
+        <Name>Political Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>environmentalEconomics</Id>
+        <Name>Enviromental Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>industricalEconomics</Id>
+        <Name>Industrial Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>internationalEconomics</Id>
+        <Name>International Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>publicEconomics</Id>
+        <Name>Public Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>labourEconomics</Id>
+        <Name>Labour Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>energyEconomics</Id>
+        <Name>Energy Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>circularEconomy</Id>
+        <Name>Circular Economy</Name>
+    </Code>
+
+    <Code>
+        <Id>strategicCompetition</Id>
+        <Name>Strategic Competition</Name>
+    </Code>
+
+    <Code>
+        <Id>internationalTrade</Id>
+        <Name>International Trade</Name>
+    </Code>
+
+    <Code>
+        <Id>financialAnalysis</Id>
+        <Name>Financial Analysis</Name>
+    </Code>
+
+    <Code>
+        <Id>gameTheory</Id>
+        <Name>Game Theory</Name>
+    </Code>
+
+    <Code>
+        <Id>industrialOrganization</Id>
+        <Name>Industrial Organization</Name>
+    </Code>
+
+    <Code>
+        <Id>accounting</Id>
+        <Name>Accounting</Name>
+    </Code>
+
+
+    <!-- category: law -->
+    <Code>
+        <Id>contractLaw</Id>
+        <Name>Contract Law</Name>
+    </Code>
+
+    <Code>
+        <Id>administrativeLaw</Id>
+        <Name>Administrative law</Name>
+    </Code>
+
+    <Code>
+        <Id>GDPR</Id>
+        <Name>GDPR</Name>
+    </Code>
+
+    <!-- category: general -->
+
+    <Code>
+        <Id>HMS</Id>
+        <Name>HMS</Name>
+    </Code>
+
+    <Code>
+        <Id>footballcoach</Id>
+        <Name>Footballcoach</Name>
+    </Code>
+
+    <Code>
+        <Id>teamcoach</Id>
+        <Name>Team coach</Name>
+    </Code>
+
+    <Code>
+        <Id>coaching</Id>
+        <Name>Coaching</Name>
+    </Code>
+
+    <Code>
+        <Id>PP</Id>
+        <Name>Public Procurement</Name>
+    </Code>
+
+    <Code>
+        <Id>OM</Id>
+        <Name>Organization and management</Name>
+    </Code>
+
+    <Code>
+        <Id>EM</Id>
+        <Name>Environmental management</Name>
+    </Code>
+
+    <Code>
+        <Id>RM</Id>
+        <Name>Risk management</Name>
+    </Code>
+
+    <Code>
+        <Id>CM</Id>
+        <Name>Conflict management</Name>
+    </Code>
+
+    <Code>
+        <Id>AP</Id>
+        <Name>Adobe photoshop</Name>
+    </Code>
+
+    <Code>
+        <Id>sale</Id>
+        <Name>Sale</Name>
+    </Code>
+
+    <Code>
+        <Id>HR</Id>
+        <Name>Human Rights</Name>
+    </Code>
+
+    <Code>
+        <Id>careerCounselor</Id>
+        <Name>Career Counselor</Name>
+    </Code>
+
+    <Code>
+        <Id>pedagogy</Id>
+        <Name>Pedagogy</Name>
+    </Code>
+
+    <Code>
+        <Id>marketing</Id>
+        <Name>Marketing</Name>
+    </Code>
+
+</CodeList>

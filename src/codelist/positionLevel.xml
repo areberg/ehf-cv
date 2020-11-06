@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Position level codelist</Title>
+    <Identifier>positionLevel</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+
+    <Code>
+        <Id>employee</Id>
+        <Name>Employee</Name>
+    </Code>
+
+    <Code>
+        <Id>MiddleLevelManager</Id>
+        <Name>Middle level manager</Name>
+    </Code>
+
+    <Code>
+        <Id>manager</Id>
+        <Name>Manager</Name>
+    </Code>
+
+</CodeList>

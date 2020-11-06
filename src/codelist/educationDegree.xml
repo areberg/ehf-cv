@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    
+    <Title>Education degree code list</Title>
+    <Identifier>educationDegree</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+    
+    <Code>
+        <Id>primary</Id>
+        <Name>Primary School</Name>
+    </Code>
+    
+    <Code>
+        <Id>secondary</Id>
+        <Name>Lower scondary school</Name>
+    </Code>
+    
+    <Code>
+        <Id>HighSchool</Id>
+        <Name>High School</Name>
+    </Code>
+    
+    <Code>
+        <Id>bachelor</Id>
+        <Name>Bachelor degree</Name>
+    </Code>
+    
+    <Code>
+        <Id>master</Id>
+        <Name>Master degree</Name>
+    </Code>
+    
+    <Code>
+        <Id>phd</Id>
+        <Name>PhD degree</Name>
+    </Code>
+    
+    <Code>
+        <Id>phd</Id>
+        <Name>PhD degree - Doctor of Philosophy</Name>
+    </Code>
+    
+    <Code>
+        <Id>candidate</Id>
+        <Name>Candidate degree</Name>
+    </Code>
+    
+    <Code>
+        <Id>apprentice</Id>
+        <Name>Apprentice degree</Name>
+    </Code>
+    
+    <Code>
+        <Id>skilled</Id>
+        <Name>Skilled degree (faglært)</Name>
+    </Code>
+    
+    <Code>
+        <Id>TradeCertificate</Id>
+        <Name>Trade certificate</Name>
+        <Description>certificate awarded on successful completion of a vocational training course, and entitling the holder to practise the trade concerned.</Description>
+    </Code>
+    
+    <Code>
+        <Id>other</Id>
+        <Name>Other degree</Name>
+        <Description>Other degrees that are not provided in this code list.</Description>
+    </Code>
+    
+</CodeList>
+
+

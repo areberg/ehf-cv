@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Skills type codelist</Title>
+    <Identifier>skillsType</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+
+    <!-- category : IT -->
+    <Code>
+        <Id>python</Id>
+        <Name>Pyhton</Name>
+    </Code>
+
+    <Code>
+        <Id>java</Id>
+        <Name>Java</Name>
+    </Code>
+
+    <Code>
+        <Id>javascript</Id>
+        <Name>JavaScript</Name>
+    </Code>
+
+    <Code>
+        <Id>c</Id>
+        <Name>C</Name>
+    </Code>
+
+    <Code>
+        <Id>c++</Id>
+        <Name>C++</Name>
+    </Code>
+
+    <Code>
+        <Id>c#</Id>
+        <Name>C#</Name>
+    </Code>
+
+    <Code>
+        <Id>SQL</Id>
+        <Name>SQL</Name>
+    </Code>
+
+    <Code>
+        <Id>matlab</Id>
+        <Name>Matlab</Name>
+    </Code>
+
+    <Code>
+        <Id>R</Id>
+        <Name>R</Name>
+    </Code>
+
+    <Code>
+        <Id>SQL</Id>
+        <Name>SQL</Name>
+    </Code>
+
+    <Code>
+        <Id>HTML</Id>
+        <Name>HTML</Name>
+    </Code>
+
+    <Code>
+        <Id>CSS</Id>
+        <Name>CSS</Name>
+    </Code>
+
+    <Code>
+        <Id>XML</Id>
+        <Name>XML</Name>
+    </Code>
+
+    <Code>
+        <Id>XSLT</Id>
+        <Name>XSLT</Name>
+    </Code>
+
+    <Code>
+        <Id>JSON</Id>
+        <Name>JSON</Name>
+    </Code>
+
+    <Code>
+        <Id>API</Id>
+        <Name>API</Name>
+    </Code>
+
+    <Code>
+        <Id>PHP</Id>
+        <Name>PHP</Name>
+    </Code>
+
+    <Code>
+        <Id>react</Id>
+        <Name>React</Name>
+    </Code>
+
+    <Code>
+        <Id>go</Id>
+        <Name>Go</Name>
+    </Code>
+
+    <Code>
+        <Id>angular</Id>
+        <Name>Angular</Name>
+    </Code>
+
+    <Code>
+        <Id>kotlin</Id>
+        <Name>Kotlin</Name>
+    </Code>
+
+    <Code>
+        <Id>DevOps</Id>
+        <Name>DevOps</Name>
+    </Code>
+
+    <Code>
+        <Id>architecture</Id>
+        <Name>Architecture</Name>
+    </Code>
+
+    <Code>
+        <Id>SAP</Id>
+        <Name>SAP</Name>
+    </Code>
+
+    <Code>
+        <Id>ML</Id>
+        <Name>Machine Learning</Name>
+    </Code>
+
+    <Code>
+        <Id>drupal</Id>
+        <Name>Drupal</Name>
+    </Code>
+
+    <Code>
+        <Id>docker</Id>
+        <Name>Docker</Name>
+    </Code>
+
+    <Code>
+        <Id>agile</Id>
+        <Name>Agile</Name>
+    </Code>
+
+    <Code>
+        <Id>.Net</Id>
+        <Name>.NET</Name>
+    </Code>
+
+    <Code>
+        <Id>assembler</Id>
+        <Name>Assembler</Name>
+    </Code>
+
+    <Code>
+        <Id>database</Id>
+        <Name>Database</Name>
+    </Code>
+
+    <Code>
+        <Id>ruby</Id>
+        <Name>Ruby</Name>
+    </Code>
+
+    <Code>
+        <Id>swift</Id>
+        <Name>Swift</Name>
+    </Code>
+
+    <Code>
+        <Id>perl</Id>
+        <Name>Perl</Name>
+    </Code>
+
+    <Code>
+        <Id>groovy</Id>
+        <Name>Groovy</Name>
+    </Code>
+
+    <Code>
+        <Id>BigData</Id>
+        <Name>Big Data</Name>
+    </Code>
+
+    <Code>
+        <Id>python</Id>
+        <Name>Pyhton</Name>
+    </Code>
+
+    <Code>
+        <Id>GIT</Id>
+        <Name>GIT</Name>
+    </Code>
+
+    <Code>
+        <Id>LAN</Id>
+        <Name>LAN Techonology</Name>
+    </Code>
+
+    <Code>
+        <Id>batch</Id>
+        <Name>Batch</Name>
+    </Code>
+
+    <Code>
+        <Id>OracleHTTP</Id>
+        <Name>Oracle HTTP</Name>
+    </Code>
+
+    <Code>
+        <Id>ApacheHTTP</Id>
+        <Name>Apache HTTP</Name>
+    </Code>
+
+    <Code>
+        <Id>rust</Id>
+        <Name>Rust</Name>
+    </Code>
+
+    <Code>
+        <Id>tableau</Id>
+        <Name>Tableau</Name>
+    </Code>
+
+    <Code>
+        <Id>powerBII</Id>
+        <Name>Power BII</Name>
+    </Code>
+
+    <Code>
+        <Id>SAS</Id>
+        <Name>SAS</Name>
+    </Code>
+
+    <Code>
+        <Id>SaaS</Id>
+        <Name>SaaS</Name>
+    </Code>
+
+    <Code>
+        <Id>GoogleAnalytics</Id>
+        <Name>Google Analytics</Name>
+    </Code>
+
+    <Code>
+        <Id>BPMN</Id>
+        <Name>Business Process Model and Notation</Name>
+    </Code>
+
+    <!-- category : Science -->
+
+    <Code>
+        <Id>LinearAlgebra</Id>
+        <Name>Linear Algebra</Name>
+    </Code>
+
+    <Code>
+        <Id>statistics</Id>
+        <Name>Statistics</Name>
+    </Code>
+
+    <Code>
+        <Id>BusinessIntelligence</Id>
+        <Name>Business Intelligence</Name>
+    </Code>
+
+    <Code>
+        <Id>chemistry</Id>
+        <Name>Chemistry</Name>
+    </Code>
+
+    <Code>
+        <Id>Physics</Id>
+        <Name>Physics</Name>
+    </Code>
+
+    <Code>
+        <Id>Actuary</Id>
+        <Name>Actuary</Name>
+    </Code>
+
+    <Code>
+        <Id>Math</Id>
+        <Name>Math</Name>
+    </Code>
+
+    <!-- category : Economics -->
+
+    <Code>
+        <Id>QuantitativeAnalysis</Id>
+        <Name>Quantitative Analysis</Name>
+    </Code>
+
+    <Code>
+        <Id>QualitativeAnalysis</Id>
+        <Name>Qualitative Analysis</Name>
+    </Code>
+    <Code>
+        <Id>microeconomic</Id>
+        <Name>Microeconomic</Name>
+    </Code>
+
+    <Code>
+        <Id>macroeconomic</Id>
+        <Name>Macroeconomic</Name>
+    </Code>
+
+    <Code>
+        <Id>econometric</Id>
+        <Name>Econometric</Name>
+    </Code>
+
+    <Code>
+        <Id>corporateGovernance</Id>
+        <Name>Corporate Governance</Name>
+    </Code>
+
+    <Code>
+        <Id>trade</Id>
+        <Name>Trade</Name>
+    </Code>
+
+    <Code>
+        <Id>socialEconomics</Id>
+        <Name>Social Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>businessEconomics</Id>
+        <Name>Business Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>politicalEconomics</Id>
+        <Name>Political Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>environmentalEconomics</Id>
+        <Name>Enviromental Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>industricalEconomics</Id>
+        <Name>Industrial Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>internationalEconomics</Id>
+        <Name>International Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>publicEconomics</Id>
+        <Name>Public Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>labourEconomics</Id>
+        <Name>Labour Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>energyEconomics</Id>
+        <Name>Energy Economics</Name>
+    </Code>
+
+    <Code>
+        <Id>circularEconomy</Id>
+        <Name>Circular Economy</Name>
+    </Code>
+
+    <Code>
+        <Id>strategicCompetition</Id>
+        <Name>Strategic Competition</Name>
+    </Code>
+
+    <Code>
+        <Id>internationalTrade</Id>+
+        <Name>International Trade</Name>
+    </Code>
+
+    <Code>
+        <Id>financialAnalysis</Id>
+        <Name>Financial Analysis</Name>
+    </Code>
+
+    <Code>
+        <Id>gameTheory</Id>
+        <Name>Game Theory</Name>
+    </Code>
+
+    <Code>
+        <Id>industrialOrganization</Id>
+        <Name>Industrial Organization</Name>
+    </Code>
+
+    <Code>
+        <Id>accounting</Id>
+        <Name>Accounting</Name>
+    </Code>
+
+    <!-- category: other -->
+
+    <Code>
+        <Id>PP</Id>
+        <Name>Public Procurement</Name>
+    </Code>
+
+    <Code>
+        <Id>HMS</Id>
+        <Name>HMS</Name>
+    </Code>
+
+    <Code>
+        <Id>pedagogy</Id>
+        <Name>Pedagogy</Name>
+    </Code>
+
+    <Code>
+        <Id>excel</Id>
+        <Name>Excel</Name>
+    </Code>
+
+    <Code>
+        <Id>word</Id>
+        <Name>Word</Name>
+    </Code>
+
+    <Code>
+        <Id>powerpoint</Id>
+        <Name>Power point</Name>
+    </Code>
+
+    <Code>
+        <Id>HMS</Id>
+        <Name>HMS</Name>
+    </Code>
+
+    <Code>
+        <Id>AP</Id>
+        <Name>Adobe photoshop</Name>
+    </Code>
+
+    <Code>
+        <Id>HR</Id>
+        <Name>Human Rights</Name>
+    </Code>
+
+    <Code>
+        <Id>marketing</Id>
+        <Name>Marketing</Name>
+    </Code>
+
+
+    <!-- cateory : Law -->
+    <Code>
+        <Id>GDPR</Id>
+        <Name>GDPR</Name>
+    </Code>
+
+    <Code>
+        <Id>ContractLaw</Id>
+        <Name>Contract Law</Name>
+    </Code>
+
+    <Code>
+        <Id>AdministrativeLaw</Id>
+        <Name>Administrative law</Name>
+    </Code>
+
+    <Code>
+        <Id>CollectiveAgreement</Id>
+        <Name>Collective agreement</Name>
+    </Code>
+
+    <Code>
+        <Id>DataProcessorAgreements</Id>
+        <Name>Data processor agreements</Name>
+    </Code>
+
+    <Code>
+        <Id>HealthLaw</Id>
+        <Name>Health Law</Name>
+    </Code>
+
+    <Code>
+        <Id>SocialSecurityLaw</Id>
+        <Name>Socail security law</Name>
+    </Code>
+
+    <Code>
+        <Id>HealthLaw</Id>
+        <Name>Health Law</Name>
+    </Code>
+
+    <Code>
+        <Id>LabourLaw</Id>
+        <Name>Labour Law</Name>
+    </Code>
+
+    <Code>
+        <Id>CriminalLaw</Id>
+        <Name>Criminal Law</Name>
+    </Code>
+
+    <Code>
+        <Id>EULaw</Id>
+        <Name>EU Law</Name>
+    </Code>
+
+    <Code>
+        <Id>EEALaw</Id> <!-- Er dette det samme som EØS-retten ? -->
+        <Name>EEA Law</Name>
+    </Code>
+
+
+</CodeList>

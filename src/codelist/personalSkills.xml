@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>PersonalSkills codelist</Title>
+    <Identifier>personalSkills</Identifier>
+    <Version>1.0</Version>
+    <Agency>DFO</Agency>
+
+    <Code>
+        <Id>communication</Id>
+        <Name>Communication</Name>
+    </Code>
+
+    <Code>
+        <Id>leadership</Id>
+        <Name>Leadership</Name>
+    </Code>
+
+    <Code>
+        <Id>problemsolving</Id>
+        <Name>Problem-solving</Name>
+    </Code>
+
+    <Code>
+        <Id>creativity</Id>
+        <Name>Creativity</Name>
+    </Code>
+
+    <Code>
+        <Id>logicalthinking</Id>
+        <Name>Logical Thinking</Name>
+    </Code>
+
+    <Code>
+        <Id>research</Id>
+        <Name>Research</Name>
+    </Code>
+
+    <Code>
+        <Id>learn</Id>
+        <Name>Willingness to learn</Name>
+    </Code>
+
+    <Code>
+        <Id>innovation</Id>
+        <Name>Innovation</Name>
+    </Code>
+
+    <Code>
+        <Id>outsideBox</Id>
+        <Name>Thinking outside the box</Name>
+    </Code>
+
+    <Code>
+        <Id>curiosity</Id>
+        <Name>Curiosity</Name>
+    </Code>
+
+    <Code>
+        <Id>integriry</Id>
+        <Name>Integrity</Name>
+    </Code>
+
+    <Code>
+        <Id>ethical</Id>
+        <Name>Ethical</Name>
+    </Code>
+
+    <Code>
+        <Id>motivating</Id>
+        <Name>Motivating</Name>
+    </Code>
+
+    <Code>
+        <Id>independent</Id>
+        <Name>Independent</Name>
+    </Code>
+
+    <Code>
+        <Id>attitude</Id>
+        <Name>Good attitude</Name>
+    </Code>
+
+    <Code>
+        <Id>TeamPlayer</Id>
+        <Name>Team player</Name>
+    </Code>
+
+    <Code>
+        <Id>awareness</Id>
+        <Name>Self-awareness</Name>
+    </Code>
+
+    <Code>
+        <Id>supervising</Id>
+        <Name>Self-supervising</Name>
+    </Code>
+
+    <Code>
+        <Id>feedback</Id>
+        <Name>Willing to accept feedback</Name>
+    </Code>
+
+    <Code>
+        <Id>pressure</Id>
+        <Name>Works well under pressure</Name>
+    </Code>
+
+    <Code>
+        <Id>passion</Id>
+        <Name>Passion</Name>
+    </Code>
+
+    <Code>
+        <Id>positive</Id>
+        <Name>Positive</Name>
+    </Code>
+
+    <Code>
+        <Id>optimism</Id>
+        <Name>Optimism</Name>
+    </Code>
+
+    <Code>
+        <Id>productive</Id>
+        <Name>productive</Name>
+    </Code>
+
+    <Code>
+        <Id>visionary</Id>
+        <Name>Visionary</Name>
+    </Code>
+
+    <Code>
+        <Id>confidence</Id>
+        <Name>Confidence</Name>
+    </Code>
+
+    <Code>
+        <Id>ambition</Id>
+        <Name>Ambition</Name>
+    </Code>
+
+    <Code>
+        <Id>hardworking</Id>
+        <Name>Hardworking</Name>
+    </Code>
+
+    <Code>
+        <Id>respectful</Id>
+        <Name>Respectful</Name>
+    </Code>
+
+    <Code>
+        <Id>storyteller</Id>
+        <Name>Storyteller</Name>
+    </Code>
+
+    <Code>
+        <Id>collaborative</Id>
+        <Name>Collaborative</Name>
+    </Code>
+
+    <Code>
+        <Id>encouraging</Id>
+        <Name>Encouraging</Name>
+    </Code>
+
+    <Code>
+        <Id>empathy</Id>
+        <Name>Empathy</Name>
+    </Code>
+
+    <Code>
+        <Id>inclusive</Id>
+        <Name>Inclusive</Name>
+    </Code>
+
+    <Code>
+        <Id>listening</Id>
+        <Name>Listening</Name>
+    </Code>
+
+    <Code>
+        <Id>management</Id>
+        <Name>Management</Name>
+    </Code>
+
+    <Code>
+        <Id>attensiveness</Id>
+        <Name>Attensiveness</Name>
+    </Code>
+
+    <Code>
+        <Id>responsible</Id>
+        <Name>Responsible</Name>
+    </Code>
+
+    <Code>
+        <Id>teachable</Id>
+        <Name>Teachable</Name>
+    </Code>
+
+    <Code>
+        <Id>helpfulness</Id>
+        <Name>Helpfulness</Name>
+    </Code>
+
+    <Code>
+        <Id>accountable</Id>
+        <Name>Accountable</Name>
+    </Code>
+
+    <Code>
+        <Id>loyal</Id>
+        <Name>Loyal</Name>
+    </Code>
+
+    <Code>
+        <Id>punctual</Id>
+        <Name>Punctual</Name>
+    </Code>
+
+    <Code>
+        <Id>reliable</Id>
+        <Name>Reliable</Name>
+    </Code>
+
+    <Code>
+        <Id>trustworthy</Id>
+        <Name>Trustworthy</Name>
+    </Code>
+
+    <Code>
+        <Id>realistic</Id>
+        <Name>Realistic</Name>
+    </Code>
+
+    <Code>
+        <Id>perspective</Id>
+        <Name>Perspectiver</Name>
+    </Code>
+
+    <Code>
+        <Id>DecisionMaking</Id>
+        <Name>Decision Making</Name>
+    </Code>
+
+    <Code>
+        <Id>diplomatic</Id>
+        <Name>Diplomatic</Name>
+    </Code>
+
+    <Code>
+        <Id>diplomatic</Id>
+        <Name>Diplomatic</Name>
+    </Code>
+
+    <Code>
+        <Id>SolutionOriented</Id>
+        <Name>Solution oriented</Name>
+    </Code>
+
+    <Code>
+        <Id>structured</Id>
+        <Name>Structured</Name>
+    </Code>
+
+    <Code>
+        <Id>analytics</Id>
+        <Name>Analytics</Name>
+    </Code>
+
+    <Code>
+        <Id>CriticalThinking</Id>
+        <Name>Critical Thinking</Name>
+    </Code>
+
+    <Code>
+        <Id>organisational</Id>
+        <Name>Organisational skills</Name>
+    </Code>
+
+    <Code>
+        <Id>marketing</Id>
+        <Name>Marketing</Name>
+    </Code>
+
+    <Code>
+        <Id>sociable</Id>
+        <Name>Sociable</Name>
+    </Code>
+
+    <Code>
+        <Id>feasibility</Id>
+        <Name>Feasibility</Name>
+    </Code>
+
+    <Code>
+        <Id>TimeManagement</Id>
+        <Name>Time Management</Name>
+    </Code>
+
+    <Code>
+        <Id>flexibility</Id>
+        <Name>Flexibility</Name>
+    </Code>
+
+    <Code>
+        <Id>enthusiasm</Id>
+        <Name>Enthusiasm</Name>
+    </Code>
+
+    <Code>
+        <Id>PersonalDrive</Id>
+        <Name>Personal Drive</Name>
+    </Code>
+
+    <Code>
+        <Id>initiative</Id>
+        <Name>Initiative</Name>
+    </Code>
+
+</CodeList>

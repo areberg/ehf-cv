@@ -18,9 +18,9 @@
             <xs:element name="IssueDate" type="xs:date" minOccurs="0"/>
             <xs:element name="IssueTime" type="xs:time" minOccurs="0"/>
             
-            <xs:element name="FolderReference" type="IdentifierType" minOccurs="0"/>
+            <xs:element name="FolderReference" type="ReferenceType" minOccurs="0"/>
             
-            <xs:element name="SenderParty" type="PartyType" minOccurs="0"/>
+            <xs:element name="ReceiverParty" type="PartyType" minOccurs="0"/>
             <xs:element name="ProviderParty" type="PartyType" minOccurs="0"/>
             
             <xs:element name="Education" type="EducationType" minOccurs="0" maxOccurs="unbounded"/>
@@ -65,7 +65,7 @@
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
-            <xs:element name="AlternaticeCourse" type="AlternativeCourseType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="AlternativeCourse" type="AlternativeCourseType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     
@@ -96,7 +96,7 @@
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
             <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="ExerienceType" type="xs:token" minOccurs="0"/>
+            <xs:element name="ExperienceType" type="xs:token" minOccurs="0"/>
             <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
             <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
             <xs:element name="JobSector" type="xs:token" minOccurs="0"/>
@@ -137,7 +137,7 @@
     
     <xs:complexType name="ReferenceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="IdentifierType"/>
             <xs:element name="MinimumTotalReference" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -149,7 +149,7 @@
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
-            <xs:element name="SkillsPractice" type="SkillsPracticeType" minOccurs="0"/>
+            <xs:element name="SkillPractice" type="SkillsPracticeType" minOccurs="0"/>
             <xs:element name="AlternativeSkills" type="AlternativeSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
@@ -209,7 +209,7 @@
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
             <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="ExerienceType" type="xs:token" minOccurs="0"/>
+            <xs:element name="ExperienceType" type="xs:token" minOccurs="0"/>
             <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
             <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
             <xs:element name="JobSector" type="xs:token" minOccurs="0"/>
@@ -252,7 +252,7 @@
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
-            <xs:element name="SkillsPractice" type="SkillsPracticeType" minOccurs="0"/>
+            <xs:element name="SkillPractice" type="SkillsPracticeType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
     
