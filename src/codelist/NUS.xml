@@ -1,0 +1,425 @@
+<!--
+https://www.ssb.no/en/klass/klassifikasjoner/36/koder
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>Classification of Edcuation (NUS) Codelist</Title>
+    <Identifier>NUS</Identifier>
+    <Version>1.0</Version>
+    <Agency>SSB</Agency>
+
+    <Code>
+        <Id>099901</Id>
+        <Name>No education</Name>
+    </Code>
+
+    <Code>
+        <Id>099902</Id>
+        <Name>Pre-school education</Name>
+    </Code>
+
+    <Code>
+        <Id>099903</Id>
+        <Name>Kindergarten-/pre-school, 0-2 years</Name>
+    </Code>
+
+    <Code>
+        <Id>099904</Id>
+        <Name>Kindergarten-/pre-school, 3-5 years</Name>
+    </Code>
+
+    <Code>
+        <Id>099999</Id>
+        <Name>No education and kindergarten-/pre-school education, unspecified fiels of study</Name>
+    </Code>
+
+    <Code>
+        <Id>101101</Id>
+        <Name>Compulsory education at promary school level</Name>
+        <Description>Includes: Special education for deaf and hearing-impaired pupils, blind and visually-impaired
+          pupils, children with speech defects, children and adolescents with learning and behavioural problems.</Description>
+    </Code>
+
+    <Code>
+        <Id>101999</Id>
+        <Name>General subjects, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>119999</Id>
+        <Name>Humanities and arts, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>129999</Id>
+        <Name>Teacher training and pedagogy, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>139999</Id>
+        <Name>Social sciences and law, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>149999</Id>
+        <Name>Business and administration, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>159999</Id>
+        <Name>Natural sciences, vocational and technical subjects, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>169999</Id>
+        <Name>Health, welfare and sport, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>179999</Id>
+        <Name>Primary industries, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>189999</Id>
+        <Name>Transport and communications, safety and security and other services, other, unspecified, primary education</Name>
+    </Code>
+
+    <Code>
+        <Id>199999</Id>
+        <Name>Primary education, unspecified field of study</Name>
+    </Code>
+
+    <Code>
+        <Id>201101</Id>
+        <Name>Continuation school education</Name>
+        <Description>Includes: Continuation school, one-year and two-year courses.</Description>
+    </Code>
+
+    <Code>
+        <Id>201102</Id>
+        <Name>Elementary education</Name>
+    </Code>
+
+    <Code>
+        <Id>201103</Id>
+        <Name>Compulsory education at lower secondary school level</Name>
+        <Description>Includes: General field of study, plan 3 in all obligatory written subjects
+          with and without German, plan 2 as lowest plan in obligatory written subjects with and
+          without German, plan 1 as lowest plan in obligatory written subjects with and without German</Description>
+    </Code>
+
+    <Code>
+        <Id>201104</Id>
+        <Name>Introductory course for non-native speaking pupils</Name>
+    </Code>
+
+    <Code>
+        <Id>201105</Id>
+        <Name>Special education for pupils with special needs</Name>
+        <Description>Includes: Special education at lower secondary level for deaf and hearing-impaired pupils,
+          blind and visually-impaired pupils, children with speech defects, children and adolescents with learning
+          and behavioural problems.</Description>
+    </Code>
+
+    <Code>
+        <Id>201106</Id>
+        <Name>Adult education, primary and lower secondary school</Name>
+    </Code>
+
+    <Code>
+        <Id>201199</Id>
+        <Name>Compulsory education at lower secondary school level, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>201999</Id>
+        <Name>General subjects, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>219999</Id>
+        <Name>Humanities and arts, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>229999</Id>
+        <Name>Teacher training and pedagogy, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>239999</Id>
+        <Name>Social sciences and law, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>249999</Id>
+        <Name>Business and administration, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>259999</Id>
+        <Name>Natural sciences, vocational and technical subjects, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>269999</Id>
+        <Name>Health, welfare and sport, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>279999</Id>
+        <Name>Primary industries, other, unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>289999</Id>
+        <Name>Transport and communications, safety and security and other services, other,
+          unspecified, lower secondary education</Name>
+    </Code>
+
+    <Code>
+        <Id>299999</Id>
+        <Name>Lower secondary education, unspecified field of study</Name>
+    </Code>
+
+    <Code>
+        <Id>301101</Id>
+        <Name>General and business studies, foundation course</Name>
+        <Description>Includes: One-year foundation course. Two-year foundation course. Adapted
+          foundation course. One-year foundation course for non-native speaking pupils. Two-year
+          foundation course for non-native speaking pupils. Preparatory course for non-native speaking p</Description>
+    </Code>
+
+    <Code>
+        <Id>301102</Id>
+        <Name>General subjects, Advanced Course I</Name>
+        <Description>Includes: General subjects, Advanced Course I for non-native speaking pupils. General
+           and business studies, adapted to Advanced Course I.</Description>
+    </Code>
+
+    <Code>
+        <Id>301103</Id>
+        <Name>The One World Volunteer Institute, solidarity work</Name>
+    </Code>
+
+    <Code>
+        <Id>301104</Id>
+        <Name>Folk high school education, one-year</Name>
+        <Description>Includes: Folk high school/Labour market course, short course.</Description>
+    </Code>
+
+    <Code>
+        <Id>301105</Id>
+        <Name>Folk high school education, half-year</Name>
+    </Code>
+
+    <Code>
+        <Id>301106</Id>
+        <Name>Education at a folk high school, two-year/advanced course</Name>
+    </Code>
+
+    <Code>
+        <Id>301107</Id>
+        <Name>Preparatory course for non-native speakers</Name>
+        <Description>Includes: General subjects, preparatory course for non-native speaking pupils.</Description>
+    </Code>
+
+    <Code>
+        <Id>301108</Id>
+        <Name>Preparatory course for vocational training</Name>
+        <Description>Includes: Home economics at state teacher training college.
+          Preparatory course for technical vocational school.</Description>
+    </Code>
+
+    <Code>
+        <Id>301109</Id>
+        <Name>General secondary school education, upper stage, part-examinations</Name>
+        <Description>Includes: Languages. social sciences. Mathematics and natural sciences.
+          Other humanities and arts.</Description>
+    </Code>
+
+    <Code>
+        <Id>301110</Id>
+        <Name>General secondary school education, lower stage</Name>
+        <Description>Includes: General secondary school, lower stage, one and two-language branch.</Description>
+    </Code>
+
+    <Code>
+        <Id>301111</Id>
+        <Name>Specialization in general studies, upper secondary level 1 (Vg1)</Name>
+    </Code>
+
+    <Code>
+        <Id>301112</Id>
+        <Name>Arts, crafts and design, upper secondary level 2 (Vg2)</Name>
+    </Code>
+
+    <Code>
+        <Id>301113</Id>
+        <Name>Preparatory course for vocational training</Name>
+        <Description>Natural science and mathematics, upper secondary level 2 (Vg2)</Description>
+    </Code>
+
+    <Code>
+        <Id>301114</Id>
+        <Name>Social sciences and economics, upper secondary level 2 (Vg2)</Name>
+    </Code>
+
+    <Code>
+        <Id>301115</Id>
+        <Name>Languages, upper secondary level 2 (Vg2)</Name>
+    </Code>
+
+    <Code>
+        <Id>301116</Id><!-- erstattes med 401104 ?? -->
+        <Name>International Baccalaureate, upper secondary level 2 (Vg2), WRONG CODE, SEE 401104</Name>
+    </Code>
+
+    <Code>
+        <Id>301117</Id>
+        <Name>Languages, social sciences and economics, upper secondary level 2 (Vg2)</Name>
+    </Code>
+
+    <Code>
+        <Id>301118</Id>
+        <Name>Specialization in general studies, upper secondary level 2 (Vg2)</Name>
+    </Code>
+
+    <Code>
+        <Id>301119</Id>
+        <Name>Specialization in general studies with arts, crafts and design, upper secondary level 1 (Vg1)</Name>
+    </Code>
+
+    <Code>
+        <Id>301120</Id>
+        <Name>Specialization in general studies, upper secondary level 1 (Vg1), basic competence</Name>
+    </Code>
+
+    <Code>
+        <Id>301121</Id>
+        <Name>Arts, crafts and design, upper secondary level 2 (Vg2), basic competence</Name>
+    </Code>
+
+    <Code>
+        <Id>301122</Id>
+        <Name>Natural science and mathematics, upper secondary level 2 (Vg2), basic competence</Name>
+    </Code>
+
+    <Code>
+        <Id>301123</Id>
+        <Name>Languages, social sciences and economics, upper secondary level 2 (Vg2), basic competence</Name>
+    </Code>
+
+    <Code>
+        <Id>301199</Id>
+        <Name>General programmes, unspecified, upper secondary, basic education</Name>
+        <Description>Includes: Preparatory course for visually-impaired pupils.</Description>
+    </Code>
+
+    <Code>
+        <Id>301999</Id>
+        <Name>General subjects, other, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>311199</Id>
+        <Name>Germanic and Romance languages, unspecified, upper secondary, basic education</Name>
+        <Description>Includes: English, general, technical and commercial, course for persons in
+          petroleum operations.</Description>
+    </Code>
+
+    <Code>
+        <Id>311299</Id>
+        <Name>Slavic, Baltic and Finno-Ugric languages, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>311399</Id>
+        <Name>Turkic, Indo-Iranian, Celtic, Semitic and Asian languages, unspecified,
+          upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>311499</Id>
+        <Name>African languages, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>311599</Id>
+        <Name>Classical languages, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>311699</Id>
+        <Name>Training for translators, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>311799</Id>
+        <Name>Linguistics, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>311999</Id>
+        <Name>Languages, other, unspecified, upper secondary, basic education</Name>
+        <Description>Includes: Languages, labour market course.</Description>
+    </Code>
+
+    <Code>
+        <Id>312199</Id>
+        <Name>Literature, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>312201</Id>
+        <Name>Books and librarianship, two-year foundation course</Name>
+    </Code>
+
+    <Code>
+        <Id>312299</Id>
+        <Name>Librarianship, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>312399</Id>
+        <Name>Authorship, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>312999</Id>
+        <Name>Literature and librarianship, other, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>313199</Id>
+        <Name>History, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>313299</Id>
+        <Name>Art history, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>313399</Id>
+        <Name>Archaeology, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>313499</Id>
+        <Name>Cultural studies, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>313599</Id>
+        <Name>Philosophy and ethics, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+    <Code>
+        <Id>313999</Id>
+        <Name>History and philosophy, other, unspecified, upper secondary, basic education</Name>
+    </Code>
+
+</Codelist>
