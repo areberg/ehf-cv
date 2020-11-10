@@ -193,7 +193,7 @@
                 <Term>cv:SubjectArea</Term>
                 <Name>Educational Subject Area</Name>
                 <Description>The candidate's educational subject area. Use codelist subArea.</Description>
-                <!--<Reference type="CODE_LIST">subArea</Reference>-->
+                <Reference type="CODE_LIST">NUS</Reference>
                 <Value type="EXAMPLE">IT</Value>
             </Element>
 
@@ -274,7 +274,7 @@
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">projectmanager</Value>
                 </Element>
 
@@ -628,7 +628,7 @@
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">arhitecture</Value>
                 </Element>
 
@@ -676,7 +676,7 @@
                 <Term>cv:ExperienceType</Term>
                 <Name>Experience type</Name>
                 <Description>The experience type, expressed by using classification of occupations code.</Description>
-                <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                <Reference type="CODE_LIST">styrk98</Reference>
                 <Value type="EXAMPLE">projectleader</Value>
             </Element>
 
@@ -684,7 +684,7 @@
                 <Term>cv:IndustryType</Term>
                 <Name>Industry type</Name>
                 <Description>The industry type related to project experience. Use code list NACE.</Description>
-                <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                <Reference type="CODE_LIST">NACE</Reference>
                 <Value type="EXAMPLE">A01</Value>
             </Element>
 
@@ -766,7 +766,7 @@
                     <Term>cv:Role</Term>
                     <Name>Role</Name>
                     <Description>The candidate's role in the project experience.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">leader</Value>
                 </Element>
 
@@ -827,7 +827,7 @@
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">projectmanager</Value>
                 </Element>
 
@@ -896,7 +896,7 @@
                 <Term>cv:IndustryType</Term>
                 <Name>Industry type</Name>
                 <Description>The industry type related to work experience. Use code list NACE.</Description>
-                <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                <Reference type="CODE_LIST">NACE</Reference>
                 <Value type="EXAMPLE">A01</Value>
             </Element>
 
@@ -978,7 +978,7 @@
                     <Term>cv:Role</Term>
                     <Name>Role</Name>
                     <Description>The candidate's role in the work experience.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">financialexpert</Value>
                 </Element>
 
@@ -1005,7 +1005,7 @@
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">teamleader</Value>
                 </Element>
 
@@ -1288,7 +1288,7 @@
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">leader</Value>
                 </Element>
 
@@ -1375,7 +1375,7 @@
                     <Term>cv:Role</Term>
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">teammember</Value>
                 </Element>
 

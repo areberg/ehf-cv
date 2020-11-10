@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    
-    <Title>Sector code</Title>
-    <Identifier>sector</Identifier>
+
+    <Title>Skills Referance</Title>
+    <Identifier>SkillReference</Identifier>
     <Version>1.0</Version>
     <Agency>DFO</Agency>
-    
+
     <Code>
-        <Id>private</Id>
-        <Name>Private Sector</Name>
-        <Description>Private sector is runed by individuals and organizations/companies to generate profit.</Description>
+        <Id>TRUE</Id>
+        <Name>True</Name>
+        <Description>You must provide references to the specific skill.</Description>
     </Code>
-    
+
     <Code>
-        <Id>public</Id>
-        <Name>Public Sector</Name>
-        <Description>Public sector that are owned and operated by the government.</Description>
+        <Id>FALSE</Id>
+        <Name>False</Name>
+        <Description>You don't need to provide references to the specific skill.</Description>
     </Code>
-    
-    <Code>
-        <Id>nonProfit</Id>
-        <Name>non-profit sector</Name>
-        <Description>Non-profit sectors as non-profit organization, non-business entity, nonprofit institution etc.</Description>
-    </Code>
-    
-    <Code>
-        <Id>all</Id>
-        <Name>All sectors</Name>
-        <Description>All sectors, i.e. private, public and non-profit sectors.</Description>
-    </Code>
-  
+
 </CodeList>
-
-

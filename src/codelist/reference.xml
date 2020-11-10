@@ -2,18 +2,18 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>SKills reference codelist</Title>
-    <Identifier>SkillsReference</Identifier>
+    <Identifier>SkillReference</Identifier>
     <Version>1.0</Version>
     <Agency>DFO</Agency>
 
     <Code>
-        <Id>Yes</Id>
-        <Name>Need skills reference</Name>
+        <Id>True</Id>
+        <Name>Must provide skill reference.</Name>
     </Code>
 
     <Code>
-        <Id>No</Id>
-        <Name>Don't need skills reference</Name>
+        <Id>False</Id>
+        <Name>Don't need to provide skill reference.</Name>
     </Code>
 
 </CodeList>

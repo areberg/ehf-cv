@@ -200,7 +200,7 @@
                 <Term>cv-req:SubjectArea</Term>
                 <Name>Educational Subject Area</Name>
                 <Description>A specific requirement of educational subject area. Use codelist subArea.</Description>
-                <!--<Reference type="CODE_LIST">subArea</Reference>-->
+                <Reference type="CODE_LIST">NUS</Reference>
                 <Value type="EXAMPLE">IT</Value>
             </Element>
 
@@ -220,7 +220,7 @@
                     <Term>cv-req:Type</Term>
                     <Name>Type Experience</Name>
                     <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">projectleader</Value>
                 </Element>
 
@@ -265,7 +265,7 @@
                     <Term>cv-req:SubjectArea</Term>
                     <Name>Educational Subject Area</Name>
                     <Description>A specific requirement of educational subject area. Use codelist subArea.</Description>
-                    <!--<Reference type="CODE_LIST">subArea</Reference>-->
+                    <Reference type="CODE_LIST">NUS</Reference>
                     <Value type="EXAMPLE">IT</Value>
                 </Element>
 
@@ -285,7 +285,7 @@
                         <Term>cv-req:Type</Term>
                         <Name>Experience Type</Name>
                         <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
-                        <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                        <Reference type="CODE_LIST">styrk98</Reference>
                         <Value type="EXAMPLE">bla</Value>
                     </Element>
 
@@ -354,7 +354,6 @@
                     <Description>Course start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
                 </Element>
-
 
                 <Element cardinality="0..1">
                     <Term>cv-req:EndDate</Term>
@@ -649,7 +648,7 @@
                 <Term>cv-req:ExperienceType</Term>
                 <Name>Experience type</Name>
                 <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
-                <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                <Reference type="CODE_LIST">styrk98</Reference>
                 <Value type="EXAMPLE">blabla</Value>
             </Element>
 
@@ -657,7 +656,7 @@
                 <Term>cv-req:IndustryType</Term>
                 <Name>Industry type</Name>
                 <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
-                <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                <Reference type="CODE_LIST">NACE</Reference>
                 <Value type="EXAMPLE">A01</Value>
             </Element>
 
@@ -697,6 +696,26 @@
                 </Element>
             </Element>
 
+            <Element cardinality="0..1">
+                <Term>cv-req:Period</Term>
+                <Name>Period</Name>
+                <Description>The period the ptoject experience need to been completed.</Description>
+
+                <Element>
+                    <Term>cv-req:StartDate</Term>
+                    <Name>Start date</Name>
+                    <Description>Project experience start date.</Description>
+                    <Value type="EXAMPLE">2020-01-19</Value>
+                </Element>
+
+                <Element>
+                    <Term>cv-req:EndDate</Term>
+                    <Name>End date</Name>
+                    <Description>Project experience end date.</Description>
+                    <Value type="EXAMPLE">2020-10-02</Value>
+                </Element>
+            </Element>
+
             <Element>
                 <Term>cv-req:ExperienceDescription</Term>
                 <Name>Project experience description</Name>
@@ -713,7 +732,7 @@
                     <Term>cv-req:Role</Term>
                     <Name>Role</Name>
                     <Description>A specific requirement about the role of the project experience.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">analyst</Value>
                 </Element>
 
@@ -785,7 +804,7 @@
                     <Term>cv-req:ExperienceType</Term>
                     <Name>Experience type</Name>
                     <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">financialmanager</Value>
                 </Element>
 
@@ -793,7 +812,7 @@
                     <Term>cv-req:IndustryType</Term>
                     <Name>Industry type</Name>
                     <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
-                    <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                    <Reference type="CODE_LIST">NACE</Reference>
                     <Value type="EXAMPLE">A01</Value>
                 </Element>
 
@@ -833,6 +852,26 @@
                     </Element>
                 </Element>
 
+                <Element cardinality="0..1">
+                    <Term>cv-req:Period</Term>
+                    <Name>Period</Name>
+                    <Description>The period the ptoject experience need to been completed.</Description>
+
+                    <Element>
+                        <Term>cv-req:StartDate</Term>
+                        <Name>Start date</Name>
+                        <Description>Project experience start date.</Description>
+                        <Value type="EXAMPLE">2020-01-19</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cv-req:EndDate</Term>
+                        <Name>End date</Name>
+                        <Description>Project experience end date.</Description>
+                        <Value type="EXAMPLE">2020-10-02</Value>
+                    </Element>
+                </Element>
+
                 <Element>
                     <Term>cv-req:ExperienceDescription</Term>
                     <Name>Project experience description</Name>
@@ -849,7 +888,7 @@
                         <Term>cv-req:Role</Term>
                         <Name>Role</Name>
                         <Description>A specific requirement about the role of the project experience.</Description>
-                        <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                        <Reference type="CODE_LIST">styrk98</Reference>
                         <Value type="EXAMPLE">analyst</Value>
                     </Element>
 
@@ -930,7 +969,7 @@
                 <Term>cv-req:IndustryType</Term>
                 <Name>Industry type</Name>
                 <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
-                <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                <Reference type="CODE_LIST">NACE</Reference>
                 <Value type="EXAMPLE">A01</Value>
             </Element>
 
@@ -964,14 +1003,14 @@
 
                 <Element>
                     <Term>cv-req:StartDate</Term>
-                    <Name>Course version</Name>
+                    <Name>Start date</Name>
                     <Description>Work experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-19</Value>
                 </Element>
 
                 <Element>
                     <Term>cv-req:EndDate</Term>
-                    <Name>Course version</Name>
+                    <Name>End date</Name>
                     <Description>Work experience end date.</Description>
                     <Value type="EXAMPLE">2020-10-02</Value>
                 </Element>
@@ -993,7 +1032,7 @@
                     <Term>cv-req:Role</Term>
                     <Name>Role</Name>
                     <Description>A specific requirement about the role of the work experience.</Description>
-                    <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                    <Reference type="CODE_LIST">styrk98</Reference>
                     <Value type="EXAMPLE">lawyer</Value>
                 </Element>
 
@@ -1038,7 +1077,7 @@
                     <Term>cv-req:IndustryType</Term>
                     <Name>Industry type</Name>
                     <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
-                    <!--<Reference type="CODE_LIST">NACE</Reference>-->
+                    <Reference type="CODE_LIST">NACE</Reference>
                     <Value type="EXAMPLE">A01</Value>
                 </Element>
 
@@ -1072,14 +1111,14 @@
 
                     <Element>
                         <Term>cv-req:StartDate</Term>
-                        <Name>Course version</Name>
+                        <Name>Start date</Name>
                         <Description>Work experience start date.</Description>
                         <Value type="EXAMPLE">2020-01-19</Value>
                     </Element>
 
                     <Element>
                         <Term>cv-req:EndDate</Term>
-                        <Name>Course version</Name>
+                        <Name>End date</Name>
                         <Description>Work experience end date.</Description>
                         <Value type="EXAMPLE">2020-10-02</Value>
                     </Element>
@@ -1101,7 +1140,7 @@
                         <Term>cv-req:Role</Term>
                         <Name>Role</Name>
                         <Description>A specific requirement about the role of the work experience.</Description>
-                        <!--<Reference type="CODE_LIST">styrk98</Reference>-->
+                        <Reference type="CODE_LIST">styrk98</Reference>
                         <Value type="EXAMPLE">assistent</Value>
                     </Element>
 
@@ -1305,7 +1344,7 @@
                     <Term>cv-req:SkillsReference</Term>
                     <Name>Skill reference</Name>
                     <Description>If the skill need a reference or not. State true or false.</Description>
-                    <!--<Reference type="CODE_LIST">skillsRef</Reference>-->
+                    <Reference type="CODE_LIST">SkillReference</Reference>
                     <Value type="EXAMPLE">True</Value>
                 </Element>
             </Element>
@@ -1376,8 +1415,8 @@
                         <Term>cv-req:SkillsReference</Term>
                         <Name>Skill reference</Name>
                         <Description>If the skill need a reference or not. State true or false.</Description>
-                        <Reference type="CODE_LIST">skillsReference</Reference>
-                        <Value type="EXAMPLE">Yes</Value>
+                        <Reference type="CODE_LIST">SkillReference</Reference>
+                        <Value type="EXAMPLE">True</Value>
                     </Element>
                 </Element>
             </Element>
