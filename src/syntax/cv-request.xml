@@ -201,7 +201,7 @@
                 <Name>Educational Subject Area</Name>
                 <Description>A specific requirement of educational subject area. Use codelist subArea.</Description>
                 <Reference type="CODE_LIST">NUS</Reference>
-                <Value type="EXAMPLE">IT</Value>
+                <Value type="EXAMPLE">269999</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -221,7 +221,7 @@
                     <Name>Type Experience</Name>
                     <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">projectleader</Value>
+                    <Value type="EXAMPLE">0113126</Value>
                 </Element>
 
                 <Element>
@@ -266,7 +266,7 @@
                     <Name>Educational Subject Area</Name>
                     <Description>A specific requirement of educational subject area. Use codelist subArea.</Description>
                     <Reference type="CODE_LIST">NUS</Reference>
-                    <Value type="EXAMPLE">IT</Value>
+                    <Value type="EXAMPLE">311499</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -286,7 +286,7 @@
                         <Name>Experience Type</Name>
                         <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
                         <Reference type="CODE_LIST">styrk98</Reference>
-                        <Value type="EXAMPLE">bla</Value>
+                        <Value type="EXAMPLE">1110101</Value>
                     </Element>
 
                     <Element>
@@ -649,7 +649,7 @@
                 <Name>Experience type</Name>
                 <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
                 <Reference type="CODE_LIST">styrk98</Reference>
-                <Value type="EXAMPLE">blabla</Value>
+                <Value type="EXAMPLE">1141101</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -657,7 +657,7 @@
                 <Name>Industry type</Name>
                 <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
                 <Reference type="CODE_LIST">NACE</Reference>
-                <Value type="EXAMPLE">A01</Value>
+                <Value type="EXAMPLE">01110</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -733,7 +733,7 @@
                     <Name>Role</Name>
                     <Description>A specific requirement about the role of the project experience.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">analyst</Value>
+                    <Value type="EXAMPLE">1210178</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -805,7 +805,7 @@
                     <Name>Experience type</Name>
                     <Description>A specific requirement about a type of experience. Expressed by using classification of occupations code.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">financialmanager</Value>
+                    <Value type="EXAMPLE">1224117</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -813,7 +813,7 @@
                     <Name>Industry type</Name>
                     <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
                     <Reference type="CODE_LIST">NACE</Reference>
-                    <Value type="EXAMPLE">A01</Value>
+                    <Value type="EXAMPLE">01190</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -889,7 +889,7 @@
                         <Name>Role</Name>
                         <Description>A specific requirement about the role of the project experience.</Description>
                         <Reference type="CODE_LIST">styrk98</Reference>
-                        <Value type="EXAMPLE">analyst</Value>
+                        <Value type="EXAMPLE">1227243</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -970,7 +970,7 @@
                 <Name>Industry type</Name>
                 <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
                 <Reference type="CODE_LIST">NACE</Reference>
-                <Value type="EXAMPLE">A01</Value>
+                <Value type="EXAMPLE">01230</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1033,7 +1033,7 @@
                     <Name>Role</Name>
                     <Description>A specific requirement about the role of the work experience.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">lawyer</Value>
+                    <Value type="EXAMPLE">1234106</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1078,7 +1078,7 @@
                     <Name>Industry type</Name>
                     <Description>A requirement about a industry related to project experience. Use code list NACE.</Description>
                     <Reference type="CODE_LIST">NACE</Reference>
-                    <Value type="EXAMPLE">A01</Value>
+                    <Value type="EXAMPLE">01479</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1141,7 +1141,7 @@
                         <Name>Role</Name>
                         <Description>A specific requirement about the role of the work experience.</Description>
                         <Reference type="CODE_LIST">styrk98</Reference>
-                        <Value type="EXAMPLE">assistent</Value>
+                        <Value type="EXAMPLE">1235104</Value>
                     </Element>
 
                     <Element cardinality="0..1">

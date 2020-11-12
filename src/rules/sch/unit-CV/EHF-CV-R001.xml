@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-1.0">
+	<assert>
+		<description>Verify period if end date is later than or equal to start date</description>
+		<scope>EHF-CV-R001</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-R001</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+				<Education>
+          <Period>
+            <StartDate>2020-01-05</StartDate>
+            <EndDate>2021-10-10</EndDate>
+          </Period>
+				</Education>
+
+		</CV>
+	</test>
+
+
+	<test id="2">
+		<assert>
+			<success>EHF-CV-R001</success>
+		</assert>
+	  <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <Education>
+        <Period>
+          <StartDate>2020-01-05</StartDate>
+          <EndDate>2020-01-05</EndDate>
+        </Period>
+      </Education>
+
+		</CV>
+	</test>
+
+	<test id="3">
+		<assert>
+			<error>EHF-CV-R001</error>
+		</assert>
+    <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <Education>
+        <Period>
+          <StartDate>2020-02-05</StartDate>
+            <EndDate>2020-01-05</EndDate>
+        </Period>
+      </Education>
+
+		</CV>
+	</test>
+
+</testSet>

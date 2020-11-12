@@ -14,7 +14,7 @@
     <cv-req:Contact>
       <cv-req:Name>Ola Nordmann</cv-req:Name>
       <cv-req:Telephone>22224444</cv-req:Telephone>
-      <cv-req:ElectronicMail>ola.nordmann@dgidir.no</cv-req:ElectronicMail>
+      <cv-req:ElectronicMail>ola.nordmann@digdir.no</cv-req:ElectronicMail>
     </cv-req:Contact>
   </cv-req:ReceiverParty>
   <cv-req:ProviderParty>

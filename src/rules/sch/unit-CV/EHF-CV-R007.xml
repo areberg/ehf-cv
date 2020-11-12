@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-1.0">
+	<assert>
+		<description>Verify project value</description>
+		<scope>EHF-CV-R007</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-R007</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<ProjectExperience>
+        <ExperienceValue>
+          <ProjectValue>1092520</ProjectValue>
+        </ExperienceValue>
+			</ProjectExperience>
+
+		</CV>
+	</test>
+
+  <test id="2">
+		<assert>
+			<error>EHF-CV-R007</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <ProjectExperience>
+        <ExperienceValue>
+          <ProjectValue>0</ProjectValue>
+        </ExperienceValue>
+      </ProjectExperience>
+
+		</CV>
+	</test>
+
+  <test id="3">
+		<assert>
+			<error>EHF-CV-R007</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <ProjectExperience>
+        <ExperienceValue>
+          <ProjectValue>-190000</ProjectValue>
+        </ExperienceValue>
+      </ProjectExperience>
+
+		</CV>
+	</test>
+
+</testSet>

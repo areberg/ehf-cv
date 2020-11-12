@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-1.0">
+	<assert>
+		<description>Verify project participation</description>
+		<scope>EHF-CV-R005</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-R005</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<ProjectExperience>
+        <ExperienceValue>
+          <ProjectParticipation>100</ProjectParticipation>
+        </ExperienceValue>
+			</ProjectExperience>
+
+		</CV>
+	</test>
+
+  <test id="2">
+		<assert>
+			<error>EHF-CV-R005</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <ProjectExperience>
+        <ExperienceValue>
+          <ProjectParticipation>0</ProjectParticipation>
+        </ExperienceValue>
+      </ProjectExperience>
+
+		</CV>
+	</test>
+
+  <test id="3">
+		<assert>
+			<error>EHF-CV-R005</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <ProjectExperience>
+        <ExperienceValue>
+          <ProjectParticipation>-10</ProjectParticipation>
+        </ExperienceValue>
+      </ProjectExperience>
+
+		</CV>
+	</test>
+
+</testSet>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-request-1.0">
+	<assert>
+		<description>Verify minimum total references</description>
+		<scope>EHF-CV-REQ-R010</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-REQ-R010</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <Reference>
+        <MinimumTotalReference>3</MinimumTotalReference>
+      </Reference>
+
+		</CVRequest>
+	</test>
+
+  <test id="2">
+    <assert>
+      <error>EHF-CV-REQ-R010</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <Reference>
+        <MinimumTotalReference>0</MinimumTotalReference>
+      </Reference>
+
+    </CVRequest>
+  </test>
+
+  <test id="3">
+    <assert>
+      <error>EHF-CV-REQ-R010</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <Reference>
+        <MinimumTotalReference>-3</MinimumTotalReference>
+      </Reference>
+
+    </CVRequest>
+  </test>
+
+</testSet>

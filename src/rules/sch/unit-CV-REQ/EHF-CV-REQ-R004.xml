@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-request-1.0">
+	<assert>
+		<description>Verify maximum experience is larger than minimum experience</description>
+		<scope>EHF-CV-REQ-R004</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-REQ-R004</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <RequiredTotalExperience>
+          <MinimumExperience>3</MinimumExperience>
+          <MaximumExperience>7</MaximumExperience>
+        </RequiredTotalExperience>
+      </ProjectExperience>
+
+		</CVRequest>
+	</test>
+
+  <test id="2">
+    <assert>
+      <error>EHF-CV-REQ-R004</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <RequiredTotalExperience>
+          <MinimumExperience>7</MinimumExperience>
+          <MaximumExperience>7</MaximumExperience>
+        </RequiredTotalExperience>
+      </ProjectExperience>
+
+    </CVRequest>
+  </test>
+
+  <test id="1">
+    <assert>
+      <error>EHF-CV-REQ-R004</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <RequiredTotalExperience>
+          <MinimumExperience>10</MinimumExperience>
+          <MaximumExperience>7</MaximumExperience>
+        </RequiredTotalExperience>
+      </ProjectExperience>
+
+    </CVRequest>
+  </test>
+
+</testSet>

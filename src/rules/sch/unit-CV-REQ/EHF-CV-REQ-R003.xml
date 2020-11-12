@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-request-1.0">
+	<assert>
+		<description>Verify certification type or title is specified</description>
+		<scope>EHF-CV-REQ-R003</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-REQ-R003</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <Certification>
+        <Type>SAP</Type>
+      </Certification>
+
+		</CVRequest>
+	</test>
+
+  <test id="2">
+    <assert>
+      <success>EHF-CV-REQ-R003</success>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <Certification>
+        <Title>Airport security</Title>
+      </Certification>
+
+    </CVRequest>
+  </test>
+
+  <test id="1">
+    <assert>
+      <error>EHF-CV-REQ-R003</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <Certification>
+        <Title>Airport security</Title>
+        <Type>SAP</Type>
+      </Certification>
+
+
+    </CVRequest>
+  </test>
+
+</testSet>

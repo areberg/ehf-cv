@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-request-1.0">
+	<assert>
+		<description>Verify project size</description>
+		<scope>EHF-CV-REQ-R007</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-REQ-R007</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <ExperienceValue>
+          <ProjectSize>100</ProjectSize>
+        </ExperienceValue>
+      </ProjectExperience>
+
+		</CVRequest>
+	</test>
+
+  <test id="2">
+    <assert>
+      <error>EHF-CV-REQ-R007</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <ExperienceValue>
+          <ProjectSize>0</ProjectSize>
+        </ExperienceValue>
+      </ProjectExperience>
+
+    </CVRequest>
+  </test>
+
+  <test id="3">
+    <assert>
+      <error>EHF-CV-REQ-R007</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <ExperienceValue>
+          <ProjectSize>-100</ProjectSize>
+        </ExperienceValue>
+      </ProjectExperience>
+
+    </CVRequest>
+  </test>
+
+</testSet>

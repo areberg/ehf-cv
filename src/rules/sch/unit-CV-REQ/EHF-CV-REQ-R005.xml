@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-request-1.0">
+	<assert>
+		<description>Verify position percent is greater than or equal zero</description>
+		<scope>EHF-CV-REQ-R005</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <ExperienceDescription>
+          <PositionPercent>3</PositionPercent>
+        </ExperienceDescription>
+      </ProjectExperience>
+
+		</CVRequest>
+	</test>
+
+  <test id="2">
+    <assert>
+      <success>EHF-CV-REQ-R005</success>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <ExperienceDescription>
+          <PositionPercent>0</PositionPercent>
+        </ExperienceDescription>
+      </ProjectExperience>
+
+    </CVRequest>
+  </test>
+
+  <test id="3">
+    <assert>
+      <error>EHF-CV-REQ-R005</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+      <ProjectExperience>
+        <ExperienceDescription>
+          <PositionPercent>-10</PositionPercent>
+        </ExperienceDescription>
+      </ProjectExperience>
+
+    </CVRequest>
+  </test>
+
+</testSet>

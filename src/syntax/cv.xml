@@ -194,7 +194,7 @@
                 <Name>Educational Subject Area</Name>
                 <Description>The candidate's educational subject area. Use codelist subArea.</Description>
                 <Reference type="CODE_LIST">NUS</Reference>
-                <Value type="EXAMPLE">IT</Value>
+                <Value type="EXAMPLE">201103</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -275,7 +275,7 @@
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">projectmanager</Value>
+                    <Value type="EXAMPLE">1120131</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -629,7 +629,7 @@
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">arhitecture</Value>
+                    <Value type="EXAMPLE">1210102</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -677,7 +677,7 @@
                 <Name>Experience type</Name>
                 <Description>The experience type, expressed by using classification of occupations code.</Description>
                 <Reference type="CODE_LIST">styrk98</Reference>
-                <Value type="EXAMPLE">projectleader</Value>
+                <Value type="EXAMPLE">1210148</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -685,7 +685,7 @@
                 <Name>Industry type</Name>
                 <Description>The industry type related to project experience. Use code list NACE.</Description>
                 <Reference type="CODE_LIST">NACE</Reference>
-                <Value type="EXAMPLE">A01</Value>
+                <Value type="EXAMPLE">07290</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -767,7 +767,7 @@
                     <Name>Role</Name>
                     <Description>The candidate's role in the project experience.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">leader</Value>
+                    <Value type="EXAMPLE">1210185</Value>
                 </Element>
 
                 <Element>
@@ -828,7 +828,7 @@
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">projectmanager</Value>
+                    <Value type="EXAMPLE">1222102</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -897,7 +897,7 @@
                 <Name>Industry type</Name>
                 <Description>The industry type related to work experience. Use code list NACE.</Description>
                 <Reference type="CODE_LIST">NACE</Reference>
-                <Value type="EXAMPLE">A01</Value>
+                <Value type="EXAMPLE">10130</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -979,7 +979,7 @@
                     <Name>Role</Name>
                     <Description>The candidate's role in the work experience.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">financialexpert</Value>
+                    <Value type="EXAMPLE">1222142</Value>
                 </Element>
 
                 <Element>
@@ -1006,7 +1006,7 @@
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">teamleader</Value>
+                    <Value type="EXAMPLE">1222169</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1289,7 +1289,7 @@
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">leader</Value>
+                    <Value type="EXAMPLE">1223122</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1376,7 +1376,7 @@
                     <Name>Contact person's role</Name>
                     <Description>Contact person's role.</Description>
                     <Reference type="CODE_LIST">styrk98</Reference>
-                    <Value type="EXAMPLE">teammember</Value>
+                    <Value type="EXAMPLE">1224127</Value>
                 </Element>
 
                 <Element cardinality="0..1">

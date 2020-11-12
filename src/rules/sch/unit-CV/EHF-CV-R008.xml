@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-1.0">
+	<assert>
+		<description>Verify clearance type or title is specified</description>
+		<scope>EHF-CV-R008</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-R008</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+				<Clearance>
+          <Type>civil</Type>
+				</Clearance>
+
+		</CV>
+	</test>
+
+  <test id="2">
+		<assert>
+			<success>EHF-CV-R008</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+				<Clearance>
+          <Title>special security</Title>
+				</Clearance>
+
+		</CV>
+	</test>
+
+  <test id="3">
+    <assert>
+      <error>EHF-CV-R008</error>
+    </assert>
+    <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+        <Clearance>
+          <Title>special security</Title>
+          <Type>civil</Type>
+        </Clearance>
+
+    </CV>
+  </test>
+
+</testSet>

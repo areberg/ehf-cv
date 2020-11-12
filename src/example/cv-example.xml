@@ -29,7 +29,7 @@
   <cv:Education>
     <cv:ID>1</cv:ID>
     <cv:EducationDegree>bachelor</cv:EducationDegree>
-    <cv:SubjectArea>IT</cv:SubjectArea>
+    <cv:SubjectArea>201103</cv:SubjectArea>
     <cv:Period>
       <cv:StartDate>2020-01-10</cv:StartDate>
       <cv:EndDate>2020-05-05</cv:EndDate>
@@ -42,7 +42,7 @@
     </cv:Documentation>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>projectmanager</cv:Role>
+      <cv:Role>1120131</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
@@ -85,7 +85,7 @@
       <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
       <cv:Name>U company</cv:Name>
       <cv:Contact>
-        <cv:ElectronicMail>alf.alfsen@z.no</cv:ElectronicMail>
+        <cv:ElectronicMail>alf.alfsen@u.no</cv:ElectronicMail>
       </cv:Contact>
       <cv:Country>NO</cv:Country>
     </cv:SupplierParty>
@@ -104,7 +104,7 @@
     <cv:WrittenSkill>A1</cv:WrittenSkill>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>arhitecture</cv:Role>
+      <cv:Role>1210102</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
@@ -114,8 +114,8 @@
   </cv:LanguageSkills>
   <cv:ProjectExperience>
     <cv:ID>1</cv:ID>
-    <cv:ExperienceType>projectleader</cv:ExperienceType>
-    <cv:IndustryType>A01</cv:IndustryType>
+    <cv:ExperienceType>1210148</cv:ExperienceType>
+    <cv:IndustryType>07290</cv:IndustryType>
     <cv:Workplace>AI</cv:Workplace>
     <cv:JobSector>private</cv:JobSector>
     <cv:CompanyParty>
@@ -128,7 +128,7 @@
     </cv:Period>
     <cv:ExperienceDescription>
       <cv:PositionPercent>100</cv:PositionPercent>
-      <cv:Role>leader</cv:Role>
+      <cv:Role>1210185</cv:Role>
       <cv:Activities>Financial analysis by using R.</cv:Activities>
     </cv:ExperienceDescription>
     <cv:ExperienceValue>
@@ -138,7 +138,7 @@
     </cv:ExperienceValue>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>projectmanager</cv:Role>
+      <cv:Role>1222102</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
@@ -152,7 +152,7 @@
   <cv:WorkExperience>
     <cv:ID>3</cv:ID>
     <cv:PositionLevel>leader</cv:PositionLevel>
-    <cv:IndustryType>A01</cv:IndustryType>
+    <cv:IndustryType>10130</cv:IndustryType>
     <cv:Workplace>CF</cv:Workplace>
     <cv:JobSector>private</cv:JobSector>
     <cv:CompanyParty>
@@ -165,12 +165,12 @@
     </cv:Period>
     <cv:WorkExperienceDescription>
       <cv:PositionPercent>100</cv:PositionPercent>
-      <cv:Role>financialexpert</cv:Role>
+      <cv:Role>1222142</cv:Role>
       <cv:Activities>Statistical analysis by using R and Python.</cv:Activities>
     </cv:WorkExperienceDescription>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>teamleader</cv:Role>
+      <cv:Role>1222169</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
@@ -221,7 +221,7 @@
     <cv:MinimumLengthPractice>5</cv:MinimumLengthPractice>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>leader</cv:Role>
+      <cv:Role>1223122</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
@@ -238,7 +238,7 @@
     <cv:Type>Leadership</cv:Type>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>teammember</cv:Role>
+      <cv:Role>1224127</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
@@ -269,7 +269,6 @@
       </cv:Documentation>
     </cv:SocialMedia>
   </cv:PersonalInformation>
- 
   <cv:Interest>
     <cv:ID>1</cv:ID>
     <cv:Description>Interest in playing football.</cv:Description>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="ehf-cv-1.0">
+	<assert>
+		<description>Verify minimum length of practice</description>
+		<scope>EHF-CV-R010</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>EHF-CV-R010</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<Skills>
+        <MinimumLengthPractice>10</MinimumLengthPractice>
+			</Skills>
+
+		</CV>
+	</test>
+
+  <test id="2">
+		<assert>
+			<success>EHF-CV-R010</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <Skills>
+        <MinimumLengthPractice>0</MinimumLengthPractice>
+      </Skills>
+
+		</CV>
+	</test>
+
+  <test id="3">
+		<assert>
+			<error>EHF-CV-R010</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+      <Skills>
+        <MinimumLengthPractice>-5</MinimumLengthPractice>
+      </Skills>
+
+		</CV>
+	</test>
+
+</testSet>
