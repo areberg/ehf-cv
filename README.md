@@ -1,4 +1,4 @@
-# EHF CV - Standarzing CV
+# EHF CV Request and CV - Standarzing CV
 
 Usage: Public procurement and job application
 
