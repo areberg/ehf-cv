@@ -2,7 +2,7 @@
 
 Usage: Public procurement and job application
 
-This folder includes: 
+Content: 
 * [code list](https://github.com/juppsi/ehf-cv/tree/master/src/codelist)
 * [examplefiles](https://github.com/juppsi/ehf-cv/tree/master/src/example) 
 * [rules](https://github.com/juppsi/ehf-cv/tree/master/src/rules/sch)  - schematron rules with unit tests
