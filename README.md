@@ -1,4 +1,6 @@
-# EHF CV Request and CV - Standarzing CV
+# EHF CV Request and CV 
+
+Project Description: A part of DFØ's standardization work related to electronic commerce. 
 
 Usage: Public procurement and job application
 
