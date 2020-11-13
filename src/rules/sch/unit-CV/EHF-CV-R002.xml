@@ -12,9 +12,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Course>
-          <Type>ML</Type>
-				</Course>
+			<Course>
+        <Type>ML</Type>
+			</Course>
 
 		</CV>
 	</test>
@@ -25,9 +25,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Course>
-          <Title>Cooking</Title>
-				</Course>
+			<Course>
+        <Title>Cooking</Title>
+			</Course>
 
 		</CV>
 	</test>
@@ -38,10 +38,10 @@
     </assert>
     <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-        <Course>
-          <Title>Cooking</Title>
-          <Type>ML</Type>
-        </Course>
+      <Course>
+        <Title>Cooking</Title>
+        <Type>ML</Type>
+      </Course>
 
     </CV>
   </test>

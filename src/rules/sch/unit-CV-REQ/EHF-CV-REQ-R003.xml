@@ -19,7 +19,22 @@
 		</CVRequest>
 	</test>
 
-  <test id="2">
+	<test id="2">
+		<assert>
+			<success>EHF-CV-REQ-R003</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<Certification>
+				<AlternativeCertification>
+				<Type>SAP</Type>
+				</AlternativeCertification>
+			</Certification>
+
+		</CVRequest>
+	</test>
+
+  <test id="3">
     <assert>
       <success>EHF-CV-REQ-R003</success>
     </assert>
@@ -32,7 +47,22 @@
     </CVRequest>
   </test>
 
-  <test id="1">
+	<test id="4">
+		<assert>
+			<success>EHF-CV-REQ-R003</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<Certification>
+				<AlternativeCertification>
+				<Title>Airport security</Title>
+				</AlternativeCertification>
+			</Certification>
+
+		</CVRequest>
+	</test>
+
+  <test id="5">
     <assert>
       <error>EHF-CV-REQ-R003</error>
     </assert>
@@ -43,8 +73,23 @@
         <Type>SAP</Type>
       </Certification>
 
-
     </CVRequest>
   </test>
+
+	<test id="6">
+		<assert>
+			<error>EHF-CV-REQ-R003</error>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<Certification>
+				<AlternativeCertification>
+				<Title>Airport security</Title>
+				<Type>SAP</Type>
+				</AlternativeCertification>
+			</Certification>
+
+		</CVRequest>
+	</test>
 
 </testSet>

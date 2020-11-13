@@ -12,9 +12,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Certification>
-          <Type>TOGAF</Type>
-				</Certification>
+			<Certification>
+        <Type>TOGAF</Type>
+			</Certification>
 
 		</CV>
 	</test>
@@ -25,9 +25,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Certification>
-          <Title>Boat coach</Title>
-				</Certification>
+			<Certification>
+        <Title>Boat coach</Title>
+			</Certification>
 
 		</CV>
 	</test>
@@ -38,10 +38,10 @@
     </assert>
     <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-        <Certification>
-          <Title>Boat coach</Title>
-          <Type>archimate</Type>
-        </Certification>
+      <Certification>
+        <Title>Boat coach</Title>
+        <Type>archimate</Type>
+      </Certification>
 
     </CV>
   </test>

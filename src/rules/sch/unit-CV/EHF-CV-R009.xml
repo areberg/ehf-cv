@@ -12,9 +12,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Skills>
-          <Type>SQL</Type>
-				</Skills>
+			<Skills>
+        <Type>SQL</Type>
+			</Skills>
 
 		</CV>
 	</test>
@@ -25,9 +25,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Skills>
-          <Title>organization psychology</Title>
-				</Skills>
+			<Skills>
+        <Title>organization psychology</Title>
+			</Skills>
 
 		</CV>
 	</test>
@@ -38,10 +38,10 @@
     </assert>
     <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-        <Skills>
-          <Title>organization psychology</Title>
-          <Type>SQL</Type>
-        </Skills>
+      <Skills>
+        <Title>organization psychology</Title>
+        <Type>SQL</Type>
+      </Skills>
 
     </CV>
   </test>

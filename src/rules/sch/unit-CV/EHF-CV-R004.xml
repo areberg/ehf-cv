@@ -12,31 +12,61 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<ProjectExperience>
-          <ExperienceDescription>
-            <PositionPercent>100</PositionPercent>
-          </ExperienceDescription>
-				</ProjectExperience>
+			<ProjectExperience>
+        <ExperienceDescription>
+          <PositionPercent>100</PositionPercent>
+        </ExperienceDescription>
+			</ProjectExperience>
 
 		</CV>
 	</test>
 
-  <test id="2">
+	<test id="2">
 		<assert>
 			<success>EHF-CV-R004</success>
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-      <ProjectExperience>
-        <ExperienceDescription>
-          <PositionPercent>0</PositionPercent>
-        </ExperienceDescription>
-      </ProjectExperience>
+			<WorkExperience>
+				<WorkExperienceDescription>
+					<PositionPercent>100</PositionPercent>
+				</WorkExperienceDescription>
+			</WorkExperience>
 
 		</CV>
 	</test>
 
   <test id="3">
+		<assert>
+			<success>EHF-CV-R004</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+	    <ProjectExperience>
+	      <ExperienceDescription>
+	        <PositionPercent>0</PositionPercent>
+	      </ExperienceDescription>
+	    </ProjectExperience>
+
+		</CV>
+	</test>
+
+	<test id="4">
+		<assert>
+			<success>EHF-CV-R004</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<WorkExperience>
+				<WorkExperienceDescription>
+					<PositionPercent>0</PositionPercent>
+				</WorkExperienceDescription>
+			</WorkExperience>
+
+		</CV>
+	</test>
+
+  <test id="5">
     <assert>
       <error>EHF-CV-R004</error>
     </assert>
@@ -50,5 +80,20 @@
 
     </CV>
   </test>
+
+	<test id="6">
+		<assert>
+			<error>EHF-CV-R004</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<WorkExperience>
+				<WorkExperienceDescription>
+					<PositionPercent>-10</PositionPercent>
+				</WorkExperienceDescription>
+			</WorkExperience>
+
+		</CV>
+	</test>
 
 </testSet>

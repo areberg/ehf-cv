@@ -12,9 +12,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<PersonalSkills>
-          <Type>creativity</Type>
-				</PersonalSkills>
+			<PersonalSkills>
+        <Type>creativity</Type>
+			</PersonalSkills>
 
 		</CV>
 	</test>
@@ -25,9 +25,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<PersonalSkills>
-          <Title>cooking</Title>
-				</PersonalSkills>
+			<PersonalSkills>
+        <Title>cooking</Title>
+			</PersonalSkills>
 
 		</CV>
 	</test>
@@ -38,10 +38,10 @@
     </assert>
     <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-        <PersonalSkills>
-          <Title>cooking</Title>
-          <Type>creativity</Type>
-        </PersonalSkills>
+      <PersonalSkills>
+        <Title>cooking</Title>
+        <Type>creativity</Type>
+      </PersonalSkills>
 
     </CV>
   </test>

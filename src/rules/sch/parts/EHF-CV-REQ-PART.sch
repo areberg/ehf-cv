@@ -9,7 +9,7 @@
 
   <rule context="cv-req:Course/cv-req:Period | cv-req:Course/cv-req:AlternativeCourse/cv-req:Period |
   cv-req:ProjectExperience/cv-req:Period | cv-req:projectExperience/cv-req:AlternativeProjectExperience/cv-req:Period |
-  cv-req:WorkExperience/cv-req:Period | cv-req:WorkExperience/cv-req:AlternativeWorkExperience/cv-req:Period ">
+  cv-req:WorkExperience/cv-req:Period | cv-req:WorkExperience/cv-req:AlternativeWorkExperience/cv-req:Period">
       <assert id="EHF-CV-REQ-R002"
               test="(cv-req:StartDate) &lt;= (cv-req:EndDate)"
               flag="fatal">A period end date shall be later or equal to the period start date.</assert>
@@ -22,14 +22,14 @@
   </rule>
 
   <rule context="cv-req:ProjectExperience/cv-req:RequiredTotalExperience |
-  cv-req:ProjectExperience/AlternativeProjectExperience/cv-req:RequiredTotalExperience">
+  cv-req:ProjectExperience/cv:req:AlternativeProjectExperience/cv-req:RequiredTotalExperience">
       <assert id="EHF-CV-REQ-R004"
               test="(cv-req:MinimumExperience) &lt; (cv-req:MaximumExperience)"
               flag="fatal">Maximum experience must be larger than minimum experience.</assert>
   </rule>
 
   <rule context="cv-req:ProjectExperience/cv-req:ExperienceDescription |
-  cv-req:ProjectExperience/AlternativeProjectExperience/cv-req:ExperienceDescription |
+  cv-req:ProjectExperience/cv-req:AlternativeProjectExperience/cv-req:ExperienceDescription |
   cv-req:WorkExperience/cv-req:WorkExperienceDescription|
   cv-req:WorkExperience/cv-req:AlternativeWorkExperience/cv-req:WorkExperienceDescription">
       <assert id="EHF-CV-REQ-R005"
@@ -38,7 +38,7 @@
   </rule>
 
   <rule context="cv-req:ProjectExperience/cv-req:ExperienceValue |
-  cv-req:ProjectExperience/AlternativeProjectExperience/cv-req:ExperienceValue">
+  cv-req:ProjectExperience/cv-req:AlternativeProjectExperience/cv-req:ExperienceValue">
 
       <assert id="EHF-CV-REQ-R006"
               test="number(cv-req:ProjectParticipation) &gt; 0"

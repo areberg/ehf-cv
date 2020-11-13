@@ -21,26 +21,124 @@
 		</CVRequest>
 	</test>
 
-  <test id="2">
-    <assert>
-      <success>EHF-CV-REQ-R005</success>
-    </assert>
-    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+	<test id="2">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <ProjectExperience>
-        <ExperienceDescription>
-          <PositionPercent>0</PositionPercent>
-        </ExperienceDescription>
-      </ProjectExperience>
+			<ProjectExperience>
+				<AlternativeProjectExperience>
+					<ExperienceDescription>
+						<PositionPercent>3</PositionPercent>
+					</ExperienceDescription>
+				</AlternativeProjectExperience>
+			</ProjectExperience>
 
-    </CVRequest>
-  </test>
+		</CVRequest>
+	</test>
 
-  <test id="3">
-    <assert>
-      <error>EHF-CV-REQ-R005</error>
-    </assert>
-    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+	<test id="3">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<WorkExperience>
+				<WorkExperienceDescription>
+					<PositionPercent>3</PositionPercent>
+				</WorkExperienceDescription>
+			</WorkExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="4">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<WorkExperience>
+				<AlternativeWorkExperience>
+					<WorkExperienceDescription>
+						<PositionPercent>3</PositionPercent>
+					</WorkExperienceDescription>
+				</AlternativeWorkExperience>
+			</WorkExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="5">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<ProjectExperience>
+				<ExperienceDescription>
+					<PositionPercent>0</PositionPercent>
+				</ExperienceDescription>
+			</ProjectExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="6">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<ProjectExperience>
+				<AlternativeProjectExperience>
+					<ExperienceDescription>
+						<PositionPercent>0</PositionPercent>
+					</ExperienceDescription>
+				</AlternativeProjectExperience>
+			</ProjectExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="7">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<WorkExperience>
+				<WorkExperienceDescription>
+					<PositionPercent>0</PositionPercent>
+				</WorkExperienceDescription>
+			</WorkExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="8">
+		<assert>
+			<success>EHF-CV-REQ-R005</success>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<WorkExperience>
+				<AlternativeWorkExperience>
+					<WorkExperienceDescription>
+						<PositionPercent>0</PositionPercent>
+					</WorkExperienceDescription>
+				</AlternativeWorkExperience>
+			</WorkExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="9">
+		<assert>
+			<error>EHF-CV-REQ-R005</error>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
       <ProjectExperience>
         <ExperienceDescription>
@@ -48,7 +146,56 @@
         </ExperienceDescription>
       </ProjectExperience>
 
-    </CVRequest>
-  </test>
+		</CVRequest>
+	</test>
+
+	<test id="10">
+		<assert>
+			<error>EHF-CV-REQ-R005</error>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<ProjectExperience>
+				<AlternativeProjectExperience>
+					<ExperienceDescription>
+						<PositionPercent>-10</PositionPercent>
+					</ExperienceDescription>
+				</AlternativeProjectExperience>
+			</ProjectExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="11">
+		<assert>
+			<error>EHF-CV-REQ-R005</error>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<WorkExperience>
+				<WorkExperienceDescription>
+					<PositionPercent>-10</PositionPercent>
+				</WorkExperienceDescription>
+			</WorkExperience>
+
+		</CVRequest>
+	</test>
+
+	<test id="12">
+		<assert>
+			<error>EHF-CV-REQ-R005</error>
+		</assert>
+		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+
+			<WorkExperience>
+				<AlternativeWorkExperience>
+					<WorkExperienceDescription>
+						<PositionPercent>-10</PositionPercent>
+					</WorkExperienceDescription>
+				</AlternativeWorkExperience>
+			</WorkExperience>
+
+		</CVRequest>
+	</test>
 
 </testSet>

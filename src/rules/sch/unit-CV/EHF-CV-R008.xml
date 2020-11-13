@@ -12,9 +12,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Clearance>
-          <Type>civil</Type>
-				</Clearance>
+			<Clearance>
+        <Type>civil</Type>
+			</Clearance>
 
 		</CV>
 	</test>
@@ -25,9 +25,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-				<Clearance>
-          <Title>special security</Title>
-				</Clearance>
+			<Clearance>
+        <Title>special security</Title>
+			</Clearance>
 
 		</CV>
 	</test>
@@ -38,10 +38,10 @@
     </assert>
     <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-        <Clearance>
-          <Title>special security</Title>
-          <Type>civil</Type>
-        </Clearance>
+      <Clearance>
+        <Title>special security</Title>
+        <Type>civil</Type>
+      </Clearance>
 
     </CV>
   </test>
