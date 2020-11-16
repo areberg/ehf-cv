@@ -1,0 +1,34 @@
+= Detailed Descriptions
+
+
+include::roles.adoc[]
+
+== Education
+
+== Course
+
+== Certification
+
+== Personal Information
+
+== Language
+
+== Relevant Assignment / Project Experience (Relevant oppdrag)
+
+== Work Experience
+
+== Clarification
+
+== Security Clearance
+
+== Other Reference
+
+== Competence
+
+== Personal Characteristics
+
+== Availability
+
+
+
+

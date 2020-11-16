@@ -1,0 +1,10 @@
+:lang: en
+
+:doctitle: EHF CV
+:revision: 1.0.0 RC1
+:shared-dir: shared
+
+//:rules-dir:
+//:snippet-dir:
+
+

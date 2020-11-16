@@ -1,0 +1,30 @@
+include::settings.adoc[]
+
+= {doctitle}
+v{revision}
+:description: This specification describes the EHF CV. The document is part of "Norwegian Digitalisation Agency" (Digdir) standardization work related to electronic commerce.
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 3
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+
+{description}
+
+:leveloffset: +1
+
+include::introduction/index.adoc[]
+
+include::background/index.adoc[]
+
+include::process/index.adoc[]
+
+include::description/index.adoc[]
+
+include::appendix/index.adoc[]
+
+:leveloffset: -1
