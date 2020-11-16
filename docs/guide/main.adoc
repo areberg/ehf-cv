@@ -13,6 +13,10 @@ v{revision}
 :sectanchors:
 :sectnums:
 
+//Variables
+:snippet-dir: ../../../src/cv-1.0/rules/snippets
+
+
 {description}
 
 :leveloffset: +1

@@ -2,7 +2,7 @@ include::settings.adoc[]
 
 = {doctitle}
 v{revision}
-:description: This specification describes the EHF CV. The document is part of "Norwegian Digitalisation Agency" (Digdir) standardization work related to electronic commerce.
+:description: This specification describes the EHF CV. The document is part of Norwegian Agency for Public and Financial Management (DFØ) standardization work related to electronic commerce.
 :doctype: book
 :icons: font
 :stem:
@@ -12,6 +12,10 @@ v{revision}
 :source-language: xml
 :sectanchors:
 :sectnums:
+
+//Variables
+:snippet-dir: ../../../src/cv-1.0/rules/snippets
+
 
 {description}
 

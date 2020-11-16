@@ -13,15 +13,15 @@
 
 	<!-- Functions -->
 
-	<xi:include href="function/gln.xml"/>
-	<xi:include href="function/slack.xml"/>
-	<xi:include href="function/mod11.xml"/>
+	<xi:include href="../../../_common/function/gln.xml"/>
+	<xi:include href="../../../_common/function/slack.xml"/>
+	<xi:include href="../../../_common/function/mod11.xml"/>
 
 	<!-- Rules -->
 
-	<include href="common/empty-elements.sch"/>
+	<include href="../../../_common/empty-elements.sch"/>
 	<include href="parts/EHF-CV-REQ-PART.sch"/>
 
-		<!-- legg til autogenererte regler -->
+	<!-- legg til autogenererte regler -->
 
 </schema>

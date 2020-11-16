@@ -1,10 +1,14 @@
 :lang: en
 
 :doctitle: EHF CV
+
 :revision: 1.0.0 RC1
-:shared-dir: shared
+
+:date-review: dd. mm.yyyy
+:date-release: dd.mm.yyyy
+:date-mandatory: dd.mm.yyyy
 
 //:rules-dir:
 //:snippet-dir:
 
-
+//:snippet-dir-syntax: 
