@@ -14,14 +14,18 @@ v{revision}
 :sectnums:
 
 //Variables
-:snippet-dir: ../../../src/cv-1.0/rules/snippets
+:snippet-dir-cv: ../../cv-1.0/rules/snippets
+:snippet-dir-cv-request: ../../cv-request-1.0/rules/snippets
 
 
 {description}
 
+//Content
 :leveloffset: +1
 
 include::introduction/index.adoc[]
+
+include::definition/index.adoc[]
 
 include::background/index.adoc[]
 

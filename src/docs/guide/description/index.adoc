@@ -1,34 +1,33 @@
 = Detailed Descriptions
 
+:leveloffset: +1
 
 include::roles.adoc[]
 
-== Education
+include::education.adoc[]
 
-== Course
+include::course.adoc[]
 
-== Certification
+include::certification.adoc[]
 
-== Personal Information
+include::language-skills.adoc[]
 
-== Language
+include::project-experience.adoc[]
 
-== Relevant Assignment / Project Experience (Relevant oppdrag)
+include::work-experience.adoc[]
 
-== Work Experience
+include::skills.adoc[]
 
-== Clarification
+include::clearance.adoc[]
 
-== Security Clearance
+include::personal-skills.adoc[]
 
-== Other Reference
+include::personal-information.adoc[]
 
-== Competence
+include::interest.adoc[]
 
-== Personal Characteristics
+include::additional-information.adoc[]
 
-== Availability
+include::references.adoc[]
 
-
-
-
+:leveloffset: -1

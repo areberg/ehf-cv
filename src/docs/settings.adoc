@@ -7,8 +7,3 @@
 :date-review: dd. mm.yyyy
 :date-release: dd.mm.yyyy
 :date-mandatory: dd.mm.yyyy
-
-//:rules-dir:
-//:snippet-dir:
-
-//:snippet-dir-syntax: 

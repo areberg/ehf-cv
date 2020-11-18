@@ -1,6 +1,6 @@
 == Parties and Roles
 
-The important parties and roles in EHF CV is described below.
+The important parties and roles in EHF CV and CV request is described below.
 
 ****
 Contracting authority (CA)::
@@ -11,7 +11,7 @@ Party participating with a tender in a procurement process to sell goods, servic
 
 ****
 
-The following diagram illustrates the parties and roles involved in the Pre-Award Catalogue and Catalogue Request.
+The following diagram illustrates the parties and roles involved in the CV and CV-request.
 
 {empty} +
 {empty} +
