@@ -1,1 +1,11 @@
 = Course
+
+The course information group is used to state relevant courses that the candidate has taken,
+both in the procurement process and the job application process. This information is not mandatory,
+but in some cases, it is necessary to fulfill the course requirement to do the job.
+
+== Information specific to CV request
+
+
+
+== Information specific to CV
