@@ -19,8 +19,8 @@
 - [x] syntax binding
 - [x] code list
 - [x] schematron rules
-- [x] unit test
-- [ ] examplefiles
+- [x] unit tests
+- [ ] example files
 - [ ] snippets
 - [ ] specification
 - [ ] change log
