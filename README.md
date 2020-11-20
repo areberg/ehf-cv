@@ -1,14 +1,11 @@
 # EHF CV Request and CV 
 
-```diff
-- **Project description**:
-```
-* A part of DFØ's standardization work related to electronic commerce.
+```diff **Project description**:``` A part of DFØ's standardization work related to electronic commerce.
 
 ```diff
-- **Usage:**
+ **Usage:**
 ``` 
-* Public procurement (purchases of services) and job application
+Public procurement (purchases of services) and job application
 
 **Content**: 
 * [code list](https://github.com/juppsi/ehf-cv/tree/master/src/codelist) - code lists
