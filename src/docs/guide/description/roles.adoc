@@ -1,4 +1,4 @@
-== Parties and Roles
+= Parties and Roles
 
 The important parties and roles in EHF CV and CV request is described below.
 

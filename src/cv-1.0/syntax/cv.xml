@@ -176,8 +176,8 @@
             <Element>
                 <Term>cv:ID</Term>
                 <Name>Education identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
-                    For example, from other documents.</Description>
+                <Description>Each line must have an identifier that is unique within the document to make it
+                  possible to positively reference the line. For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
 

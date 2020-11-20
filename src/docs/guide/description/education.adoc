@@ -1,10 +1,90 @@
-== Education
+= Education
 
-Candidate, economic operator and contracting authority can specify Education
+Education may be specified in CV request and CV, in different ways.
+
+== Information specific to CV request
+
+A contracting authority can state both an educational requirement and an alternative requirement for the candidate.
+The alternative requirement is optional, but in some cases, there is relevant to accept other educations.
+Note that, the alternative requirements include the same information elements as the original requirement.
+
+All educations need to be identified uniquely, to ensure that the education can be referenced in the CV.
+
+To differentiate the different types of educational requirements use the element `cv-req:Requirement`. The economic operators
+will only provide qualified candidates, and it makes it easier to evaluate the candidates. 
+
+.Example of the requested education in the CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=Education]
+----
+<1> Education identifier
+<2> Education requirement - indicate whether a candidate needs to fulfill the educational requirement
+<3> Education degree
+<4> Classification of education
+
+.Example of the requested education in the CV request with alternative requirements
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=EducationAlternative]
+----
+<1> Education identifier
+<2> Education requirement - indicate whether a candidate needs to fulfill the educational requirement
+<3> Education degree
+<4> Classification of education
+<5> Registration type - specify which registration type candidate needs
+<6> Alternative education requirements
+
+In some cases, contracting authorities accept relevant experiences as compensation for an education degree, where they
+can state the type of experience and minimum year of experience. The following example illustrates that. In addition,
+there is also possible to have alternative education.
+
+.Example of the requested education in the CV request with relevant experience
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=EducationRelevantExperience]
+----
+<1> Education identifier
+<2> Education requirement - indicate whether a candidate needs to fulfill the educational requirement
+<3> Education degree
+<4> Classification of education
+<5> Relevant experience type
+<6> Minimum year of relevant experience
 
 
-=== Information specific to CV request
+== Information specific to CV
 
+Based on the educational requirement, the economic operator needs to document the candidate's education.
+For CV used in the job application, fill in the relevant parts of education information.
 
+The element `EducationReference` needs to be used in the procurement process, not in the job application process.
+This is a reference to the corresponding educational requirement in the CV request.
 
-=== Information specific to CV
+.Example of a description of education in CV as a response to requested education in CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=Education-req]
+----
+<1> Education identifier
+<2> Education degree
+<3> Classification of education
+<4> Education period
+<5> Registration type
+<6> Registration type, connected to the registration type
+<7> Embedded document as binary object with `mimeCode`. Use Base64.
+<8> URI to education document, typically `vitnemalsportalen` in Norway
+<9> Contact information related to candidate's education
+<10> Education reference
+
+.Example of a description of education in a CV in the job application
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=Education]
+----
+<1> Education identifier
+<2> Education degree
+<3> Classification of education
+<4> Education period
+<5> Embedded document as binary object with `mimeCode`. Use Base64.
+<6> URI to education document, typically `vitnemalsportalen` in Norway
+<7> Contact information related to candidate's education

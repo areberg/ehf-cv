@@ -175,8 +175,8 @@
             <Element>
                 <Term>cv-req:ID</Term>
                 <Name>Education identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to make it possible to positively reference the line.
-                    For example, from other documents.</Description>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to
+                  positively reference the line. For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
 
@@ -193,7 +193,7 @@
                 <Name>Education degree</Name>
                 <Description>A specific requirement of education degree. Use codelist educationDegree.</Description>
                 <Reference type="CODE_LIST">educationDegree</Reference>
-                <Value type="EXAMPLE">Master</Value>
+                <Value type="EXAMPLE">master</Value>
             </Element>
 
             <Element>

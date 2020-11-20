@@ -7,7 +7,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Identifier>NUS</Identifier>
     <Version>1.0</Version>
     <Agency>SSB</Agency>
-    
+
     <Code>
         <Id>099901</Id>
         <Name>No education</Name>
@@ -1931,7 +1931,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>361999</Id>
       <Name>Nursing and caring, other, unspecified, upper secondary, basic education</Name>
-      <Description>Includes: Housewife&apos;s substitute and home help, one-year and half-year courses. Care work, short course for non-native speaking pupils and half-year introductory course.</Description>
+      <Description>Includes: Housewife's substitute and home help, one-year and half-year courses. Care work, short course for non-native speaking pupils and half-year introductory course.</Description>
     </Code>
     <Code>
       <Id>362101</Id>
@@ -2137,7 +2137,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>369908</Id>
       <Name>Medical office skills, unspecified, upper secondary, basic education</Name>
-      <Description>Includes: Medical secretary training, Folkeuniversitetet Adult Education Association&apos;s half-year course.</Description>
+      <Description>Includes: Medical secretary training, Folkeuniversitetet Adult Education Association's half-year course.</Description>
     </Code>
     <Code>
       <Id>369909</Id>
@@ -2175,7 +2175,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>369999</Id>
       <Name>Health, welfare and sport, other, unspecified, upper secondary, basic education</Name>
-      <Description>Includes: Health care and environmental studies: specially adapted course, short course and preparatory course for non-native speakers. Social and health care subjects, labour market course. Institutional housekeeper&apos;s assistant (accommodation management</Description>
+      <Description>Includes: Health care and environmental studies: specially adapted course, short course and preparatory course for non-native speakers. Social and health care subjects, labour market course. Institutional housekeeper's assistant (accommodation management</Description>
     </Code>
     <Code>
       <Id>371101</Id>
@@ -2416,7 +2416,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>381399</Id>
       <Name>Maritime navigation, unspecified, upper secondary, basic education</Name>
-      <Description>Includes: Deck crew or engineering branch, adult education course. Shipping worker. Ferry captain course. Course for skippers of small boats. Training for ship&apos;s mates. Maritime trades: one-year, half-year and specially adapted course.</Description>
+      <Description>Includes: Deck crew or engineering branch, adult education course. Shipping worker. Ferry captain course. Course for skippers of small boats. Training for ship's mates. Maritime trades: one-year, half-year and specially adapted course.</Description>
     </Code>
     <Code>
       <Id>381401</Id>
@@ -2944,7 +2944,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>416207</Id>
       <Name>Gilding, upper secondary level 2 (Vg2) and upper secondary level 3 (Vg3), special pathway</Name>
-      <Description>Includes: Gilder, journeyman&apos;s examination. Gilding, Advanced Course I and Advanced Course II, special pathway</Description>
+      <Description>Includes: Gilder, journeyman's examination. Gilding, Advanced Course I and Advanced Course II, special pathway</Description>
     </Code>
     <Code>
       <Id>416299</Id>
@@ -3051,8 +3051,8 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>416603</Id>
-      <Name>Men&apos;s tailoring, upper secondary level 3 (Vg3)</Name>
-      <Description>Includes: Tailor, trade examination. Men&apos;s tailoring, Advanced Course II.</Description>
+      <Name>Men's tailoring, upper secondary level 3 (Vg3)</Name>
+      <Description>Includes: Tailor, trade examination. Men's tailoring, Advanced Course II.</Description>
     </Code>
     <Code>
       <Id>416604</Id>
@@ -3750,7 +3750,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>455199</Id>
       <Name>Electrical and electronic subjects, unspecified, upper secondary, final year</Name>
-      <Description>Includes: Training for electricians, power current. Training for power station workers (electrical machinists). Maritime college, adaptation course for ship&apos;s electricians. Low current work.</Description>
+      <Description>Includes: Training for electricians, power current. Training for power station workers (electrical machinists). Maritime college, adaptation course for ship's electricians. Low current work.</Description>
     </Code>
     <Code>
       <Id>455201</Id>
@@ -3898,7 +3898,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>455231</Id>
       <Name>Ship engine mechanic, upper secondary level 3 (Vg3)</Name>
-      <Description>Includes: Ship&apos;s mechanic course with final trade examination, two- month course. Ship&apos;s mechanic, trade examination. Motorman skills, Advanced Course II.</Description>
+      <Description>Includes: Ship's mechanic course with final trade examination, two- month course. Ship's mechanic, trade examination. Motorman skills, Advanced Course II.</Description>
     </Code>
     <Code>
       <Id>455232</Id>
@@ -4015,7 +4015,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>455304</Id>
       <Name>Optical and geodetic instrument making, upper secondary level 3 (Vg3)</Name>
-      <Description>Includes: Optician, one-year journeyman&apos;s examination course, trade examination and specialist course. Optical and gemetrical instrument making, Advanced Course II.</Description>
+      <Description>Includes: Optician, one-year journeyman's examination course, trade examination and specialist course. Optical and gemetrical instrument making, Advanced Course II.</Description>
     </Code>
     <Code>
       <Id>455305</Id>
@@ -4416,7 +4416,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>458302</Id>
       <Name>Lead glass handicrafts, upper secondary level 2 (Vg2) and upper secondary level 3 (Vg3), special pathway</Name>
-      <Description>Includes: Lead glaziery, journeyman&apos;s examination. Lead glaziery, Advanced Course I and II, special pathway.</Description>
+      <Description>Includes: Lead glaziery, journeyman's examination. Lead glaziery, Advanced Course I and II, special pathway.</Description>
     </Code>
     <Code>
       <Id>458303</Id>
@@ -4618,7 +4618,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>458901</Id>
       <Name>Brazing, upper secondary level 2 (Vg2) and upper secondary level 3 (Vg3), special pathway</Name>
-      <Description>Includes: Brazier, journeyman&apos;s examination. Brazing, Advanced Course II</Description>
+      <Description>Includes: Brazier, journeyman's examination. Brazing, Advanced Course II</Description>
     </Code>
     <Code>
       <Id>458999</Id>
@@ -4662,8 +4662,8 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>461901</Id>
-      <Name>Housewife&apos;s substitute, upper secondary, final year</Name>
-      <Description>Includes: Training for housewife&apos;s substitutes and home helps.</Description>
+      <Name>Housewife's substitute, upper secondary, final year</Name>
+      <Description>Includes: Training for housewife's substitutes and home helps.</Description>
     </Code>
     <Code>
       <Id>461902</Id>
@@ -5057,11 +5057,11 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>481303</Id>
-      <Name>Training for ship&apos;s masters</Name>
+      <Name>Training for ship's masters</Name>
     </Code>
     <Code>
       <Id>481304</Id>
-      <Name>Training for ship&apos;s mates</Name>
+      <Name>Training for ship's mates</Name>
       <Description>Includes: Course for second mates. Maritime college adaptation course for third mates.</Description>
     </Code>
     <Code>
@@ -5138,8 +5138,8 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>483101</Id>
-      <Name>Ladies&apos; hairdressing, Advanced Course II</Name>
-      <Description>Includes: Ladies&apos; hairdresser, trade examination and specialist course.</Description>
+      <Name>Ladies' hairdressing, Advanced Course II</Name>
+      <Description>Includes: Ladies' hairdresser, trade examination and specialist course.</Description>
     </Code>
     <Code>
       <Id>483102</Id>
@@ -5147,8 +5147,8 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>483103</Id>
-      <Name>Men&apos;s hairdressing, Advanced Course II</Name>
-      <Description>Includes: Men&apos;s hairdresser, trade examination and specialist course.</Description>
+      <Name>Men's hairdressing, Advanced Course II</Name>
+      <Description>Includes: Men's hairdresser, trade examination and specialist course.</Description>
     </Code>
     <Code>
       <Id>483104</Id>
@@ -5158,7 +5158,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>483105</Id>
       <Name>Wig-making and stage make-up, upper secondary level 2 (Vg2) and upper secondary level 3 (Vg3), special pathway</Name>
-      <Description>Includes: Wigmaker, trade examination. Wigmaking and stage make-up, journeyman&apos;s examination. Wigmaking and stage make-up, Advanced Course I and Advanced Course II, special pathway</Description>
+      <Description>Includes: Wigmaker, trade examination. Wigmaking and stage make-up, journeyman's examination. Wigmaking and stage make-up, Advanced Course I and Advanced Course II, special pathway</Description>
     </Code>
     <Code>
       <Id>483106</Id>
@@ -5189,7 +5189,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>483301</Id>
       <Name>Dry cleaning, upper secondary level 2 (Vg2) and upper secondary level 3 (Vg3), special pathway</Name>
-      <Description>Includes: Dry-cleaning, Advanced Course I. Dry-cleaning and dyeing of clothing, trade examination. Dry cleaning and laundry skills, journeyman&apos;s examination. Dry cleaning and laundry skills, Advanced Course I and Advanced Course II, special pathway.</Description>
+      <Description>Includes: Dry-cleaning, Advanced Course I. Dry-cleaning and dyeing of clothing, trade examination. Dry cleaning and laundry skills, journeyman's examination. Dry cleaning and laundry skills, Advanced Course I and Advanced Course II, special pathway.</Description>
     </Code>
     <Code>
       <Id>483302</Id>
@@ -5286,7 +5286,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>512399</Id>
       <Name>Authorship, unspecified, post-secondary non-tertiary education</Name>
-      <Description>Includes: Creative writing, one-year course at the Academy of Creative Writing. Writer&apos;s programme, one-year.</Description>
+      <Description>Includes: Creative writing, one-year course at the Academy of Creative Writing. Writer's programme, one-year.</Description>
     </Code>
     <Code>
       <Id>512999</Id>
@@ -6682,7 +6682,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>549901</Id>
-      <Name>Directorate of Labour&apos;s service school, trainee course</Name>
+      <Name>Directorate of Labour's service school, trainee course</Name>
     </Code>
     <Code>
       <Id>549902</Id>
@@ -6717,7 +6717,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>549909</Id>
-      <Name>Norwegian Telecom&apos;s supplementary education for employees</Name>
+      <Name>Norwegian Telecom's supplementary education for employees</Name>
     </Code>
     <Code>
       <Id>549910</Id>
@@ -8585,12 +8585,12 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>581301</Id>
-      <Name>Ship&apos;s master course</Name>
-      <Description>Includes: Ship&apos;s master course, navigation programme and commodity trading and maritime law programme. Master&apos;s certificate examination, one-year extended course. Skipper course for coastal and fishing fleet.</Description>
+      <Name>Ship's master course</Name>
+      <Description>Includes: Ship's master course, navigation programme and commodity trading and maritime law programme. Master's certificate examination, one-year extended course. Skipper course for coastal and fishing fleet.</Description>
     </Code>
     <Code>
       <Id>581302</Id>
-      <Name>Training for ship&apos;s masters</Name>
+      <Name>Training for ship's masters</Name>
     </Code>
     <Code>
       <Id>581303</Id>
@@ -8622,7 +8622,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>581310</Id>
-      <Name>Post-secondary vocational education, ship&apos;s officer, nautical programme ? chief officer, 1�-year</Name>
+      <Name>Post-secondary vocational education, ship's officer, nautical programme ? chief officer, 1�-year</Name>
     </Code>
     <Code>
       <Id>581311</Id>
@@ -8630,7 +8630,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>581312</Id>
-      <Name>Post-secondary vocational education, ship&apos;s officer, nautical programme ? coastal skipper, half-year</Name>
+      <Name>Post-secondary vocational education, ship's officer, nautical programme ? coastal skipper, half-year</Name>
     </Code>
     <Code>
       <Id>581399</Id>
@@ -9261,7 +9261,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>612101</Id>
       <Name>Literature, undergraduate level</Name>
-      <Description>Includes: Literature, foundation course, intermediate course, major subject, half-semester unit and semester unit/sub-discipline units. General literature studies, foundation course and intermediate course. Children&apos;s and adolescents&apos; literature, major su</Description>
+      <Description>Includes: Literature, foundation course, intermediate course, major subject, half-semester unit and semester unit/sub-discipline units. General literature studies, foundation course and intermediate course. Children's and adolescents' literature, major su</Description>
     </Code>
     <Code>
       <Id>612102</Id>
@@ -12108,7 +12108,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     <Code>
       <Id>641999</Id>
       <Name>Business and administration, other, unspecified, undergraduate level</Name>
-      <Description>Includes: Business and administration, one- and two-year course, two-year part-time course emphasizing smaller companies supplementary year, for forestry-based industries one-year, for navigators/ship&apos;s officers half-year, with data processing three years</Description>
+      <Description>Includes: Business and administration, one- and two-year course, two-year part-time course emphasizing smaller companies supplementary year, for forestry-based industries one-year, for navigators/ship's officers half-year, with data processing three years</Description>
     </Code>
     <Code>
       <Id>642101</Id>
@@ -14688,7 +14688,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>681307</Id>
-      <Name>Training for ship&apos;s masters</Name>
+      <Name>Training for ship's masters</Name>
     </Code>
     <Code>
       <Id>681308</Id>
@@ -15412,7 +15412,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>712105</Id>
-      <Name>Master degree, children&apos;s and youth literary writing and dissemination, two-year</Name>
+      <Name>Master degree, children's and youth literary writing and dissemination, two-year</Name>
     </Code>
     <Code>
       <Id>712199</Id>
@@ -17729,7 +17729,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>741105</Id>
-      <Name>Business and economics programme, Community of European Management Schools (CEMS) Master&apos;s Degree</Name>
+      <Name>Business and economics programme, Community of European Management Schools (CEMS) Master's Degree</Name>
     </Code>
     <Code>
       <Id>741106</Id>
@@ -18798,7 +18798,7 @@ https://www.ssb.no/en/klass/klassifikasjoner/36/koder
     </Code>
     <Code>
       <Id>754114</Id>
-      <Name>Master of Science, IT management, 1�-year</Name>
+      <Name>Master of Science, IT management, 1-year</Name>
     </Code>
     <Code>
       <Id>754115</Id>

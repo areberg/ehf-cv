@@ -26,28 +26,46 @@
       <cv-req:ElectronicMail>john.johnsen@x.com</cv-req:ElectronicMail>
     </cv-req:Contact>
   </cv-req:ProviderParty>
+
+  <!-- tag::Education[] -->
   <cv-req:Education>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:EducationDegree>master</cv-req:EducationDegree>
-    <cv-req:SubjectArea>269999</cv-req:SubjectArea>
-    <cv-req:RegistrationType>HPR</cv-req:RegistrationType>
-    <cv-req:RelevantExperience>
-      <cv-req:Type>0113126</cv-req:Type>
-      <cv-req:MinYear>2</cv-req:MinYear>
-    </cv-req:RelevantExperience>
-    <cv-req:AlternativeEducation>
+    <cv-req:ID>2</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:EducationDegree>master</cv-req:EducationDegree><!--3-->
+    <cv-req:SubjectArea>711729</cv-req:SubjectArea><!--4-->
+  </cv-req:Education>
+  <!-- end::Education[] -->
+
+  <!-- tag::EducationAlternative[] -->
+  <cv-req:Education>
+    <cv-req:ID>2</cv-req:ID><!--1-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:EducationDegree>master</cv-req:EducationDegree><!--3-->
+    <cv-req:SubjectArea>661104</cv-req:SubjectArea><!--4-->
+    <cv-req:RegistrationType>HPR</cv-req:RegistrationType><!--5-->
+    <cv-req:AlternativeEducation><!--6-->
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>should</cv-req:Requirement>
       <cv-req:EducationDegree>master</cv-req:EducationDegree>
-      <cv-req:SubjectArea>311499</cv-req:SubjectArea>
-      <cv-req:RegistrationType>HMS</cv-req:RegistrationType>
-      <cv-req:RelevantExperience>
-        <cv-req:Type>1110101</cv-req:Type>
-        <cv-req:MinYear>5</cv-req:MinYear>
-      </cv-req:RelevantExperience>
+      <cv-req:SubjectArea>361202</cv-req:SubjectArea>
+      <cv-req:RegistrationType>HPR</cv-req:RegistrationType>
     </cv-req:AlternativeEducation>
   </cv-req:Education>
+  <!-- end::EducationAlternative[] -->
+
+  <!-- tag::EducationRelevantExperience[] -->
+  <cv-req:Education>
+    <cv-req:ID>3</cv-req:ID><!--1-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:EducationDegree>master</cv-req:EducationDegree><!--3-->
+    <cv-req:SubjectArea>711729</cv-req:SubjectArea><!--4-->
+    <cv-req:RelevantExperience>
+      <cv-req:Type>3120127</cv-req:Type><!--5-->
+      <cv-req:MinYear>5</cv-req:MinYear><!--6-->
+    </cv-req:RelevantExperience>
+  </cv-req:Education>
+  <!-- end::EducationRelevantExperience[] -->
+
   <cv-req:Course>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
