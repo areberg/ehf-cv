@@ -111,7 +111,7 @@
                     <Term>cv-req:ElectronicMail</Term>
                     <Name>Contact Email Address</Name>
                     <Description>Contact person's e-mail address.</Description>
-                    <Value type="EXAMPLE">ola.nordmann@dgidir.no</Value>
+                    <Value type="EXAMPLE">ola.nordmann@digdir.no</Value>
                 </Element>
             </Element>
         </Element>

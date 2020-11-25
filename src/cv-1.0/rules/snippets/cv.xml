@@ -76,31 +76,56 @@
   </cv:Education>
   <!-- end::Education[] -->
 
+  <!-- tag::Course-req[] -->
   <cv:Course>
-    <cv:ID>1</cv:ID>
-    <cv:Title>HMS</cv:Title>
-    <cv:Type>Dykkerkurs</cv:Type>
-    <cv:Version>1.0</cv:Version>
-    <cv:Period>
-      <cv:StartDate>2020-01-10</cv:StartDate>
-      <cv:EndDate>2020-05-05</cv:EndDate>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Title>HMS security airport</cv:Title><!--2-->
+    <cv:Version>1.0</cv:Version><!--3-->
+    <cv:Period><!--4-->
+      <cv:StartDate>2020-04-01</cv:StartDate>
+      <cv:EndDate>2020-05-01</cv:EndDate>
     </cv:Period>
-    <cv:SupplierParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
-      <cv:Name>Z company</cv:Name>
+    <cv:SupplierParty><!--5-->
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID><!--6-->
+      <cv:Name>Z company</cv:Name><!--7-->
       <cv:Contact>
-        <cv:ElectronicMail>alf.alfsen@z.no</cv:ElectronicMail>
+        <cv:ElectronicMail>alf.alfsen@z.no</cv:ElectronicMail><!--8-->
       </cv:Contact>
-      <cv:Country>NO</cv:Country>
+      <cv:Country>NO</cv:Country><!--9-->
     </cv:SupplierParty>
     <cv:Documentation>
-      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">a3VycyBkb2t1bWVudGFzam9uCg==</cv:EmbeddedDocumentBinaryObject>
-      <cv:URI>https://www.kurssportalen.no/</cv:URI>
+      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">a3VycyBkb2t1bWVudGFzam9uCg==</cv:EmbeddedDocumentBinaryObject><!--10-->
+      <cv:URI>https://www.kurssportalen.no/</cv:URI><!--11-->
     </cv:Documentation>
-    <cv:CourseReference>
+    <cv:CourseReference><!--12-->
       <cv:ID>51</cv:ID>
     </cv:CourseReference>
   </cv:Course>
+  <!-- end::Course-req[] -->
+
+  <!-- tag::Course[] -->
+  <cv:Course>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Type>circularEconomy</cv:Type><!--2-->
+    <cv:Period><!--3-->
+      <cv:StartDate>2020-04-01</cv:StartDate>
+      <cv:EndDate>2020-05-01</cv:EndDate>
+    </cv:Period>
+    <cv:SupplierParty><!--4-->
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID><!--5-->
+      <cv:Name>X company</cv:Name><!--6-->
+      <cv:Contact>
+        <cv:ElectronicMail>ola.nordmann@xcompany.no</cv:ElectronicMail><!--7-->
+      </cv:Contact>
+      <cv:Country>ES</cv:Country><!--8-->
+    </cv:SupplierParty>
+    <cv:Documentation>
+      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">Y291cnNlIGRvY3VtZW50YXRpb24gaW4gY2lyY3VsYXIgZWNvbm9teQ==</cv:EmbeddedDocumentBinaryObject><!--9-->
+      <cv:URI>https://www.kurssportalen.no/</cv:URI><!--10-->
+    </cv:Documentation>
+  </cv:Course>
+  <!-- end::Course[] -->
+
   <cv:Certification>
     <cv:ID>1</cv:ID>
     <cv:Title>Archimate</cv:Title>

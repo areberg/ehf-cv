@@ -69,7 +69,7 @@ include::../{snippet-dir-cv}/cv.xml[tags=Education-req]
 <3> Classification of education
 <4> Education period
 <5> Registration type
-<6> Registration type, connected to the registration type
+<6> Registration number, connected to the registration type
 <7> Embedded document as binary object with `mimeCode`. Use Base64.
 <8> URI to education document, typically `vitnemalsportalen` in Norway
 <9> Contact information related to candidate's education

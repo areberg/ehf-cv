@@ -64,7 +64,7 @@
 
   <test id="5">
     <assert>
-      <success>EHF-CV-REQ-R001</success>
+      <error>EHF-CV-REQ-R001</error>
     </assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
@@ -78,7 +78,7 @@
 
 	<test id="6">
 		<assert>
-			<success>EHF-CV-REQ-R001</success>
+			<error>EHF-CV-REQ-R001</error>
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 

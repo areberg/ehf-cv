@@ -66,28 +66,41 @@
   </cv-req:Education>
   <!-- end::EducationRelevantExperience[] -->
 
+  <!-- tag::CourseAlternative[] -->
   <cv-req:Course>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:Title>HMS</cv-req:Title>
-    <cv-req:Type>Dykkerkurs</cv-req:Type>
-    <cv-req:Version>1.0</cv-req:Version>
-    <cv-req:Period>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:Title>HMS security airport</cv-req:Title><!--3-->
+    <cv-req:Version>2.0</cv-req:Version><!--4-->
+    <cv-req:Period><!--5-->
       <cv-req:StartDate>2020-01-10</cv-req:StartDate>
       <cv-req:EndDate>2020-05-05</cv-req:EndDate>
     </cv-req:Period>
-    <cv-req:AlternativeCourse>
+    <cv-req:AlternativeCourse><!--6-->
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>should</cv-req:Requirement>
-      <cv-req:Title>HMS</cv-req:Title>
-      <cv-req:Type>Dykkerkurs</cv-req:Type>
+      <cv-req:Title>HMS security airport</cv-req:Title>
       <cv-req:Version>1.0</cv-req:Version>
       <cv-req:Period>
-        <cv-req:StartDate>2020-01-10</cv-req:StartDate>
+        <cv-req:StartDate>2019-01-10</cv-req:StartDate>
         <cv-req:EndDate>2020-05-05</cv-req:EndDate>
       </cv-req:Period>
     </cv-req:AlternativeCourse>
   </cv-req:Course>
+  <!-- end::CourseAlternative[] -->
+
+  <!-- tag::Course[] -->
+  <cv-req:Course>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:Type>macroeconomic</cv-req:Type><!--3-->
+    <cv-req:Period><!--4-->
+      <cv-req:StartDate>2020-01-10</cv-req:StartDate>
+      <cv-req:EndDate>2020-05-05</cv-req:EndDate>
+    </cv-req:Period>
+  </cv-req:Course>
+  <!-- end::Course[] -->
+
   <cv-req:Certification>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>

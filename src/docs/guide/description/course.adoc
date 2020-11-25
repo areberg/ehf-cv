@@ -6,6 +6,83 @@ but in some cases, it is necessary to fulfill the course requirement to do the j
 
 == Information specific to CV request
 
+A contracting authority can state both a course requirement (main requirement) and an alternative requirement in the
+cv request. The alternative requirement is optional, but in some cases, one can accept other similar courses.
+For example, the contracting authority can accept other versions of the specific course.
+Note that, the alternative requirements include the same information elements as the original requirement.
 
+All courses need to be identified uniquely, to ensure that the course can be referenced in the CV.
+To differentiate the different types of course requirements use the element `cv-req:Requirement`. The economic operators
+will only provide qualified candidates, and it makes it easier to evaluate the candidates.
+
+A course can only include either element `cv-req:type` or `cv-req:title`. Use type if the specific course is defined
+in the course code list, otherwise use the title. Note that, every course needs to consist of either a title or a type
+that identifies the specific course.
+
+.Example of the requested course in the CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=Course]
+----
+<1> Course identifier
+<2> Course requirement - indicate whether a candidate needs to fulfill the course requirement
+<3> Course type - codelist
+<4> Period
+
+.Example of the requested course in the CV request with alternative requirement
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=CourseAlternative]
+----
+<1> Course identifier
+<2> Course requirement - indicate whether a candidate needs to fulfill the course requirement
+<3> Course title
+<4> Course version
+<5> Period
+<6> Alternative course requirement
 
 == Information specific to CV
+
+Based on the course requirement, the economic operator needs to document the candidate's course.
+For CV used in the job application process, fill in the relevant parts of course information.
+
+The element `CourseReference` needs to be used in the procurement process, not in the job application process.
+This is a reference to the corresponding course requirement in the CV request.
+
+It is possible to state information about the supplier of the course. This might be relevant for some contracting
+authorities, since different suppliers may offer the same course with different content.
+
+
+.Example of a description of Course in CV as a response to requested course in CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=Course-req]
+----
+<1> Course identifier
+<2> Course title
+<3> Course version
+<4> Course period
+<5> Information about the supplier of the course
+<6> The supplier's organisation number
+<7> The legal name of supplier
+<8> Contact information of supplier expressed as email address
+<9> The country where the supplier is registered - expressed as country code from the code list
+<10> Embedded document as binary object with `mimeCode`. Use Base64.
+<11> URI to course document
+<12> Course reference
+
+.Example of a description of course in a CV in the job application
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=Course]
+----
+<1> Course identifier
+<2> Course type from code list
+<3> Course period
+<4> Information about the supplier of the course
+<5> The supplier's organisation number
+<6> The legal name of supplier
+<7> Contact information of supplier expressed as email address
+<8> The country where the supplier is registered - expressed as country code from the code list
+<9> Embedded document as binary object with `mimeCode`. Use Base64.
+<10> URI to course document
