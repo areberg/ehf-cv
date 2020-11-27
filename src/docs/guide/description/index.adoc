@@ -6,9 +6,7 @@ include::roles.adoc[]
 
 include::education.adoc[]
 
-include::course.adoc[]
-
-include::certification.adoc[]
+include::course-and-certification.adoc[]
 
 include::language-skills.adoc[]
 

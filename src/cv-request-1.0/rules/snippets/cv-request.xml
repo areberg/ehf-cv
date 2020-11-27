@@ -92,7 +92,7 @@
   <!-- tag::Course[] -->
   <cv-req:Course>
     <cv-req:ID>1</cv-req:ID><!--1-->
-    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
     <cv-req:Type>macroeconomic</cv-req:Type><!--3-->
     <cv-req:Period><!--4-->
       <cv-req:StartDate>2020-01-10</cv-req:StartDate>
@@ -101,22 +101,34 @@
   </cv-req:Course>
   <!-- end::Course[] -->
 
+  <!-- tag::CertificationAlternative[] -->
   <cv-req:Certification>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:Title>HMS</cv-req:Title>
-    <cv-req:Type>archimate</cv-req:Type>
-    <cv-req:Version>3.0</cv-req:Version>
-    <cv-req:ValidTo>2020-12-01</cv-req:ValidTo>
-    <cv-req:AlternativeCertification>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:Title>Organization leader</cv-req:Title><!--3-->
+    <cv-req:Version>3.0</cv-req:Version><!--4-->
+    <cv-req:ValidTo>2020-12-01</cv-req:ValidTo><!--5-->
+    <cv-req:AlternativeCertification><!--6-->
       <cv-req:ID>1</cv-req:ID>
-      <cv-req:Requirement>desirable</cv-req:Requirement>
-      <cv-req:Title>HMS</cv-req:Title>
-      <cv-req:Type>togaf</cv-req:Type>
+      <cv-req:Requirement>should</cv-req:Requirement>
+      <cv-req:Title>Organization leader</cv-req:Title>
       <cv-req:Version>2.0</cv-req:Version>
-      <cv-req:ValidTo>2025-05-01</cv-req:ValidTo>
+      <cv-req:ValidTo>2020-12-01</cv-req:ValidTo>
     </cv-req:AlternativeCertification>
   </cv-req:Certification>
+  <!-- end::CertificationAlternative[] -->
+
+  <!-- tag::Certification[] -->
+  <cv-req:Certification>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:Type>archimate</cv-req:Type><!--3-->
+    <cv-req:Version>3.0</cv-req:Version><!--4-->
+    <cv-req:ValidTo>2025-05-05</cv-req:ValidTo><!--5-->
+  </cv-req:Certification>
+  <!-- end::Certification[] -->
+
+  <!-- tag::LanguageSkillsAlternative[] -->
   <cv-req:LanguageSkills>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
@@ -131,6 +143,18 @@
       <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
     </cv-req:AlternativeLanguageSkills>
   </cv-req:LanguageSkills>
+  <!-- end::LanguageSkillsAlternative[] -->
+
+  <!-- tag::LanguageSkills[] -->
+  <cv-req:LanguageSkills>
+    <cv-req:ID>1</cv-req:ID>
+    <cv-req:Requirement>must</cv-req:Requirement>
+    <cv-req:Language>NO</cv-req:Language>
+    <cv-req:OralSkill>A1</cv-req:OralSkill>
+    <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
+  </cv-req:LanguageSkills>
+  <!-- end::LanguageSkills[] -->
+
   <cv-req:ProjectExperience>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>

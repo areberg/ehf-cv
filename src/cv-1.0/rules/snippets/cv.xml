@@ -126,28 +126,52 @@
   </cv:Course>
   <!-- end::Course[] -->
 
+  <!-- tag::Certification-req[] -->
   <cv:Certification>
-    <cv:ID>1</cv:ID>
-    <cv:Title>Archimate</cv:Title>
-    <cv:Type>TOGAF</cv:Type>
-    <cv:Version>3.0</cv:Version>
-    <cv:ValidTo>2020-05-14</cv:ValidTo>
-    <cv:SupplierParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
-      <cv:Name>U company</cv:Name>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Title>Organization leader</cv:Title><!--2-->
+    <cv:Version>3.0</cv:Version><!--3-->
+    <cv:ValidTo>2020-05-14</cv:ValidTo><!--4-->
+    <cv:SupplierParty><!--5-->
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID><!--6-->
+      <cv:Name>U company</cv:Name><!--7-->
       <cv:Contact>
-        <cv:ElectronicMail>alf.alfsen@u.no</cv:ElectronicMail>
+        <cv:ElectronicMail>alf.alfsen@u.no</cv:ElectronicMail><!--8-->
       </cv:Contact>
-      <cv:Country>NO</cv:Country>
+      <cv:Country>NO</cv:Country><!--9-->
     </cv:SupplierParty>
     <cv:Documentation>
-      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==</cv:EmbeddedDocumentBinaryObject>
-      <cv:URI>https://www.sertifiseringsportalen.no/</cv:URI>
+      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==</cv:EmbeddedDocumentBinaryObject><!--10-->
+      <cv:URI>https://www.sertifiseringsportalen.no/</cv:URI><!--11-->
     </cv:Documentation>
-    <cv:CertificationReference>
+    <cv:CertificationReference><!--12-->
       <cv:ID>159</cv:ID>
     </cv:CertificationReference>
   </cv:Certification>
+  <!-- end::Certification-req[] -->
+
+  <!-- tag::Certification[] -->
+  <cv:Certification>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Type>TOGAF</cv:Type><!--2-->
+    <cv:Version>3.0</cv:Version><!--3-->
+    <cv:ValidTo>2020-05-14</cv:ValidTo><!--4-->
+    <cv:SupplierParty><!--5-->
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID><!--6-->
+      <cv:Name>U company</cv:Name><!--7-->
+      <cv:Contact>
+        <cv:ElectronicMail>alf.alfsen@u.no</cv:ElectronicMail><!--8-->
+      </cv:Contact>
+      <cv:Country>NO</cv:Country><!--9-->
+    </cv:SupplierParty>
+    <cv:Documentation>
+      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==</cv:EmbeddedDocumentBinaryObject><!--10-->
+      <cv:URI>https://www.sertifiseringsportalen.no/</cv:URI><!--11-->
+    </cv:Documentation>
+  </cv:Certification>
+  <!-- end::Certification[] -->
+
+  <!-- tag::LanguageSkills-req[] -->
   <cv:LanguageSkills>
     <cv:ID>1</cv:ID>
     <cv:Language>sq</cv:Language>
@@ -163,6 +187,23 @@
       <cv:ID>req-65</cv:ID>
     </cv:LanguageSkillsReference>
   </cv:LanguageSkills>
+  <!-- end::LanguageSkills-req[] -->
+
+  <!-- tag::LanguageSkills[] -->
+  <cv:LanguageSkills>
+    <cv:ID>1</cv:ID>
+    <cv:Language>sq</cv:Language>
+    <cv:OralSkill>A1</cv:OralSkill>
+    <cv:WrittenSkill>A1</cv:WrittenSkill>
+    <cv:Contact>
+      <cv:Name>Ola Nordmann</cv:Name>
+      <cv:Role>1210102</cv:Role>
+      <cv:Telephone>22221111</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
+    </cv:Contact>
+  </cv:LanguageSkills>
+  <!-- end::LanguageSkills[] -->
+
   <cv:ProjectExperience>
     <cv:ID>1</cv:ID>
     <cv:ExperienceType>1210148</cv:ExperienceType>
