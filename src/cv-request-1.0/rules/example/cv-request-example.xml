@@ -89,13 +89,13 @@
   <cv-req:LanguageSkills>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:Language>NO</cv-req:Language>
+    <cv-req:Language>no</cv-req:Language>
     <cv-req:OralSkill>A1</cv-req:OralSkill>
     <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
     <cv-req:AlternativeLanguageSkills>
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>advantage</cv-req:Requirement>
-      <cv-req:Language>NO</cv-req:Language>
+      <cv-req:Language>da</cv-req:Language>
       <cv-req:OralSkill>A1</cv-req:OralSkill>
       <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
     </cv-req:AlternativeLanguageSkills>

@@ -76,7 +76,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=CertificationAlternativ
 Based on the course/certification requirement, the economic operator needs to document the candidate's course/certification.
 For CV used in the job application process, fill in the relevant parts of course/certification information.
 
-The element `CourseReference` and `CertificationReference` needs to be used in the procurement process, not in the job application
+The element `cv:CourseReference` and `cv:CertificationReference` needs to be used in the procurement process, not in the job application
 process. This is a reference to the corresponding course requirement in the CV request.
 
 It is possible to state information about the supplier of the course/certification. This might be relevant for some contracting

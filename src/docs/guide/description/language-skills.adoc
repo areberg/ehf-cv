@@ -1,1 +1,77 @@
 = Language skills
+
+Language skills may be specified in CV request and CV, in different ways. In some work, the language skill is
+really important.
+
+== Information specific to CV request
+
+A contracting authority can state both a specific language requirement and an alternative requirement.
+The alternative requirement is optional, but in some cases, there is relevant to accept other languages.
+For example, some Norwegian entities use Norwegian as primarily work language but may accept Swedish and Danish.
+There is also possible to require several languages, for example, Norwegian and English.
+Note that, the alternative requirements include the same information elements as the original requirement.
+
+All language skills need to be identified uniquely, to ensure that the language skill can be referenced in the CV.
+To differentiate the different types of language skill requirements use the element `cv-req:Requirement`.
+
+Oral skill and written skill must be provided for each language skill requirement. The skill levels are defined from
+EU global standard. Note that, the skill level is a minimum requirement. For example, the contracting authority wants a candidate
+with a `B1` oral skill level. The candidate has an oral skill level on `A1`, which implies that the candidate is qualified.
+
+.Example of the requested language skill in the CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=LanguageSkills]
+----
+<1> Language skill identifier
+<2> Language skill requirement - indicate whether a candidate needs to fulfill the educational requirement
+<3> A specific language - use code list
+<4> Oral skill
+<5> Written skill
+
+.Example of the requested language skill in the CV request with alternative requirements
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=LanguageSkillsAlternative]
+----
+<1> Language skill identifier
+<2> Language skill requirement - indicate whether a candidate needs to fulfill the educational requirement
+<3> A specific language - use code list
+<4> Oral skill
+<5> Written skill
+<6> Alternative language skill requirements
+
+
+== Information specific to CV
+
+Based on the language skill requirement, the economic operator needs to document the candidate's language skill.
+For CV used in the job application, fill in the relevant parts of education information.
+
+Oral skill and written skill must be provided for each language skill. The skill levels are defined from
+EU global standard, use code list
+
+The element `cv:LanguageSkillsReference` needs to be used in the procurement process, not in the job application process.
+This is a reference to the corresponding language skill requirement in the CV request.
+
+.Example of a description of language skill in CV as a response to requested language skill in CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=LanguageSkills-req]
+----
+<1> Language skill identifier
+<2> A specific language - use code list
+<3> Oral skill
+<4> Written skill
+<5> Contact information related to candidate's language skill
+<6> Language skill reference
+
+.Example of a description of language skill in a CV in the job application
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=LanguageSkills]
+----
+<1> Language skill identifier
+<2> A specific language - use code list
+<3> Oral skill
+<4> Written skill
+<5> Contact information related to candidate's language skill

@@ -56,7 +56,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=EducationRelevantExperi
 Based on the educational requirement, the economic operator needs to document the candidate's education.
 For CV used in the job application, fill in the relevant parts of education information.
 
-The element `EducationReference` needs to be used in the procurement process, not in the job application process.
+The element `cv:EducationReference` needs to be used in the procurement process, not in the job application process.
 This is a reference to the corresponding educational requirement in the CV request.
 
 .Example of a description of education in CV as a response to requested education in CV request

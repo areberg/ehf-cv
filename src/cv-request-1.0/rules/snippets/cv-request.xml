@@ -130,15 +130,15 @@
 
   <!-- tag::LanguageSkillsAlternative[] -->
   <cv-req:LanguageSkills>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:Language>NO</cv-req:Language>
-    <cv-req:OralSkill>A1</cv-req:OralSkill>
-    <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
-    <cv-req:AlternativeLanguageSkills>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:Language>no</cv-req:Language><!--3-->
+    <cv-req:OralSkill>A1</cv-req:OralSkill><!--4-->
+    <cv-req:WrittenSkill>A1</cv-req:WrittenSkill><!--5-->
+    <cv-req:AlternativeLanguageSkills><!--6-->
       <cv-req:ID>1</cv-req:ID>
-      <cv-req:Requirement>advantage</cv-req:Requirement>
-      <cv-req:Language>NO</cv-req:Language>
+      <cv-req:Requirement>should</cv-req:Requirement>
+      <cv-req:Language>sv</cv-req:Language>
       <cv-req:OralSkill>A1</cv-req:OralSkill>
       <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
     </cv-req:AlternativeLanguageSkills>
@@ -147,40 +147,41 @@
 
   <!-- tag::LanguageSkills[] -->
   <cv-req:LanguageSkills>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:Language>NO</cv-req:Language>
-    <cv-req:OralSkill>A1</cv-req:OralSkill>
-    <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:Language>tr</cv-req:Language><!--3-->
+    <cv-req:OralSkill>A1</cv-req:OralSkill><!--4-->
+    <cv-req:WrittenSkill>A1</cv-req:WrittenSkill><!--5-->
   </cv-req:LanguageSkills>
   <!-- end::LanguageSkills[] -->
 
+  <!-- tag::ProjectExperienceAlternative[] -->
   <cv-req:ProjectExperience>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:ExperienceType>1141101</cv-req:ExperienceType>
-    <cv-req:IndustryType>01110</cv-req:IndustryType>
-    <cv-req:Workplace>AI</cv-req:Workplace>
-    <cv-req:JobSector>private</cv-req:JobSector>
-    <cv-req:RequiredTotalExperience>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:ExperienceType>1141101</cv-req:ExperienceType><!--3-->
+    <cv-req:IndustryType>01110</cv-req:IndustryType><!--4-->
+    <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
+    <cv-req:JobSector>private</cv-req:JobSector><!--6-->
+    <cv-req:RequiredTotalExperience><!--7-->
       <cv-req:MinimumExperience>2</cv-req:MinimumExperience>
       <cv-req:MaximumExperience>2</cv-req:MaximumExperience>
     </cv-req:RequiredTotalExperience>
-    <cv-req:Period>
+    <cv-req:Period><!--8-->
       <cv-req:StartDate>2020-01-19</cv-req:StartDate>
       <cv-req:EndDate>2020-10-02</cv-req:EndDate>
     </cv-req:Period>
     <cv-req:ExperienceDescription>
-      <cv-req:PositionPercent>100</cv-req:PositionPercent>
-      <cv-req:Role>1210178</cv-req:Role>
-      <cv-req:Activities>Must have done financial analysis by using R.</cv-req:Activities>
+      <cv-req:PositionPercent>100</cv-req:PositionPercent><!--9-->
+      <cv-req:Role>1210178</cv-req:Role><!--10-->
+      <cv-req:Activities>Must have done financial analysis by using R.</cv-req:Activities><!--11-->
     </cv-req:ExperienceDescription>
     <cv-req:ExperienceValue>
-      <cv-req:ProjectParticipation>5</cv-req:ProjectParticipation>
-      <cv-req:ProjectSize>5</cv-req:ProjectSize>
-      <cv-req:ProjectValue currencyID="NOK">100</cv-req:ProjectValue>
+      <cv-req:ProjectParticipation>5</cv-req:ProjectParticipation><!--12-->
+      <cv-req:ProjectSize>5</cv-req:ProjectSize><!--13-->
+      <cv-req:ProjectValue currencyID="NOK">100</cv-req:ProjectValue><!--14-->
     </cv-req:ExperienceValue>
-    <cv-req:AlternativeProjectExperience>
+    <cv-req:AlternativeProjectExperience><!--15-->
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>must</cv-req:Requirement>
       <cv-req:ExperienceType>1224117</cv-req:ExperienceType>
@@ -207,6 +208,37 @@
       </cv-req:ExperienceValue>
     </cv-req:AlternativeProjectExperience>
   </cv-req:ProjectExperience>
+  <!-- end::ProjectExperienceAlternative[] -->
+
+  <!-- tag::ProjectExperience[] -->
+  <cv-req:ProjectExperience>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:ExperienceType>1141101</cv-req:ExperienceType><!--3-->
+    <cv-req:IndustryType>01110</cv-req:IndustryType><!--4-->
+    <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
+    <cv-req:JobSector>private</cv-req:JobSector><!--6-->
+    <cv-req:RequiredTotalExperience><!--7-->
+      <cv-req:MinimumExperience>2</cv-req:MinimumExperience>
+      <cv-req:MaximumExperience>2</cv-req:MaximumExperience>
+    </cv-req:RequiredTotalExperience>
+    <cv-req:Period><!--8-->
+      <cv-req:StartDate>2020-01-19</cv-req:StartDate>
+      <cv-req:EndDate>2020-10-02</cv-req:EndDate>
+    </cv-req:Period>
+    <cv-req:ExperienceDescription><!--9-->
+      <cv-req:PositionPercent>100</cv-req:PositionPercent>
+      <cv-req:Role>1210178</cv-req:Role>
+      <cv-req:Activities>Must have done financial analysis by using R.</cv-req:Activities>
+    </cv-req:ExperienceDescription>
+    <cv-req:ExperienceValue><!--10-->
+      <cv-req:ProjectParticipation>5</cv-req:ProjectParticipation>
+      <cv-req:ProjectSize>5</cv-req:ProjectSize>
+      <cv-req:ProjectValue currencyID="NOK">100</cv-req:ProjectValue>
+    </cv-req:ExperienceValue>
+  </cv-req:ProjectExperience>
+  <!-- end::ProjectExperience[] -->
+
   <cv-req:WorkExperience>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
@@ -243,6 +275,7 @@
       </cv-req:WorkExperienceDescription>
     </cv-req:AlternativeWorkExperience>
   </cv-req:WorkExperience>
+
   <cv-req:Clearance>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>desirable</cv-req:Requirement>
@@ -259,10 +292,12 @@
       <cv-req:ExpirationDate>2025-05-05</cv-req:ExpirationDate>
     </cv-req:AlternativeClearance>
   </cv-req:Clearance>
+
   <cv-req:Reference>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:MinimumTotalReference>3</cv-req:MinimumTotalReference>
   </cv-req:Reference>
+
   <cv-req:Skills>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
@@ -287,6 +322,7 @@
       </cv-req:SkillPractice>
     </cv-req:AlternativeSkills>
   </cv-req:Skills>
+
   <cv-req:PersonalSkills>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Title>HMS</cv-req:Title>

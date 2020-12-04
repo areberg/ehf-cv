@@ -16,5 +16,8 @@ The following diagram illustrates the parties and roles involved in the CV and C
 {empty} +
 {empty} +
 
-.EHF CV and request rolediagram.
-image::images/rolediagram.png[align="center",1200, 800]
+.EHF CV and request rolediagram - procurement process.
+image::images/rolediagram-procurement.png[align="center",1200, 800]
+
+.EHF CV and request rolediagram - job application process.
+image::images/rolediagram-job-application.png[align="center",1200, 800]

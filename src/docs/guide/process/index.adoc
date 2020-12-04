@@ -1,14 +1,15 @@
 = Process and Typical Use Cases
 
-The following diagram illustrates the EHF CV  process.
+== Procurement Process
 
-.EHF CV process diagram.
-image::images/processdiagram.png[align="center",1200, 800]
+The following diagram illustrates the public procurement process.
 
+.EHF CV request and CV process diagram
+image::images/processdiagram-procurement.png[align="center",1200, 800]
 
-== Use Cases
+=== Use Cases
 
-=== Use Case 1
+==== Use Case 1
 
 The Norwegian Digitalisation Agency needs developer expertise for one of its projects. They have decided to acquire this
 expertise through Dynamic Procurement System (DPS) procedure. In order to streamline the processing and evaluation of
@@ -57,5 +58,13 @@ the selected supplier is decided, a message from the competition system is sent 
 is selected.
 
 
+== Job Application Process
 
+The following diagram illustrates the job application process.
 
+.EHF CV request and CV process diagram
+image::images/processdiagram-job-application.png[align="center",1200, 800]
+
+== Use Cases
+
+=== Use Case 1

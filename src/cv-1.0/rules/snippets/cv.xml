@@ -173,17 +173,17 @@
 
   <!-- tag::LanguageSkills-req[] -->
   <cv:LanguageSkills>
-    <cv:ID>1</cv:ID>
-    <cv:Language>sq</cv:Language>
-    <cv:OralSkill>A1</cv:OralSkill>
-    <cv:WrittenSkill>A1</cv:WrittenSkill>
-    <cv:Contact>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Language>no</cv:Language><!--2-->
+    <cv:OralSkill>A1</cv:OralSkill><!--3-->
+    <cv:WrittenSkill>A1</cv:WrittenSkill><!--4-->
+    <cv:Contact><!--5-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1210102</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:LanguageSkillsReference>
+    <cv:LanguageSkillsReference><!--6-->
       <cv:ID>req-65</cv:ID>
     </cv:LanguageSkillsReference>
   </cv:LanguageSkills>
@@ -191,11 +191,11 @@
 
   <!-- tag::LanguageSkills[] -->
   <cv:LanguageSkills>
-    <cv:ID>1</cv:ID>
-    <cv:Language>sq</cv:Language>
-    <cv:OralSkill>A1</cv:OralSkill>
-    <cv:WrittenSkill>A1</cv:WrittenSkill>
-    <cv:Contact>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Language>da</cv:Language><!--2-->
+    <cv:OralSkill>A1</cv:OralSkill><!--3-->
+    <cv:WrittenSkill>A1</cv:WrittenSkill><!--4-->
+    <cv:Contact><!--5-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1210102</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
@@ -204,6 +204,7 @@
   </cv:LanguageSkills>
   <!-- end::LanguageSkills[] -->
 
+  <!-- tag::ProjectExperience-req[] -->
   <cv:ProjectExperience>
     <cv:ID>1</cv:ID>
     <cv:ExperienceType>1210148</cv:ExperienceType>
@@ -241,6 +242,42 @@
       <cv:ID>req-25</cv:ID>
     </cv:ProjectExperienceReference>
   </cv:ProjectExperience>
+  <!-- end::ProjectExperience-req[] -->
+
+  <!-- tag::ProjectExperience[] -->
+  <cv:ProjectExperience>
+    <cv:ID>1</cv:ID>
+    <cv:ExperienceType>1210148</cv:ExperienceType>
+    <cv:IndustryType>07290</cv:IndustryType>
+    <cv:Workplace>AI</cv:Workplace>
+    <cv:JobSector>private</cv:JobSector>
+    <cv:CompanyParty>
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:Name>AZ company</cv:Name>
+    </cv:CompanyParty>
+    <cv:Period>
+      <cv:StartDate>2020-01-01</cv:StartDate>
+      <cv:EndDate>2020-12-01</cv:EndDate>
+    </cv:Period>
+    <cv:ExperienceDescription>
+      <cv:PositionPercent>100</cv:PositionPercent>
+      <cv:Role>1210185</cv:Role>
+      <cv:Activities>Financial analysis by using R.</cv:Activities>
+    </cv:ExperienceDescription>
+    <cv:ExperienceValue>
+      <cv:ProjectParticipation>5</cv:ProjectParticipation>
+      <cv:ProjectSize>5</cv:ProjectSize>
+      <cv:ProjectValue currencyID="NOK">100</cv:ProjectValue>
+    </cv:ExperienceValue>
+    <cv:Contact>
+      <cv:Name>Ola Nordmann</cv:Name>
+      <cv:Role>1222102</cv:Role>
+      <cv:Telephone>22221111</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
+    </cv:Contact>
+  </cv:ProjectExperience>
+  <!-- end::ProjectExperience[] -->
+
   <cv:WorkExperience>
     <cv:ID>3</cv:ID>
     <cv:PositionLevel>leader</cv:PositionLevel>
@@ -273,6 +310,7 @@
       <cv:ID>req-25</cv:ID>
     </cv:ProjectExperienceReference>
   </cv:WorkExperience>
+
   <cv:Clearance>
     <cv:ID>1</cv:ID>
     <cv:Title>Politiattest</cv:Title>
@@ -288,6 +326,7 @@
       <cv:ID>65424</cv:ID>
     </cv:ClearanceReference>
   </cv:Clearance>
+
   <cv:Reference>
     <cv:ID>1</cv:ID>
     <cv:Party>
@@ -304,6 +343,7 @@
       <cv:ID>1234</cv:ID>
     </cv:RequestReference>
   </cv:Reference>
+
   <cv:Skills>
     <cv:ID>1</cv:ID>
     <cv:Title>HMS</cv:Title>
@@ -324,6 +364,7 @@
       <cv:ID>1547</cv:ID>
     </cv:SkillsReference>
   </cv:Skills>
+
   <cv:PersonalSkills>
     <cv:ID>1</cv:ID>
     <cv:Title>HMS</cv:Title>
@@ -338,6 +379,7 @@
       <cv:ID>147</cv:ID>
     </cv:PersonalSkillsReference>
   </cv:PersonalSkills>
+
   <cv:PersonalInformation>
     <cv:ID>1</cv:ID>
     <cv:Name>Ola Nordmann</cv:Name>
@@ -361,10 +403,12 @@
       </cv:Documentation>
     </cv:SocialMedia>
   </cv:PersonalInformation>
+
   <cv:Interest>
     <cv:ID>1</cv:ID>
     <cv:Description>Interest in playing football.</cv:Description>
   </cv:Interest>
+
   <cv:AdditionalInformation>
     <cv:ID>1</cv:ID>
     <cv:Title>Footballcoach</cv:Title>
