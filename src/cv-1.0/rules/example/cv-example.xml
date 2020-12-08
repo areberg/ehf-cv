@@ -177,9 +177,9 @@
     <cv:EducationReference>
       <cv:ID>req-edu-45</cv:ID>
     </cv:EducationReference>
-    <cv:ProjectExperienceReference>
+    <cv:WorkExperienceReference>
       <cv:ID>req-25</cv:ID>
-    </cv:ProjectExperienceReference>
+    </cv:WorkExperienceReference>
   </cv:WorkExperience>
   <cv:Clearance>
     <cv:ID>1</cv:ID>

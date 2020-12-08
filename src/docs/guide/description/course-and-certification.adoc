@@ -55,7 +55,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=CourseAlternative]
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=Certification]
 ----
 <1> Certification identifier
-<2> Certification requirement - indicate whether a candidate needs to fulfill the course requirement
+<2> Certification requirement - indicate whether a candidate needs to fulfill the certification requirement
 <3> Certification type - code list
 <4> A date certification is valid to
 
@@ -65,7 +65,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=Certification]
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=CertificationAlternative]
 ----
 <1> Certification identifier
-<2> Certification requirement - indicate whether a candidate needs to fulfill the course requirement
+<2> Certification requirement - indicate whether a candidate needs to fulfill the certification requirement
 <3> Certification title
 <4> Certification version
 <5> A date certification must be valid to

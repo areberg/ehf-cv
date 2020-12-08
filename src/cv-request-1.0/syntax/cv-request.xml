@@ -192,7 +192,7 @@
                 <Term>cv-req:EducationDegree</Term>
                 <Name>Education degree</Name>
                 <Description>A specific requirement of education degree. Use codelist educationDegree.</Description>
-                <Reference type="CODE_LIST">educationDegree</Reference>
+                <Reference type="CODE_LIST">EducationDegree</Reference>
                 <Value type="EXAMPLE">master</Value>
             </Element>
 
@@ -257,7 +257,7 @@
                     <Term>cv-req:EducationDegree</Term>
                     <Name>Education degree</Name>
                     <Description>A specific requirement of education degree. Use codelist educationDegree.</Description>
-                    <Reference type="CODE_LIST">educationDegree</Reference>
+                    <Reference type="CODE_LIST">EducationDegree</Reference>
                     <Value type="EXAMPLE">master</Value>
                 </Element>
 
@@ -332,7 +332,7 @@
                 <Term>cv-req:Type</Term>
                 <Name>Course type</Name>
                 <Description>The specific name of the course expressed as code.</Description>
-                <Reference type="CODE_LIST">courseType</Reference>
+                <Reference type="CODE_LIST">CourseType</Reference>
                 <Value type="EXAMPLE">Dykkerkurs</Value>
             </Element>
 
@@ -395,7 +395,7 @@
                     <Term>cv-req:Type</Term>
                     <Name>Course type</Name>
                     <Description>The specific name of the course expressed as code.</Description>
-                    <Reference type="CODE_LIST">courseType</Reference>
+                    <Reference type="CODE_LIST">CourseType</Reference>
                     <Value type="EXAMPLE">Dykkerkurs</Value>
                 </Element>
 
@@ -460,7 +460,7 @@
                 <Term>cv-req:Type</Term>
                 <Name>Certification type</Name>
                 <Description>The specific name of the certification expressed as code.</Description>
-                <Reference type="CODE_LIST">certificationType</Reference>
+                <Reference type="CODE_LIST">CertificationType</Reference>
                 <Value type="EXAMPLE">archimate</Value>
             </Element>
 
@@ -510,7 +510,7 @@
                     <Term>cv-req:Type</Term>
                     <Name>Certification type</Name>
                     <Description>The specific name of the certification expressed as code.</Description>
-                    <Reference type="CODE_LIST">certificationType</Reference>
+                    <Reference type="CODE_LIST">CertificationType</Reference>
                     <Value type="EXAMPLE">togaf</Value>
                 </Element>
 
@@ -563,7 +563,7 @@
                 <Term>cv-req:OralSkill</Term>
                 <Name>Language</Name>
                 <Description>Minimum requirement about the oral skill related to the specific language. Use EU Global Scale code list.</Description>
-                <Reference type="CODE_LIST">languageScale</Reference>
+                <Reference type="CODE_LIST">LanguageLevel</Reference>
                 <Value type="EXAMPLE">A1</Value>
             </Element>
 
@@ -571,7 +571,7 @@
                 <Term>cv-req:WrittenSkill</Term>
                 <Name>Language</Name>
                 <Description>Minimum requirement about the written skill related to the specific language. Use EU Global Scale code list.</Description>
-                <Reference type="CODE_LIST">languageScale</Reference>
+                <Reference type="CODE_LIST">LanguageLevel</Reference>
                 <Value type="EXAMPLE">A1</Value>
             </Element>
 
@@ -609,7 +609,7 @@
                     <Term>cv-req:OralSkill</Term>
                     <Name>Language</Name>
                     <Description>Minimum requirement about the oral skill related to the specific language. Use EU Global Scale code list.</Description>
-                    <Reference type="CODE_LIST">languageScale</Reference>
+                    <Reference type="CODE_LIST">LanguageLevel</Reference>
                     <Value type="EXAMPLE">A1</Value>
                 </Element>
 
@@ -617,7 +617,7 @@
                     <Term>cv-req:WrittenSkill</Term>
                     <Name>Language</Name>
                     <Description>Minimum requirement about the written skill related to the specific language. Use EU Global Scale code list.</Description>
-                    <Reference type="CODE_LIST">languageScale</Reference>
+                    <Reference type="CODE_LIST">LanguageLevel</Reference>
                     <Value type="EXAMPLE">A1</Value>
                 </Element>
             </Element>
@@ -961,8 +961,8 @@
                 <Term>cv-req:PositionLevel</Term>
                 <Name>Position level</Name>
                 <Description>A specific requirement about candidates position level. Use code list.</Description>
-                <Reference type="CODE_LIST">positionLevel</Reference>
-                <Value type="EXAMPLE">Leader</Value>
+                <Reference type="CODE_LIST">PositionLevel</Reference>
+                <Value type="EXAMPLE">employee</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1069,8 +1069,8 @@
                     <Term>cv-req:PositionLevel</Term>
                     <Name>Position level</Name>
                     <Description>A specific requirement about candidates position level. Use code list.</Description>
-                    <Reference type="CODE_LIST">positionLevel</Reference>
-                    <Value type="EXAMPLE">Leader</Value>
+                    <Reference type="CODE_LIST">PositionLevel</Reference>
+                    <Value type="EXAMPLE">MiddleLevelManager</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1186,7 +1186,7 @@
                 <Term>cv-req:Type</Term>
                 <Name>Clearance type</Name>
                 <Description>The specific name of the clearance expressed as code.</Description>
-                <Reference type="CODE_LIST">clearanceType</Reference>
+                <Reference type="CODE_LIST">ClearanceType</Reference>
                 <Value type="EXAMPLE">politi</Value>
             </Element>
 
@@ -1194,7 +1194,7 @@
                 <Term>cv-req:Level</Term>
                 <Name>Clearance level</Name>
                 <Description>The level of the clearance requirement.</Description>
-                <Reference type="CODE_LIST">clearanceLevel</Reference>
+                <Reference type="CODE_LIST">ClearanceLevel</Reference>
                 <Value type="EXAMPLE">secret</Value>
             </Element>
 
@@ -1237,7 +1237,7 @@
                     <Term>cv-req:Type</Term>
                     <Name>Clearance type</Name>
                     <Description>The specific name of the clearance expressed as code.</Description>
-                    <Reference type="CODE_LIST">clearanceType</Reference>
+                    <Reference type="CODE_LIST">ClearanceType</Reference>
                     <Value type="EXAMPLE">politi</Value>
                 </Element>
 
@@ -1245,7 +1245,7 @@
                     <Term>cv-req:Level</Term>
                     <Name>Clearance level</Name>
                     <Description>The level of the clearance requirement.</Description>
-                    <Reference type="CODE_LIST">clearanceLevel</Reference>
+                    <Reference type="CODE_LIST">ClearanceLevel</Reference>
                     <Value type="EXAMPLE">secret</Value>
                 </Element>
 
@@ -1310,7 +1310,7 @@
                 <Term>cv-req:Type</Term>
                 <Name>Skill type</Name>
                 <Description>The specific name of the skill expressed as code.</Description>
-                <Reference type="CODE_LIST">skillsType</Reference>
+                <Reference type="CODE_LIST">SkillsType</Reference>
                 <Value type="EXAMPLE">Java</Value>
             </Element>
 
@@ -1381,7 +1381,7 @@
                     <Term>cv-req:Type</Term>
                     <Name>Skill type</Name>
                     <Description>The specific name of the skill expressed as code.</Description>
-                    <Reference type="CODE_LIST">skillsType</Reference>
+                    <Reference type="CODE_LIST">SkillsType</Reference>
                     <Value type="EXAMPLE">Java</Value>
                 </Element>
 
@@ -1454,7 +1454,7 @@
                 <Term>cv-req:Type</Term>
                 <Name>Personal skill type</Name>
                 <Description>The specific name of the personal skill expressed as code.</Description>
-                <Reference type="CODE_LIST">personalSkills</Reference>
+                <Reference type="CODE_LIST">PersonalSkills</Reference>
                 <Value type="EXAMPLE">Leadership</Value>
             </Element>
         </Element>

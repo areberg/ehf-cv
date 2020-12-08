@@ -158,53 +158,53 @@
   <!-- tag::ProjectExperienceAlternative[] -->
   <cv-req:ProjectExperience>
     <cv-req:ID>1</cv-req:ID><!--1-->
-    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
-    <cv-req:ExperienceType>1141101</cv-req:ExperienceType><!--3-->
-    <cv-req:IndustryType>01110</cv-req:IndustryType><!--4-->
-    <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:ExperienceType>2130111</cv-req:ExperienceType><!--3-->
+    <cv-req:IndustryType>63120</cv-req:IndustryType><!--4-->
+    <cv-req:Workplace>CA</cv-req:Workplace><!--5-->
     <cv-req:JobSector>private</cv-req:JobSector><!--6-->
     <cv-req:RequiredTotalExperience><!--7-->
       <cv-req:MinimumExperience>2</cv-req:MinimumExperience>
-      <cv-req:MaximumExperience>2</cv-req:MaximumExperience>
+      <cv-req:MaximumExperience>6</cv-req:MaximumExperience>
     </cv-req:RequiredTotalExperience>
     <cv-req:Period><!--8-->
-      <cv-req:StartDate>2020-01-19</cv-req:StartDate>
+      <cv-req:StartDate>2000-01-19</cv-req:StartDate>
       <cv-req:EndDate>2020-10-02</cv-req:EndDate>
     </cv-req:Period>
     <cv-req:ExperienceDescription>
       <cv-req:PositionPercent>100</cv-req:PositionPercent><!--9-->
-      <cv-req:Role>1210178</cv-req:Role><!--10-->
-      <cv-req:Activities>Must have done financial analysis by using R.</cv-req:Activities><!--11-->
+      <cv-req:Role>2130110</cv-req:Role><!--10-->
+      <cv-req:Activities>Must coordinate comapnies web-portal.</cv-req:Activities><!--11-->
     </cv-req:ExperienceDescription>
     <cv-req:ExperienceValue>
       <cv-req:ProjectParticipation>5</cv-req:ProjectParticipation><!--12-->
-      <cv-req:ProjectSize>5</cv-req:ProjectSize><!--13-->
-      <cv-req:ProjectValue currencyID="NOK">100</cv-req:ProjectValue><!--14-->
+      <cv-req:ProjectSize>20</cv-req:ProjectSize><!--13-->
+      <cv-req:ProjectValue currencyID="NOK">1500000</cv-req:ProjectValue><!--14-->
     </cv-req:ExperienceValue>
     <cv-req:AlternativeProjectExperience><!--15-->
       <cv-req:ID>1</cv-req:ID>
-      <cv-req:Requirement>must</cv-req:Requirement>
-      <cv-req:ExperienceType>1224117</cv-req:ExperienceType>
-      <cv-req:IndustryType>01190</cv-req:IndustryType>
+      <cv-req:Requirement>should</cv-req:Requirement>
+      <cv-req:ExperienceType>2130111</cv-req:ExperienceType>
+      <cv-req:IndustryType>63120</cv-req:IndustryType>
       <cv-req:Workplace>AI</cv-req:Workplace>
       <cv-req:JobSector>private</cv-req:JobSector>
       <cv-req:RequiredTotalExperience>
         <cv-req:MinimumExperience>2</cv-req:MinimumExperience>
-        <cv-req:MaximumExperience>2</cv-req:MaximumExperience>
+        <cv-req:MaximumExperience>6</cv-req:MaximumExperience>
       </cv-req:RequiredTotalExperience>
       <cv-req:Period>
-        <cv-req:StartDate>2020-01-19</cv-req:StartDate>
+        <cv-req:StartDate>2000-01-19</cv-req:StartDate>
         <cv-req:EndDate>2020-10-02</cv-req:EndDate>
       </cv-req:Period>
       <cv-req:ExperienceDescription>
         <cv-req:PositionPercent>100</cv-req:PositionPercent>
-        <cv-req:Role>1227243</cv-req:Role>
-        <cv-req:Activities>Must have done financial analysis by using R.</cv-req:Activities>
+        <cv-req:Role>2130114</cv-req:Role>
+        <cv-req:Activities>Developing IT-system.</cv-req:Activities>
       </cv-req:ExperienceDescription>
       <cv-req:ExperienceValue>
         <cv-req:ProjectParticipation>5</cv-req:ProjectParticipation>
-        <cv-req:ProjectSize>5</cv-req:ProjectSize>
-        <cv-req:ProjectValue currencyID="NOK">100000</cv-req:ProjectValue>
+        <cv-req:ProjectSize>15</cv-req:ProjectSize>
+        <cv-req:ProjectValue currencyID="NOK">1500000</cv-req:ProjectValue>
       </cv-req:ExperienceValue>
     </cv-req:AlternativeProjectExperience>
   </cv-req:ProjectExperience>
@@ -239,42 +239,65 @@
   </cv-req:ProjectExperience>
   <!-- end::ProjectExperience[] -->
 
+  <!-- tag::WorkExperienceAlternative[] -->
   <cv-req:WorkExperience>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:PositionLevel>Leader</cv-req:PositionLevel>
-    <cv-req:IndustryType>01230</cv-req:IndustryType>
-    <cv-req:Workplace>AI</cv-req:Workplace>
-    <cv-req:JobSector>private</cv-req:JobSector>
-    <cv-req:MinimumTotalExperience>5</cv-req:MinimumTotalExperience>
-    <cv-req:Period>
-      <cv-req:StartDate>2020-01-19</cv-req:StartDate>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>should</cv-req:Requirement><!--2-->
+    <cv-req:PositionLevel>employee</cv-req:PositionLevel><!--3-->
+    <cv-req:IndustryType>71200</cv-req:IndustryType><!--4-->
+    <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
+    <cv-req:JobSector>private</cv-req:JobSector><!--6-->
+    <cv-req:MinimumTotalExperience>5</cv-req:MinimumTotalExperience><!--7-->
+    <cv-req:Period><!--8-->
+      <cv-req:StartDate>2010-01-19</cv-req:StartDate>
       <cv-req:EndDate>2020-10-02</cv-req:EndDate>
     </cv-req:Period>
     <cv-req:WorkExperienceDescription>
-      <cv-req:PositionPercent>100</cv-req:PositionPercent>
-      <cv-req:Role>1234106</cv-req:Role>
-      <cv-req:Activities>Must have done mathemathical analysis by using Python.</cv-req:Activities>
+      <cv-req:PositionPercent>100</cv-req:PositionPercent><!--9-->
+      <cv-req:Role>2130161</cv-req:Role><!--10-->
+      <cv-req:Activities>Must have done mathemathical analysis by using Python.</cv-req:Activities><!--11-->
     </cv-req:WorkExperienceDescription>
-    <cv-req:AlternativeWorkExperience>
+    <cv-req:AlternativeWorkExperience><!--12-->
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>should</cv-req:Requirement>
-      <cv-req:PositionLevel>Leader</cv-req:PositionLevel>
-      <cv-req:IndustryType>01479</cv-req:IndustryType>
+      <cv-req:PositionLevel>employee</cv-req:PositionLevel>
+      <cv-req:IndustryType>72190</cv-req:IndustryType>
       <cv-req:Workplace>AI</cv-req:Workplace>
       <cv-req:JobSector>private</cv-req:JobSector>
       <cv-req:MinimumTotalExperience>5</cv-req:MinimumTotalExperience>
       <cv-req:Period>
-        <cv-req:StartDate>2020-01-19</cv-req:StartDate>
+        <cv-req:StartDate>2010-01-19</cv-req:StartDate>
         <cv-req:EndDate>2020-10-02</cv-req:EndDate>
       </cv-req:Period>
       <cv-req:WorkExperienceDescription>
         <cv-req:PositionPercent>100</cv-req:PositionPercent>
-        <cv-req:Role>1235104</cv-req:Role>
+        <cv-req:Role>2130161</cv-req:Role>
         <cv-req:Activities>Must have done mathemathical analysis by using Python.</cv-req:Activities>
       </cv-req:WorkExperienceDescription>
     </cv-req:AlternativeWorkExperience>
   </cv-req:WorkExperience>
+    <!-- end::WorkExperienceAlternative[] -->
+
+    <!-- tag::WorkExperience[] -->
+    <cv-req:WorkExperience>
+      <cv-req:ID>1</cv-req:ID><!--1-->
+      <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+      <cv-req:PositionLevel>MiddleLevelManager</cv-req:PositionLevel><!--3-->
+      <cv-req:IndustryType>01230</cv-req:IndustryType><!--4-->
+      <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
+      <cv-req:JobSector>private</cv-req:JobSector><!--6-->
+      <cv-req:MinimumTotalExperience>5</cv-req:MinimumTotalExperience><!--7-->
+      <cv-req:Period><!--8-->
+        <cv-req:StartDate>2020-01-19</cv-req:StartDate>
+        <cv-req:EndDate>2020-10-02</cv-req:EndDate>
+      </cv-req:Period>
+      <cv-req:WorkExperienceDescription><!--9-->
+        <cv-req:PositionPercent>100</cv-req:PositionPercent>
+        <cv-req:Role>1234106</cv-req:Role>
+        <cv-req:Activities>Must have done mathemathical analysis by using Python.</cv-req:Activities>
+      </cv-req:WorkExperienceDescription>
+    </cv-req:WorkExperience>
+      <!-- end::WorkExperience[] -->
 
   <cv-req:Clearance>
     <cv-req:ID>1</cv-req:ID>

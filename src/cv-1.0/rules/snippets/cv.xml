@@ -206,39 +206,36 @@
 
   <!-- tag::ProjectExperience-req[] -->
   <cv:ProjectExperience>
-    <cv:ID>1</cv:ID>
-    <cv:ExperienceType>1210148</cv:ExperienceType>
-    <cv:IndustryType>07290</cv:IndustryType>
-    <cv:Workplace>AI</cv:Workplace>
-    <cv:JobSector>private</cv:JobSector>
-    <cv:CompanyParty>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:ExperienceType>2130111</cv:ExperienceType><!--2-->
+    <cv:CompanyParty><!--3-->
       <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
       <cv:Name>AZ company</cv:Name>
     </cv:CompanyParty>
-    <cv:Period>
-      <cv:StartDate>2020-01-01</cv:StartDate>
-      <cv:EndDate>2020-12-01</cv:EndDate>
+    <cv:Period><!--4-->
+      <cv:StartDate>2005-01-01</cv:StartDate>
+      <cv:EndDate>2018-12-01</cv:EndDate>
     </cv:Period>
-    <cv:ExperienceDescription>
+    <cv:ExperienceDescription><!--5-->
       <cv:PositionPercent>100</cv:PositionPercent>
-      <cv:Role>1210185</cv:Role>
-      <cv:Activities>Financial analysis by using R.</cv:Activities>
+      <cv:Role>2130110</cv:Role>
+      <cv:Activities>Coordinator of web portal for X company.</cv:Activities>
     </cv:ExperienceDescription>
-    <cv:ExperienceValue>
+    <cv:ExperienceValue><!--6-->
       <cv:ProjectParticipation>5</cv:ProjectParticipation>
-      <cv:ProjectSize>5</cv:ProjectSize>
-      <cv:ProjectValue currencyID="NOK">100</cv:ProjectValue>
+      <cv:ProjectSize>20</cv:ProjectSize>
+      <cv:ProjectValue currencyID="NOK">1500000</cv:ProjectValue>
     </cv:ExperienceValue>
-    <cv:Contact>
+    <cv:Contact><!--7-->
       <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>1222102</cv:Role>
+      <cv:Role>2130121</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
-      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
+      <cv:ElectronicMail>ola.nordmann@x-company.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:EducationReference>
+    <cv:EducationReference><!--8-->
       <cv:ID>req-edu-45</cv:ID>
     </cv:EducationReference>
-    <cv:ProjectExperienceReference>
+    <cv:ProjectExperienceReference><!--9-->
       <cv:ID>req-25</cv:ID>
     </cv:ProjectExperienceReference>
   </cv:ProjectExperience>
@@ -246,30 +243,30 @@
 
   <!-- tag::ProjectExperience[] -->
   <cv:ProjectExperience>
-    <cv:ID>1</cv:ID>
-    <cv:ExperienceType>1210148</cv:ExperienceType>
-    <cv:IndustryType>07290</cv:IndustryType>
-    <cv:Workplace>AI</cv:Workplace>
-    <cv:JobSector>private</cv:JobSector>
-    <cv:CompanyParty>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:ExperienceType>1210148</cv:ExperienceType><!--2-->
+    <cv:IndustryType>07290</cv:IndustryType><!--3-->
+    <cv:Workplace>AI</cv:Workplace><!--4-->
+    <cv:JobSector>private</cv:JobSector><!--5-->
+    <cv:CompanyParty><!--6-->
       <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
       <cv:Name>AZ company</cv:Name>
     </cv:CompanyParty>
-    <cv:Period>
+    <cv:Period><!--7-->
       <cv:StartDate>2020-01-01</cv:StartDate>
       <cv:EndDate>2020-12-01</cv:EndDate>
     </cv:Period>
     <cv:ExperienceDescription>
-      <cv:PositionPercent>100</cv:PositionPercent>
-      <cv:Role>1210185</cv:Role>
-      <cv:Activities>Financial analysis by using R.</cv:Activities>
+      <cv:PositionPercent>100</cv:PositionPercent><!--8-->
+      <cv:Role>1210185</cv:Role><!--9-->
+      <cv:Activities>Financial analysis by using R.</cv:Activities><!--10-->
     </cv:ExperienceDescription>
     <cv:ExperienceValue>
-      <cv:ProjectParticipation>5</cv:ProjectParticipation>
-      <cv:ProjectSize>5</cv:ProjectSize>
-      <cv:ProjectValue currencyID="NOK">100</cv:ProjectValue>
+      <cv:ProjectParticipation>5</cv:ProjectParticipation><!--11-->
+      <cv:ProjectSize>5</cv:ProjectSize><!--12-->
+      <cv:ProjectValue currencyID="NOK">100</cv:ProjectValue><!--13-->
     </cv:ExperienceValue>
-    <cv:Contact>
+    <cv:Contact><!--14-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1222102</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
@@ -278,38 +275,66 @@
   </cv:ProjectExperience>
   <!-- end::ProjectExperience[] -->
 
+  <!-- tag::WorkExperience-req[] -->
   <cv:WorkExperience>
-    <cv:ID>3</cv:ID>
-    <cv:PositionLevel>leader</cv:PositionLevel>
-    <cv:IndustryType>10130</cv:IndustryType>
-    <cv:Workplace>CF</cv:Workplace>
-    <cv:JobSector>private</cv:JobSector>
-    <cv:CompanyParty>
+    <cv:ID>3</cv:ID><!--1-->
+    <cv:PositionLevel>employee</cv:PositionLevel><!--2-->
+    <cv:CompanyParty><!--3-->
       <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
-      <cv:Name>XYZ company</cv:Name>
+      <cv:Name>X company</cv:Name>
     </cv:CompanyParty>
-    <cv:Period>
+    <cv:Period><!--4-->
       <cv:StartDate>2013-05-05</cv:StartDate>
       <cv:EndDate>2017-08-01</cv:EndDate>
     </cv:Period>
-    <cv:WorkExperienceDescription>
+    <cv:WorkExperienceDescription><!--5-->
       <cv:PositionPercent>100</cv:PositionPercent>
-      <cv:Role>1222142</cv:Role>
-      <cv:Activities>Statistical analysis by using R and Python.</cv:Activities>
+      <cv:Role>2130161</cv:Role>
+      <cv:Activities>Mathemathical analysis by using R and Python.</cv:Activities>
     </cv:WorkExperienceDescription>
-    <cv:Contact>
+    <cv:Contact><!--6-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1222169</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:EducationReference>
+    <cv:EducationReference><!--7-->
       <cv:ID>req-edu-45</cv:ID>
     </cv:EducationReference>
-    <cv:ProjectExperienceReference>
+    <cv:WorkExperienceReference><!--8-->
       <cv:ID>req-25</cv:ID>
-    </cv:ProjectExperienceReference>
+    </cv:WorkExperienceReference>
   </cv:WorkExperience>
+  <!-- end::WorkExperience-req[] -->
+
+  <!-- tag::WorkExperience[] -->
+  <cv:WorkExperience>
+    <cv:ID>3</cv:ID><!--1-->
+    <cv:PositionLevel>leader</cv:PositionLevel><!--2-->
+    <cv:IndustryType>72110</cv:IndustryType><!--3-->
+    <cv:Workplace>CF</cv:Workplace><!--4-->
+    <cv:JobSector>private</cv:JobSector><!--5-->
+    <cv:CompanyParty><!--6-->
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:Name>XYZ company</cv:Name>
+    </cv:CompanyParty>
+    <cv:Period><!--7-->
+      <cv:StartDate>2015-05-07</cv:StartDate>
+      <cv:EndDate>2020-10-01</cv:EndDate>
+    </cv:Period>
+    <cv:WorkExperienceDescription>
+      <cv:PositionPercent>100</cv:PositionPercent><!--8-->
+      <cv:Role>2130160</cv:Role><!--9-->
+      <cv:Activities>Applicationprogrammer</cv:Activities><!--10-->
+    </cv:WorkExperienceDescription>
+    <cv:Contact><!--11-->
+      <cv:Name>Ola Nordmann</cv:Name>
+      <cv:Role>1222169</cv:Role>
+      <cv:Telephone>22221111</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@xyz.no</cv:ElectronicMail>
+    </cv:Contact>
+  </cv:WorkExperience>
+  <!-- end::WorkExperience[] -->
 
   <cv:Clearance>
     <cv:ID>1</cv:ID>

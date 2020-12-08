@@ -30,7 +30,7 @@ project participation (need to be months), the size of project and the total val
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperienceAlternative]
 ----
 <1> Project experience identifier
-<2> Project experience requirement - indicate whether a candidate needs to fulfill the course requirement
+<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement
 <3> Type of project experience
 <4> Type of industry
 <5> Workplace
@@ -38,10 +38,10 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperienceAltern
 <7> Total year of experience
 <8> Period
 <9> Candidate's position percent
-<10> Total project size
+<10> Role in project
 <11> Description of project activities
 <12> Project participation
-<13> Project size
+<13> Total Project size
 <14> Project value
 <15> Alternative project experience
 
@@ -51,7 +51,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperienceAltern
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperience]
 ----
 <1> Project experience identifier
-<2> Project experience requirement - indicate whether a candidate needs to fulfill the course requirement
+<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement
 <3> Type of project experience
 <4> Type of industry
 <5> Workplace
@@ -65,22 +65,46 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperience]
 == Information specific to CV
 
 Based on the project experience requirement, the economic operator needs to document the candidate's project experience.
-For CV used in the job application, fill in the relevant parts of education information.
+For CV used in the job application, fill in the relevant parts of project experience information.
+
 
 The element `cv:EducationReference` and `cv:ProjectExperienceReference` needs to be used in the procurement process,
 not in the job application process. The education reference corresponds to the educational requirement in the CV request when
 the contracting authority accepts relevant experience. The project experience reference corresponds to project experience in the
 CV request.
 
-.Example of a description of education in CV as a response to requested education in CV request
+.Example of a description of project experience in CV as a response to requested education in CV request
 [source, xml, indent=0]
 ----
 include::../{snippet-dir-cv}/cv.xml[tags=ProjectExperience-req]
 ----
+<1> Project experience identifier
+<2> Type of project experience
+<3> Information about contracting authority or organisation
+<4> Period
+<5> Project experience description: position percent, role, activities
+<6> Value of project experience: total month of project participation, total project size, total project value
+<7> Contact information
+<8> Education reference
+<9> Project experience reference
 
 
-.Example of a description of education in a CV in the job application
+.Example of a description of project experience in a CV in the job application
 [source, xml, indent=0]
 ----
 include::../{snippet-dir-cv}/cv.xml[tags=ProjectExperience]
 ----
+<1> Project experience identifier
+<2> Type of project experience
+<3> Type of industry
+<4> Workplace
+<5> Job sector
+<6> Information about contracting authority or organisation
+<7> Period
+<8> Position percent
+<9> Project role
+<10> Description of project activities
+<11> Total month of project participation
+<12> Project size
+<13> Project value
+<14> Contact information

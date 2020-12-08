@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Position level codelist</Title>
-    <Identifier>positionLevel</Identifier>
+    <Identifier>PositionLevel</Identifier>
     <Version>1.0</Version>
     <Agency>DFO</Agency>
 

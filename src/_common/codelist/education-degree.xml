@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Education degree code list</Title>
-    <Identifier>educationDegree</Identifier>
+    <Identifier>EducationDegree</Identifier>
     <Version>1.0</Version>
     <Agency>DFO</Agency>
 
@@ -54,7 +54,7 @@
     <Code>
         <Id>TradeCertificate</Id>
         <Name>Trade certificate</Name>
-        <Description>certificate awarded on successful completion of a vocational training course, and entitling the 
+        <Description>certificate awarded on successful completion of a vocational training course, and entitling the
           holder to practise the trade concerned.</Description>
     </Code>
 

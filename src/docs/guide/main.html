@@ -493,7 +493,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_information_specific_to_cv_4">5.5.2. Information specific to CV</a></li>
 </ul>
 </li>
-<li><a href="#_work_experience">5.6. Work Experience</a></li>
+<li><a href="#_work_experience">5.6. Work Experience</a>
+<ul class="sectlevel3">
+<li><a href="#_information_specific_to_cv_request_5">5.6.1. Information specific to CV request</a></li>
+<li><a href="#_information_specific_to_cv_5">5.6.2. Information specific to CV</a></li>
+</ul>
+</li>
 <li><a href="#_skills">5.7. Skills</a></li>
 <li><a href="#_clearance">5.8. Clearance</a></li>
 <li><a href="#_personal_skills">5.9. Personal Skills</a></li>
@@ -1202,7 +1207,7 @@ certification need to be valid to a specific date (<code>cv-req:ValidTo</code>).
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Certification requirement - indicate whether a candidate needs to fulfill the course requirement</td>
+<td>Certification requirement - indicate whether a candidate needs to fulfill the certification requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -1241,7 +1246,7 @@ certification need to be valid to a specific date (<code>cv-req:ValidTo</code>).
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Certification requirement - indicate whether a candidate needs to fulfill the course requirement</td>
+<td>Certification requirement - indicate whether a candidate needs to fulfill the certification requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -1621,7 +1626,7 @@ with a <code>B1</code> oral skill level. The candidate has an oral skill level o
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Language skill requirement - indicate whether a candidate needs to fulfill the educational requirement</td>
+<td>Language skill requirement - indicate whether a candidate needs to fulfill the language requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -1664,7 +1669,7 @@ with a <code>B1</code> oral skill level. The candidate has an oral skill level o
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Language skill requirement - indicate whether a candidate needs to fulfill the educational requirement</td>
+<td>Language skill requirement - indicate whether a candidate needs to fulfill the language requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -1689,7 +1694,7 @@ with a <code>B1</code> oral skill level. The candidate has an oral skill level o
 <h4 id="_information_specific_to_cv_3"><a class="anchor" href="#_information_specific_to_cv_3"></a>5.4.2. Information specific to CV</h4>
 <div class="paragraph">
 <p>Based on the language skill requirement, the economic operator needs to document the candidate&#8217;s language skill.
-For CV used in the job application, fill in the relevant parts of education information.</p>
+For CV used in the job application, fill in the relevant parts of language-skill information.</p>
 </div>
 <div class="paragraph">
 <p>Oral skill and written skill must be provided for each language skill. The skill levels are defined from
@@ -1827,53 +1832,53 @@ project participation (need to be months), the size of project and the total val
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv-req:ProjectExperience&gt;</span>
   <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
-  <span class="tag">&lt;cv-req:Requirement&gt;</span>must<span class="tag">&lt;/cv-req:Requirement&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
-  <span class="tag">&lt;cv-req:ExperienceType&gt;</span>1141101<span class="tag">&lt;/cv-req:ExperienceType&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
-  <span class="tag">&lt;cv-req:IndustryType&gt;</span>01110<span class="tag">&lt;/cv-req:IndustryType&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
-  <span class="tag">&lt;cv-req:Workplace&gt;</span>AI<span class="tag">&lt;/cv-req:Workplace&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;cv-req:Requirement&gt;</span>should<span class="tag">&lt;/cv-req:Requirement&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv-req:ExperienceType&gt;</span>2130111<span class="tag">&lt;/cv-req:ExperienceType&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv-req:IndustryType&gt;</span>63120<span class="tag">&lt;/cv-req:IndustryType&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv-req:Workplace&gt;</span>CA<span class="tag">&lt;/cv-req:Workplace&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
   <span class="tag">&lt;cv-req:JobSector&gt;</span>private<span class="tag">&lt;/cv-req:JobSector&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
   <span class="tag">&lt;cv-req:RequiredTotalExperience&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
     <span class="tag">&lt;cv-req:MinimumExperience&gt;</span>2<span class="tag">&lt;/cv-req:MinimumExperience&gt;</span>
-    <span class="tag">&lt;cv-req:MaximumExperience&gt;</span>2<span class="tag">&lt;/cv-req:MaximumExperience&gt;</span>
+    <span class="tag">&lt;cv-req:MaximumExperience&gt;</span>6<span class="tag">&lt;/cv-req:MaximumExperience&gt;</span>
   <span class="tag">&lt;/cv-req:RequiredTotalExperience&gt;</span>
   <span class="tag">&lt;cv-req:Period&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
-    <span class="tag">&lt;cv-req:StartDate&gt;</span>2020-01-19<span class="tag">&lt;/cv-req:StartDate&gt;</span>
+    <span class="tag">&lt;cv-req:StartDate&gt;</span>2000-01-19<span class="tag">&lt;/cv-req:StartDate&gt;</span>
     <span class="tag">&lt;cv-req:EndDate&gt;</span>2020-10-02<span class="tag">&lt;/cv-req:EndDate&gt;</span>
   <span class="tag">&lt;/cv-req:Period&gt;</span>
   <span class="tag">&lt;cv-req:ExperienceDescription&gt;</span>
     <span class="tag">&lt;cv-req:PositionPercent&gt;</span>100<span class="tag">&lt;/cv-req:PositionPercent&gt;</span><i class="conum" data-value="9"></i><b>(9)</b>
-    <span class="tag">&lt;cv-req:Role&gt;</span>1210178<span class="tag">&lt;/cv-req:Role&gt;</span><i class="conum" data-value="10"></i><b>(10)</b>
-    <span class="tag">&lt;cv-req:Activities&gt;</span>Must have done financial analysis by using R.<span class="tag">&lt;/cv-req:Activities&gt;</span><i class="conum" data-value="11"></i><b>(11)</b>
+    <span class="tag">&lt;cv-req:Role&gt;</span>2130110<span class="tag">&lt;/cv-req:Role&gt;</span><i class="conum" data-value="10"></i><b>(10)</b>
+    <span class="tag">&lt;cv-req:Activities&gt;</span>Must coordinate comapnies web-portal.<span class="tag">&lt;/cv-req:Activities&gt;</span><i class="conum" data-value="11"></i><b>(11)</b>
   <span class="tag">&lt;/cv-req:ExperienceDescription&gt;</span>
   <span class="tag">&lt;cv-req:ExperienceValue&gt;</span>
     <span class="tag">&lt;cv-req:ProjectParticipation&gt;</span>5<span class="tag">&lt;/cv-req:ProjectParticipation&gt;</span><i class="conum" data-value="12"></i><b>(12)</b>
-    <span class="tag">&lt;cv-req:ProjectSize&gt;</span>5<span class="tag">&lt;/cv-req:ProjectSize&gt;</span><i class="conum" data-value="13"></i><b>(13)</b>
-    <span class="tag">&lt;cv-req:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cv-req:ProjectValue&gt;</span><i class="conum" data-value="14"></i><b>(14)</b>
+    <span class="tag">&lt;cv-req:ProjectSize&gt;</span>20<span class="tag">&lt;/cv-req:ProjectSize&gt;</span><i class="conum" data-value="13"></i><b>(13)</b>
+    <span class="tag">&lt;cv-req:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1500000<span class="tag">&lt;/cv-req:ProjectValue&gt;</span><i class="conum" data-value="14"></i><b>(14)</b>
   <span class="tag">&lt;/cv-req:ExperienceValue&gt;</span>
   <span class="tag">&lt;cv-req:AlternativeProjectExperience&gt;</span><i class="conum" data-value="15"></i><b>(15)</b>
     <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span>
-    <span class="tag">&lt;cv-req:Requirement&gt;</span>must<span class="tag">&lt;/cv-req:Requirement&gt;</span>
-    <span class="tag">&lt;cv-req:ExperienceType&gt;</span>1224117<span class="tag">&lt;/cv-req:ExperienceType&gt;</span>
-    <span class="tag">&lt;cv-req:IndustryType&gt;</span>01190<span class="tag">&lt;/cv-req:IndustryType&gt;</span>
+    <span class="tag">&lt;cv-req:Requirement&gt;</span>should<span class="tag">&lt;/cv-req:Requirement&gt;</span>
+    <span class="tag">&lt;cv-req:ExperienceType&gt;</span>2130111<span class="tag">&lt;/cv-req:ExperienceType&gt;</span>
+    <span class="tag">&lt;cv-req:IndustryType&gt;</span>63120<span class="tag">&lt;/cv-req:IndustryType&gt;</span>
     <span class="tag">&lt;cv-req:Workplace&gt;</span>AI<span class="tag">&lt;/cv-req:Workplace&gt;</span>
     <span class="tag">&lt;cv-req:JobSector&gt;</span>private<span class="tag">&lt;/cv-req:JobSector&gt;</span>
     <span class="tag">&lt;cv-req:RequiredTotalExperience&gt;</span>
       <span class="tag">&lt;cv-req:MinimumExperience&gt;</span>2<span class="tag">&lt;/cv-req:MinimumExperience&gt;</span>
-      <span class="tag">&lt;cv-req:MaximumExperience&gt;</span>2<span class="tag">&lt;/cv-req:MaximumExperience&gt;</span>
+      <span class="tag">&lt;cv-req:MaximumExperience&gt;</span>6<span class="tag">&lt;/cv-req:MaximumExperience&gt;</span>
     <span class="tag">&lt;/cv-req:RequiredTotalExperience&gt;</span>
     <span class="tag">&lt;cv-req:Period&gt;</span>
-      <span class="tag">&lt;cv-req:StartDate&gt;</span>2020-01-19<span class="tag">&lt;/cv-req:StartDate&gt;</span>
+      <span class="tag">&lt;cv-req:StartDate&gt;</span>2000-01-19<span class="tag">&lt;/cv-req:StartDate&gt;</span>
       <span class="tag">&lt;cv-req:EndDate&gt;</span>2020-10-02<span class="tag">&lt;/cv-req:EndDate&gt;</span>
     <span class="tag">&lt;/cv-req:Period&gt;</span>
     <span class="tag">&lt;cv-req:ExperienceDescription&gt;</span>
       <span class="tag">&lt;cv-req:PositionPercent&gt;</span>100<span class="tag">&lt;/cv-req:PositionPercent&gt;</span>
-      <span class="tag">&lt;cv-req:Role&gt;</span>1227243<span class="tag">&lt;/cv-req:Role&gt;</span>
-      <span class="tag">&lt;cv-req:Activities&gt;</span>Must have done financial analysis by using R.<span class="tag">&lt;/cv-req:Activities&gt;</span>
+      <span class="tag">&lt;cv-req:Role&gt;</span>2130114<span class="tag">&lt;/cv-req:Role&gt;</span>
+      <span class="tag">&lt;cv-req:Activities&gt;</span>Developing IT-system.<span class="tag">&lt;/cv-req:Activities&gt;</span>
     <span class="tag">&lt;/cv-req:ExperienceDescription&gt;</span>
     <span class="tag">&lt;cv-req:ExperienceValue&gt;</span>
       <span class="tag">&lt;cv-req:ProjectParticipation&gt;</span>5<span class="tag">&lt;/cv-req:ProjectParticipation&gt;</span>
-      <span class="tag">&lt;cv-req:ProjectSize&gt;</span>5<span class="tag">&lt;/cv-req:ProjectSize&gt;</span>
-      <span class="tag">&lt;cv-req:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100000<span class="tag">&lt;/cv-req:ProjectValue&gt;</span>
+      <span class="tag">&lt;cv-req:ProjectSize&gt;</span>15<span class="tag">&lt;/cv-req:ProjectSize&gt;</span>
+      <span class="tag">&lt;cv-req:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1500000<span class="tag">&lt;/cv-req:ProjectValue&gt;</span>
     <span class="tag">&lt;/cv-req:ExperienceValue&gt;</span>
   <span class="tag">&lt;/cv-req:AlternativeProjectExperience&gt;</span>
 <span class="tag">&lt;/cv-req:ProjectExperience&gt;</span></code></pre>
@@ -1887,7 +1892,7 @@ project participation (need to be months), the size of project and the total val
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Project experience requirement - indicate whether a candidate needs to fulfill the course requirement</td>
+<td>Project experience requirement - indicate whether a candidate needs to fulfill the project requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -1919,7 +1924,7 @@ project participation (need to be months), the size of project and the total val
 </tr>
 <tr>
 <td><i class="conum" data-value="10"></i><b>10</b></td>
-<td>Total project size</td>
+<td>Role in project</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="11"></i><b>11</b></td>
@@ -1931,7 +1936,7 @@ project participation (need to be months), the size of project and the total val
 </tr>
 <tr>
 <td><i class="conum" data-value="13"></i><b>13</b></td>
-<td>Project size</td>
+<td>Total Project size</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="14"></i><b>14</b></td>
@@ -1982,7 +1987,7 @@ project participation (need to be months), the size of project and the total val
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Project experience requirement - indicate whether a candidate needs to fulfill the course requirement</td>
+<td>Project experience requirement - indicate whether a candidate needs to fulfill the project requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -2022,83 +2027,122 @@ project participation (need to be months), the size of project and the total val
 <div class="sect3">
 <h4 id="_information_specific_to_cv_4"><a class="anchor" href="#_information_specific_to_cv_4"></a>5.5.2. Information specific to CV</h4>
 <div class="paragraph">
-<p>Based on the educational requirement, the economic operator needs to document the candidate&#8217;s education.
-For CV used in the job application, fill in the relevant parts of education information.</p>
+<p>Based on the project experience requirement, the economic operator needs to document the candidate&#8217;s project experience.
+For CV used in the job application, fill in the relevant parts of project experience information.</p>
 </div>
 <div class="paragraph">
-<p>The element <code>cv:EducationReference</code> needs to be used in the procurement process, not in the job application process.
-This is a reference to the corresponding educational requirement in the CV request.</p>
+<p>The element <code>cv:EducationReference</code> and <code>cv:ProjectExperienceReference</code> needs to be used in the procurement process,
+not in the job application process. The education reference corresponds to the educational requirement in the CV request when
+the contracting authority accepts relevant experience. The project experience reference corresponds to project experience in the
+CV request.</p>
 </div>
 <div class="listingblock">
-<div class="title">Example of a description of education in CV as a response to requested education in CV request</div>
+<div class="title">Example of a description of project experience in CV as a response to requested education in CV request</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:ProjectExperience&gt;</span>
-  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span>
-  <span class="tag">&lt;cv:ExperienceType&gt;</span>1210148<span class="tag">&lt;/cv:ExperienceType&gt;</span>
-  <span class="tag">&lt;cv:IndustryType&gt;</span>07290<span class="tag">&lt;/cv:IndustryType&gt;</span>
-  <span class="tag">&lt;cv:Workplace&gt;</span>AI<span class="tag">&lt;/cv:Workplace&gt;</span>
-  <span class="tag">&lt;cv:JobSector&gt;</span>private<span class="tag">&lt;/cv:JobSector&gt;</span>
-  <span class="tag">&lt;cv:CompanyParty&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:ExperienceType&gt;</span>2130111<span class="tag">&lt;/cv:ExperienceType&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:CompanyParty&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
     <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span>
     <span class="tag">&lt;cv:Name&gt;</span>AZ company<span class="tag">&lt;/cv:Name&gt;</span>
   <span class="tag">&lt;/cv:CompanyParty&gt;</span>
-  <span class="tag">&lt;cv:Period&gt;</span>
-    <span class="tag">&lt;cv:StartDate&gt;</span>2020-01-01<span class="tag">&lt;/cv:StartDate&gt;</span>
-    <span class="tag">&lt;cv:EndDate&gt;</span>2020-12-01<span class="tag">&lt;/cv:EndDate&gt;</span>
+  <span class="tag">&lt;cv:Period&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+    <span class="tag">&lt;cv:StartDate&gt;</span>2005-01-01<span class="tag">&lt;/cv:StartDate&gt;</span>
+    <span class="tag">&lt;cv:EndDate&gt;</span>2018-12-01<span class="tag">&lt;/cv:EndDate&gt;</span>
   <span class="tag">&lt;/cv:Period&gt;</span>
-  <span class="tag">&lt;cv:ExperienceDescription&gt;</span>
+  <span class="tag">&lt;cv:ExperienceDescription&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
     <span class="tag">&lt;cv:PositionPercent&gt;</span>100<span class="tag">&lt;/cv:PositionPercent&gt;</span>
-    <span class="tag">&lt;cv:Role&gt;</span>1210185<span class="tag">&lt;/cv:Role&gt;</span>
-    <span class="tag">&lt;cv:Activities&gt;</span>Financial analysis by using R.<span class="tag">&lt;/cv:Activities&gt;</span>
+    <span class="tag">&lt;cv:Role&gt;</span>2130110<span class="tag">&lt;/cv:Role&gt;</span>
+    <span class="tag">&lt;cv:Activities&gt;</span>Coordinator of web portal for X company.<span class="tag">&lt;/cv:Activities&gt;</span>
   <span class="tag">&lt;/cv:ExperienceDescription&gt;</span>
-  <span class="tag">&lt;cv:ExperienceValue&gt;</span>
+  <span class="tag">&lt;cv:ExperienceValue&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
     <span class="tag">&lt;cv:ProjectParticipation&gt;</span>5<span class="tag">&lt;/cv:ProjectParticipation&gt;</span>
-    <span class="tag">&lt;cv:ProjectSize&gt;</span>5<span class="tag">&lt;/cv:ProjectSize&gt;</span>
-    <span class="tag">&lt;cv:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cv:ProjectValue&gt;</span>
+    <span class="tag">&lt;cv:ProjectSize&gt;</span>20<span class="tag">&lt;/cv:ProjectSize&gt;</span>
+    <span class="tag">&lt;cv:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>1500000<span class="tag">&lt;/cv:ProjectValue&gt;</span>
   <span class="tag">&lt;/cv:ExperienceValue&gt;</span>
-  <span class="tag">&lt;cv:Contact&gt;</span>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
     <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
-    <span class="tag">&lt;cv:Role&gt;</span>1222102<span class="tag">&lt;/cv:Role&gt;</span>
+    <span class="tag">&lt;cv:Role&gt;</span>2130121<span class="tag">&lt;/cv:Role&gt;</span>
     <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
-    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@x.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@x-company.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
   <span class="tag">&lt;/cv:Contact&gt;</span>
-  <span class="tag">&lt;cv:EducationReference&gt;</span>
+  <span class="tag">&lt;cv:EducationReference&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
     <span class="tag">&lt;cv:ID&gt;</span>req-edu-45<span class="tag">&lt;/cv:ID&gt;</span>
   <span class="tag">&lt;/cv:EducationReference&gt;</span>
-  <span class="tag">&lt;cv:ProjectExperienceReference&gt;</span>
+  <span class="tag">&lt;cv:ProjectExperienceReference&gt;</span><i class="conum" data-value="9"></i><b>(9)</b>
     <span class="tag">&lt;cv:ID&gt;</span>req-25<span class="tag">&lt;/cv:ID&gt;</span>
   <span class="tag">&lt;/cv:ProjectExperienceReference&gt;</span>
 <span class="tag">&lt;/cv:ProjectExperience&gt;</span></code></pre>
 </div>
 </div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Project experience identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Type of project experience</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Information about contracting authority or organisation</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Period</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Project experience description: position percent, role, activities</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Value of project experience: total month of project participation, total project size, total project value</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Contact information</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Education reference</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="9"></i><b>9</b></td>
+<td>Project experience reference</td>
+</tr>
+</table>
+</div>
 <div class="listingblock">
-<div class="title">Example of a description of education in a CV in the job application</div>
+<div class="title">Example of a description of project experience in a CV in the job application</div>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:ProjectExperience&gt;</span>
-  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span>
-  <span class="tag">&lt;cv:ExperienceType&gt;</span>1210148<span class="tag">&lt;/cv:ExperienceType&gt;</span>
-  <span class="tag">&lt;cv:IndustryType&gt;</span>07290<span class="tag">&lt;/cv:IndustryType&gt;</span>
-  <span class="tag">&lt;cv:Workplace&gt;</span>AI<span class="tag">&lt;/cv:Workplace&gt;</span>
-  <span class="tag">&lt;cv:JobSector&gt;</span>private<span class="tag">&lt;/cv:JobSector&gt;</span>
-  <span class="tag">&lt;cv:CompanyParty&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:ExperienceType&gt;</span>1210148<span class="tag">&lt;/cv:ExperienceType&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:IndustryType&gt;</span>07290<span class="tag">&lt;/cv:IndustryType&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv:Workplace&gt;</span>AI<span class="tag">&lt;/cv:Workplace&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:JobSector&gt;</span>private<span class="tag">&lt;/cv:JobSector&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;cv:CompanyParty&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
     <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span>
     <span class="tag">&lt;cv:Name&gt;</span>AZ company<span class="tag">&lt;/cv:Name&gt;</span>
   <span class="tag">&lt;/cv:CompanyParty&gt;</span>
-  <span class="tag">&lt;cv:Period&gt;</span>
+  <span class="tag">&lt;cv:Period&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
     <span class="tag">&lt;cv:StartDate&gt;</span>2020-01-01<span class="tag">&lt;/cv:StartDate&gt;</span>
     <span class="tag">&lt;cv:EndDate&gt;</span>2020-12-01<span class="tag">&lt;/cv:EndDate&gt;</span>
   <span class="tag">&lt;/cv:Period&gt;</span>
   <span class="tag">&lt;cv:ExperienceDescription&gt;</span>
-    <span class="tag">&lt;cv:PositionPercent&gt;</span>100<span class="tag">&lt;/cv:PositionPercent&gt;</span>
-    <span class="tag">&lt;cv:Role&gt;</span>1210185<span class="tag">&lt;/cv:Role&gt;</span>
-    <span class="tag">&lt;cv:Activities&gt;</span>Financial analysis by using R.<span class="tag">&lt;/cv:Activities&gt;</span>
+    <span class="tag">&lt;cv:PositionPercent&gt;</span>100<span class="tag">&lt;/cv:PositionPercent&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
+    <span class="tag">&lt;cv:Role&gt;</span>1210185<span class="tag">&lt;/cv:Role&gt;</span><i class="conum" data-value="9"></i><b>(9)</b>
+    <span class="tag">&lt;cv:Activities&gt;</span>Financial analysis by using R.<span class="tag">&lt;/cv:Activities&gt;</span><i class="conum" data-value="10"></i><b>(10)</b>
   <span class="tag">&lt;/cv:ExperienceDescription&gt;</span>
   <span class="tag">&lt;cv:ExperienceValue&gt;</span>
-    <span class="tag">&lt;cv:ProjectParticipation&gt;</span>5<span class="tag">&lt;/cv:ProjectParticipation&gt;</span>
-    <span class="tag">&lt;cv:ProjectSize&gt;</span>5<span class="tag">&lt;/cv:ProjectSize&gt;</span>
-    <span class="tag">&lt;cv:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cv:ProjectValue&gt;</span>
+    <span class="tag">&lt;cv:ProjectParticipation&gt;</span>5<span class="tag">&lt;/cv:ProjectParticipation&gt;</span><i class="conum" data-value="11"></i><b>(11)</b>
+    <span class="tag">&lt;cv:ProjectSize&gt;</span>5<span class="tag">&lt;/cv:ProjectSize&gt;</span><i class="conum" data-value="12"></i><b>(12)</b>
+    <span class="tag">&lt;cv:ProjectValue</span> <span class="attribute-name">currencyID</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">NOK</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>100<span class="tag">&lt;/cv:ProjectValue&gt;</span><i class="conum" data-value="13"></i><b>(13)</b>
   <span class="tag">&lt;/cv:ExperienceValue&gt;</span>
-  <span class="tag">&lt;cv:Contact&gt;</span>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="14"></i><b>(14)</b>
     <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
     <span class="tag">&lt;cv:Role&gt;</span>1222102<span class="tag">&lt;/cv:Role&gt;</span>
     <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
@@ -2107,11 +2151,418 @@ This is a reference to the corresponding educational requirement in the CV reque
 <span class="tag">&lt;/cv:ProjectExperience&gt;</span></code></pre>
 </div>
 </div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Project experience identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Type of project experience</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Type of industry</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Workplace</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Job sector</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Information about contracting authority or organisation</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Period</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Position percent</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="9"></i><b>9</b></td>
+<td>Project role</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="10"></i><b>10</b></td>
+<td>Description of project activities</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="11"></i><b>11</b></td>
+<td>Total month of project participation</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="12"></i><b>12</b></td>
+<td>Project size</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="13"></i><b>13</b></td>
+<td>Project value</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="14"></i><b>14</b></td>
+<td>Contact information</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_work_experience"><a class="anchor" href="#_work_experience"></a>5.6. Work Experience</h3>
-
+<div class="paragraph">
+<p>Work experience contains information about candidate&#8217;s employment history.
+This is not similar to project experience.</p>
+</div>
+<div class="sect3">
+<h4 id="_information_specific_to_cv_request_5"><a class="anchor" href="#_information_specific_to_cv_request_5"></a>5.6.1. Information specific to CV request</h4>
+<div class="paragraph">
+<p>A contracting authority can specify a request for a work experience in several ways. There are many options.
+For each work experience, there must be a position level, i.e. employee, middle level manager or manager. Illustrates
+type of experience a candidate need for this job.</p>
+</div>
+<div class="paragraph">
+<p>There is always possible to request a work experience specific to a industry or workplace. The job sector need to
+be specified for each work experience, in element <code>cv-req:JobSector</code>.</p>
+</div>
+<div class="paragraph">
+<p>The minimum total experience need to be specified in element <code>cv-req:MinimumTotalExperience</code>. Implies that the candidate
+must fulfill this minimum requirement. This element can be used to differentiate for example a junior or senior candidate.</p>
+</div>
+<div class="paragraph">
+<p>In the CV request, the contracting authority can state the requested period for a work experience, using element
+<code>cv-req:Period</code>. Implies that the candidate can only refer to work experience from this period. For example, if
+a contracting authority only want candidates with work experience from last seven years.</p>
+</div>
+<div class="paragraph">
+<p>The description of experience need to be provided in element <code>cv-req:WorkExperienceDescription</code>, where candidate&#8217;s role must
+be specified in element <code>cv-req:Role</code>. It is also possible to describe the project activities and candidate&#8217;s
+position percent (e.g. must have worked 100%, full-time, with the project).</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of the requested work experience in the CV request with alternative requirement</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv-req:WorkExperience&gt;</span>
+  <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv-req:Requirement&gt;</span>should<span class="tag">&lt;/cv-req:Requirement&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv-req:PositionLevel&gt;</span>employee<span class="tag">&lt;/cv-req:PositionLevel&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv-req:IndustryType&gt;</span>71200<span class="tag">&lt;/cv-req:IndustryType&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv-req:Workplace&gt;</span>AI<span class="tag">&lt;/cv-req:Workplace&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;cv-req:JobSector&gt;</span>private<span class="tag">&lt;/cv-req:JobSector&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+  <span class="tag">&lt;cv-req:MinimumTotalExperience&gt;</span>5<span class="tag">&lt;/cv-req:MinimumTotalExperience&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+  <span class="tag">&lt;cv-req:Period&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
+    <span class="tag">&lt;cv-req:StartDate&gt;</span>2010-01-19<span class="tag">&lt;/cv-req:StartDate&gt;</span>
+    <span class="tag">&lt;cv-req:EndDate&gt;</span>2020-10-02<span class="tag">&lt;/cv-req:EndDate&gt;</span>
+  <span class="tag">&lt;/cv-req:Period&gt;</span>
+  <span class="tag">&lt;cv-req:WorkExperienceDescription&gt;</span>
+    <span class="tag">&lt;cv-req:PositionPercent&gt;</span>100<span class="tag">&lt;/cv-req:PositionPercent&gt;</span><i class="conum" data-value="9"></i><b>(9)</b>
+    <span class="tag">&lt;cv-req:Role&gt;</span>2130161<span class="tag">&lt;/cv-req:Role&gt;</span><i class="conum" data-value="10"></i><b>(10)</b>
+    <span class="tag">&lt;cv-req:Activities&gt;</span>Must have done mathemathical analysis by using Python.<span class="tag">&lt;/cv-req:Activities&gt;</span><i class="conum" data-value="11"></i><b>(11)</b>
+  <span class="tag">&lt;/cv-req:WorkExperienceDescription&gt;</span>
+  <span class="tag">&lt;cv-req:AlternativeWorkExperience&gt;</span><i class="conum" data-value="12"></i><b>(12)</b>
+    <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span>
+    <span class="tag">&lt;cv-req:Requirement&gt;</span>should<span class="tag">&lt;/cv-req:Requirement&gt;</span>
+    <span class="tag">&lt;cv-req:PositionLevel&gt;</span>employee<span class="tag">&lt;/cv-req:PositionLevel&gt;</span>
+    <span class="tag">&lt;cv-req:IndustryType&gt;</span>72190<span class="tag">&lt;/cv-req:IndustryType&gt;</span>
+    <span class="tag">&lt;cv-req:Workplace&gt;</span>AI<span class="tag">&lt;/cv-req:Workplace&gt;</span>
+    <span class="tag">&lt;cv-req:JobSector&gt;</span>private<span class="tag">&lt;/cv-req:JobSector&gt;</span>
+    <span class="tag">&lt;cv-req:MinimumTotalExperience&gt;</span>5<span class="tag">&lt;/cv-req:MinimumTotalExperience&gt;</span>
+    <span class="tag">&lt;cv-req:Period&gt;</span>
+      <span class="tag">&lt;cv-req:StartDate&gt;</span>2010-01-19<span class="tag">&lt;/cv-req:StartDate&gt;</span>
+      <span class="tag">&lt;cv-req:EndDate&gt;</span>2020-10-02<span class="tag">&lt;/cv-req:EndDate&gt;</span>
+    <span class="tag">&lt;/cv-req:Period&gt;</span>
+    <span class="tag">&lt;cv-req:WorkExperienceDescription&gt;</span>
+      <span class="tag">&lt;cv-req:PositionPercent&gt;</span>100<span class="tag">&lt;/cv-req:PositionPercent&gt;</span>
+      <span class="tag">&lt;cv-req:Role&gt;</span>2130161<span class="tag">&lt;/cv-req:Role&gt;</span>
+      <span class="tag">&lt;cv-req:Activities&gt;</span>Must have done mathemathical analysis by using Python.<span class="tag">&lt;/cv-req:Activities&gt;</span>
+    <span class="tag">&lt;/cv-req:WorkExperienceDescription&gt;</span>
+  <span class="tag">&lt;/cv-req:AlternativeWorkExperience&gt;</span>
+<span class="tag">&lt;/cv-req:WorkExperience&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Work experience identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Position level</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Type of industry</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Workplace</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Job sector</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Minimum total year of experience</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Period</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="9"></i><b>9</b></td>
+<td>Position percent</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="10"></i><b>10</b></td>
+<td>Role in work experience</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="11"></i><b>11</b></td>
+<td>Description of work activities</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="12"></i><b>12</b></td>
+<td>Alternative work experience</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Example of the requested work experience in the CV request</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv-req:WorkExperience&gt;</span>
+  <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv-req:Requirement&gt;</span>must<span class="tag">&lt;/cv-req:Requirement&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv-req:PositionLevel&gt;</span>MiddleLevelManager<span class="tag">&lt;/cv-req:PositionLevel&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv-req:IndustryType&gt;</span>01230<span class="tag">&lt;/cv-req:IndustryType&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv-req:Workplace&gt;</span>AI<span class="tag">&lt;/cv-req:Workplace&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;cv-req:JobSector&gt;</span>private<span class="tag">&lt;/cv-req:JobSector&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+  <span class="tag">&lt;cv-req:MinimumTotalExperience&gt;</span>5<span class="tag">&lt;/cv-req:MinimumTotalExperience&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+  <span class="tag">&lt;cv-req:Period&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
+    <span class="tag">&lt;cv-req:StartDate&gt;</span>2020-01-19<span class="tag">&lt;/cv-req:StartDate&gt;</span>
+    <span class="tag">&lt;cv-req:EndDate&gt;</span>2020-10-02<span class="tag">&lt;/cv-req:EndDate&gt;</span>
+  <span class="tag">&lt;/cv-req:Period&gt;</span>
+  <span class="tag">&lt;cv-req:WorkExperienceDescription&gt;</span><i class="conum" data-value="9"></i><b>(9)</b>
+    <span class="tag">&lt;cv-req:PositionPercent&gt;</span>100<span class="tag">&lt;/cv-req:PositionPercent&gt;</span>
+    <span class="tag">&lt;cv-req:Role&gt;</span>1234106<span class="tag">&lt;/cv-req:Role&gt;</span>
+    <span class="tag">&lt;cv-req:Activities&gt;</span>Must have done mathemathical analysis by using Python.<span class="tag">&lt;/cv-req:Activities&gt;</span>
+  <span class="tag">&lt;/cv-req:WorkExperienceDescription&gt;</span>
+<span class="tag">&lt;/cv-req:WorkExperience&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Work experience identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Position level</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Type of industry</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Workplace</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Job sector</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Minimum total year of experience</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Period</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="9"></i><b>9</b></td>
+<td>Work description</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_information_specific_to_cv_5"><a class="anchor" href="#_information_specific_to_cv_5"></a>5.6.2. Information specific to CV</h4>
+<div class="paragraph">
+<p>Based on the project experience requirement, the economic operator needs to document the candidate&#8217;s work experience.
+For CV used in the job application, fill in the relevant parts of work experience information.</p>
+</div>
+<div class="paragraph">
+<p>The element <code>cv:EducationReference</code> and <code>cv:WorkExperienceReference</code> needs to be used in the procurement process,
+not in the job application process. The education reference corresponds to the educational requirement in the CV request when
+the contracting authority accepts relevant experience. The work experience reference corresponds to work experience in the
+CV request.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of work in CV as a response to requested education in CV request</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:WorkExperience&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>3<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:PositionLevel&gt;</span>employee<span class="tag">&lt;/cv:PositionLevel&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:CompanyParty&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+    <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span>
+    <span class="tag">&lt;cv:Name&gt;</span>X company<span class="tag">&lt;/cv:Name&gt;</span>
+  <span class="tag">&lt;/cv:CompanyParty&gt;</span>
+  <span class="tag">&lt;cv:Period&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+    <span class="tag">&lt;cv:StartDate&gt;</span>2013-05-05<span class="tag">&lt;/cv:StartDate&gt;</span>
+    <span class="tag">&lt;cv:EndDate&gt;</span>2017-08-01<span class="tag">&lt;/cv:EndDate&gt;</span>
+  <span class="tag">&lt;/cv:Period&gt;</span>
+  <span class="tag">&lt;cv:WorkExperienceDescription&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv:PositionPercent&gt;</span>100<span class="tag">&lt;/cv:PositionPercent&gt;</span>
+    <span class="tag">&lt;cv:Role&gt;</span>2130161<span class="tag">&lt;/cv:Role&gt;</span>
+    <span class="tag">&lt;cv:Activities&gt;</span>Mathemathical analysis by using R and Python.<span class="tag">&lt;/cv:Activities&gt;</span>
+  <span class="tag">&lt;/cv:WorkExperienceDescription&gt;</span>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
+    <span class="tag">&lt;cv:Role&gt;</span>1222169<span class="tag">&lt;/cv:Role&gt;</span>
+    <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@x.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+  <span class="tag">&lt;/cv:Contact&gt;</span>
+  <span class="tag">&lt;cv:EducationReference&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+    <span class="tag">&lt;cv:ID&gt;</span>req-edu-45<span class="tag">&lt;/cv:ID&gt;</span>
+  <span class="tag">&lt;/cv:EducationReference&gt;</span>
+  <span class="tag">&lt;cv:WorkExperienceReference&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
+    <span class="tag">&lt;cv:ID&gt;</span>req-25<span class="tag">&lt;/cv:ID&gt;</span>
+  <span class="tag">&lt;/cv:WorkExperienceReference&gt;</span>
+<span class="tag">&lt;/cv:WorkExperience&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Work experience identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Position level</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Information about contracting authority or organisation</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Period</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Work experience description: position percent, role, activities</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Contact information</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Education reference</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Project experience reference</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of work in a CV in the job application</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:WorkExperience&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>3<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:PositionLevel&gt;</span>leader<span class="tag">&lt;/cv:PositionLevel&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:IndustryType&gt;</span>72110<span class="tag">&lt;/cv:IndustryType&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv:Workplace&gt;</span>CF<span class="tag">&lt;/cv:Workplace&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:JobSector&gt;</span>private<span class="tag">&lt;/cv:JobSector&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;cv:CompanyParty&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span>
+    <span class="tag">&lt;cv:Name&gt;</span>XYZ company<span class="tag">&lt;/cv:Name&gt;</span>
+  <span class="tag">&lt;/cv:CompanyParty&gt;</span>
+  <span class="tag">&lt;cv:Period&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+    <span class="tag">&lt;cv:StartDate&gt;</span>2015-05-07<span class="tag">&lt;/cv:StartDate&gt;</span>
+    <span class="tag">&lt;cv:EndDate&gt;</span>2020-10-01<span class="tag">&lt;/cv:EndDate&gt;</span>
+  <span class="tag">&lt;/cv:Period&gt;</span>
+  <span class="tag">&lt;cv:WorkExperienceDescription&gt;</span>
+    <span class="tag">&lt;cv:PositionPercent&gt;</span>100<span class="tag">&lt;/cv:PositionPercent&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
+    <span class="tag">&lt;cv:Role&gt;</span>2130160<span class="tag">&lt;/cv:Role&gt;</span><i class="conum" data-value="9"></i><b>(9)</b>
+    <span class="tag">&lt;cv:Activities&gt;</span>Applicationprogrammer<span class="tag">&lt;/cv:Activities&gt;</span><i class="conum" data-value="10"></i><b>(10)</b>
+  <span class="tag">&lt;/cv:WorkExperienceDescription&gt;</span>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="11"></i><b>(11)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
+    <span class="tag">&lt;cv:Role&gt;</span>1222169<span class="tag">&lt;/cv:Role&gt;</span>
+    <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@xyz.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+  <span class="tag">&lt;/cv:Contact&gt;</span>
+<span class="tag">&lt;/cv:WorkExperience&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Work experience identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Position level</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Type of industry</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Workplace</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Job sector</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Information about contracting authority or organisation</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Period</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Position percent</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="9"></i><b>9</b></td>
+<td>Role</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="10"></i><b>10</b></td>
+<td>Description of work activities</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="11"></i><b>11</b></td>
+<td>Contact information</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_skills"><a class="anchor" href="#_skills"></a>5.7. Skills</h3>

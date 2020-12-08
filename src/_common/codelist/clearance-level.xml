@@ -1,64 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    
+
     <Title>Clearance level code</Title>
-    <Identifier>clearanceLevel</Identifier>
+    <Identifier>ClearanceLevel</Identifier>
     <Version>1.0</Version>
     <Agency>DFO</Agency>
-    
+
     <Code>
         <Id>confidential</Id>
         <Name>Confidential</Name>
         <Description>Confidentail clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>NATOConfidential</Id>
         <Name>NATO Confidential</Name>
         <Description>NATO Confidential clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>secret</Id>
         <Name>Secret</Name>
         <Description>Secret clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>NATOSecret</Id>
         <Name>NATO secret</Name>
         <Description>NATO secret clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>TopSecret</Id>
         <Name>Top Secret</Name>
         <Description>Top secret clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>CosmicTopSecret</Id>
         <Name>Cosmic Top Secret</Name>
         <Description>Cosmic top secret clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>atomal</Id>
         <Name>Atomal</Name>
         <Description>Atomal clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>crypto</Id>
         <Name>Crypto</Name>
         <Description>Crypto clearance level</Description>
     </Code>
-    
+
     <Code>
         <Id>extendedAccessCard</Id>
         <Name>Extended access card</Name>
         <Description>Extended acess card clearance level</Description>
     </Code>
 </CodeList>
-
-

@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>PersonalSkills codelist</Title>
-    <Identifier>personalSkills</Identifier>
+    <Identifier>PersonalSkills</Identifier>
     <Version>1.0</Version>
     <Agency>DFO</Agency>
 

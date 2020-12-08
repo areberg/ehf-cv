@@ -24,7 +24,7 @@ with a `B1` oral skill level. The candidate has an oral skill level on `A1`, whi
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=LanguageSkills]
 ----
 <1> Language skill identifier
-<2> Language skill requirement - indicate whether a candidate needs to fulfill the educational requirement
+<2> Language skill requirement - indicate whether a candidate needs to fulfill the language requirement
 <3> A specific language - use code list
 <4> Oral skill
 <5> Written skill
@@ -35,7 +35,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=LanguageSkills]
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=LanguageSkillsAlternative]
 ----
 <1> Language skill identifier
-<2> Language skill requirement - indicate whether a candidate needs to fulfill the educational requirement
+<2> Language skill requirement - indicate whether a candidate needs to fulfill the language requirement
 <3> A specific language - use code list
 <4> Oral skill
 <5> Written skill
@@ -45,7 +45,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=LanguageSkillsAlternati
 == Information specific to CV
 
 Based on the language skill requirement, the economic operator needs to document the candidate's language skill.
-For CV used in the job application, fill in the relevant parts of education information.
+For CV used in the job application, fill in the relevant parts of language-skill information.
 
 Oral skill and written skill must be provided for each language skill. The skill levels are defined from
 EU global standard, use code list

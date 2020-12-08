@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Certification type codelist</Title>
-    <Identifier>certicationType</Identifier>
+    <Identifier>CerticationType</Identifier>
     <Version>1.0</Version>
     <Agency>DFO</Agency>
 
