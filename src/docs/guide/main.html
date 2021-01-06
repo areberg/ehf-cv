@@ -2944,13 +2944,6 @@ team leader, etc.</p>
 <p>Personal details about the applicant. Only used in EHF CV, not in EHF CV Request.</p>
 </div>
 <div class="paragraph">
-<p>Personal details contains following information:
-* Name - <code>cv:Name</code>
-* Date of birth - <code>cv:DateOfBirth</code>
-* Postal address - <code>cv:PostalAddress</code>
-* Social media - <code>cv:SocialMedia</code></p>
-</div>
-<div class="paragraph">
 <p>A social media can only include either element <code>cv-req:type</code> or <code>cv-req:title</code>. Use type if the
 specific social media is defined in the clearance code list, otherwise use the title.
 Note that, every social media needs to consist of either a title or a type that identifies the
@@ -3017,11 +3010,97 @@ specific social media.</p>
 </div>
 <div class="sect2">
 <h3 id="_interest"><a class="anchor" href="#_interest"></a>5.11. Interest</h3>
-
+<div class="paragraph">
+<p>An applicant&#8217;s personal interest. Only used in EHF CV, not in EHF CV Request.</p>
+</div>
+<div class="paragraph">
+<p>Information about applicant&#8217;s hobbies and interests can be described in element <code>cv:Description</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of interest in a CV</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Interest&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Description&gt;</span>Interest in playing football.<span class="tag">&lt;/cv:Description&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tag">&lt;/cv:Interest&gt;</span>
+<span class="tag">&lt;cv:AdditionalInformation&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Title&gt;</span>Footballcoach<span class="tag">&lt;/cv:Title&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:Description&gt;</span>Worked as footballcoach for young girls.<span class="tag">&lt;/cv:Description&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv:Documentation&gt;</span>
+    <span class="tag">&lt;cv:EmbeddedDocumentBinaryObject</span> <span class="attribute-name">mimeCode</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">application/pdf</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>YXBwcm92ZWQgZm9vdGJhbGwgcmVmZXJlZSBpbiBub3J3YXk=<span class="tag">&lt;/cv:EmbeddedDocumentBinaryObject&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+    <span class="tag">&lt;cv:URI&gt;</span>https://www.fotballdommer.no/<span class="tag">&lt;/cv:URI&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;/cv:Documentation&gt;</span>
+<span class="tag">&lt;/cv:AdditionalInformation&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Description</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_additional_information"><a class="anchor" href="#_additional_information"></a>5.12. Additional Information</h3>
-
+<div class="paragraph">
+<p>Other detailed information about the applicant, not provided in other information groups in
+CV-document. Only used in EHF CV, not in EHF CV Request.</p>
+</div>
+<div class="paragraph">
+<p>Give a short title of additional information in element <code>cv:Title</code> and describe the information
+in element <code>cv:Description</code>.
+Documentation of the information can be stated as a URI (<code>cv:URI</code>) and/or embedded document
+(<code>cv:EmbeddedDocumentBinaryObject</code>).</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of additional information in a CV</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Interest&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Description&gt;</span>Interest in playing football.<span class="tag">&lt;/cv:Description&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+<span class="tag">&lt;/cv:Interest&gt;</span>
+<span class="tag">&lt;cv:AdditionalInformation&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Title&gt;</span>Footballcoach<span class="tag">&lt;/cv:Title&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:Description&gt;</span>Worked as footballcoach for young girls.<span class="tag">&lt;/cv:Description&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv:Documentation&gt;</span>
+    <span class="tag">&lt;cv:EmbeddedDocumentBinaryObject</span> <span class="attribute-name">mimeCode</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">application/pdf</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>YXBwcm92ZWQgZm9vdGJhbGwgcmVmZXJlZSBpbiBub3J3YXk=<span class="tag">&lt;/cv:EmbeddedDocumentBinaryObject&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+    <span class="tag">&lt;cv:URI&gt;</span>https://www.fotballdommer.no/<span class="tag">&lt;/cv:URI&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;/cv:Documentation&gt;</span>
+<span class="tag">&lt;/cv:AdditionalInformation&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Title</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Description</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Embedded document as binary object with <code>mimeCode</code>. Use Base64.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>URI to additional information</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_references"><a class="anchor" href="#_references"></a>5.13. References</h3>

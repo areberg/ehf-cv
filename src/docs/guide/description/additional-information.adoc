@@ -1,1 +1,20 @@
 = Additional Information
+
+Other detailed information about the applicant, not provided in other information groups in
+CV-document. Only used in EHF CV, not in EHF CV Request.
+
+Give a short title of additional information in element `cv:Title` and describe the information
+in element `cv:Description`.
+Documentation of the information can be stated as a URI (`cv:URI`) and/or embedded document
+(`cv:EmbeddedDocumentBinaryObject`).
+
+.Example of a description of additional information in a CV
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=Interest]
+----
+<1> Identifier
+<2> Title
+<3> Description
+<4> Embedded document as binary object with `mimeCode`. Use Base64.
+<5> URI to additional information
