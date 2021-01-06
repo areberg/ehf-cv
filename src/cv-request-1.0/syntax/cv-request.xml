@@ -1187,7 +1187,7 @@
                 <Name>Clearance type</Name>
                 <Description>The specific name of the clearance expressed as code.</Description>
                 <Reference type="CODE_LIST">ClearanceType</Reference>
-                <Value type="EXAMPLE">politi</Value>
+                <Value type="EXAMPLE">police</Value>
             </Element>
 
             <Element>
@@ -1455,7 +1455,7 @@
                 <Name>Personal skill type</Name>
                 <Description>The specific name of the personal skill expressed as code.</Description>
                 <Reference type="CODE_LIST">PersonalSkills</Reference>
-                <Value type="EXAMPLE">Leadership</Value>
+                <Value type="EXAMPLE">listening</Value>
             </Element>
         </Element>
 

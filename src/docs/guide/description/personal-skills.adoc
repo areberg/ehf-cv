@@ -1,1 +1,58 @@
 = Personal Skills
+
+Person skills is about our abilities and strength.
+
+== Information specific to CV request
+
+A contracting authority can state personal skill requirement (main requirement) in the cv request.
+
+All personal skills need to be identified uniquely, to ensure that the personal skill can be
+referenced in the CV.
+
+A personal skill can only include either element `cv-req:type` or `cv-req:title`. Use type if the specific
+personal skill is defined in the person skill code list, otherwise use the title.
+Note that, every clearance needs to consist of either a title or a type that identifies the specific
+personal skill.
+
+.Example of the requested clearance in the CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=PersonalSkills]
+----
+<1> Personal skill identifier
+<2> Personal skill type
+
+
+== Information specific to CV
+
+Based on the personal skill requirement, the economic operator needs to provide information
+of the candidate's personal skill. For CV used in the job application process, fill in the relevant
+parts of personal skill information.
+
+The element `cv:PersonalSkillsReference` needs to be used in the procurement process, not in the
+job application process. This is a reference to the corresponding personal skill requirement in the
+CV request.
+
+There is possible to state a contact point (to a person) who can confirm the candidate's personal
+skills, use the element `cv:Contact`. In some cases, there is relevant that the contracting
+authority needs this confirmation or documentation from an earlier co-worker, leader,
+team leader, etc.
+
+.Example of a description of personal skill in CV as a response to requested course in CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills-req]
+----
+<1> Personal skill identifier
+<2> Type of personal skill
+<3> Contact information
+<4> Personal skill reference
+
+.Example of a description of personal skill in a CV in the job application
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills]
+----
+<1> Personal skill identifier
+<2> Type of personal skill
+<3> Contact information

@@ -1357,7 +1357,7 @@
                 <Name>Personal skill type</Name>
                 <Description>The specific name of the personal skill expressed as code.</Description>
                 <Reference type="CODE_LIST">PersonalSkills</Reference>
-                <Value type="EXAMPLE">Leadership</Value>
+                <Value type="EXAMPLE">leadership</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1491,7 +1491,7 @@
                     <Value type="EXAMPLE">1</Value>
                 </Element>
 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cv:Title</Term>
                     <Name>Social media title</Name>
                     <Description>The specific name of the social media.</Description>

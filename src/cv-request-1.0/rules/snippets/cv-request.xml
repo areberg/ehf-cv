@@ -278,43 +278,53 @@
   </cv-req:WorkExperience>
     <!-- end::WorkExperienceAlternative[] -->
 
-    <!-- tag::WorkExperience[] -->
-    <cv-req:WorkExperience>
-      <cv-req:ID>1</cv-req:ID><!--1-->
-      <cv-req:Requirement>must</cv-req:Requirement><!--2-->
-      <cv-req:PositionLevel>MiddleLevelManager</cv-req:PositionLevel><!--3-->
-      <cv-req:IndustryType>01230</cv-req:IndustryType><!--4-->
-      <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
-      <cv-req:JobSector>private</cv-req:JobSector><!--6-->
-      <cv-req:MinimumTotalExperience>5</cv-req:MinimumTotalExperience><!--7-->
-      <cv-req:Period><!--8-->
-        <cv-req:StartDate>2020-01-19</cv-req:StartDate>
-        <cv-req:EndDate>2020-10-02</cv-req:EndDate>
-      </cv-req:Period>
-      <cv-req:WorkExperienceDescription><!--9-->
-        <cv-req:PositionPercent>100</cv-req:PositionPercent>
-        <cv-req:Role>1234106</cv-req:Role>
-        <cv-req:Activities>Must have done mathemathical analysis by using Python.</cv-req:Activities>
-      </cv-req:WorkExperienceDescription>
-    </cv-req:WorkExperience>
-      <!-- end::WorkExperience[] -->
+  <!-- tag::WorkExperience[] -->
+  <cv-req:WorkExperience>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:PositionLevel>MiddleLevelManager</cv-req:PositionLevel><!--3-->
+    <cv-req:IndustryType>01230</cv-req:IndustryType><!--4-->
+    <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
+    <cv-req:JobSector>private</cv-req:JobSector><!--6-->
+    <cv-req:MinimumTotalExperience>5</cv-req:MinimumTotalExperience><!--7-->
+    <cv-req:Period><!--8-->
+      <cv-req:StartDate>2020-01-19</cv-req:StartDate>
+      <cv-req:EndDate>2020-10-02</cv-req:EndDate>
+    </cv-req:Period>
+    <cv-req:WorkExperienceDescription><!--9-->
+      <cv-req:PositionPercent>100</cv-req:PositionPercent>
+      <cv-req:Role>1234106</cv-req:Role>
+      <cv-req:Activities>Must have done mathemathical analysis by using Python.</cv-req:Activities>
+    </cv-req:WorkExperienceDescription>
+  </cv-req:WorkExperience>
+  <!-- end::WorkExperience[] -->
 
+  <!-- tag::ClearanceAlternative[] -->
   <cv-req:Clearance>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>desirable</cv-req:Requirement>
-    <cv-req:Title>HMS</cv-req:Title>
-    <cv-req:Type>politi</cv-req:Type>
-    <cv-req:Level>secret</cv-req:Level>
-    <cv-req:ExpirationDate>2025-05-05</cv-req:ExpirationDate>
-    <cv-req:AlternativeClearance>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>desirable</cv-req:Requirement><!--2-->
+    <cv-req:Type>civil</cv-req:Type><!--3-->
+    <cv-req:Level>secret</cv-req:Level><!--4-->
+    <cv-req:ExpirationDate>2025-05-05</cv-req:ExpirationDate><!--5-->
+    <cv-req:AlternativeClearance><!--6-->
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>must</cv-req:Requirement>
-      <cv-req:Title>HMS</cv-req:Title>
-      <cv-req:Type>politi</cv-req:Type>
+      <cv-req:Type>police</cv-req:Type>
       <cv-req:Level>secret</cv-req:Level>
       <cv-req:ExpirationDate>2025-05-05</cv-req:ExpirationDate>
     </cv-req:AlternativeClearance>
   </cv-req:Clearance>
+  <!-- end::ClearanceAlternative[] -->
+
+  <!-- tag::Clearance[] -->
+  <cv-req:Clearance>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:Title>AirportXYZ</cv-req:Title><!--3-->
+    <cv-req:Level>secret</cv-req:Level><!--4-->
+    <cv-req:ExpirationDate>2030-05-05</cv-req:ExpirationDate><!--5-->
+  </cv-req:Clearance>
+  <!-- end::Clearance[] -->
 
   <cv-req:Reference>
     <cv-req:ID>1</cv-req:ID>
@@ -346,9 +356,10 @@
     </cv-req:AlternativeSkills>
   </cv-req:Skills>
 
+  <!-- tag::PersonalSkills[] -->
   <cv-req:PersonalSkills>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Title>HMS</cv-req:Title>
-    <cv-req:Type>Leadership</cv-req:Type>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Type>Leadership</cv-req:Type><!--2-->
   </cv-req:PersonalSkills>
+  <!-- end::PersonalSkills[] -->
 </cv-req:CVRequest>

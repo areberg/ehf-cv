@@ -336,21 +336,35 @@
   </cv:WorkExperience>
   <!-- end::WorkExperience[] -->
 
+  <!-- tag::Clearance-req[] -->
   <cv:Clearance>
-    <cv:ID>1</cv:ID>
-    <cv:Title>Politiattest</cv:Title>
-    <cv:Type>civil</cv:Type>
-    <cv:Level>secret</cv:Level>
-    <cv:ExpirationDate>2025-08-08</cv:ExpirationDate>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Type>civil</cv:Type><!--2-->
+    <cv:Level>secret</cv:Level><!--3-->
+    <cv:ExpirationDate>2025-08-08</cv:ExpirationDate><!--4-->
     <cv:Documentation>
-      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==</cv:EmbeddedDocumentBinaryObject>
-      <cv:URI>https://www.politiet.no/</cv:URI>
+      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==</cv:EmbeddedDocumentBinaryObject><!--5-->
+      <cv:URI>https://www.politiet.no/</cv:URI><!--6-->
     </cv:Documentation>
-    <cv:Description>Can bli cleared before 2020-05-01.</cv:Description>
-    <cv:ClearanceReference>
-      <cv:ID>65424</cv:ID>
+    <cv:Description>Can bli cleared before 2020-05-01.</cv:Description><!--7-->
+    <cv:ClearanceReference><!--8-->
+      <cv:ID>1</cv:ID>
     </cv:ClearanceReference>
   </cv:Clearance>
+  <!-- end::Clearance-req[] -->
+
+  <!-- tag::Clearance[] -->
+  <cv:Clearance>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Title>Politiattest</cv:Title><!--2-->
+    <cv-req:Title>Airport</cv-req:Title><!--3-->
+    <cv-req:Level>secret</cv-req:Level><!--4-->
+    <cv:ExpirationDate>2025-08-08</cv:ExpirationDate><!--5-->
+    <cv:Documentation>
+      <cv:URI>https://www.politiet.no/</cv:URI><!--6-->
+    </cv:Documentation>
+  </cv:Clearance>
+  <!-- end::Clearance[] -->
 
   <cv:Reference>
     <cv:ID>1</cv:ID>
@@ -390,26 +404,41 @@
     </cv:SkillsReference>
   </cv:Skills>
 
+  <!-- tag::PersonalSkills-req[] -->
   <cv:PersonalSkills>
-    <cv:ID>1</cv:ID>
-    <cv:Title>HMS</cv:Title>
-    <cv:Type>Leadership</cv:Type>
-    <cv:Contact>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Type>Leadership</cv:Type><!--2-->
+    <cv:Contact><!--3-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1224127</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:PersonalSkillsReference>
-      <cv:ID>147</cv:ID>
+    <cv:PersonalSkillsReference><!--4-->
+      <cv:ID>1</cv:ID>
     </cv:PersonalSkillsReference>
   </cv:PersonalSkills>
+  <!-- end::PersonalSkills-req[] -->
 
+  <!-- tag::PersonalSkills[] -->
+  <cv:PersonalSkills>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Type>listening</cv:Type><!--2-->
+    <cv:Contact><!--3-->
+      <cv:Name>Ola Nordmann</cv:Name>
+      <cv:Role>1224127</cv:Role>
+      <cv:Telephone>22221111</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
+    </cv:Contact>
+  </cv:PersonalSkills>
+  <!-- end::PersonalSkills[] -->
+
+  <!-- tag::PersonalInformation[] -->
   <cv:PersonalInformation>
-    <cv:ID>1</cv:ID>
-    <cv:Name>Ola Nordmann</cv:Name>
-    <cv:DateOfBirth>1991-01-01</cv:DateOfBirth>
-    <cv:PostalAddress>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Name>Ola Nordmann</cv:Name><!--2-->
+    <cv:DateOfBirth>1991-01-01</cv:DateOfBirth><!--3-->
+    <cv:PostalAddress><!--4-->
       <cv:StreetName>Oslobukta 20</cv:StreetName>
       <cv:AdditionalStreetName>2. building</cv:AdditionalStreetName>
       <cv:CityName>Oslo</cv:CityName>
@@ -419,15 +448,14 @@
       </cv:Country>
     </cv:PostalAddress>
     <cv:SocialMedia>
-      <cv:ID>1</cv:ID>
-      <cv:Title>fotballblogg</cv:Title>
-      <cv:Type>vlog</cv:Type>
+      <cv:ID>1</cv:ID><!--5-->
+      <cv:Type>linkedin</cv:Type><!--6-->
       <cv:Documentation>
-        <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">c2Nob29sIHBpY3R1cmU=</cv:EmbeddedDocumentBinaryObject>
-        <cv:URI>https://www.linkedin.no</cv:URI>
+        <cv:URI>https://www.linkedin.no/xxx</cv:URI><!--7-->
       </cv:Documentation>
     </cv:SocialMedia>
   </cv:PersonalInformation>
+  <!-- end::PersonalInformation[] -->
 
   <cv:Interest>
     <cv:ID>1</cv:ID>
