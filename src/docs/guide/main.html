@@ -499,23 +499,33 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_information_specific_to_cv_5">5.6.2. Information specific to CV</a></li>
 </ul>
 </li>
-<li><a href="#_skills">5.7. Skills</a></li>
+<li><a href="#_skills">5.7. Skills</a>
+<ul class="sectlevel3">
+<li><a href="#_information_specific_to_cv_request_6">5.7.1. Information specific to CV request</a></li>
+<li><a href="#_information_specific_to_cv_6">5.7.2. Information specific to CV</a></li>
+</ul>
+</li>
 <li><a href="#_clearance">5.8. Clearance</a>
 <ul class="sectlevel3">
-<li><a href="#_information_specific_to_cv_request_6">5.8.1. Information specific to CV request</a></li>
-<li><a href="#_information_specific_to_cv_6">5.8.2. Information specific to CV</a></li>
+<li><a href="#_information_specific_to_cv_request_7">5.8.1. Information specific to CV request</a></li>
+<li><a href="#_information_specific_to_cv_7">5.8.2. Information specific to CV</a></li>
 </ul>
 </li>
 <li><a href="#_personal_skills">5.9. Personal Skills</a>
 <ul class="sectlevel3">
-<li><a href="#_information_specific_to_cv_request_7">5.9.1. Information specific to CV request</a></li>
-<li><a href="#_information_specific_to_cv_7">5.9.2. Information specific to CV</a></li>
+<li><a href="#_information_specific_to_cv_request_8">5.9.1. Information specific to CV request</a></li>
+<li><a href="#_information_specific_to_cv_8">5.9.2. Information specific to CV</a></li>
 </ul>
 </li>
 <li><a href="#_personal_information">5.10. Personal Information</a></li>
 <li><a href="#_interest">5.11. Interest</a></li>
 <li><a href="#_additional_information">5.12. Additional Information</a></li>
-<li><a href="#_references">5.13. References</a></li>
+<li><a href="#_references">5.13. References</a>
+<ul class="sectlevel3">
+<li><a href="#_information_specific_to_cv_request_9">5.13.1. Information specific to CV request</a></li>
+<li><a href="#_information_specific_to_cv_9">5.13.2. Information specific to CV</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_profiles_and_messages">Appendix A: Profiles and messages</a>
@@ -1100,7 +1110,7 @@ CV. To differentiate the different types of course requirements use the element 
 operators will only provide qualified candidates, and it makes it easier to evaluate the candidates.</p>
 </div>
 <div class="paragraph">
-<p>A course/certification can only include either element <code>cv-req:type</code> or <code>cv-req:title</code>. Use type if the specific course is defined
+<p>A course/certification can only include either element <code>cv-req:Type</code> or <code>cv-req:Title</code>. Use type if the specific course is defined
 in the course code list, otherwise use the title. Similarly for certification.
 Note that, every course and certification needs to consist of either a title or a type that identifies the specific course or
 certification.</p>
@@ -2579,6 +2589,265 @@ CV request.</p>
 <div class="paragraph">
 <p>Skills contains information about candidate&#8217;s abilities related to the specific work.</p>
 </div>
+<div class="sect3">
+<h4 id="_information_specific_to_cv_request_6"><a class="anchor" href="#_information_specific_to_cv_request_6"></a>5.7.1. Information specific to CV request</h4>
+<div class="paragraph">
+<p>A contracting authority can state a skill requirement and an alternative requirement in the
+cv request. The alternative requirement is optional, but in some cases, one can accept other skill.</p>
+</div>
+<div class="paragraph">
+<p>To differentiate the different types of skill requirements use the element <code>cv-req:Requirement</code>.
+The economic operators will only provide qualified candidates, and it makes it easier to evaluate the
+candidates.</p>
+</div>
+<div class="paragraph">
+<p>A skill can only include either element <code>cv-req:Type</code> or <code>cv-req:Title</code>. Use type if the specific
+skill is defined in the skill code list, otherwise use the title. Each skill can consist of a version
+number.</p>
+</div>
+<div class="paragraph">
+<p>The contracting authority can specify details about the skill practices in element <code>cv-req:SkillPractice</code>.
+The element contains information about the last practiced date, the skill practice length
+(minimum requirement - must be stated as months) and if the candidate must provide a reference person.
+The candidate must provide contact information to the references-person, if element
+<code>cv-req:SkillsReference</code> is <code>True</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of the requested skill in the CV request</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv-req:Skills&gt;</span>
+  <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv-req:Requirement&gt;</span>must<span class="tag">&lt;/cv-req:Requirement&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv-req:Type&gt;</span>matlab<span class="tag">&lt;/cv-req:Type&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv-req:Version&gt;</span>2.0<span class="tag">&lt;/cv-req:Version&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv-req:SkillPractice&gt;</span>
+    <span class="tag">&lt;cv-req:LastPractice&gt;</span>2019-02-02<span class="tag">&lt;/cv-req:LastPractice&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv-req:MinimumLengthPractice&gt;</span>12<span class="tag">&lt;/cv-req:MinimumLengthPractice&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv-req:SkillsReference&gt;</span>True<span class="tag">&lt;/cv-req:SkillsReference&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+  <span class="tag">&lt;/cv-req:SkillPractice&gt;</span>
+<span class="tag">&lt;/cv-req:Skills&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Skill identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Skill requirement - indicate whether a candidate needs to fulfill the skill requirement</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Type of skill</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Skill version</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Last practice date</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Length of practice</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Skills reference</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Example of the requested skill in the CV request with alternative requirement</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv-req:Skills&gt;</span>
+  <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv-req:Requirement&gt;</span>must<span class="tag">&lt;/cv-req:Requirement&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv-req:Type&gt;</span>java<span class="tag">&lt;/cv-req:Type&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv-req:Version&gt;</span>11<span class="tag">&lt;/cv-req:Version&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv-req:SkillPractice&gt;</span>
+    <span class="tag">&lt;cv-req:LastPractice&gt;</span>2020-03-03<span class="tag">&lt;/cv-req:LastPractice&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv-req:MinimumLengthPractice&gt;</span>5<span class="tag">&lt;/cv-req:MinimumLengthPractice&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv-req:SkillsReference&gt;</span>True<span class="tag">&lt;/cv-req:SkillsReference&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+  <span class="tag">&lt;/cv-req:SkillPractice&gt;</span>
+  <span class="tag">&lt;cv-req:AlternativeSkills&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
+    <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span>
+    <span class="tag">&lt;cv-req:Requirement&gt;</span>must<span class="tag">&lt;/cv-req:Requirement&gt;</span>
+    <span class="tag">&lt;cv-req:Type&gt;</span>java<span class="tag">&lt;/cv-req:Type&gt;</span>
+    <span class="tag">&lt;cv-req:Version&gt;</span>8<span class="tag">&lt;/cv-req:Version&gt;</span>
+    <span class="tag">&lt;cv-req:SkillPractice&gt;</span>
+      <span class="tag">&lt;cv-req:LastPractice&gt;</span>2020-03-03<span class="tag">&lt;/cv-req:LastPractice&gt;</span>
+      <span class="tag">&lt;cv-req:MinimumLengthPractice&gt;</span>5<span class="tag">&lt;/cv-req:MinimumLengthPractice&gt;</span>
+      <span class="tag">&lt;cv-req:SkillsReference&gt;</span>True<span class="tag">&lt;/cv-req:SkillsReference&gt;</span>
+    <span class="tag">&lt;/cv-req:SkillPractice&gt;</span>
+  <span class="tag">&lt;/cv-req:AlternativeSkills&gt;</span>
+<span class="tag">&lt;/cv-req:Skills&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Skill identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Skill requirement - indicate whether a candidate needs to fulfill the skill requirement</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Type of skill</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Skill version</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Last practice date</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Length of practice</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Skills reference</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Alternative skill requirement</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_information_specific_to_cv_6"><a class="anchor" href="#_information_specific_to_cv_6"></a>5.7.2. Information specific to CV</h4>
+<div class="paragraph">
+<p>Based on the skill requirement, the economic operator needs to document the candidate&#8217;s
+skill. For CV used in the job application process, fill in the relevant parts of
+skill information.</p>
+</div>
+<div class="paragraph">
+<p>The element <code>cv:SkillsReference</code> needs to be used in the procurement process, not in the job
+application process. This is a reference to the corresponding skill requirement in the CV request.</p>
+</div>
+<div class="paragraph">
+<p>References to where the skill has been applied can be stated in element <code>cv:SkillsAppliedReference/cv:ID</code>.
+For example education, project experience, etc.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of skill in CV as a response to requested skill in CV request</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Skills&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Type&gt;</span>java<span class="tag">&lt;/cv:Type&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:Version&gt;</span>11<span class="tag">&lt;/cv:Version&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv:LastPractice&gt;</span>2020-05-05<span class="tag">&lt;/cv:LastPractice&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:MinimumLengthPractice&gt;</span>5<span class="tag">&lt;/cv:MinimumLengthPractice&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
+    <span class="tag">&lt;cv:Role&gt;</span>1223122<span class="tag">&lt;/cv:Role&gt;</span>
+    <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@x.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+  <span class="tag">&lt;/cv:Contact&gt;</span>
+  <span class="tag">&lt;cv:SkillsAppliedReference&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+    <span class="tag">&lt;cv:ID&gt;</span>edu-1234<span class="tag">&lt;/cv:ID&gt;</span>
+  <span class="tag">&lt;/cv:SkillsAppliedReference&gt;</span>
+  <span class="tag">&lt;cv:SkillsReference&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
+    <span class="tag">&lt;cv:ID&gt;</span>1547<span class="tag">&lt;/cv:ID&gt;</span>
+  <span class="tag">&lt;/cv:SkillsReference&gt;</span>
+<span class="tag">&lt;/cv:Skills&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Skill identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Type of skill</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Skill version</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Last practice date</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Minimum length of practice</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Contact information</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Reference to where the skill is applied</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>Skills reference</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of skills in a CV in the job application</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Skills&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Type&gt;</span>PP<span class="tag">&lt;/cv:Type&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:LastPractice&gt;</span>2020-03-03<span class="tag">&lt;/cv:LastPractice&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv:MinimumLengthPractice&gt;</span>20<span class="tag">&lt;/cv:MinimumLengthPractice&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
+    <span class="tag">&lt;cv:Role&gt;</span>1223122<span class="tag">&lt;/cv:Role&gt;</span>
+    <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@abc.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+  <span class="tag">&lt;/cv:Contact&gt;</span>
+  <span class="tag">&lt;cv:SkillsAppliedReference&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:ID&gt;</span>work-exp-1234<span class="tag">&lt;/cv:ID&gt;</span>
+  <span class="tag">&lt;/cv:SkillsAppliedReference&gt;</span>
+<span class="tag">&lt;/cv:Skills&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Skill identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Type of skill</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Last practice date</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Minimum length of practice</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Contact information</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Reference to where the skill is applied</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_clearance"><a class="anchor" href="#_clearance"></a>5.8. Clearance</h3>
@@ -2588,7 +2857,7 @@ have a specific level of clearances. For example, security clearances are requir
 employers who have access to sensitive information.</p>
 </div>
 <div class="sect3">
-<h4 id="_information_specific_to_cv_request_6"><a class="anchor" href="#_information_specific_to_cv_request_6"></a>5.8.1. Information specific to CV request</h4>
+<h4 id="_information_specific_to_cv_request_7"><a class="anchor" href="#_information_specific_to_cv_request_7"></a>5.8.1. Information specific to CV request</h4>
 <div class="paragraph">
 <p>A contracting authority can state clearance requirement (main requirement) and an alternative
 requirement in the cv request. The alternative requirement is optional, but in some cases, one can
@@ -2601,7 +2870,7 @@ The economic operators will only provide qualified candidates, and it makes it e
 candidates.</p>
 </div>
 <div class="paragraph">
-<p>A clearance can only include either element <code>cv-req:type</code> or <code>cv-req:title</code>. Use type if the specific
+<p>A clearance can only include either element <code>cv-req:Type</code> or <code>cv-req:Title</code>. Use type if the specific
 clearance is defined in the clearance code list, otherwise use the title.
 Note that, every clearance needs to consist of either a title or a type that identifies the specific
 clearance.</p>
@@ -2636,7 +2905,7 @@ the clearance needs to be active.</p>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Clearance requirement - indicate whether a candidate needs to fulfill the course requirement</td>
+<td>Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -2675,7 +2944,7 @@ the clearance needs to be active.</p>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Clearance requirement - indicate whether a candidate needs to fulfill the course requirement</td>
+<td>Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -2693,7 +2962,7 @@ the clearance needs to be active.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_information_specific_to_cv_6"><a class="anchor" href="#_information_specific_to_cv_6"></a>5.8.2. Information specific to CV</h4>
+<h4 id="_information_specific_to_cv_7"><a class="anchor" href="#_information_specific_to_cv_7"></a>5.8.2. Information specific to CV</h4>
 <div class="paragraph">
 <p>Based on the clearance requirement, the economic operator needs to document the candidate&#8217;s
 clearance. For CV used in the job application process, fill in the relevant parts of
@@ -2813,7 +3082,7 @@ process.</p>
 <p>Person skills is about our abilities and strength.</p>
 </div>
 <div class="sect3">
-<h4 id="_information_specific_to_cv_request_7"><a class="anchor" href="#_information_specific_to_cv_request_7"></a>5.9.1. Information specific to CV request</h4>
+<h4 id="_information_specific_to_cv_request_8"><a class="anchor" href="#_information_specific_to_cv_request_8"></a>5.9.1. Information specific to CV request</h4>
 <div class="paragraph">
 <p>A contracting authority can state personal skill requirement (main requirement) in the cv request.</p>
 </div>
@@ -2822,7 +3091,7 @@ process.</p>
 referenced in the CV.</p>
 </div>
 <div class="paragraph">
-<p>A personal skill can only include either element <code>cv-req:type</code> or <code>cv-req:title</code>. Use type if the specific
+<p>A personal skill can only include either element <code>cv-req:Type</code> or <code>cv-req:Title</code>. Use type if the specific
 personal skill is defined in the person skill code list, otherwise use the title.
 Note that, every clearance needs to consist of either a title or a type that identifies the specific
 personal skill.</p>
@@ -2850,7 +3119,7 @@ personal skill.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_information_specific_to_cv_7"><a class="anchor" href="#_information_specific_to_cv_7"></a>5.9.2. Information specific to CV</h4>
+<h4 id="_information_specific_to_cv_8"><a class="anchor" href="#_information_specific_to_cv_8"></a>5.9.2. Information specific to CV</h4>
 <div class="paragraph">
 <p>Based on the personal skill requirement, the economic operator needs to provide information
 of the candidate&#8217;s personal skill. For CV used in the job application process, fill in the relevant
@@ -2944,7 +3213,7 @@ team leader, etc.</p>
 <p>Personal details about the applicant. Only used in EHF CV, not in EHF CV Request.</p>
 </div>
 <div class="paragraph">
-<p>A social media can only include either element <code>cv-req:type</code> or <code>cv-req:title</code>. Use type if the
+<p>A social media can only include either element <code>cv-req:Type</code> or <code>cv-req:Title</code>. Use type if the
 specific social media is defined in the clearance code list, otherwise use the title.
 Note that, every social media needs to consist of either a title or a type that identifies the
 specific social media.</p>
@@ -3091,7 +3360,154 @@ Documentation of the information can be stated as a URI (<code>cv:URI</code>) an
 </div>
 <div class="sect2">
 <h3 id="_references"><a class="anchor" href="#_references"></a>5.13. References</h3>
-
+<div class="paragraph">
+<p>References that can testify the applicant&#8217;s character, skills and abilities to a contracting authority
+or an employer.</p>
+</div>
+<div class="sect3">
+<h4 id="_information_specific_to_cv_request_9"><a class="anchor" href="#_information_specific_to_cv_request_9"></a>5.13.1. Information specific to CV request</h4>
+<div class="paragraph">
+<p>The contracting authority can require a minimum total references, i.e. a lower bound limit.
+Use element <code>cv-req:MinimumTotalReference</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of the requested reference in the CV request</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv-req:Skills&gt;</span>
+  <span class="tag">&lt;cv-req:ID&gt;</span>1<span class="tag">&lt;/cv-req:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv-req:Requirement&gt;</span>must<span class="tag">&lt;/cv-req:Requirement&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv-req:Type&gt;</span>matlab<span class="tag">&lt;/cv-req:Type&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv-req:Version&gt;</span>2.0<span class="tag">&lt;/cv-req:Version&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv-req:SkillPractice&gt;</span>
+    <span class="tag">&lt;cv-req:LastPractice&gt;</span>2019-02-02<span class="tag">&lt;/cv-req:LastPractice&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv-req:MinimumLengthPractice&gt;</span>12<span class="tag">&lt;/cv-req:MinimumLengthPractice&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv-req:SkillsReference&gt;</span>True<span class="tag">&lt;/cv-req:SkillsReference&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+  <span class="tag">&lt;/cv-req:SkillPractice&gt;</span>
+<span class="tag">&lt;/cv-req:Skills&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Reference identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Minimum requirement</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_information_specific_to_cv_9"><a class="anchor" href="#_information_specific_to_cv_9"></a>5.13.2. Information specific to CV</h4>
+<div class="paragraph">
+<p>Based on the reference requirement, the economic operator needs to document the candidate&#8217;s
+references. For CV used in the job application process, fill in the relevant parts of
+skill information.</p>
+</div>
+<div class="paragraph">
+<p>The element <code>cv:RequestReference</code> needs to be used in the procurement process, not in the job
+application process. This is a reference to the corresponding reference requirement in the CV request.</p>
+</div>
+<div class="paragraph">
+<p>Party information need to be stated in element <code>cv:Party</code>, with the party name and electronic
+address identifier.
+Relationship between the candidate and the reference-person can be stated in element <code>cv:Relation</code>.
+For example school teacher, team leader, etc.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of skill in CV as a response to requested skill in CV request</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Reference&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Party&gt;</span>
+    <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>ABC AS<span class="tag">&lt;/cv:Name&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;/cv:Party&gt;</span>
+  <span class="tag">&lt;cv:Relation&gt;</span>Team leader<span class="tag">&lt;/cv:Relation&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
+    <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@abc.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+  <span class="tag">&lt;/cv:Contact&gt;</span>
+  <span class="tag">&lt;cv:RequestReference&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:ID&gt;</span>1234<span class="tag">&lt;/cv:ID&gt;</span>
+  <span class="tag">&lt;/cv:RequestReference&gt;</span>
+<span class="tag">&lt;/cv:Reference&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Reference identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Electronic address identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Party name</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Relationship to reference-person</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Contact information</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Corresponding reference to cv request</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Example of a description of skills in a CV in the job application</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Reference&gt;</span>
+  <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="tag">&lt;cv:Party&gt;</span>
+    <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>X school<span class="tag">&lt;/cv:Name&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;/cv:Party&gt;</span>
+  <span class="tag">&lt;cv:Relation&gt;</span>Math teacher<span class="tag">&lt;/cv:Relation&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
+    <span class="tag">&lt;cv:Telephone&gt;</span>22441111<span class="tag">&lt;/cv:Telephone&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@x.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+  <span class="tag">&lt;/cv:Contact&gt;</span>
+<span class="tag">&lt;/cv:Reference&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Reference identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Electronic address identifier</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Party name</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Relationship to reference-person</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Contact information</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 </div>
 </div>

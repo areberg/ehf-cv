@@ -366,43 +366,80 @@
   </cv:Clearance>
   <!-- end::Clearance[] -->
 
+  <!-- tag::Reference-req[] -->
   <cv:Reference>
-    <cv:ID>1</cv:ID>
+    <cv:ID>1</cv:ID><!--1-->
     <cv:Party>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
-      <cv:Name>Frivilling organisasjon</cv:Name>
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID><!--2-->
+      <cv:Name>ABC AS</cv:Name><!--3-->
     </cv:Party>
-    <cv:Relation>Math teacher</cv:Relation>
-    <cv:Contact>
+    <cv:Relation>Team leader</cv:Relation><!--4-->
+    <cv:Contact><!--5-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Telephone>22221111</cv:Telephone>
-      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
+      <cv:ElectronicMail>ola.nordmann@abc.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:RequestReference>
+    <cv:RequestReference><!--6-->
       <cv:ID>1234</cv:ID>
     </cv:RequestReference>
   </cv:Reference>
+  <!-- end::Reference-req[] -->
 
+  <!-- tag::Reference[] -->
+  <cv:Reference>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Party>
+      <cv:EndpointID scheme="0192">123456785</cv:EndpointID><!--2-->
+      <cv:Name>X school</cv:Name><!--3-->
+    </cv:Party>
+    <cv:Relation>Math teacher</cv:Relation><!--4-->
+    <cv:Contact><!--5-->
+      <cv:Name>Ola Nordmann</cv:Name>
+      <cv:Telephone>22441111</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
+    </cv:Contact>
+  </cv:Reference>
+  <!-- end::Reference[] -->
+
+  <!-- tag::Skills-req[] -->
   <cv:Skills>
-    <cv:ID>1</cv:ID>
-    <cv:Title>HMS</cv:Title>
-    <cv:Type>Java</cv:Type>
-    <cv:Version>11</cv:Version>
-    <cv:LastPractice>2020-03-03</cv:LastPractice>
-    <cv:MinimumLengthPractice>5</cv:MinimumLengthPractice>
-    <cv:Contact>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Type>java</cv:Type><!--2-->
+    <cv:Version>11</cv:Version><!--3-->
+    <cv:LastPractice>2020-05-05</cv:LastPractice><!--4-->
+    <cv:MinimumLengthPractice>5</cv:MinimumLengthPractice><!--5-->
+    <cv:Contact><!--6-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1223122</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:SkillsAppliedReference>
+    <cv:SkillsAppliedReference><!--7-->
       <cv:ID>edu-1234</cv:ID>
     </cv:SkillsAppliedReference>
-    <cv:SkillsReference>
+    <cv:SkillsReference><!--8-->
       <cv:ID>1547</cv:ID>
     </cv:SkillsReference>
   </cv:Skills>
+  <!-- end::Skills-req[] -->
+
+  <!-- tag::Skills[] -->
+  <cv:Skills>
+    <cv:ID>1</cv:ID><!--1-->
+    <cv:Type>PP</cv:Type><!--2-->
+    <cv:LastPractice>2020-03-03</cv:LastPractice><!--3-->
+    <cv:MinimumLengthPractice>20</cv:MinimumLengthPractice><!--4-->
+    <cv:Contact><!--5-->
+      <cv:Name>Ola Nordmann</cv:Name>
+      <cv:Role>1223122</cv:Role>
+      <cv:Telephone>22221111</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@abc.no</cv:ElectronicMail>
+    </cv:Contact>
+    <cv:SkillsAppliedReference><!--6-->
+      <cv:ID>work-exp-1234</cv:ID>
+    </cv:SkillsAppliedReference>
+  </cv:Skills>
+  <!-- end::Skills[] -->
 
   <!-- tag::PersonalSkills-req[] -->
   <cv:PersonalSkills>

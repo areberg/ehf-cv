@@ -188,17 +188,12 @@
     </Code>
 
     <Code>
-        <Id>python</Id>
-        <Name>Pyhton</Name>
-    </Code>
-
-    <Code>
-        <Id>GIT</Id>
+        <Id>git</Id>
         <Name>GIT</Name>
     </Code>
 
     <Code>
-        <Id>LAN</Id>
+        <Id>lan</Id>
         <Name>LAN Techonology</Name>
     </Code>
 
@@ -275,17 +270,17 @@
     </Code>
 
     <Code>
-        <Id>Physics</Id>
+        <Id>physics</Id>
         <Name>Physics</Name>
     </Code>
 
     <Code>
-        <Id>Actuary</Id>
+        <Id>actuary</Id>
         <Name>Actuary</Name>
     </Code>
 
     <Code>
-        <Id>Math</Id>
+        <Id>math</Id>
         <Name>Math</Name>
     </Code>
 
@@ -405,58 +400,6 @@
         <Name>Accounting</Name>
     </Code>
 
-    <!-- category: other -->
-
-    <Code>
-        <Id>PP</Id>
-        <Name>Public Procurement</Name>
-    </Code>
-
-    <Code>
-        <Id>HMS</Id>
-        <Name>HMS</Name>
-    </Code>
-
-    <Code>
-        <Id>pedagogy</Id>
-        <Name>Pedagogy</Name>
-    </Code>
-
-    <Code>
-        <Id>excel</Id>
-        <Name>Excel</Name>
-    </Code>
-
-    <Code>
-        <Id>word</Id>
-        <Name>Word</Name>
-    </Code>
-
-    <Code>
-        <Id>powerpoint</Id>
-        <Name>Power point</Name>
-    </Code>
-
-    <Code>
-        <Id>HMS</Id>
-        <Name>HMS</Name>
-    </Code>
-
-    <Code>
-        <Id>AP</Id>
-        <Name>Adobe photoshop</Name>
-    </Code>
-
-    <Code>
-        <Id>HR</Id>
-        <Name>Human Rights</Name>
-    </Code>
-
-    <Code>
-        <Id>marketing</Id>
-        <Name>Marketing</Name>
-    </Code>
-
 
     <!-- cateory : Law -->
     <Code>
@@ -514,10 +457,56 @@
         <Name>EU Law</Name>
     </Code>
 
+
+    <!-- category: other -->
     <Code>
-        <Id>EEALaw</Id> <!-- Er dette det samme som EØS-retten ? -->
-        <Name>EEA Law</Name>
+        <Id>PublicProcurement</Id>
+        <Name>Public Procurement</Name>
     </Code>
 
+    <Code>
+        <Id>HMS</Id>
+        <Name>HMS</Name>
+    </Code>
+
+    <Code>
+        <Id>pedagogy</Id>
+        <Name>Pedagogy</Name>
+    </Code>
+
+    <Code>
+        <Id>excel</Id>
+        <Name>Excel</Name>
+    </Code>
+
+    <Code>
+        <Id>word</Id>
+        <Name>Word</Name>
+    </Code>
+
+    <Code>
+        <Id>powerpoint</Id>
+        <Name>Power point</Name>
+    </Code>
+
+    <Code>
+        <Id>HMS</Id>
+        <Name>HMS</Name>
+    </Code>
+
+    <Code>
+        <Id>AP</Id>
+        <Name>Adobe photoshop</Name>
+    </Code>
+
+    <Code>
+        <Id>HR</Id>
+        <Name>Human Rights</Name>
+    </Code>
+
+    <Code>
+        <Id>marketing</Id>
+        <Name>Marketing</Name>
+    </Code>
 
 </CodeList>

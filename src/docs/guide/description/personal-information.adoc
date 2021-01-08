@@ -2,7 +2,7 @@
 
 Personal details about the applicant. Only used in EHF CV, not in EHF CV Request.
 
-A social media can only include either element `cv-req:type` or `cv-req:title`. Use type if the
+A social media can only include either element `cv-req:Type` or `cv-req:Title`. Use type if the
 specific social media is defined in the clearance code list, otherwise use the title.
 Note that, every social media needs to consist of either a title or a type that identifies the
 specific social media.

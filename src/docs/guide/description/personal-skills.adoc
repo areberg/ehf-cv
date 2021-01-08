@@ -9,7 +9,7 @@ A contracting authority can state personal skill requirement (main requirement) 
 All personal skills need to be identified uniquely, to ensure that the personal skill can be
 referenced in the CV.
 
-A personal skill can only include either element `cv-req:type` or `cv-req:title`. Use type if the specific
+A personal skill can only include either element `cv-req:Type` or `cv-req:Title`. Use type if the specific
 personal skill is defined in the person skill code list, otherwise use the title.
 Note that, every clearance needs to consist of either a title or a type that identifies the specific
 personal skill.

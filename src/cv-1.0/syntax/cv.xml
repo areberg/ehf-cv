@@ -1249,7 +1249,7 @@
                 <Name>Skill type</Name>
                 <Description>The specific name of the skill expressed as code.</Description>
                 <Reference type="CODE_LIST">SkillsType</Reference>
-                <Value type="EXAMPLE">Java</Value>
+                <Value type="EXAMPLE">java</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1307,7 +1307,7 @@
                 </Element>
             </Element>
 
-            <Element cardinality="0..1">
+            <Element cardinality="0..n">
                 <Term>cv:SkillsAppliedReference</Term>
                 <Name>Skills applied reference</Name>
 

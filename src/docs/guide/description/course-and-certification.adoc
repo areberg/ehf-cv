@@ -18,7 +18,7 @@ All courses and certifications need to be identified uniquely, to ensure that th
 CV. To differentiate the different types of course requirements use the element `cv-req:Requirement`. The economic
 operators will only provide qualified candidates, and it makes it easier to evaluate the candidates.
 
-A course/certification can only include either element `cv-req:type` or `cv-req:title`. Use type if the specific course is defined
+A course/certification can only include either element `cv-req:Type` or `cv-req:Title`. Use type if the specific course is defined
 in the course code list, otherwise use the title. Similarly for certification.
 Note that, every course and certification needs to consist of either a title or a type that identifies the specific course or
 certification.

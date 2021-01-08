@@ -326,28 +326,29 @@
   </cv-req:Clearance>
   <!-- end::Clearance[] -->
 
+  <!-- tag::Reference[] -->
   <cv-req:Reference>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:MinimumTotalReference>3</cv-req:MinimumTotalReference>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:MinimumTotalReference>3</cv-req:MinimumTotalReference><!--2-->
   </cv-req:Reference>
+  <!-- end::Reference[] -->
 
+  <!-- tag::SkillsAlternative[] -->
   <cv-req:Skills>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:Title>HMS</cv-req:Title>
-    <cv-req:Type>Java</cv-req:Type>
-    <cv-req:Version>11</cv-req:Version>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:Type>java</cv-req:Type><!--3-->
+    <cv-req:Version>11</cv-req:Version><!--4-->
     <cv-req:SkillPractice>
-      <cv-req:LastPractice>2020-03-03</cv-req:LastPractice>
-      <cv-req:MinimumLengthPractice>5</cv-req:MinimumLengthPractice>
-      <cv-req:SkillsReference>True</cv-req:SkillsReference>
+      <cv-req:LastPractice>2020-03-03</cv-req:LastPractice><!--5-->
+      <cv-req:MinimumLengthPractice>5</cv-req:MinimumLengthPractice><!--6-->
+      <cv-req:SkillsReference>True</cv-req:SkillsReference><!--7-->
     </cv-req:SkillPractice>
-    <cv-req:AlternativeSkills>
+    <cv-req:AlternativeSkills><!--8-->
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>must</cv-req:Requirement>
-      <cv-req:Title>HMS</cv-req:Title>
-      <cv-req:Type>Java</cv-req:Type>
-      <cv-req:Version>11</cv-req:Version>
+      <cv-req:Type>java</cv-req:Type>
+      <cv-req:Version>8</cv-req:Version>
       <cv-req:SkillPractice>
         <cv-req:LastPractice>2020-03-03</cv-req:LastPractice>
         <cv-req:MinimumLengthPractice>5</cv-req:MinimumLengthPractice>
@@ -355,6 +356,21 @@
       </cv-req:SkillPractice>
     </cv-req:AlternativeSkills>
   </cv-req:Skills>
+  <!-- end::SkillsAlternative[] -->
+
+  <!-- tag::Skills[] -->
+  <cv-req:Skills>
+    <cv-req:ID>1</cv-req:ID><!--1-->
+    <cv-req:Requirement>must</cv-req:Requirement><!--2-->
+    <cv-req:Type>matlab</cv-req:Type><!--3-->
+    <cv-req:Version>2.0</cv-req:Version><!--4-->
+    <cv-req:SkillPractice>
+      <cv-req:LastPractice>2019-02-02</cv-req:LastPractice><!--5-->
+      <cv-req:MinimumLengthPractice>12</cv-req:MinimumLengthPractice><!--6-->
+      <cv-req:SkillsReference>True</cv-req:SkillsReference><!--7-->
+    </cv-req:SkillPractice>
+  </cv-req:Skills>
+  <!-- end::Skills[] -->
 
   <!-- tag::PersonalSkills[] -->
   <cv-req:PersonalSkills>
