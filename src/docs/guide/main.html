@@ -526,6 +526,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_information_specific_to_cv_9">5.13.2. Information specific to CV</a></li>
 </ul>
 </li>
+<li><a href="#_code_list">5.14. Code list</a></li>
 </ul>
 </li>
 <li><a href="#_profiles_and_messages">Appendix A: Profiles and messages</a>
@@ -3413,7 +3414,7 @@ application process. This is a reference to the corresponding reference requirem
 <div class="paragraph">
 <p>Party information need to be stated in element <code>cv:Party</code>, with the party name and electronic
 address identifier.
-Relationship between the candidate and the reference-person can be stated in element <code>cv:Relation</code>.
+Relationship between the candidate and the reference-person can be stated in element <code>cv:Relationship</code>.
 For example school teacher, team leader, etc.</p>
 </div>
 <div class="listingblock">
@@ -3425,7 +3426,7 @@ For example school teacher, team leader, etc.</p>
     <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
     <span class="tag">&lt;cv:Name&gt;</span>ABC AS<span class="tag">&lt;/cv:Name&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
   <span class="tag">&lt;/cv:Party&gt;</span>
-  <span class="tag">&lt;cv:Relation&gt;</span>Team leader<span class="tag">&lt;/cv:Relation&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:Relationship&gt;</span>Team leader<span class="tag">&lt;/cv:Relationship&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
   <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
     <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
     <span class="tag">&lt;cv:Telephone&gt;</span>22221111<span class="tag">&lt;/cv:Telephone&gt;</span>
@@ -3474,7 +3475,7 @@ For example school teacher, team leader, etc.</p>
     <span class="tag">&lt;cv:EndpointID</span> <span class="attribute-name">scheme</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0192</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>123456785<span class="tag">&lt;/cv:EndpointID&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
     <span class="tag">&lt;cv:Name&gt;</span>X school<span class="tag">&lt;/cv:Name&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
   <span class="tag">&lt;/cv:Party&gt;</span>
-  <span class="tag">&lt;cv:Relation&gt;</span>Math teacher<span class="tag">&lt;/cv:Relation&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
+  <span class="tag">&lt;cv:Relationship&gt;</span>Math teacher<span class="tag">&lt;/cv:Relationship&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
   <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
     <span class="tag">&lt;cv:Name&gt;</span>Ola Nordmann<span class="tag">&lt;/cv:Name&gt;</span>
     <span class="tag">&lt;cv:Telephone&gt;</span>22441111<span class="tag">&lt;/cv:Telephone&gt;</span>
@@ -3507,6 +3508,55 @@ For example school teacher, team leader, etc.</p>
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_code_list"><a class="anchor" href="#_code_list"></a>5.14. Code list</h3>
+<div class="paragraph">
+<p>Following code list do not include every respective codes, and need to be updated by time.
+It is a part of an evolution.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code list</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Certification type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Course type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clearance type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personal skills</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skills type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Social media</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>All codes that needs to be included in a specific code list must be reported to <code>ehf@dfo.no</code>.
+The code lists will be updated in release period.</p>
 </div>
 </div>
 </div>
@@ -3553,18 +3603,12 @@ CustomizationID is a string without spaces. The list below contains spaces in Cu
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>EHF CV Request</strong></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>urn:fdc:difi.no:2017:ehf:pacr:1.0</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top" rowspan="2"><div class="content"><div class="paragraph">
-<p>urn:fdc:difi.no:2017:ehf:profile:03:1.0</p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>EHF CV</strong></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>urn:fdc:difi.no:2017:ehf:pac:1.0</p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 </tbody>
 </table>

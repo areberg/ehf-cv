@@ -28,4 +28,6 @@ include::additional-information.adoc[]
 
 include::references.adoc[]
 
+include::code-list.adoc[]
+
 :leveloffset: -1

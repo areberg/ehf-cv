@@ -1180,7 +1180,7 @@
             </Element>
 
             <Element>
-                <Term>cv:Relation</Term>
+                <Term>cv:Relationship</Term>
                 <Name>Relation type</Name>
                 <Description>Relation type to the reference. State e.g. role, positionlevel, profession</Description>
                 <Value type="EXAMPLE">Math teacher</Value>

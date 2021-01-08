@@ -150,7 +150,7 @@
         <xs:sequence>
             <xs:element name="ID" type="IdentifierType"/>
             <xs:element name="Party" type="PartyType" minOccurs="0"/> <!-- Navn og endpointID -->
-            <xs:element name="Relation" type="xs:string" minOccurs="0"/>
+            <xs:element name="Relationship" type="xs:string" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
             <xs:element name="RequestReference" type="ReferenceType" minOccurs="0"/> <!-- Finn et nytt passende navn -->
         </xs:sequence>

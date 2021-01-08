@@ -21,10 +21,10 @@ In the table below you will find the values to be used as the specification iden
 
 
 | EHF CV Request
-| urn:fdc:difi.no:2017:ehf:pacr:1.0
-.2+| urn:fdc:difi.no:2017:ehf:profile:03:1.0
+|
+.2+|
 
 | EHF CV
-|urn:fdc:difi.no:2017:ehf:pac:1.0
+|
 
 |===

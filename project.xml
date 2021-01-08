@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
+
+    <Name>EHF CV Request and CV</Name>
+
+    <!-- Documentation -->
+
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>guide/</Path>
+        <Title>Implementation Guideline</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>changelog/</Path>
+        <Title>Changelog</Title>
+    </Resource>
+
+    <!-- Syntax -->
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>src/cv-1.0/syntax/cv.xml</Path>
+        <Title>EHF CV</Title>
+    </Resource>
+    <Resource>
+        <Type>Syntax-1</Type>
+        <Path>src/cv-request-1.0/syntax/cv-request.xml</Path>
+        <Title>EHF CV Request</Title>
+    </Resource>
+
+    <!-- Rules -->
+    <Resource>
+        <Identifier>t1-process-1.0</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>src/cv-1.0/rules/sch/EHF-CV-1.0.sch</Path>
+        <Title>Business rules EHF CV</Title>
+    </Resource>
+    <Resource>
+        <Identifier>t2-process-1.0</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>src/cv-request-1.0/rules/sch/EHF-CV-REQUEST-1.0.sch</Path>
+        <Title>Business rules EHF CV Request</Title>
+    </Resource>
+
+    <!-- Files -->
+    <Resource>
+        <Type>native:File</Type>
+        <Title>Example files</Title>
+        <Description>Zip file containing examples of EHF CV Request and CV.</Description>
+        <Property key="download">ehf-cv-and-request-examples.zip</Property>
+        <Property key="filename">examples.zip</Property>
+        <Property key="virtual">true</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Schematron files</Title>
+        <Description>Zip file containing Schematron files of EHF CV Request and CV.</Description>
+        <Property key="download">ehf-cv-and-request-schematron.zip</Property>
+        <Property key="filename">schematron.zip</Property>
+        <Property key="virtual">true</Property>
+    </Resource>
+
+    <!-- Code lists-->
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/certification-type.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/clearance-level.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/clearance-type.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/course-type.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/eaid.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/education-degree.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/icd.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/ISO3166-1_Alpha2.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/ISO4217_2015.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/language-code.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/language-level.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/MimeCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/NACE.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/NUS.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/personal-skills.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/position-level.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/reference.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/requirement.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/sector.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/skills-type.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/social-media.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>src/_common/codelist/styrk98.xml</Path>
+    </Resource>
+
+
+</Project>

@@ -29,7 +29,7 @@ application process. This is a reference to the corresponding reference requirem
 
 Party information need to be stated in element `cv:Party`, with the party name and electronic
 address identifier.
-Relationship between the candidate and the reference-person can be stated in element `cv:Relation`.
+Relationship between the candidate and the reference-person can be stated in element `cv:Relationship`.
 For example school teacher, team leader, etc.
 
 .Example of a description of skill in CV as a response to requested skill in CV request
