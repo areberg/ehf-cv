@@ -1428,7 +1428,7 @@
 
             <Element cardinality="0..1">
                 <Term>cv:DateOfBirth</Term>
-                <Name>Candidate date of birth</Name>
+                <Name>Date of birth</Name>
                 <Description>The candidate's date of birth.</Description>
                 <Value type="EXAMPLE">1991-01-01</Value>
             </Element>
@@ -1476,6 +1476,25 @@
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">NO</Value>
                     </Element>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cv:Contact</Term>
+                <Name>Contact information</Name>
+
+                <Element cardinality="0..1">
+                    <Term>cv:Telephone</Term>
+                    <Name>Telephone number</Name>
+                    <Description>The candidate's telephone number.</Description>
+                    <Value type="EXAMPLE">99999999</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cv:ElectronicMail</Term>
+                    <Name>Electronic address</Name>
+                    <Description>The candidate's e-mail address.</Description>
+                    <Value type="EXAMPLE">1991-01-01</Value>
                 </Element>
             </Element>
 

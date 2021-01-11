@@ -484,11 +484,15 @@
         <cv:IdentificationCode>NO</cv:IdentificationCode>
       </cv:Country>
     </cv:PostalAddress>
+    <cv:Contact><!--5-->
+      <cv:Telephone>98989898</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@xxx.no</cv:ElectronicMail>
+    </cv:Contact>
     <cv:SocialMedia>
-      <cv:ID>1</cv:ID><!--5-->
-      <cv:Type>linkedin</cv:Type><!--6-->
+      <cv:ID>1</cv:ID><!--6-->
+      <cv:Type>linkedin</cv:Type><!--7-->
       <cv:Documentation>
-        <cv:URI>https://www.linkedin.no/xxx</cv:URI><!--7-->
+        <cv:URI>https://www.linkedin.no/xxx</cv:URI><!--8-->
       </cv:Documentation>
     </cv:SocialMedia>
   </cv:PersonalInformation>

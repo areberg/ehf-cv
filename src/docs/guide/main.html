@@ -534,6 +534,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_customization_and_profile_identifiers">A.1. Customization and Profile identifiers</a></li>
 </ul>
 </li>
+<li><a href="#_semantic_datatypes">Appendix B: Semantic datatypes</a>
+<ul class="sectlevel2">
+<li><a href="#_primitive_types">B.1. Primitive types</a></li>
+<li><a href="#_semantic_data_types">B.2. Semantic data types</a>
+<ul class="sectlevel3">
+<li><a href="#_percentage">B.2.1. Percentage</a></li>
+<li><a href="#_quantity">B.2.2. Quantity</a></li>
+<li><a href="#_code">B.2.3. Code</a></li>
+<li><a href="#_identifier">B.2.4. Identifier</a></li>
+<li><a href="#_date">B.2.5. Date</a></li>
+<li><a href="#_document_reference">B.2.6. Document Reference</a></li>
+<li><a href="#_text">B.2.7. Text</a></li>
+<li><a href="#_binary_objects">B.2.8. Binary objects</a></li>
+<li><a href="#_boolean">B.2.9. Boolean</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -3235,11 +3253,15 @@ specific social media.</p>
       <span class="tag">&lt;cv:IdentificationCode&gt;</span>NO<span class="tag">&lt;/cv:IdentificationCode&gt;</span>
     <span class="tag">&lt;/cv:Country&gt;</span>
   <span class="tag">&lt;/cv:PostalAddress&gt;</span>
+  <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+    <span class="tag">&lt;cv:Telephone&gt;</span>98989898<span class="tag">&lt;/cv:Telephone&gt;</span>
+    <span class="tag">&lt;cv:ElectronicMail&gt;</span>ola.nordmann@xxx.no<span class="tag">&lt;/cv:ElectronicMail&gt;</span>
+  <span class="tag">&lt;/cv:Contact&gt;</span>
   <span class="tag">&lt;cv:SocialMedia&gt;</span>
-    <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
-    <span class="tag">&lt;cv:Type&gt;</span>linkedin<span class="tag">&lt;/cv:Type&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:Type&gt;</span>linkedin<span class="tag">&lt;/cv:Type&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
     <span class="tag">&lt;cv:Documentation&gt;</span>
-      <span class="tag">&lt;cv:URI&gt;</span>https://www.linkedin.no/xxx<span class="tag">&lt;/cv:URI&gt;</span><i class="conum" data-value="7"></i><b>(7)</b>
+      <span class="tag">&lt;cv:URI&gt;</span>https://www.linkedin.no/xxx<span class="tag">&lt;/cv:URI&gt;</span><i class="conum" data-value="8"></i><b>(8)</b>
     <span class="tag">&lt;/cv:Documentation&gt;</span>
   <span class="tag">&lt;/cv:SocialMedia&gt;</span>
 <span class="tag">&lt;/cv:PersonalInformation&gt;</span></code></pre>
@@ -3265,14 +3287,18 @@ specific social media.</p>
 </tr>
 <tr>
 <td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>Social media identifier</td>
+<td>Contact information</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="6"></i><b>6</b></td>
-<td>Type of social media</td>
+<td>Social media identifier</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Type of social media</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
 <td>Social media URI</td>
 </tr>
 </table>
@@ -3612,6 +3638,438 @@ CustomizationID is a string without spaces. The list below contains spaces in Cu
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_semantic_datatypes"><a class="anchor" href="#_semantic_datatypes"></a>Appendix B: Semantic datatypes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Semantic data types are used to bridge the gap between the semantic concepts expressed by the information elements and the technical implementation.
+The semantic data types define the allowed value domain for the content, and any additional information components (attributes) needed in order to ensure its precise interpretation.</p>
+</div>
+<div class="sect2">
+<h3 id="_primitive_types"><a class="anchor" href="#_primitive_types"></a>B.1. Primitive types</h3>
+<div class="paragraph">
+<p>Semantic data type content may be of the following primitive types. These primitive types were taken from {ISO15000}, Annex A.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Primitive type</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Binary</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A set of finite-length sequences of binary digits.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Date</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time point representing a calendar day on a time scale consisting of an origin and a succession of calendar {ISO8601}.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Decimal</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A subset of the real numbers, which can be represented by decimal numerals.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>String</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A finite sequence of characters.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_semantic_data_types"><a class="anchor" href="#_semantic_data_types"></a>B.2. Semantic data types</h3>
+<div class="paragraph">
+<p>The different semantic data types are described in the tables below, where various features such as attributes, format, and decimals as well as the basic type are defined for each semantic data type. They are based on {ISO15000}.</p>
+</div>
+<div class="paragraph">
+<p>When used in an instance document, each data element will contain data. In the below tables this is identified as the “content”. Whenever a business term is used this term shall <strong>always</strong> have content and therefore the content is always mandatory.</p>
+</div>
+<div class="sect3">
+<h4 id="_percentage"><a class="anchor" href="#_percentage"></a>B.2.1. Percentage</h4>
+<div class="paragraph">
+<p>Percentages are given as fractions of a hundred (per cent) e.g. the value 34,78 % in percentage terms is given as 34,78.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+No restriction on number of decimals for percentages.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">34.7812</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_quantity"><a class="anchor" href="#_quantity"></a>B.2.2. Quantity</h4>
+<div class="paragraph">
+<p>Quantities are used to state a number of units such as for items. The code for the Unit of Measure is defined as a separate business term.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+No restriction on number of decimals for quantities.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10000.1234</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_code"><a class="anchor" href="#_code"></a>B.2.3. Code</h4>
+<div class="paragraph">
+<p>Codes are used to specify allowed values in elements as well as for lists of options. Code is different from Identifier in that allowed values have standardized meanings that can be known by the recipient.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Codes shall be entered exactly as shown in the selected code list
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abc123</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_identifier"><a class="anchor" href="#_identifier"></a>B.2.4. Identifier</h4>
+<div class="paragraph">
+<p>Identifiers (IDs) are keys that are issued by the sender or recipient of a document or by a third party.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The use of the attributes is specified for each information element.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">abc:123-DEF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Scheme identifier</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GLN</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Scheme version identifier</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_date"><a class="anchor" href="#_date"></a>B.2.5. Date</h4>
+<div class="paragraph">
+<p>Dates shall be in accordance to the “Calendar date complete representation” as specified by {ISO8601}, format <strong>YYYY-MM-DD</strong>.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Dates shall <strong>not</strong> include timezone information.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. EN 16931_ Date. Type</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2017-12-01</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_document_reference"><a class="anchor" href="#_document_reference"></a>B.2.6. Document Reference</h4>
+<div class="paragraph">
+<p>Document Reference Types are identifiers that were assigned to a document or document line.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Document Reference. Type</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">abc:123-DEF</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_text"><a class="anchor" href="#_text"></a>B.2.7. Text</h4>
+<div class="paragraph">
+<p>Text is the actual wording of anything written or printed. Line breaks in the text may be present, and any line breaks should be preserved and respected by the receiver’s system</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5% allowance when paid within 30 days</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_binary_objects"><a class="anchor" href="#_binary_objects"></a>B.2.8. Binary objects</h4>
+<div class="paragraph">
+<p>Binary objects can be used to describe files which are transmitted together with the business document.
+Attachments shall be transmitted together with the business document.
+The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename that is provided by (or on behalf of) the sender of the business document.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QmFzZTY0IGNvbnRlbnQgZXhhbXBsZQ==</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mime Code</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">image/jpeg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filename</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">drawing5.jpg</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_boolean"><a class="anchor" href="#_boolean"></a>B.2.9. Boolean</h4>
+<div class="paragraph">
+<p>Boolean indicators are used to specify the two allowed values, <em>true</em> or <em>false</em>. All elements of datatype Boolean, must have either <em>true</em> or <em>false</em> as their value.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Use</th>
+<th class="tableblock halign-left valign-top">Primitive Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>

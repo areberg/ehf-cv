@@ -1,3 +1,5 @@
 [appendix]
 
 include::profiles.adoc[]
+
+include::datatypes/index.adoc[]

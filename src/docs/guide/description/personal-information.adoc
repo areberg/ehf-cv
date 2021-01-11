@@ -16,6 +16,7 @@ include::../{snippet-dir-cv}/cv.xml[tags=PersonalInformation]
 <2> Personal name
 <3> Date of birth
 <4> Postal address
-<5> Social media identifier
-<6> Type of social media
-<7> Social media URI
+<5> Contact information
+<6> Social media identifier
+<7> Type of social media
+<8> Social media URI
