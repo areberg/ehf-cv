@@ -30,13 +30,13 @@
 
     <!-- Rules -->
     <Resource>
-        <Identifier>t1-process-1.0</Identifier>
+        <Identifier>cv-process-1.0</Identifier>
         <Type>native:Schematron</Type>
         <Path>src/cv-1.0/rules/sch/EHF-CV-1.0.sch</Path>
         <Title>Business rules EHF CV</Title>
     </Resource>
     <Resource>
-        <Identifier>t2-process-1.0</Identifier>
+        <Identifier>cv-request-process-1.0</Identifier>
         <Type>native:Schematron</Type>
         <Path>src/cv-request-1.0/rules/sch/EHF-CV-REQUEST-1.0.sch</Path>
         <Title>Business rules EHF CV Request</Title>

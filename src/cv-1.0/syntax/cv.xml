@@ -5,6 +5,9 @@
     <Term>cvuest</Term>
     <Name>EHF CV 1.0 RC1</Name>
 
+    <Property key="sch:prefix">EHF-CV</Property>
+    <Property key="sch:identifier">cv-basic-1.0</Property>
+
     <Namespace prefix="cv">urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1</Namespace>
 
     <Document>
@@ -207,6 +210,7 @@
                     <Name>Start date</Name>
                     <Description>Education start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
                 </Element>
 
                 <Element>
@@ -214,6 +218,7 @@
                     <Name>End date</Name>
                     <Description>Education end date.</Description>
                     <Value type="EXAMPLE">2020-05-05</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
                 </Element>
             </Element>
 
@@ -323,6 +328,7 @@
                 <Name>Course title</Name>
                 <Description>The specific name of the course.</Description>
                 <Value type="EXAMPLE">HMS</Value>
+                <Reference type="RULE">EHF-CV-R002</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -331,6 +337,7 @@
                 <Description>The specific name of the course expressed as code.</Description>
                 <Reference type="CODE_LIST">CourseType</Reference>
                 <Value type="EXAMPLE">Dykkerkurs</Value>
+                <Reference type="RULE">EHF-CV-R002</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -350,6 +357,7 @@
                     <Name>Course version</Name>
                     <Description>Course start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
                 </Element>
 
                 <Element>
@@ -357,6 +365,7 @@
                     <Name>Course version</Name>
                     <Description>Course end date. This may be a date in future.</Description>
                     <Value type="EXAMPLE">2020-05-05</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
                 </Element>
             </Element>
 
@@ -464,7 +473,8 @@
                 <Term>cv:Title</Term>
                 <Name>Certification title</Name>
                 <Description>The specific name of the course.</Description>
-                <Value type="EXAMPLE">Archimate</Value>
+                <Value type="EXAMPLE">CookingMaster</Value>
+                <Reference type="RULE">EHF-CV-R003</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -473,6 +483,7 @@
                 <Description>The specific name of the certfication expressed as code.</Description>
                 <Reference type="CODE_LIST">CertificationType</Reference>
                 <Value type="EXAMPLE">TOGAF</Value>
+                <Reference type="RULE">EHF-CV-R003</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -740,6 +751,7 @@
                     <Name>Project experience start date</Name>
                     <Description>Project experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-01</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
                 </Element>
 
                 <Element>
@@ -747,6 +759,7 @@
                     <Name>Project experience end date</Name>
                     <Description>Project experience end date.</Description>
                     <Value type="EXAMPLE">2020-12-01</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
                 </Element>
             </Element>
 
@@ -760,6 +773,7 @@
                     <Name>Position percent</Name>
                     <Description>The candidate's work percentage in the specific project experience.</Description>
                     <Value type="EXAMPLE">100</Value>
+                    <Reference type="RULE">EHF-CV-R004</Reference>
                 </Element>
 
                 <Element>
@@ -788,6 +802,7 @@
                     <Name>Project participation</Name>
                     <Description>The candidate's project participation, stated as months.</Description>
                     <Value type="EXAMPLE">5</Value>
+                    <Reference type="RULE">EHF-CV-R005</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -795,12 +810,14 @@
                     <Name>Project size</Name>
                     <Description>The total size of the project, stated as months.</Description>
                     <Value type="EXAMPLE">5</Value>
+                    <Reference type="RULE">EHF-CV-R006</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv:ProjectValue</Term>
                     <Name>Project Value</Name>
                     <Description>Total value of the project.</Description>
+                    <Reference type="RULE">EHF-CV-R007</Reference>
 
                     <Attribute>
                         <Term>currencyID</Term>
@@ -972,6 +989,7 @@
                     <Name>Position percent</Name>
                     <Description>Worked percentage in the specific work experience.</Description>
                     <Value type="EXAMPLE">100</Value>
+                    <Reference type="RULE">EHF-CV-R004</Reference>
                 </Element>
 
                 <Element>
@@ -1066,7 +1084,8 @@
                 <Term>cv:Title</Term>
                 <Name>Clearance title</Name>
                 <Description>The specific name of the clearance.</Description>
-                <Value type="EXAMPLE">Politiattest</Value>
+                <Value type="EXAMPLE">attest</Value>
+                <Reference type="RULE">EHF-CV-R008</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1075,6 +1094,7 @@
                 <Description>The specific name of the clearance expressed as code.</Description>
                 <Reference type="CODE_LIST">clearanceType</Reference>
                 <Value type="EXAMPLE">civil</Value>
+                <Reference type="RULE">EHF-CV-R008</Reference>
             </Element>
 
             <Element>
@@ -1242,6 +1262,7 @@
                 <Name>Skill title</Name>
                 <Description>The specific name of the skill.</Description>
                 <Value type="EXAMPLE">HMS</Value>
+                <Reference type="RULE">EHF-CV-R009</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1250,6 +1271,7 @@
                 <Description>The specific name of the skill expressed as code.</Description>
                 <Reference type="CODE_LIST">SkillsType</Reference>
                 <Value type="EXAMPLE">java</Value>
+                <Reference type="RULE">EHF-CV-R009</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1271,6 +1293,7 @@
                 <Name>Skill minimum length practice</Name>
                 <Description>How long the skill was practiced continously, state the minimum length as months.</Description>
                 <Value type="EXAMPLE">5</Value>
+                <Reference type="RULE">EHF-CV-R010</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1349,7 +1372,8 @@
                 <Term>cv:Title</Term>
                 <Name>Personal skill title</Name>
                 <Description>The specific name of the personal skill.</Description>
-                <Value type="EXAMPLE">HMS</Value>
+                <Value type="EXAMPLE">washing</Value>
+                <Reference type="RULE">EHF-CV-R011</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1358,6 +1382,7 @@
                 <Description>The specific name of the personal skill expressed as code.</Description>
                 <Reference type="CODE_LIST">PersonalSkills</Reference>
                 <Value type="EXAMPLE">leadership</Value>
+                <Reference type="RULE">EHF-CV-R011</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1515,6 +1540,7 @@
                     <Name>Social media title</Name>
                     <Description>The specific name of the social media.</Description>
                     <Value type="EXAMPLE">fotballblogg</Value>
+                    <Reference type="RULE">EHF-CV-R012</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1523,12 +1549,12 @@
                     <Description>The specific name of the social media expressed as code.</Description>
                     <Reference type="CODE_LIST">SocialMedia</Reference>
                     <Value type="EXAMPLE">vlog</Value>
+                    <Reference type="RULE">EHF-CV-R012</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv:Documentation</Term>
                     <Name>Social medium documentation</Name>
-
 
                     <Element cardinality="0..1">
                         <Term>cv:EmbeddedDocumentBinaryObject</Term>

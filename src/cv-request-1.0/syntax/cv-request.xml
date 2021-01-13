@@ -3,6 +3,8 @@
 
     <Term>cv-request</Term>
     <Name>EHF CV Request 1.0 RC1</Name>
+    <Property key="sch:prefix">EHF-CV-REQ</Property>
+    <Property key="sch:identifier">cv-request-basic-1.0</Property>
 
     <Namespace prefix="cv-req">urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1</Namespace>
 
@@ -79,6 +81,7 @@
                     <Reference type="CODE_LIST">eaid</Reference>
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
+
                 <Value type="EXAMPLE">987654325</Value>
             </Element>
 
@@ -131,6 +134,7 @@
                     <Reference type="CODE_LIST">eaid</Reference>
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
+
                 <Value type="EXAMPLE">987654325</Value>
             </Element>
 
@@ -326,6 +330,7 @@
                 <Name>Course title</Name>
                 <Description>The specific name of the course.</Description>
                 <Value type="EXAMPLE">HMS</Value>
+                <Reference type="RULE">EHF-CV-REQ-R001</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -334,6 +339,7 @@
                 <Description>The specific name of the course expressed as code.</Description>
                 <Reference type="CODE_LIST">CourseType</Reference>
                 <Value type="EXAMPLE">Dykkerkurs</Value>
+                <Reference type="RULE">EHF-CV-REQ-R001</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -353,6 +359,7 @@
                     <Name>Start date</Name>
                     <Description>Course start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -360,6 +367,7 @@
                     <Name>End date</Name>
                     <Description>Course end date. This may be a date in future.</Description>
                     <Value type="EXAMPLE">2020-05-05</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                 </Element>
             </Element>
 
@@ -389,6 +397,7 @@
                     <Name>Course title</Name>
                     <Description>The specific name of the course.</Description>
                     <Value type="EXAMPLE">HMS</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R001</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -396,7 +405,8 @@
                     <Name>Course type</Name>
                     <Description>The specific name of the course expressed as code.</Description>
                     <Reference type="CODE_LIST">CourseType</Reference>
-                    <Value type="EXAMPLE">Dykkerkurs</Value>
+                    <Value type="EXAMPLE">IndianCooking</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R001</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -416,6 +426,7 @@
                         <Name>Period start date</Name>
                         <Description>Course start date.</Description>
                         <Value type="EXAMPLE">2020-01-10</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -423,6 +434,7 @@
                         <Name>Period end date</Name>
                         <Description>Course end date. This may be a date in future.</Description>
                         <Value type="EXAMPLE">2020-05-05</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                     </Element>
                 </Element>
             </Element>
@@ -454,6 +466,7 @@
                 <Name>Certification title</Name>
                 <Description>The specific name of the certification.</Description>
                 <Value type="EXAMPLE">HMS</Value>
+                <Reference type="RULE">EHF-CV-REQ-R003</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -462,6 +475,7 @@
                 <Description>The specific name of the certification expressed as code.</Description>
                 <Reference type="CODE_LIST">CertificationType</Reference>
                 <Value type="EXAMPLE">archimate</Value>
+                <Reference type="RULE">EHF-CV-REQ-R003</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -504,6 +518,7 @@
                     <Name>Certification title</Name>
                     <Description>The specific name of the certification.</Description>
                     <Value type="EXAMPLE">HMS</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R003</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -511,7 +526,8 @@
                     <Name>Certification type</Name>
                     <Description>The specific name of the certification expressed as code.</Description>
                     <Reference type="CODE_LIST">CertificationType</Reference>
-                    <Value type="EXAMPLE">togaf</Value>
+                    <Value type="EXAMPLE">TOGAF</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R003</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -686,26 +702,29 @@
                     <Name>Minimum experience</Name>
                     <Description>A specific requirement about minimum year of experience.</Description>
                     <Value type="EXAMPLE">2</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R004</Reference>
                 </Element>
 
                 <Element>
                     <Term>cv-req:MaximumExperience</Term>
                     <Name>Maximum experience</Name>
                     <Description>A specific requirement about maximum year of experience.</Description>
-                    <Value type="EXAMPLE">2</Value>
+                    <Value type="EXAMPLE">10</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R004</Reference>
                 </Element>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>cv-req:Period</Term>
                 <Name>Period</Name>
-                <Description>The period the ptoject experience need to been completed.</Description>
+                <Description>The period the project experience need to been completed.</Description>
 
                 <Element>
                     <Term>cv-req:StartDate</Term>
                     <Name>Start date</Name>
                     <Description>Project experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-19</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                 </Element>
 
                 <Element>
@@ -713,6 +732,7 @@
                     <Name>End date</Name>
                     <Description>Project experience end date.</Description>
                     <Value type="EXAMPLE">2020-10-02</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                 </Element>
             </Element>
 
@@ -726,6 +746,7 @@
                     <Name>Position percent</Name>
                     <Description>A specific requirement about the percent of the project exeperience position.</Description>
                     <Value type="EXAMPLE">100</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R005</Reference>
                 </Element>
 
                 <Element>
@@ -742,7 +763,6 @@
                     <Description>Detailed description about what the cancdidate need to have done in the specific project experience. E.g. Finance analysis</Description>
                     <Value type="EXAMPLE">Must have done financial analysis by using R.</Value>
                 </Element>
-
             </Element>
 
             <Element cardinality="0..1">
@@ -755,6 +775,7 @@
                     <Name>Project participation</Name>
                     <Description>A specific requirement about candidate's project participation, stated as months.</Description>
                     <Value type="EXAMPLE">5</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R006</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -762,12 +783,14 @@
                     <Name>Project size</Name>
                     <Description>A specific requirement about the total size of the project, stated as months.</Description>
                     <Value type="EXAMPLE">5</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R007</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv-req:ProjectValue</Term>
                     <Name>Project Value</Name>
                     <Description>Total value of the project.</Description>
+                    <Reference type="RULE">EHF-CV-REQ-R008</Reference>
 
                     <Attribute>
                         <Term>currencyID</Term>
@@ -775,6 +798,7 @@
                         <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">NOK</Value>
                     </Attribute>
+
                     <Value type="EXAMPLE">100</Value>
                 </Element>
             </Element>
@@ -842,26 +866,29 @@
                         <Name>Minimum experience</Name>
                         <Description>A specific requirement about minimum year of experience.</Description>
                         <Value type="EXAMPLE">2</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R004</Reference>
                     </Element>
 
                     <Element>
                         <Term>cv-req:MaximumExperience</Term>
                         <Name>Maximum experience</Name>
                         <Description>A specific requirement about maximum year of experience.</Description>
-                        <Value type="EXAMPLE">2</Value>
+                        <Value type="EXAMPLE">6</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R004</Reference>
                     </Element>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv-req:Period</Term>
                     <Name>Period</Name>
-                    <Description>The period the ptoject experience need to been completed.</Description>
+                    <Description>The period the project experience need to been completed.</Description>
 
                     <Element>
                         <Term>cv-req:StartDate</Term>
                         <Name>Start date</Name>
                         <Description>Project experience start date.</Description>
                         <Value type="EXAMPLE">2020-01-19</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                     </Element>
 
                     <Element>
@@ -869,6 +896,7 @@
                         <Name>End date</Name>
                         <Description>Project experience end date.</Description>
                         <Value type="EXAMPLE">2020-10-02</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                     </Element>
                 </Element>
 
@@ -882,6 +910,7 @@
                         <Name>Position percent</Name>
                         <Description>A specific requirement about the percent of the project exeperience position.</Description>
                         <Value type="EXAMPLE">100</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R005</Reference>
                     </Element>
 
                     <Element>
@@ -910,6 +939,7 @@
                         <Name>Project participation</Name>
                         <Description>A specific requirement about candidate's project participation, stated as months.</Description>
                         <Value type="EXAMPLE">5</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R006</Reference>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -917,12 +947,14 @@
                         <Name>Project size</Name>
                         <Description>A specific requirement about the total size of the project, stated as months.</Description>
                         <Value type="EXAMPLE">5</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R007</Reference>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cv-req:ProjectValue</Term>
                         <Name>Project Value</Name>
                         <Description>Total value of the project.</Description>
+                        <Reference type="RULE">EHF-CV-REQ-R008</Reference>
 
                         <Attribute>
                             <Term>currencyID</Term>
@@ -930,6 +962,7 @@
                             <Reference type="CODE_LIST">ISO4217</Reference>
                             <Value type="EXAMPLE">NOK</Value>
                         </Attribute>
+
                         <Value type="EXAMPLE">100000</Value>
                     </Element>
                 </Element>
@@ -1006,6 +1039,7 @@
                     <Name>Start date</Name>
                     <Description>Work experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-19</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                 </Element>
 
                 <Element>
@@ -1013,6 +1047,7 @@
                     <Name>End date</Name>
                     <Description>Work experience end date.</Description>
                     <Value type="EXAMPLE">2020-10-02</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                 </Element>
             </Element>
 
@@ -1026,6 +1061,7 @@
                     <Name>Position percent</Name>
                     <Description>A specific requirement about the percent of the work exeperience position.</Description>
                     <Value type="EXAMPLE">100</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R005</Reference>
                 </Element>
 
                 <Element>
@@ -1114,6 +1150,7 @@
                         <Name>Start date</Name>
                         <Description>Work experience start date.</Description>
                         <Value type="EXAMPLE">2020-01-19</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                     </Element>
 
                     <Element>
@@ -1121,6 +1158,7 @@
                         <Name>End date</Name>
                         <Description>Work experience end date.</Description>
                         <Value type="EXAMPLE">2020-10-02</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R002</Reference>
                     </Element>
                 </Element>
 
@@ -1134,6 +1172,7 @@
                         <Name>Position percent</Name>
                         <Description>A specific requirement about the percent of the work exeperience position.</Description>
                         <Value type="EXAMPLE">100</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R005</Reference>
                     </Element>
 
                     <Element>
@@ -1180,6 +1219,7 @@
                 <Name>Clearance title</Name>
                 <Description>The specific name of the clearance.</Description>
                 <Value type="EXAMPLE">HMS</Value>
+                <Reference type="RULE">EHF-CV-REQ-R009</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1188,6 +1228,7 @@
                 <Description>The specific name of the clearance expressed as code.</Description>
                 <Reference type="CODE_LIST">ClearanceType</Reference>
                 <Value type="EXAMPLE">police</Value>
+                <Reference type="RULE">EHF-CV-REQ-R009</Reference>
             </Element>
 
             <Element>
@@ -1231,6 +1272,7 @@
                     <Name>Clearance title</Name>
                     <Description>The specific name of the clearance.</Description>
                     <Value type="EXAMPLE">HMS</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R009</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1239,6 +1281,7 @@
                     <Description>The specific name of the clearance expressed as code.</Description>
                     <Reference type="CODE_LIST">ClearanceType</Reference>
                     <Value type="EXAMPLE">politi</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R009</Reference>
                 </Element>
 
                 <Element>
@@ -1275,6 +1318,7 @@
                 <Name>Minimum total reference</Name>
                 <Description>Requirement about total minimum references, that need to be provided by the candidate.</Description>
                 <Value type="EXAMPLE">3</Value>
+                <Reference type="RULE">EHF-CV-REQ-R010</Reference>
             </Element>
         </Element>
 
@@ -1304,6 +1348,7 @@
                 <Name>Skill title</Name>
                 <Description>The specific name of the skill.</Description>
                 <Value type="EXAMPLE">3Dmodelling</Value>
+                <Reference type="RULE">EHF-CV-REQ-R011</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1312,6 +1357,7 @@
                 <Description>The specific name of the skill expressed as code.</Description>
                 <Reference type="CODE_LIST">SkillsType</Reference>
                 <Value type="EXAMPLE">java</Value>
+                <Reference type="RULE">EHF-CV-REQ-R011</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1338,6 +1384,7 @@
                     <Name>Skill minimum length practice</Name>
                     <Description>How long the skill need to be practiced continously, state the minimum length as months.</Description>
                     <Value type="EXAMPLE">5</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R012</Reference>
                 </Element>
 
                 <Element>
@@ -1375,6 +1422,7 @@
                     <Name>Skill title</Name>
                     <Description>The specific name of the skill.</Description>
                     <Value type="EXAMPLE">HMS</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R011</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1383,6 +1431,7 @@
                     <Description>The specific name of the skill expressed as code.</Description>
                     <Reference type="CODE_LIST">SkillsType</Reference>
                     <Value type="EXAMPLE">Java</Value>
+                    <Reference type="RULE">EHF-CV-REQ-R011</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1409,6 +1458,7 @@
                         <Name>Skill minimum length practice</Name>
                         <Description>How long the skill need to be practiced continously, state the minimum length as months.</Description>
                         <Value type="EXAMPLE">5</Value>
+                        <Reference type="RULE">EHF-CV-REQ-R012</Reference>
                     </Element>
 
                     <Element>
@@ -1448,6 +1498,7 @@
                 <Name>Personal skill title</Name>
                 <Description>The specific name of the personal skill.</Description>
                 <Value type="EXAMPLE">HMS</Value>
+                <Reference type="RULE">EHF-CV-REQ-R013</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1456,6 +1507,7 @@
                 <Description>The specific name of the personal skill expressed as code.</Description>
                 <Reference type="CODE_LIST">PersonalSkills</Reference>
                 <Value type="EXAMPLE">listening</Value>
+                <Reference type="RULE">EHF-CV-REQ-R013</Reference>
             </Element>
         </Element>
 

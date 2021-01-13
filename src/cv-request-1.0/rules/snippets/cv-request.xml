@@ -375,7 +375,7 @@
   <!-- tag::PersonalSkills[] -->
   <cv-req:PersonalSkills>
     <cv-req:ID>1</cv-req:ID><!--1-->
-    <cv-req:Type>Leadership</cv-req:Type><!--2-->
+    <cv-req:Type>leadership</cv-req:Type><!--2-->
   </cv-req:PersonalSkills>
   <!-- end::PersonalSkills[] -->
 </cv-req:CVRequest>
