@@ -1,0 +1,34 @@
+=== Develop an IT-system
+
+This use case describes the procurement process where a contracting authority needs several
+IT-developers to develop the company's IT-system.
+
+****
+
+Description::
+The Contracting authority needs a developer to develop a web portal. The economic operator
+provides a summary of the candidate's experiences, academic background, skills, personal skills,
+language skills, references, interest, and personal information.
+
+Parties involved::
+Contracting Authority +
+Economic operator
+
+Assumptions::
+. The contracting authority need a IT-developer to develop a web portal. There are many candidate's
+that apply for this work.
+
+Flow::
+. The contracting authority creates a CV request document with all the necessary requirements
+and criteria.
+. The contracting authority sends the tender documents (with CV request) to the tender system.
+. The economic operator (and candidate) create a CV-document, based on the requirements.
+. The economic operator sends tender documents (with CV) to the contracting authority's system.
+. The contracting authority receives the documents.
+
+
+Result::
+. The contracting authority receives CV-documents from several economic operators and evaluates
+the candidates. The best candidate is chosen based on the requested requirements.
+
+****

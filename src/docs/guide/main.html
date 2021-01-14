@@ -456,12 +456,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_procurement_process">4.1. Procurement Process</a>
 <ul class="sectlevel3">
 <li><a href="#_use_cases">4.1.1. Use Cases</a></li>
+<li><a href="#_develop_an_it_system">4.1.2. Develop an IT-system</a></li>
 </ul>
 </li>
-<li><a href="#_job_application_process">4.2. Job Application Process</a></li>
-<li><a href="#_use_cases_2">4.3. Use Cases</a>
+<li><a href="#_job_application_process">4.2. Job Application Process</a>
 <ul class="sectlevel3">
-<li><a href="#_use_case_1_2">4.3.1. Use Case 1</a></li>
+<li><a href="#_use_cases_2">4.2.1. Use Cases</a></li>
+<li><a href="#_applying_for_a_job">4.2.2. Applying for a job</a></li>
 </ul>
 </li>
 </ul>
@@ -657,97 +658,76 @@ ensuring good quality of information (data). By structuring the information, we 
 </div>
 <div class="sect3">
 <h4 id="_use_cases"><a class="anchor" href="#_use_cases"></a>4.1.1. Use Cases</h4>
-<div class="sect4">
-<h5 id="_use_case_1"><a class="anchor" href="#_use_case_1"></a>Use Case 1</h5>
+
+</div>
+<div class="sect3">
+<h4 id="_develop_an_it_system"><a class="anchor" href="#_develop_an_it_system"></a>4.1.2. Develop an IT-system</h4>
 <div class="paragraph">
-<p>The Norwegian Digitalisation Agency needs developer expertise for one of its projects. They have decided to acquire this
-expertise through Dynamic Procurement System (DPS) procedure. In order to streamline the processing and evaluation of
-incoming CVs from all suppliers located in the supplier database, they have decided to set requirements and criteria for
-the consultant&#8217;s competence in their tender system based on EHF CV. Thus, requirements that can be set can be automatically
-evaluated against the submitted CVs.</p>
+<p>This use case describes the procurement process where a contracting authority needs several
+IT-developers to develop the company&#8217;s IT-system.</p>
 </div>
-<div class="paragraph">
-<p>Tenderer logs into the tender system and finds the template for CV request. He wants the consultant to answer the
-following areas:</p>
+<div class="sidebarblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Description</dt>
+<dd>
+<p>The Contracting authority needs a developer to develop a web portal. The economic operator
+provides a summary of the candidate&#8217;s experiences, academic background, skills, personal skills,
+language skills, references, interest, and personal information.</p>
+</dd>
+<dt class="hdlist1">Parties involved</dt>
+<dd>
+<p>Contracting Authority<br>
+Economic operator</p>
+</dd>
+<dt class="hdlist1">Assumptions</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The contracting authority need a IT-developer to develop a web portal. There are many candidate&#8217;s
+that apply for this work.</p>
+</li>
+</ol>
 </div>
-<div class="ulist">
-<ul>
+</dd>
+<dt class="hdlist1">Flow</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Education:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Achieved relevant master&#8217;s degree related to the development assignment</p>
+<p>The contracting authority creates a CV request document with all the necessary requirements
+and criteria.</p>
 </li>
 <li>
-<p>Long and particularly relevant experience can to some extent compensate for the education requirement:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Relevant courses</p>
+<p>The contracting authority sends the tender documents (with CV request) to the tender system.</p>
 </li>
 <li>
-<p>Certifications that are relevant</p>
+<p>The economic operator (and candidate) create a CV-document, based on the requirements.</p>
 </li>
 <li>
-<p>Language (fluent English written and oral)</p>
+<p>The economic operator sends tender documents (with CV) to the contracting authority&#8217;s system.</p>
 </li>
 <li>
-<p>Relevant assignments</p>
+<p>The contracting authority receives the documents.</p>
 </li>
-<li>
-<p>Work Experience</p>
-<div class="ulist">
-<ul>
-<li>
-<p>References</p>
-</li>
-</ul>
+</ol>
 </div>
-</li>
+</dd>
+<dt class="hdlist1">Result</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Other reference</p>
+<p>The contracting authority receives CV-documents from several economic operators and evaluates
+the candidates. The best candidate is chosen based on the requested requirements.</p>
 </li>
-<li>
-<p>Other skills</p>
-</li>
-<li>
-<p>Personal characteristics</p>
-</li>
-<li>
-<p>Availability</p>
-</li>
-</ul>
+</ol>
 </div>
-</li>
-</ul>
+</dd>
+</dl>
 </div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The fields in the form links to the evaluation model in order to rank the candidates automatically.</p>
-</div>
-<div class="paragraph">
-<p>EHF pre-award catalogue request is been used for the suppliers to be able to set the hourly rate for the different
-developer profiles. Rest of the procurement documents are been attached.</p>
-</div>
-<div class="paragraph">
-<p>The entire package is sent to all suppliers located in the supplier register for DPS via the Peppol network.</p>
-</div>
-<div class="paragraph">
-<p>The supplier receives the tender documents and upload the CV request in their own system where requirements for
-competence are shown. The supplier fills in the various fields and pastes links to proof or uploads PDF attachments
-as proof of the competence of the candidate. Hourly rates are filled in the EHF pre-award catalogue. When the tender
-document is been filled out it will be sent, via the Peppol network, to Norwegian Digitalisation Agency access point.</p>
-</div>
-<div class="paragraph">
-<p>Norwegian Digitalisation Agency receives 49 CVs from 15 different suppliers. The competition system sorts, evaluates
-the different fields and comes out with a ranking. Tender staff checks some of the CVs that need this especially those
-who do not meet the education requirement but have filled in long and particularly relevant experience to compensate
-for lack of education. The offers are also ranked in terms of hourly rates against the competence requirements. When
-the selected supplier is decided, a message from the competition system is sent to Doffin informing about which supplier
-is selected.</p>
 </div>
 </div>
 </div>
@@ -763,12 +743,70 @@ is selected.</p>
 </div>
 <div class="title">Figure 2. EHF CV request and CV process diagram</div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_use_cases_2"><a class="anchor" href="#_use_cases_2"></a>4.3. Use Cases</h3>
 <div class="sect3">
-<h4 id="_use_case_1_2"><a class="anchor" href="#_use_case_1_2"></a>4.3.1. Use Case 1</h4>
+<h4 id="_use_cases_2"><a class="anchor" href="#_use_cases_2"></a>4.2.1. Use Cases</h4>
 
+</div>
+<div class="sect3">
+<h4 id="_applying_for_a_job"><a class="anchor" href="#_applying_for_a_job"></a>4.2.2. Applying for a job</h4>
+<div class="paragraph">
+<p>This use case describes a job process, where a candidate applies for a job.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Description</dt>
+<dd>
+<p>A job applicant creates a CV-document, that provides a summary of their experiences,
+academic background, skills, personal skills, language skills, references, interest
+and personal information.</p>
+</dd>
+<dt class="hdlist1">Parties involved</dt>
+<dd>
+<p>Job applicant</p>
+</dd>
+<dt class="hdlist1">Assumptions</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The job applicant find an interesting job.</p>
+</li>
+</ol>
+</div>
+</dd>
+<dt class="hdlist1">Flow</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The applicant find the job on Internet.</p>
+</li>
+<li>
+<p>The applicant creates a CV with necessary information.</p>
+</li>
+<li>
+<p>The applicant sends the CV with other application documents to the employer.</p>
+</li>
+</ol>
+</div>
+</dd>
+<dt class="hdlist1">Result</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The applicant sends a standard CV-document to the employer, with application other documents.
+The employer evaluates the CV based on the requested requirements.</p>
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2823,7 +2861,7 @@ For example education, project experience, etc.</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Skills&gt;</span>
   <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
-  <span class="tag">&lt;cv:Type&gt;</span>PP<span class="tag">&lt;/cv:Type&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:Type&gt;</span>PublicProcurement<span class="tag">&lt;/cv:Type&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
   <span class="tag">&lt;cv:LastPractice&gt;</span>2020-03-03<span class="tag">&lt;/cv:LastPractice&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
   <span class="tag">&lt;cv:MinimumLengthPractice&gt;</span>20<span class="tag">&lt;/cv:MinimumLengthPractice&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
   <span class="tag">&lt;cv:Contact&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
@@ -3059,12 +3097,11 @@ process.</p>
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;cv:Clearance&gt;</span>
   <span class="tag">&lt;cv:ID&gt;</span>1<span class="tag">&lt;/cv:ID&gt;</span><i class="conum" data-value="1"></i><b>(1)</b>
-  <span class="tag">&lt;cv:Title&gt;</span>Politiattest<span class="tag">&lt;/cv:Title&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
-  <span class="tag">&lt;cv-req:Title&gt;</span>Airport<span class="tag">&lt;/cv-req:Title&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
-  <span class="tag">&lt;cv-req:Level&gt;</span>secret<span class="tag">&lt;/cv-req:Level&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
-  <span class="tag">&lt;cv:ExpirationDate&gt;</span>2025-08-08<span class="tag">&lt;/cv:ExpirationDate&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="tag">&lt;cv:Title&gt;</span>Airport<span class="tag">&lt;/cv:Title&gt;</span><i class="conum" data-value="2"></i><b>(2)</b>
+  <span class="tag">&lt;cv:Level&gt;</span>secret<span class="tag">&lt;/cv:Level&gt;</span><i class="conum" data-value="3"></i><b>(3)</b>
+  <span class="tag">&lt;cv:ExpirationDate&gt;</span>2025-08-08<span class="tag">&lt;/cv:ExpirationDate&gt;</span><i class="conum" data-value="4"></i><b>(4)</b>
   <span class="tag">&lt;cv:Documentation&gt;</span>
-    <span class="tag">&lt;cv:URI&gt;</span>https://www.politiet.no/<span class="tag">&lt;/cv:URI&gt;</span><i class="conum" data-value="6"></i><b>(6)</b>
+    <span class="tag">&lt;cv:URI&gt;</span>https://www.politiet.no/<span class="tag">&lt;/cv:URI&gt;</span><i class="conum" data-value="5"></i><b>(5)</b>
   <span class="tag">&lt;/cv:Documentation&gt;</span>
 <span class="tag">&lt;/cv:Clearance&gt;</span></code></pre>
 </div>

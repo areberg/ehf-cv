@@ -1,0 +1,28 @@
+=== Applying for a job
+
+This use case describes a job process, where a candidate applies for a job.
+
+****
+
+Description::
+A job applicant creates a CV-document, that provides a summary of their experiences,
+academic background, skills, personal skills, language skills, references, interest
+and personal information.
+
+Parties involved::
+Job applicant
+
+Assumptions::
+. The job applicant find an interesting job.
+
+Flow::
+. The applicant find the job on Internet.
+. The applicant creates a CV with necessary information.
+. The applicant sends the CV with other application documents to the employer.
+
+
+Result::
+. The applicant sends a standard CV-document to the employer, with application other documents.
+The employer evaluates the CV based on the requested requirements.
+
+****
