@@ -12,33 +12,27 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <ProjectExperience>
-        <RequiredTotalExperience>
-          <MinimumExperience>3</MinimumExperience>
-          <MaximumExperience>7</MaximumExperience>
-        </RequiredTotalExperience>
-      </ProjectExperience>
+      <RequiredTotalExperience>
+        <MinimumExperience>3</MinimumExperience>
+        <MaximumExperience>7</MaximumExperience>
+      </RequiredTotalExperience>
 
 		</CVRequest>
 	</test>
 
-	<test id="2">
-		<assert>
-			<success>EHF-CV-REQ-R004</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+  <test id="2">
+    <assert>
+      <error>EHF-CV-REQ-R004</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<RequiredTotalExperience>
-						<MinimumExperience>3</MinimumExperience>
-						<MaximumExperience>7</MaximumExperience>
-					</RequiredTotalExperience>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
+      <RequiredTotalExperience>
+        <MinimumExperience>7</MinimumExperience>
+        <MaximumExperience>7</MaximumExperience>
+      </RequiredTotalExperience>
 
-		</CVRequest>
-	</test>
+    </CVRequest>
+  </test>
 
   <test id="3">
     <assert>
@@ -46,66 +40,12 @@
     </assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <ProjectExperience>
-        <RequiredTotalExperience>
-          <MinimumExperience>7</MinimumExperience>
-          <MaximumExperience>7</MaximumExperience>
-        </RequiredTotalExperience>
-      </ProjectExperience>
+      <RequiredTotalExperience>
+        <MinimumExperience>10</MinimumExperience>
+        <MaximumExperience>7</MaximumExperience>
+      </RequiredTotalExperience>
 
     </CVRequest>
   </test>
-
-	<test id="4">
-		<assert>
-			<error>EHF-CV-REQ-R004</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<RequiredTotalExperience>
-						<MinimumExperience>7</MinimumExperience>
-						<MaximumExperience>7</MaximumExperience>
-					</RequiredTotalExperience>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-  <test id="5">
-    <assert>
-      <error>EHF-CV-REQ-R004</error>
-    </assert>
-    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-      <ProjectExperience>
-        <RequiredTotalExperience>
-          <MinimumExperience>10</MinimumExperience>
-          <MaximumExperience>7</MaximumExperience>
-        </RequiredTotalExperience>
-      </ProjectExperience>
-
-    </CVRequest>
-  </test>
-
-	<test id="6">
-		<assert>
-			<error>EHF-CV-REQ-R004</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<RequiredTotalExperience>
-						<MinimumExperience>17</MinimumExperience>
-						<MaximumExperience>7</MaximumExperience>
-					</RequiredTotalExperience>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
 
 </testSet>

@@ -12,31 +12,25 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectValue>100000</ProjectValue>
-        </ExperienceValue>
-      </ProjectExperience>
+      <ExperienceValue>
+        <ProjectValue>100000</ProjectValue>
+      </ExperienceValue>
 
 		</CVRequest>
 	</test>
 
-	<test id="2">
-		<assert>
-			<success>EHF-CV-REQ-R008</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+  <test id="2">
+    <assert>
+      <error>EHF-CV-REQ-R008</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<ExperienceValue>
-						<ProjectValue>100000</ProjectValue>
-					</ExperienceValue>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
+      <ExperienceValue>
+        <ProjectValue>0</ProjectValue>
+      </ExperienceValue>
 
-		</CVRequest>
-	</test>
+    </CVRequest>
+  </test>
 
   <test id="3">
     <assert>
@@ -44,62 +38,10 @@
     </assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectValue>0</ProjectValue>
-        </ExperienceValue>
-      </ProjectExperience>
-
+      <ExperienceValue>
+        <ProjectValue>-10000</ProjectValue>
+      </ExperienceValue>
     </CVRequest>
   </test>
-
-	<test id="4">
-		<assert>
-			<error>EHF-CV-REQ-R008</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<ExperienceValue>
-						<ProjectValue>0</ProjectValue>
-					</ExperienceValue>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-  <test id="5">
-    <assert>
-      <error>EHF-CV-REQ-R008</error>
-    </assert>
-    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectValue>-10000</ProjectValue>
-        </ExperienceValue>
-      </ProjectExperience>
-
-    </CVRequest>
-  </test>
-
-	<test id="6">
-		<assert>
-			<error>EHF-CV-REQ-R008</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<ExperienceValue>
-						<ProjectValue>-10000</ProjectValue>
-					</ExperienceValue>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
 
 </testSet>

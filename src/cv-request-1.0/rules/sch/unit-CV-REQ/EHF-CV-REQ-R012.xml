@@ -12,94 +12,38 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <Skills>
-        <SkillPractice>
-          <MinimumLengthPractice>8</MinimumLengthPractice>
-        </SkillPractice>
-      </Skills>
+      <SkillPractice>
+        <MinimumLengthPractice>8</MinimumLengthPractice>
+      </SkillPractice>
 
 		</CVRequest>
 	</test>
 
-	<test id="2">
-		<assert>
-			<success>EHF-CV-REQ-R012</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<Skills>
-				<AlternativeSkills>
-					<SkillPractice>
-						<MinimumLengthPractice>8</MinimumLengthPractice>
-					</SkillPractice>
-				</AlternativeSkills>
-			</Skills>
-
-		</CVRequest>
-	</test>
-
-  <test id="3">
+  <test id="2">
     <assert>
       <success>EHF-CV-REQ-R012</success>
     </assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <Skills>
-        <SkillPractice>
-          <MinimumLengthPractice>0</MinimumLengthPractice>
-        </SkillPractice>
-      </Skills>
+      <SkillPractice>
+        <MinimumLengthPractice>0</MinimumLengthPractice>
+      </SkillPractice>
 
     </CVRequest>
   </test>
 
-	<test id="4">
-		<assert>
-			<success>EHF-CV-REQ-R012</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<Skills>
-				<AlternativeSkills>
-					<SkillPractice>
-						<MinimumLengthPractice>0</MinimumLengthPractice>
-					</SkillPractice>
-				</AlternativeSkills>
-			</Skills>
-
-		</CVRequest>
-	</test>
-
-  <test id="5">
+  <test id="3">
     <assert>
       <error>EHF-CV-REQ-R012</error>
     </assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <Skills>
-        <SkillPractice>
-          <MinimumLengthPractice>-5</MinimumLengthPractice>
-        </SkillPractice>
-      </Skills>
+      <SkillPractice>
+        <MinimumLengthPractice>-5</MinimumLengthPractice>
+      </SkillPractice>
 
     </CVRequest>
   </test>
 
-	<test id="6">
-		<assert>
-			<error>EHF-CV-REQ-R012</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<Skills>
-				<AlternativeSkills>
-					<SkillPractice>
-						<MinimumLengthPractice>-5</MinimumLengthPractice>
-					</SkillPractice>
-				</AlternativeSkills>
-			</Skills>
-
-		</CVRequest>
-	</test>
 
 </testSet>

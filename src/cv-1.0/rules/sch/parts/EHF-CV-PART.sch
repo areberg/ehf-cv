@@ -26,7 +26,7 @@
               equal 100.</assert>
   </rule>
 
-  <rule context="cv:ProjectExperience/cv:ExperienceValue">
+  <rule context="cv:ExperienceValue">
 
       <assert id="EHF-CV-R005"
               test="number(cv:ProjectParticipation) &gt; 0"

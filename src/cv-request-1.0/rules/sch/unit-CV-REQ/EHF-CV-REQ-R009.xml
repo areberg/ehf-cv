@@ -25,11 +25,9 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Clearance>
-				<AlternativeClearance>
-					<Type>military</Type>
-				</AlternativeClearance>
-			</Clearance>
+			<AlternativeClearance>
+				<Type>military</Type>
+			</AlternativeClearance>
 
 		</CVRequest>
 	</test>
@@ -53,11 +51,9 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Clearance>
-				<AlternativeClearance>
-				  <Title>Department security</Title>
-				</AlternativeClearance>
-			</Clearance>
+			<AlternativeClearance>
+			  <Title>Department security</Title>
+			</AlternativeClearance>
 
 		</CVRequest>
 	</test>
@@ -82,12 +78,10 @@
     </assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Clearance>
-				<AlternativeClearance>
-				  <Title>Department security</Title>
-					<Type>military</Type>
-				</AlternativeClearance>
-			</Clearance>
+			<AlternativeClearance>
+			  <Title>Department security</Title>
+				<Type>military</Type>
+			</AlternativeClearance>
 
     </CVRequest>
   </test>

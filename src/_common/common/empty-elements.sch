@@ -2,7 +2,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
     <rule context="cv:*">
         <assert id="EHF-COMMON-R001"
-                test=". != ''"
+                test="normalize-space() != ''"
                 flag="fatal">Document MUST not contain empty elements.</assert>
         <assert id="EHF-COMMON-R002"
                 test="every $attr in @* satisfies normalize-space($attr) != ''"
@@ -11,7 +11,7 @@
 
     <rule context="cv-req:*">
         <assert id="EHF-COMMON-R003"
-                test="count(*) != 0"
+                test="normalize-space() != ''"
                 flag="fatal">Document MUST not contain empty elements.</assert>
         <assert id="EHF-COMMON-R004"
                 test="every $attr in @* satisfies normalize-space($attr) != ''"

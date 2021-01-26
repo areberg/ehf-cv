@@ -12,31 +12,25 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectParticipation>100</ProjectParticipation>
-        </ExperienceValue>
-			</ProjectExperience>
+      <ExperienceValue>
+        <ProjectParticipation>100</ProjectParticipation>
+      </ExperienceValue>
 
 		</CVRequest>
 	</test>
 
-	<test id="2">
-		<assert>
-			<success>EHF-CV-REQ-R006</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+  <test id="2">
+    <assert>
+      <error>EHF-CV-REQ-R006</error>
+    </assert>
+    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<ExperienceValue>
-						<ProjectParticipation>100</ProjectParticipation>
-					</ExperienceValue>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
+      <ExperienceValue>
+        <ProjectParticipation>0</ProjectParticipation>
+      </ExperienceValue>
 
-		</CVRequest>
-	</test>
+    </CVRequest>
+  </test>
 
   <test id="3">
     <assert>
@@ -44,62 +38,11 @@
     </assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectParticipation>0</ProjectParticipation>
-        </ExperienceValue>
-      </ProjectExperience>
+      <ExperienceValue>
+        <ProjectParticipation>-10</ProjectParticipation>
+      </ExperienceValue>
 
     </CVRequest>
   </test>
-
-	<test id="4">
-		<assert>
-			<error>EHF-CV-REQ-R006</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<ExperienceValue>
-						<ProjectParticipation>0</ProjectParticipation>
-					</ExperienceValue>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-  <test id="5">
-    <assert>
-      <error>EHF-CV-REQ-R006</error>
-    </assert>
-    <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectParticipation>-10</ProjectParticipation>
-        </ExperienceValue>
-      </ProjectExperience>
-
-    </CVRequest>
-  </test>
-
-	<test id="6">
-		<assert>
-			<error>EHF-CV-REQ-R006</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<ExperienceValue>
-						<ProjectParticipation>-10</ProjectParticipation>
-					</ExperienceValue>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
 
 </testSet>

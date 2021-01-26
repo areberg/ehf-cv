@@ -12,11 +12,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-			<ProjectExperience>
-        <ExperienceValue>
-          <ProjectParticipation>100</ProjectParticipation>
-        </ExperienceValue>
-			</ProjectExperience>
+      <ExperienceValue>
+        <ProjectParticipation>100</ProjectParticipation>
+      </ExperienceValue>
 
 		</CV>
 	</test>
@@ -27,11 +25,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectParticipation>0</ProjectParticipation>
-        </ExperienceValue>
-      </ProjectExperience>
+      <ExperienceValue>
+        <ProjectParticipation>0</ProjectParticipation>
+      </ExperienceValue>
 
 		</CV>
 	</test>
@@ -42,11 +38,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-      <ProjectExperience>
-        <ExperienceValue>
-          <ProjectParticipation>-10</ProjectParticipation>
-        </ExperienceValue>
-      </ProjectExperience>
+      <ExperienceValue>
+        <ProjectParticipation>-10</ProjectParticipation>
+      </ExperienceValue>
 
 		</CV>
 	</test>

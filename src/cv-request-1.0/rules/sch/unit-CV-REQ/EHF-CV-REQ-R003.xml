@@ -25,11 +25,9 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Certification>
-				<AlternativeCertification>
-				<Type>SAP</Type>
-				</AlternativeCertification>
-			</Certification>
+			<AlternativeCertification>
+			<Type>SAP</Type>
+			</AlternativeCertification>
 
 		</CVRequest>
 	</test>
@@ -53,11 +51,9 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Certification>
-				<AlternativeCertification>
-				<Title>Airport security</Title>
-				</AlternativeCertification>
-			</Certification>
+			<AlternativeCertification>
+			<Title>Airport security</Title>
+			</AlternativeCertification>
 
 		</CVRequest>
 	</test>
@@ -82,12 +78,10 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Certification>
-				<AlternativeCertification>
+			<AlternativeCertification>
 				<Title>Airport security</Title>
 				<Type>SAP</Type>
-				</AlternativeCertification>
-			</Certification>
+			</AlternativeCertification>
 
 		</CVRequest>
 	</test>

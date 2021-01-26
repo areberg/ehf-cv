@@ -40,6 +40,7 @@
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2020-10-05</Value>
+            <Reference type="RULE">EHF-COMMON-R030</Reference>
         </Element>
 
         <Element>
@@ -76,6 +77,7 @@
                 <Term>cv:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the contracting authority.</Description>
+                <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                 <Attribute>
                     <Term>scheme</Term>
@@ -128,6 +130,7 @@
                 <Term>cv:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the economic operator or the candidate.</Description>
+                <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                 <Attribute>
                     <Term>scheme</Term>
@@ -211,6 +214,7 @@
                     <Description>Education start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
                     <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
 
                 <Element>
@@ -219,6 +223,7 @@
                     <Description>Education end date.</Description>
                     <Value type="EXAMPLE">2020-05-05</Value>
                     <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
             </Element>
 
@@ -358,6 +363,7 @@
                     <Description>Course start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
                     <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
 
                 <Element>
@@ -366,6 +372,7 @@
                     <Description>Course end date. This may be a date in future.</Description>
                     <Value type="EXAMPLE">2020-05-05</Value>
                     <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
             </Element>
 
@@ -378,6 +385,7 @@
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the supplier party.</Description>
+                    <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
                         <Term>scheme</Term>
@@ -498,6 +506,7 @@
                 <Name>Cerrtification valid date</Name>
                 <Description>The date certication is valid to.</Description>
                 <Value type="EXAMPLE">2020-05-14</Value>
+                <Reference type="RULE">EHF-COMMON-R030</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -509,6 +518,7 @@
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the supplier party.</Description>
+                    <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
                         <Term>scheme</Term>
@@ -724,6 +734,7 @@
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the company party.</Description>
+                    <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
                         <Term>scheme</Term>
@@ -752,6 +763,7 @@
                     <Description>Project experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-01</Value>
                     <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
 
                 <Element>
@@ -760,6 +772,7 @@
                     <Description>Project experience end date.</Description>
                     <Value type="EXAMPLE">2020-12-01</Value>
                     <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
             </Element>
 
@@ -942,6 +955,7 @@
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the company party.</Description>
+                    <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
                         <Term>scheme</Term>
@@ -969,6 +983,8 @@
                     <Name>Work experience start date</Name>
                     <Description>Work experience start date.</Description>
                     <Value type="EXAMPLE">2013-05-05</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
 
                 <Element>
@@ -976,6 +992,8 @@
                     <Name>Work experience end date</Name>
                     <Description>Work experience end date.</Description>
                     <Value type="EXAMPLE">2017-08-01</Value>
+                    <Reference type="RULE">EHF-CV-R001</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                 </Element>
             </Element>
 
@@ -1110,6 +1128,7 @@
                 <Name>Clearance expiration date</Name>
                 <Description>The clearance's expiration date.</Description>
                 <Value type="EXAMPLE">2025-08-08</Value>
+                <Reference type="RULE">EHF-COMMON-R030</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1181,6 +1200,7 @@
                     <Term>cv:EndpointID</Term>
                     <Name>Electronic Address Identifier</Name>
                     <Description>The electronic address identifier of the party.</Description>
+                    <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
                         <Term>scheme</Term>
@@ -1286,6 +1306,7 @@
                 <Name>Skill last practice</Name>
                 <Description>Last time the skill was practiced.</Description>
                 <Value type="EXAMPLE">2020-03-03</Value>
+                <Reference type="RULE">EHF-COMMON-R030</Reference>
             </Element>
 
             <Element cardinality="0..1">
@@ -1456,6 +1477,7 @@
                 <Name>Date of birth</Name>
                 <Description>The candidate's date of birth.</Description>
                 <Value type="EXAMPLE">1991-01-01</Value>
+                <Reference type="RULE">EHF-COMMON-R030</Reference>
             </Element>
 
             <Element cardinality="0..1">

@@ -38,6 +38,7 @@
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2020-02-02</Value>
+            <Reference type="RULE">EHF-COMMON-R031</Reference>
         </Element>
 
         <Element>
@@ -74,6 +75,7 @@
                 <Term>cv-req:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the economic operator.</Description>
+                <Reference type="RULE">EHF-COMMON-R011</Reference>
 
                 <Attribute>
                     <Term>scheme</Term>
@@ -127,6 +129,7 @@
                 <Term>cv-req:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
                 <Description>The electronic address identifier of the Contracting Authority.</Description>
+                <Reference type="RULE">EHF-COMMON-R011</Reference>
 
                 <Attribute>
                     <Term>scheme</Term>
@@ -360,6 +363,7 @@
                     <Description>Course start date.</Description>
                     <Value type="EXAMPLE">2020-01-10</Value>
                     <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -368,6 +372,7 @@
                     <Description>Course end date. This may be a date in future.</Description>
                     <Value type="EXAMPLE">2020-05-05</Value>
                     <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
             </Element>
 
@@ -427,6 +432,7 @@
                         <Description>Course start date.</Description>
                         <Value type="EXAMPLE">2020-01-10</Value>
                         <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                        <Reference type="RULE">EHF-COMMON-R031</Reference>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -435,6 +441,7 @@
                         <Description>Course end date. This may be a date in future.</Description>
                         <Value type="EXAMPLE">2020-05-05</Value>
                         <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                        <Reference type="RULE">EHF-COMMON-R031</Reference>
                     </Element>
                 </Element>
             </Element>
@@ -490,6 +497,7 @@
                 <Name>Cerrtification valid date</Name>
                 <Description>The certification need to be valid to a spesific date.</Description>
                 <Value type="EXAMPLE">2020-12-01</Value>
+                <Reference type="RULE">EHF-COMMON-R031</Reference>
             </Element>
 
             <Element cardinality="0..n">
@@ -542,6 +550,7 @@
                     <Name>Cerrtification valid date</Name>
                     <Description>The certification need to be valid to a spesific date.</Description>
                     <Value type="EXAMPLE">2025-05-01</Value>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
             </Element>
         </Element>
@@ -725,6 +734,7 @@
                     <Description>Project experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-19</Value>
                     <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
 
                 <Element>
@@ -733,6 +743,7 @@
                     <Description>Project experience end date.</Description>
                     <Value type="EXAMPLE">2020-10-02</Value>
                     <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
             </Element>
 
@@ -889,6 +900,7 @@
                         <Description>Project experience start date.</Description>
                         <Value type="EXAMPLE">2020-01-19</Value>
                         <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                        <Reference type="RULE">EHF-COMMON-R031</Reference>
                     </Element>
 
                     <Element>
@@ -897,6 +909,7 @@
                         <Description>Project experience end date.</Description>
                         <Value type="EXAMPLE">2020-10-02</Value>
                         <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                        <Reference type="RULE">EHF-COMMON-R031</Reference>
                     </Element>
                 </Element>
 
@@ -1040,6 +1053,7 @@
                     <Description>Work experience start date.</Description>
                     <Value type="EXAMPLE">2020-01-19</Value>
                     <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
 
                 <Element>
@@ -1048,6 +1062,7 @@
                     <Description>Work experience end date.</Description>
                     <Value type="EXAMPLE">2020-10-02</Value>
                     <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
             </Element>
 
@@ -1151,6 +1166,7 @@
                         <Description>Work experience start date.</Description>
                         <Value type="EXAMPLE">2020-01-19</Value>
                         <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                        <Reference type="RULE">EHF-COMMON-R031</Reference>
                     </Element>
 
                     <Element>
@@ -1159,6 +1175,7 @@
                         <Description>Work experience end date.</Description>
                         <Value type="EXAMPLE">2020-10-02</Value>
                         <Reference type="RULE">EHF-CV-REQ-R002</Reference>
+                        <Reference type="RULE">EHF-COMMON-R031</Reference>
                     </Element>
                 </Element>
 
@@ -1244,6 +1261,7 @@
                 <Name>Clearance expiration date</Name>
                 <Description>A specific requirement about the clearance expiration date.</Description>
                 <Value type="EXAMPLE">2025-05-05</Value>
+                <Reference type="RULE">EHF-COMMON-R031</Reference>
             </Element>
 
             <Element cardinality="0..n">
@@ -1297,6 +1315,7 @@
                     <Name>Clearance expiration date</Name>
                     <Description>A specific requirement about the clearance expiration date.</Description>
                     <Value type="EXAMPLE">2025-05-05</Value>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
             </Element>
         </Element>
@@ -1377,6 +1396,7 @@
                     <Name>Skill last practice</Name>
                     <Description>Last time the skill need to be practice.</Description>
                     <Value type="EXAMPLE">2020-03-03</Value>
+                    <Reference type="RULE">EHF-COMMON-R031</Reference>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1451,6 +1471,7 @@
                         <Name>Skill last practice</Name>
                         <Description>Last time the skill need to be practice.</Description>
                         <Value type="EXAMPLE">2020-03-03</Value>
+                        <Reference type="RULE">EHF-COMMON-R031</Reference>
                     </Element>
 
                     <Element cardinality="0..1">
