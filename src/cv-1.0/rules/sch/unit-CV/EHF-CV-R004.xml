@@ -12,11 +12,9 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-			<ProjectExperience>
-        <ExperienceDescription>
-          <PositionPercent>100</PositionPercent>
-        </ExperienceDescription>
-			</ProjectExperience>
+      <ExperienceDescription>
+        <PositionPercent>10</PositionPercent>
+      </ExperienceDescription>
 
 		</CV>
 	</test>
@@ -27,26 +25,22 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-			<WorkExperience>
-				<WorkExperienceDescription>
-					<PositionPercent>100</PositionPercent>
-				</WorkExperienceDescription>
-			</WorkExperience>
+			<WorkExperienceDescription>
+				<PositionPercent>10</PositionPercent>
+			</WorkExperienceDescription>
 
 		</CV>
 	</test>
 
-  <test id="3">
+	<test id="3">
 		<assert>
 			<success>EHF-CV-R004</success>
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-	    <ProjectExperience>
-	      <ExperienceDescription>
-	        <PositionPercent>0</PositionPercent>
-	      </ExperienceDescription>
-	    </ProjectExperience>
+			<ExperienceDescription>
+				<PositionPercent>100</PositionPercent>
+			</ExperienceDescription>
 
 		</CV>
 	</test>
@@ -57,43 +51,88 @@
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-			<WorkExperience>
-				<WorkExperienceDescription>
-					<PositionPercent>0</PositionPercent>
-				</WorkExperienceDescription>
-			</WorkExperience>
+			<WorkExperienceDescription>
+				<PositionPercent>100</PositionPercent>
+			</WorkExperienceDescription>
 
 		</CV>
 	</test>
 
-  <test id="5">
+	<test id="5">
+		<assert>
+			<success>EHF-CV-R004</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<ExperienceDescription>
+				<PositionPercent>0</PositionPercent>
+			</ExperienceDescription>
+
+		</CV>
+	</test>
+
+	<test id="6">
+		<assert>
+			<success>EHF-CV-R004</success>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<WorkExperienceDescription>
+				<PositionPercent>0</PositionPercent>
+			</WorkExperienceDescription>
+
+		</CV>
+	</test>
+
+  <test id="7">
     <assert>
       <error>EHF-CV-R004</error>
     </assert>
     <CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-      <ProjectExperience>
-        <ExperienceDescription>
-          <PositionPercent>-10</PositionPercent>
-        </ExperienceDescription>
-      </ProjectExperience>
+      <ExperienceDescription>
+        <PositionPercent>-10</PositionPercent>
+      </ExperienceDescription>
 
     </CV>
   </test>
 
-	<test id="6">
+	<test id="8">
 		<assert>
 			<error>EHF-CV-R004</error>
 		</assert>
 		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
 
-			<WorkExperience>
-				<WorkExperienceDescription>
-					<PositionPercent>-10</PositionPercent>
-				</WorkExperienceDescription>
-			</WorkExperience>
+			<WorkExperienceDescription>
+				<PositionPercent>-10</PositionPercent>
+			</WorkExperienceDescription>
 
 		</CV>
 	</test>
 
+	<test id="9">
+		<assert>
+			<error>EHF-CV-R004</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<ExperienceDescription>
+				<PositionPercent>150</PositionPercent>
+			</ExperienceDescription>
+
+		</CV>
+	</test>
+
+	<test id="10">
+		<assert>
+			<error>EHF-CV-R004</error>
+		</assert>
+		<CV xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
+
+			<WorkExperienceDescription>
+				<PositionPercent>150</PositionPercent>
+			</WorkExperienceDescription>
+
+		</CV>
+	</test>
 </testSet>

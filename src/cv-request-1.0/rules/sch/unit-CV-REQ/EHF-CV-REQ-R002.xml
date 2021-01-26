@@ -12,12 +12,10 @@
 		</assert>
 		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Course>
         <Period>
           <StartDate>2020-01-05</StartDate>
           <EndDate>2021-10-10</EndDate>
         </Period>
-			</Course>
 
 		</CVRequest>
 	</test>
@@ -26,288 +24,26 @@
 		<assert>
 			<success>EHF-CV-REQ-R002</success>
 		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
+	  <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-			<Course>
-				<AlternativeCourse>
-					<Period>
-						<StartDate>2020-01-05</StartDate>
-						<EndDate>2021-10-10</EndDate>
-					</Period>
-				</AlternativeCourse>
-			</Course>
+      <Period>
+        <StartDate>2020-01-05</StartDate>
+        <EndDate>2020-01-05</EndDate>
+      </Period>
 
 		</CVRequest>
 	</test>
 
 	<test id="3">
 		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<Period>
-					<StartDate>2020-01-05</StartDate>
-					<EndDate>2021-10-10</EndDate>
-				</Period>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="4">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<Period>
-						<StartDate>2020-01-05</StartDate>
-						<EndDate>2021-10-10</EndDate>
-					</Period>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="5">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<WorkExperience>
-				<Period>
-					<StartDate>2020-01-05</StartDate>
-					<EndDate>2021-10-10</EndDate>
-				</Period>
-			</WorkExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="6">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<WorkExperience>
-				<AlternativeWorkExperience>
-					<Period>
-						<StartDate>2020-01-05</StartDate>
-						<EndDate>2021-10-10</EndDate>
-					</Period>
-				</AlternativeWorkExperience>
-			</WorkExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="7">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-	  <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-      <Course>
-        <Period>
-          <StartDate>2020-01-05</StartDate>
-          <EndDate>2020-01-05</EndDate>
-        </Period>
-      </Course>
-
-		</CVRequest>
-	</test>
-
-	<test id="8">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<Course>
-				<AlternativeCourse>
-					<Period>
-						<StartDate>2020-01-05</StartDate>
-						<EndDate>2020-01-05</EndDate>
-					</Period>
-				</AlternativeCourse>
-			</Course>
-
-		</CVRequest>
-	</test>
-
-	<test id="9">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<Period>
-					<StartDate>2020-01-05</StartDate>
-					<EndDate>2020-01-05</EndDate>
-				</Period>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="10">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<Period>
-						<StartDate>2020-01-05</StartDate>
-						<EndDate>2020-01-05</EndDate>
-					</Period>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="11">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<WorkExperience>
-				<Period>
-					<StartDate>2020-01-05</StartDate>
-					<EndDate>2020-01-05</EndDate>
-				</Period>
-			</WorkExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="12">
-		<assert>
-			<success>EHF-CV-REQ-R002</success>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<WorkExperience>
-				<AlternativeWorkExperience>
-					<Period>
-						<StartDate>2020-01-05</StartDate>
-						<EndDate>2020-01-05</EndDate>
-					</Period>
-				</AlternativeWorkExperience>
-			</WorkExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="13">
-		<assert>
 			<error>EHF-CV-REQ-R002</error>
 		</assert>
     <CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
 
-      <Course>
-        <Period>
-          <StartDate>2020-02-05</StartDate>
-          <EndDate>2020-01-05</EndDate>
-        </Period>
-      </Course>
-
-		</CVRequest>
-	</test>
-
-	<test id="14">
-		<assert>
-			<error>EHF-CV-REQ-R002</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<Course>
-				<AlternativeCourse>
-					<Period>
-						<StartDate>2020-02-05</StartDate>
-						<EndDate>2020-01-05</EndDate>
-					</Period>
-				</AlternativeCourse>
-			</Course>
-
-		</CVRequest>
-	</test>
-
-	<test id="15">
-		<assert>
-			<error>EHF-CV-REQ-R002</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<Period>
-					<StartDate>2020-02-05</StartDate>
-					<EndDate>2020-01-05</EndDate>
-				</Period>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="16">
-		<assert>
-			<error>EHF-CV-REQ-R002</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<ProjectExperience>
-				<AlternativeProjectExperience>
-					<Period>
-						<StartDate>2020-02-05</StartDate>
-						<EndDate>2020-01-05</EndDate>
-					</Period>
-				</AlternativeProjectExperience>
-			</ProjectExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="17">
-		<assert>
-			<error>EHF-CV-REQ-R002</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<WorkExperience>
-				<Period>
-					<StartDate>2020-02-05</StartDate>
-					<EndDate>2020-01-05</EndDate>
-				</Period>
-			</WorkExperience>
-
-		</CVRequest>
-	</test>
-
-	<test id="18">
-		<assert>
-			<error>EHF-CV-REQ-R002</error>
-		</assert>
-		<CVRequest xmlns="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-
-			<WorkExperience>
-				<AlternativeWorkExperience>
-					<Period>
-						<StartDate>2020-02-05</StartDate>
-						<EndDate>2020-01-05</EndDate>
-					</Period>
-				</AlternativeWorkExperience>
-			</WorkExperience>
+      <Period>
+        <StartDate>2020-02-05</StartDate>
+        <EndDate>2020-01-05</EndDate>
+      </Period>
 
 		</CVRequest>
 	</test>

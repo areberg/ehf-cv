@@ -79,8 +79,8 @@
     <cv:ID>1</cv:ID>
     <cv:Type>python</cv:Type>
     <cv:Period>
-      <cv-req:StartDate>2019-01-10</cv-req:StartDate>
-      <cv-req:EndDate>2020-05-05</cv-req:EndDate>
+      <cv:StartDate>2019-01-10</cv:StartDate>
+      <cv:EndDate>2020-05-05</cv:EndDate>
     </cv:Period>
     <cv:SupplierParty>
       <cv:EndpointID scheme="0192">123456785</cv:EndpointID>

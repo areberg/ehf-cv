@@ -235,7 +235,8 @@
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
   </cv:PersonalSkills>
-  cv:PersonalInformation>
+
+  <cv:PersonalInformation>
     <cv:ID>1</cv:ID>
     <cv:Name>Ola Nordmann</cv:Name>
     <cv:DateOfBirth>1991-01-01</cv:DateOfBirth>

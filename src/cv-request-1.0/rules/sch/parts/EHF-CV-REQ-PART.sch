@@ -7,9 +7,7 @@
               flag="fatal">A course shall include either a title or a type.</assert>
   </rule>
 
-  <rule context="cv-req:Course/cv-req:Period | cv-req:Course/cv-req:AlternativeCourse/cv-req:Period |
-  cv-req:ProjectExperience/cv-req:Period | cv-req:projectExperience/cv-req:AlternativeProjectExperience/cv-req:Period |
-  cv-req:WorkExperience/cv-req:Period | cv-req:WorkExperience/cv-req:AlternativeWorkExperience/cv-req:Period">
+  <rule context="cv-req:Period">
       <assert id="EHF-CV-REQ-R002"
               test="(cv-req:StartDate) &lt;= (cv-req:EndDate)"
               flag="fatal">A period end date shall be later or equal to the period start date.</assert>
@@ -28,13 +26,11 @@
               flag="fatal">Maximum experience must be larger than minimum experience.</assert>
   </rule>
 
-  <rule context="cv-req:ProjectExperience/cv-req:ExperienceDescription |
-  cv-req:ProjectExperience/cv-req:AlternativeProjectExperience/cv-req:ExperienceDescription |
-  cv-req:WorkExperience/cv-req:WorkExperienceDescription|
-  cv-req:WorkExperience/cv-req:AlternativeWorkExperience/cv-req:WorkExperienceDescription">
+  <rule context="cv-req:ExperienceDescription|cv-req:WorkExperienceDescription">
       <assert id="EHF-CV-REQ-R005"
-              test="(cv-req:PositionPercent) &gt;= 0 "
-              flag="fatal">Position percent shall be a greater than or equal zero.</assert>
+              test="((cv-req:PositionPercent) &gt;= 0) and ((cv-req:PositionPercent) &lt;= 100) "
+              flag="fatal">Position percent shall be a greater than or equal zero, and less than or
+              equal 100.</assert>
   </rule>
 
   <rule context="cv-req:ProjectExperience/cv-req:ExperienceValue |

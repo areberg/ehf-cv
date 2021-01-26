@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron">
 
-  <rule context="cv:Education/cv:Period | cv:Course/cv:Period | cv:ProjectExperience/cv:Period |
-                cv:WorkExperience/cv:Period">
+  <rule context="cv:Period">
       <assert id="EHF-CV-R001"
               test="(cv:StartDate) &lt;= (cv:EndDate)"
               flag="fatal">A period end date shall be later or equal to the period start date.</assert>
@@ -20,10 +19,11 @@
               flag="fatal">A Certification shall include either a title or a type.</assert>
   </rule>
 
-  <rule context="cv:ProjectExperience/cv:ExperienceDescription | cv:WorkExperience/cv:WorkExperienceDescription">
+  <rule context="cv:ExperienceDescription | cv:WorkExperienceDescription">
       <assert id="EHF-CV-R004"
-              test="(cv:PositionPercent) &gt;= 0 "
-              flag="fatal">Position percent shall be a greater than or equal zero.</assert>
+              test="((cv-req:PositionPercent) &gt;= 0) and ((cv-req:PositionPercent) &lt;= 100)"
+              flag="fatal">Position percent shall be a greater than or equal zero, and less than or
+              equal 100.</assert>
   </rule>
 
   <rule context="cv:ProjectExperience/cv:ExperienceValue">
@@ -51,9 +51,6 @@
       <assert id="EHF-CV-R009"
               test="(cv:Title) or (cv:Type)"
               flag="fatal">A skill shall include either a title or a type.</assert>
-  </rule>
-
-  <rule context="cv:Skills">
       <assert id="EHF-CV-R010"
               test="(cv:MinimumLengthPractice) &gt;= 0"
               flag="fatal">Minimum length of practice shall be a greater than or equal zero.</assert>

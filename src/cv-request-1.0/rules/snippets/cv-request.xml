@@ -220,7 +220,7 @@
     <cv-req:JobSector>private</cv-req:JobSector><!--6-->
     <cv-req:RequiredTotalExperience><!--7-->
       <cv-req:MinimumExperience>2</cv-req:MinimumExperience>
-      <cv-req:MaximumExperience>2</cv-req:MaximumExperience>
+      <cv-req:MaximumExperience>5</cv-req:MaximumExperience>
     </cv-req:RequiredTotalExperience>
     <cv-req:Period><!--8-->
       <cv-req:StartDate>2020-01-19</cv-req:StartDate>

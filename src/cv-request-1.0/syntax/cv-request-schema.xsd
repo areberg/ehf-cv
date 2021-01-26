@@ -5,46 +5,46 @@
     attributeFormDefault="unqualified"
     elementFormDefault="qualified"
     version="1.0">
-    
+
     <xs:element name="CVRequest" type="CVRequestType"/>
-    
+
     <xs:complexType name="CVRequestType">
         <xs:sequence>
             <xs:element name ="CustomizationID" type="IdentifierType"/>
             <xs:element name ="ProfileID" type="IdentifierType"/>
-            
+
             <xs:element name="ID" type="xs:token"/>
-            
+
             <xs:element name="IssueDate" type="xs:date" minOccurs="0"/>
             <xs:element name="IssueTime" type="xs:time" minOccurs="0"/>
-            
+
             <xs:element name="FolderReference" type="ReferenceType" minOccurs="0"/>
-            
+
             <xs:element name="ReceiverParty" type="PartyType" minOccurs="0"/>
             <xs:element name="ProviderParty" type="PartyType" minOccurs="0"/>
-            
+
             <xs:element name="Education" type="EducationType" minOccurs="0" maxOccurs="unbounded"/>
-            
+
             <xs:element name="Course" type="CourseType" minOccurs="0" maxOccurs="unbounded"/>
-            
+
             <xs:element name="Certification" type="CertificationType" minOccurs="0" maxOccurs="unbounded"/>
-            
+
             <xs:element name="LanguageSkills" type="LanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
-            
-            <xs:element name="ProjectExperience" type="ProjectExperinceType" minOccurs="0" maxOccurs="unbounded"/>         
-            
+
+            <xs:element name="ProjectExperience" type="ProjectExperinceType" minOccurs="0" maxOccurs="unbounded"/>
+
             <xs:element name="WorkExperience" type="WorkExperinceType" minOccurs="0" maxOccurs="unbounded"/>
-            
+
             <xs:element name="Clearance" type="ClearanceType" minOccurs="0" maxOccurs="unbounded"/>
-            
+
             <xs:element name="Reference" type="ReferenceType" minOccurs="0"/>
-            
+
             <xs:element name="Skills" type="SkillsType" minOccurs="0" maxOccurs="unbounded"/>
-            
+
             <xs:element name="PersonalSkills" type="PersonalSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="EducationType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -53,10 +53,10 @@
             <xs:element name="SubjectArea" type="xs:token" minOccurs="0"/>
             <xs:element name="RegistrationType" type="xs:string" minOccurs="0"/>
             <xs:element name="RelevantExperience" type="RelevantExperienceType" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="AlternativeEducation" type="AlternativeEducationType" maxOccurs="unbounded"/>
-        </xs:sequence>   
+            <xs:element name="AlternativeEducation" type="AlternativeEducationType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="CourseType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -68,7 +68,7 @@
             <xs:element name="AlternativeCourse" type="AlternativeCourseType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="CertificationType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -80,7 +80,7 @@
             <xs:element name="AlternativeCertification" type="AlternativeCertificationType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="LanguageSkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -91,7 +91,7 @@
             <xs:element name="AlternativeLanguageSkills" type="AlternativeLanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="ProjectExperinceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -107,7 +107,7 @@
             <xs:element name="AlternativeProjectExperience" type="AlternativeProjectExperienceType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="WorkExperinceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -122,7 +122,7 @@
             <xs:element name="AlternativeWorkExperience" type="AlternativeWordExperienceType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="ClearanceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -134,14 +134,14 @@
             <xs:element name="AlternativeClearance" type="AlternativeClearanceType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="ReferenceType">
         <xs:sequence>
             <xs:element name="ID" type="IdentifierType"/>
             <xs:element name="MinimumTotalReference" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="SkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -153,7 +153,7 @@
             <xs:element name="AlternativeSkills" type="AlternativeSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="PersonalSkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -161,18 +161,18 @@
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeEducationType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
             <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="EducationGrade" type="xs:token" minOccurs="0"/>
+            <xs:element name="EducationDegree" type="xs:token" minOccurs="0"/>
             <xs:element name="SubjectArea" type="xs:token" minOccurs="0"/>
             <xs:element name="RegistrationType" type="xs:token" minOccurs="0"/>
             <xs:element name="RelevantExperience" type="RelevantExperienceType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeCourseType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -183,7 +183,7 @@
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeCertificationType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -194,7 +194,7 @@
             <xs:element name="ValidTo" type="xs:date" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeLanguageSkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -204,7 +204,7 @@
             <xs:element name="WrittenSkill" type="xs:token" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeProjectExperienceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -219,7 +219,7 @@
             <xs:element name="ExperienceValue" type="ExperienceValueType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeWordExperienceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -233,7 +233,7 @@
             <xs:element name="WorkExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeClearanceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -244,7 +244,7 @@
             <xs:element name="ExpirationDate" type="xs:date" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="AlternativeSkillsType">
         <xs:sequence>
             <xs:element name="ID" type="xs:token"/>
@@ -255,7 +255,7 @@
             <xs:element name="SkillPractice" type="SkillsPracticeType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="IdentifierType">
         <xs:simpleContent>
             <xs:extension base="xs:token">
@@ -263,7 +263,7 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="CurrencyType">
         <xs:simpleContent>
             <xs:extension base="xs:token">
@@ -271,7 +271,7 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
+
     <xs:complexType name="PartyType">
         <xs:sequence>
             <xs:element name="EndpointID" type="IdentifierType" minOccurs="0"/>
@@ -279,7 +279,7 @@
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="ContactType">
         <xs:sequence>
             <xs:element name="Name" type="xs:string" minOccurs="0"/>
@@ -287,28 +287,28 @@
             <xs:element name="ElectronicMail" type="xs:token" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="RelevantExperienceType">
         <xs:sequence>
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
             <xs:element name="MinYear" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="PeriodType">
         <xs:sequence>
             <xs:element name="StartDate" type="xs:date" minOccurs="0"/>
             <xs:element name="EndDate" type="xs:date" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="RequiredTotalExperienceType">
         <xs:sequence>
             <xs:element name="MinimumExperience" type="xs:integer" minOccurs="0"/>
             <xs:element name="MaximumExperience" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="ExperienceDescriptionType">
         <xs:sequence>
             <xs:element name="PositionPercent" type="xs:integer" minOccurs="0"/>
@@ -316,7 +316,7 @@
             <xs:element name="Activities" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="ExperienceValueType">
         <xs:sequence>
             <xs:element name="ProjectParticipation" type="xs:integer" minOccurs="0"/>
@@ -324,7 +324,7 @@
             <xs:element name="ProjectValue" type="CurrencyType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="SkillsPracticeType">
         <xs:sequence>
             <xs:element name="LastPractice" type="xs:date" minOccurs="0"/>
@@ -332,5 +332,5 @@
             <xs:element name="SkillsReference" type="xs:token" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
 </xs:schema>

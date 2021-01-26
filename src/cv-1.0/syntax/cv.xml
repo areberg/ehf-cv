@@ -2,7 +2,7 @@
 
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>cvuest</Term>
+    <Term>cv</Term>
     <Name>EHF CV 1.0 RC1</Name>
 
     <Property key="sch:prefix">EHF-CV</Property>
