@@ -1,8 +1,16 @@
 = Introduction
 
-The purpose of this document is to define and describe a common format for the curriculum vitae messages
-in the European procurement market, and increase use of electronic communication between the supplier and contracting
-authority.
+Curriculum Vitaes (CV's) are created in different ways and with different layouts both in procurement processes
+and job application processes. Contracting authorities, Economic operators and job seekers must relate to different formats when describing skills and competences.
+This often leads to poor information quality and ambiguity which makes the the evaluation of providers and candidates difficult.
 
-This document mainly describes a person's professional and academic history and can be used in both the procurement process
-or in a job application.
+The purpose of this EHF-CV specification is to define and describe a common format for the Curriculum Vitae (CV) messages
+(in the European procurement market) to be used in both a procurement process and in job applications.
+
+:leveloffset: +1
+
+//include::definitions.adoc[]
+
+include::benefits.adoc[]
+
+:leveloffset: -1

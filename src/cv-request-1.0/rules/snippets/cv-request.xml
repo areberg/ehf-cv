@@ -8,7 +8,8 @@
   <cv-req:FolderReference>
     <cv-req:ID scheme="DOFFIN">14789</cv-req:ID>
   </cv-req:FolderReference>
-  <cv-req:ReceiverParty>
+  <!-- tag::Receiver[] -->
+    <cv-req:ReceiverParty>
     <cv-req:EndpointID scheme="0192">987654325</cv-req:EndpointID>
     <cv-req:Name>Digitaliseringsdirektoratet</cv-req:Name>
     <cv-req:Contact>
@@ -17,7 +18,10 @@
       <cv-req:ElectronicMail>ola.nordmann@dgidir.no</cv-req:ElectronicMail>
     </cv-req:Contact>
   </cv-req:ReceiverParty>
-  <cv-req:ProviderParty>
+  <!-- end::Receiver[] -->
+
+  <!-- tag::Sender[] -->
+   <cv-req:ProviderParty>
     <cv-req:EndpointID scheme="0192">987654325</cv-req:EndpointID>
     <cv-req:Name>X company</cv-req:Name>
     <cv-req:Contact>
@@ -26,6 +30,7 @@
       <cv-req:ElectronicMail>john.johnsen@x.com</cv-req:ElectronicMail>
     </cv-req:Contact>
   </cv-req:ProviderParty>
+  <!-- end::Sender[] -->
 
   <!-- tag::Education[] -->
   <cv-req:Education>

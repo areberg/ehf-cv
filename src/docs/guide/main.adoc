@@ -25,9 +25,9 @@ v{revision}
 
 include::introduction/index.adoc[]
 
-include::definition/index.adoc[]
+include::parties/index.adoc[]
 
-include::background/index.adoc[]
+//include::benefit/index.adoc[]
 
 include::process/index.adoc[]
 

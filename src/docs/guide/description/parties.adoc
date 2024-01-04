@@ -1,0 +1,27 @@
+[[parties]]
+= Parties
+
+The following parties/roles may be specified in the message.
+The same actor may play more than one role depending on the handling routine.
+
+[[sender-party]]
+== Sender (SenderParty)
+
+Sender is the sender of CV-request or CV.
+
+.Example of sender in CV-request:
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=Sender]
+----
+
+[[receiver-party]]
+== Receiver (ReceiverParty)
+
+Receiver is the receiver of CV-request or CV.
+
+.Example of receiver in CV-request:
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=Receiver]
+----

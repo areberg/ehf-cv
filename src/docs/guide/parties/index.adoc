@@ -1,0 +1,46 @@
+[[parties-and-roles]]
+= Parties and roles
+
+The table below gives the definitions of the parties and roles involved in the EHF-CV process.
+
+[cols="2,8",options="header",]
+|====
+|Business partners |Definition
+|*Contracting Authority* a|
+
+The Contracting Authority (CA) is the organization within the government that is responsible for procurement, as well as the individual within that organization who has been delegated this responsibility.
+
+Examples of CA roles: Sender of CV-request and Receiver of CV. 
+
+|*Economic Operator* a|
+
+The Economic Operator (EO) is a business or other organisation which supplies goods, works or services within the context of market operations.
+
+Examples of EO roles: Sender of CV and Receiver of CV-request. 
+
+|====
+
+[cols="2,9",options="header",]
+|====
+|Role/actor |Definition
+|*Sender of CV-request (cv-req:SenderParty)* a|
+
+The role is carried out by the Contracting authority.
+
+|*Receiver of CV-request (cv-req:ReceiverParty)* a|
+
+The role is carried out by the Economic operator.
+
+|*Sender of CV (cv:SenderParty)* a|
+
+The role is carried out by the Economic operator.
+
+|*Receiver of CV (cv:ReceiverParty)* a|
+
+The role is carried out by the Contracting authority.
+
+|====
+
+The diagram below shows the roles in the EHF-CV process.
+
+image::images/rollemodell.bmp[image,width=1000,height=600]
