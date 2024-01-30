@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-
+   
     <Title>Clearance type code</Title>
     <Identifier>ClearanceType</Identifier>
     <Version>1.0</Version>
-    <Agency>DFO</Agency>
 
+    <!-- tag::ClearanceType[] -->
+    <Agency>DFO</Agency>
+    
     <Code>
         <Id>civil</Id>
         <Name>civil</Name>
@@ -23,5 +25,6 @@
         <Name>military</Name>
         <Description>Military clearance</Description>
     </Code>
+   <!-- end::ClearanceType[] -->
 
 </CodeList>

@@ -7,11 +7,21 @@
   <cv:IssueTime>10:30:00</cv:IssueTime>
 
   <cv:FolderReference>
-    <cv:ID scheme="DOFFIN">152</cv:ID>
+    <cv:ID schemeID="DOFFIN">152</cv:ID>
   </cv:FolderReference>
 
+  <cv:SenderParty>
+    <cv:EndpointID schemeID="0192">987654325</cv:EndpointID>
+    <cv:Name>Y company</cv:Name>
+    <cv:Contact>
+      <cv:Name>John Johnsen</cv:Name>
+      <cv:Telephone>99998888</cv:Telephone>
+      <cv:ElectronicMail>john.johnsen@y.com</cv:ElectronicMail>
+    </cv:Contact>
+  </cv:SenderParty>
+
   <cv:ReceiverParty>
-    <cv:EndpointID scheme="0192">987654325</cv:EndpointID>
+    <cv:EndpointID schemeID="0192">987654325</cv:EndpointID>
     <cv:Name>X company</cv:Name>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
@@ -19,16 +29,6 @@
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
   </cv:ReceiverParty>
-
-  <cv:ProviderParty>
-    <cv:EndpointID scheme="0192">987654325</cv:EndpointID>
-    <cv:Name>Y company</cv:Name>
-    <cv:Contact>
-      <cv:Name>John Johnsen</cv:Name>
-      <cv:Telephone>99998888</cv:Telephone>
-      <cv:ElectronicMail>john.johnsen@y.com</cv:ElectronicMail>
-    </cv:Contact>
-  </cv:ProviderParty>
 
   <cv:Education>
     <cv:ID>1</cv:ID>
@@ -59,7 +59,7 @@
       <cv:EndDate>2020-05-01</cv:EndDate>
     </cv:Period>
     <cv:SupplierParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>Z company</cv:Name>
       <cv:Contact>
         <cv:ElectronicMail>alf.alfsen@z.no</cv:ElectronicMail>
@@ -80,7 +80,7 @@
       <cv:EndDate>2019-08-01</cv:EndDate>
     </cv:Period>
     <cv:SupplierParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>X company</cv:Name>
       <cv:Contact>
         <cv:ElectronicMail>ola.nordmann@xcompany.no</cv:ElectronicMail>
@@ -99,7 +99,7 @@
     <cv:Version>3.0</cv:Version>
     <cv:ValidTo>2020-05-14</cv:ValidTo>
     <cv:SupplierParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>U company</cv:Name>
       <cv:Contact>
         <cv:ElectronicMail>alf.alfsen@u.no</cv:ElectronicMail>
@@ -132,7 +132,7 @@
     <cv:Workplace>AI</cv:Workplace>
     <cv:JobSector>private</cv:JobSector>
     <cv:CompanyParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>AZ company</cv:Name>
     </cv:CompanyParty>
     <cv:Period>
@@ -164,7 +164,7 @@
     <cv:Workplace>CF</cv:Workplace>
     <cv:JobSector>private</cv:JobSector>
     <cv:CompanyParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>XYZ company</cv:Name>
     </cv:CompanyParty>
     <cv:Period>
@@ -197,7 +197,7 @@
   <cv:Reference>
     <cv:ID>1</cv:ID>
     <cv:Party>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>X school</cv:Name>
     </cv:Party>
     <cv:Relationship>Math teacher</cv:Relationship>

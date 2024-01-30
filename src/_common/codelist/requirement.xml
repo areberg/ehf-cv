@@ -4,6 +4,7 @@
     <Title>Requirement code</Title>
     <Identifier>requirement</Identifier>
     <Version>1.0</Version>
+    <!-- tag::Requirement[] -->
     <Agency>DFO</Agency>
     
     <Code>
@@ -29,6 +30,7 @@
         <Name>Advantage requirement</Name>
         <Description>An advantage in evaluation process if this requirement is fullfilled.</Description>
     </Code>
+    <!-- end::Requirement[] -->
 
 </CodeList>
 

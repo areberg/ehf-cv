@@ -1,7 +1,6 @@
 = Additional Information
 
-Other detailed information about the applicant, not provided in other information groups in
-CV-document. Only used in EHF CV, not in EHF CV Request.
+May be used for additional information about the applicant, not provided in other information groups in. Only used in CV, not in CV request.
 
 Give a short title of additional information in element `cv:Title` and describe the information
 in element `cv:Description`.

@@ -3,32 +3,32 @@
   <cv-req:CustomizationID>...</cv-req:CustomizationID>
   <cv-req:ProfileID>...</cv-req:ProfileID>
   <cv-req:ID>1</cv-req:ID>
-  <cv-req:IssueDate>2020-10-02</cv-req:IssueDate>
+  <cv-req:IssueDate>2024-10-02</cv-req:IssueDate>
   <cv-req:IssueTime>10:30:00</cv-req:IssueTime>
   <cv-req:FolderReference>
-    <cv-req:ID scheme="DOFFIN">123</cv-req:ID>
+    <cv-req:ID schemeID="DOFFIN">123</cv-req:ID>
   </cv-req:FolderReference>
-
-  <cv-req:ReceiverParty>
-    <cv-req:EndpointID scheme="0192">987654325</cv-req:EndpointID>
-    <cv-req:Name>Direktorat</cv-req:Name>
+  
+  <cv-req:SenderParty>
+    <cv-req:EndpointID schemeID="0192">987654325</cv-req:EndpointID>
+    <cv-req:Name>Digitaliseringsdirektoratet</cv-req:Name>
     <cv-req:Contact>
       <cv-req:Name>Ola Nordmann</cv-req:Name>
       <cv-req:Telephone>22224444</cv-req:Telephone>
       <cv-req:ElectronicMail>ola.nordmann@direktorat.no</cv-req:ElectronicMail>
     </cv-req:Contact>
-  </cv-req:ReceiverParty>
-
-  <cv-req:ProviderParty>
-    <cv-req:EndpointID scheme="0192">987654325</cv-req:EndpointID>
+  </cv-req:SenderParty>
+  
+  <cv-req:ReceiverParty>
+    <cv-req:EndpointID schemeID="0192">987654325</cv-req:EndpointID>
     <cv-req:Name>X company</cv-req:Name>
     <cv-req:Contact>
       <cv-req:Name>John Johnsen</cv-req:Name>
       <cv-req:Telephone>99998888</cv-req:Telephone>
       <cv-req:ElectronicMail>john.johnsen@x.com</cv-req:ElectronicMail>
     </cv-req:Contact>
-  </cv-req:ProviderParty>
-
+  </cv-req:ReceiverParty>
+  
   <cv-req:Education>
     <cv-req:ID>2</cv-req:ID>
     <cv-req:Requirement>should</cv-req:Requirement>

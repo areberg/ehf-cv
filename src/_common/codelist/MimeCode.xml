@@ -4,6 +4,7 @@
     <Title>Mime code</Title>
     <Identifier>MimeCode</Identifier>
     <Version>1.0</Version>
+    <!-- tag::MimeCode[] -->
     <Agency>IANA</Agency>
     <Subset>OpenPEPPOL</Subset>
     
@@ -61,6 +62,7 @@
         <Id>application/vnd.oasis.opendocument.spreadsheet</Id>
         <Name>application/vnd.oasis.opendocument.spreadsheet</Name>
     </Code>
+    <!-- end::MimeCode[] -->
 </CodeList>
 
 

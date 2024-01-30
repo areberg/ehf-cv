@@ -1,0 +1,5 @@
+= General descriptions
+
+The following is valid for all information groups where the listed elements are present.
+
+* Element *Requirement* must be according to codelist Requirement code (chapter 5.11)

@@ -14,6 +14,7 @@ Sender is the sender of CV-request or CV.
 ----
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=Sender]
 ----
+<1> schemeID according to codelist Electronic address identifier (EAID) (chapter 5.18)
 
 [[receiver-party]]
 == Receiver (ReceiverParty)
@@ -25,3 +26,4 @@ Receiver is the receiver of CV-request or CV.
 ----
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=Receiver]
 ----
+<1> schemeID according to codelist Electronic address identifier (EAID) (chapter 5.18)

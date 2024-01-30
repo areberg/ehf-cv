@@ -4,22 +4,20 @@ Skills contains information about candidate's abilities related to the specific 
 
 == Information specific to CV request
 
-A contracting authority can state a skill requirement and an alternative requirement in the
-cv request. The alternative requirement is optional, but in some cases, one can accept other skill.
+A Contracting Authority can specify a skill requirement and an alternative requirement in the
+CV request. The alternative requirement is optional, but may be used when different skills can be accepted.
 
-To differentiate the different types of skill requirements use the element `cv-req:Requirement`.
-The economic operators will only provide qualified candidates, and it makes it easier to evaluate the
-candidates.
+The element `cv-req:Requirement` shall be used to differentiate between skills that *should* and *must* be present. The Economic Operators
+will only provide qualified candidates, and this makes it easier to do the rating.
 
-A skill can only include either element `cv-req:Type` or `cv-req:Title`. Use type if the specific
-skill is defined in the skill code list, otherwise use the title. Each skill can consist of a version
+A skill must include either `cv-req:Type` or `cv-req:Title`, not both. Use type if the specific
+skill is defined in the skill codelist, otherwise use the title. Each skill can consist of a version
 number.
 
-The contracting authority can specify details about the skill practices in element `cv-req:SkillPractice`.
+The Contracting Authority can specify details about the skill practices in element `cv-req:SkillPractice`.
 The element contains information about the last practiced date, the skill practice length
-(minimum requirement - must be stated as months) and if the candidate must provide a reference person.
-The candidate must provide contact information to the references-person, if element
-`cv-req:SkillsReference` is `True`.
+(minimum requirement - must be stated as months) and if the candidate must provide a reference person
+(element `cv-req:SkillsReference` is `true`).
 
 .Example of the requested skill in the CV request
 [source, xml, indent=0]
@@ -27,12 +25,12 @@ The candidate must provide contact information to the references-person, if elem
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=Skills]
 ----
 <1> Skill identifier
-<2> Skill requirement - indicate whether a candidate needs to fulfill the skill requirement
-<3> Type of skill
+<2> Skill requirement - indicate whether a candidate needs to fulfill the skill requirement.  According to codelist Requirement code (chapter 5.11).
+<3> Type of skill according to codelist Skills type (chapter 5.13)
 <4> Skill version
 <5> Last practice date
 <6> Length of practice
-<7> Skills reference
+<7> Skills reference (true or false)
 
 
 .Example of the requested skill in the CV request with alternative requirement
@@ -41,23 +39,20 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=Skills]
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=SkillsAlternative]
 ----
 <1> Skill identifier
-<2> Skill requirement - indicate whether a candidate needs to fulfill the skill requirement
-<3> Type of skill
+<2> Skill requirement - indicate whether a candidate needs to fulfill the skill requirement.  According to codelist Requirement code (chapter 5.11).
+<3> Type of skill according to codelist Skills type (chapter 5.13)
 <4> Skill version
 <5> Last practice date
 <6> Length of practice
-<7> Skills reference
+<7> Skills reference (true or false)
 <8> Alternative skill requirement
 
 
 == Information specific to CV
 
-Based on the skill requirement, the economic operator needs to document the candidate's
-skill. For CV used in the job application process, fill in the relevant parts of
-skill information.
-
-The element `cv:SkillsReference` needs to be used in the procurement process, not in the job
-application process. This is a reference to the corresponding skill requirement in the CV request.
+Based on the skill requirement, the Economic Operator needs to document the candidate's
+skill. 
+The element `cv:SkillsReference` must be used as a reference to the corresponding skill requirement in the CV request.
 
 References to where the skill has been applied can be stated in element `cv:SkillsAppliedReference/cv:ID`.
 For example education, project experience, etc.
@@ -68,22 +63,11 @@ For example education, project experience, etc.
 include::../{snippet-dir-cv}/cv.xml[tags=Skills-req]
 ----
 <1> Skill identifier
-<2> Type of skill
+<2> Type of skill according to codelist Skills type (chapter 5.13)
 <3> Skill version
 <4> Last practice date
 <5> Minimum length of practice
-<6> Contact information
+<6> Contact information.
+    Role according to codelist Classification of Occupations (Styrk98) (chapter 5.15)
 <7> Reference to where the skill is applied
 <8> Skills reference
-
-.Example of a description of skills in a CV in the job application
-[source, xml, indent=0]
-----
-include::../{snippet-dir-cv}/cv.xml[tags=Skills]
-----
-<1> Skill identifier
-<2> Type of skill
-<3> Last practice date
-<4> Minimum length of practice
-<5> Contact information
-<6> Reference to where the skill is applied

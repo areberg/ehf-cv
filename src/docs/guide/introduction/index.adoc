@@ -1,11 +1,11 @@
 = Introduction
 
 Curriculum Vitaes (CV's) are created in different ways and with different layouts both in procurement processes
-and job application processes. Contracting authorities, Economic operators and job seekers must relate to different formats when describing skills and competences.
-This often leads to poor information quality and ambiguity which makes the the evaluation of providers and candidates difficult.
+and other processes where CV's are used. Contracting Authorities and Economic Operators must relate to different formats when describing skills and competences.
+This often leads to poor information quality and ambiguity which makes the evaluation of providers and candidates difficult and time consuming.  
 
-The purpose of this EHF-CV specification is to define and describe a common format for the Curriculum Vitae (CV) messages
-(in the European procurement market) to be used in both a procurement process and in job applications.
+The purpose of this EHF-CV specification is to define and describe a common format for the Curriculum Vitae (CV) messages to be used in a procurement process. 
+This includes both the tender process in Pre Award and the follow-up of contract information in Post Award.
 
 :leveloffset: +1
 

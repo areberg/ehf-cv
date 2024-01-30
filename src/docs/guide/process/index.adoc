@@ -1,23 +1,23 @@
-= Process and Typical Use Cases
+= Process and Use cases
 
-== EHF-CV in a procurement process
+== EHF-CV in Pre-Award
 
-The following diagram illustrates the use of EHF-CV in a procurement process.
+The following diagram illustrates the use of EHF-CV in a tender process in Pre-Award.
 
-.EHF CV request and CV process diagram
-image::images/ehf-cv.png[align="center",1200, 800]
+.Process diagram
+image::images/pre-award.png[align="center",1200, 800]
 
-=== Use Cases
+//=== Use Cases
 
-include::use-case-procurement.adoc[]
+include::use-case-pre-award.adoc[]
 
-== Job Application Process
+== EHF-CV in Post-Award
 
-The following diagram illustrates the job application process.
+The following diagram illustrates the use of EHF-CV in a contract follow-up process in Post-Award.
 
-.EHF CV request and CV process diagram
-image::images/processdiagram-job-application.png[align="center",1200, 800]
+.Process diagram
+image::images/post-award.png[align="center",1200, 800]
 
-=== Use Cases
+//=== Use Cases
 
-include::use-case-job.adoc[]
+include::use-case-post-award.adoc[]

@@ -4,7 +4,9 @@
     <Title>ISO 3166-1:Alpha2 Country codes</Title>
     <Identifier>ISO3166</Identifier>
     <Version>2013</Version>
+    <!-- tag::CountryCodes[] -->
     <Agency>ISO</Agency>
+    <!-- end::CountryCodes[] -->
 
     <Code>
         <Id>AD</Id>

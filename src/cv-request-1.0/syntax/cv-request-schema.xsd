@@ -13,15 +13,15 @@
             <xs:element name ="CustomizationID" type="IdentifierType"/>
             <xs:element name ="ProfileID" type="IdentifierType"/>
 
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
 
             <xs:element name="IssueDate" type="xs:date" minOccurs="0"/>
             <xs:element name="IssueTime" type="xs:time" minOccurs="0"/>
 
             <xs:element name="FolderReference" type="ReferenceType" minOccurs="0"/>
 
+            <xs:element name="SenderParty" type="PartyType" minOccurs="0"/>
             <xs:element name="ReceiverParty" type="PartyType" minOccurs="0"/>
-            <xs:element name="ProviderParty" type="PartyType" minOccurs="0"/>
 
             <xs:element name="Education" type="EducationType" minOccurs="0" maxOccurs="unbounded"/>
 
@@ -47,10 +47,10 @@
 
     <xs:complexType name="EducationType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="EducationDegree" type="xs:token" minOccurs="0"/>
-            <xs:element name="SubjectArea" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="EducationDegree" type="xs:string" minOccurs="0"/>
+            <xs:element name="SubjectArea" type="xs:string" minOccurs="0"/>
             <xs:element name="RegistrationType" type="xs:string" minOccurs="0"/>
             <xs:element name="RelevantExperience" type="RelevantExperienceType" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="AlternativeEducation" type="AlternativeEducationType" minOccurs="0" maxOccurs="unbounded"/>
@@ -59,10 +59,10 @@
 
     <xs:complexType name="CourseType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="AlternativeCourse" type="AlternativeCourseType" minOccurs="0" maxOccurs="unbounded"/>
@@ -71,10 +71,10 @@
 
     <xs:complexType name="CertificationType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="ValidTo" type="xs:date" minOccurs="0"/>
             <xs:element name="AlternativeCertification" type="AlternativeCertificationType" minOccurs="0" maxOccurs="unbounded"/>
@@ -83,23 +83,23 @@
 
     <xs:complexType name="LanguageSkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="Language" type="xs:token" minOccurs="0"/>
-            <xs:element name="OralSkill" type="xs:token" minOccurs="0"/>
-            <xs:element name="WrittenSkill" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="Language" type="xs:string" minOccurs="0"/>
+            <xs:element name="OralSkill" type="xs:string" minOccurs="0"/>
+            <xs:element name="WrittenSkill" type="xs:string" minOccurs="0"/>
             <xs:element name="AlternativeLanguageSkills" type="AlternativeLanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="ProjectExperinceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="ExperienceType" type="xs:token" minOccurs="0"/>
-            <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
-            <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
-            <xs:element name="JobSector" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="ExperienceType" type="xs:string" minOccurs="0"/>
+            <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
+            <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
+            <xs:element name="JobSector" type="xs:string" minOccurs="0"/>
             <xs:element name="RequiredTotalExperience" type="RequiredTotalExperienceType" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="ExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
@@ -110,12 +110,12 @@
 
     <xs:complexType name="WorkExperinceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="PositionLevel" type="xs:token" minOccurs="0"/>
-            <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
-            <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
-            <xs:element name="JobSector" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="PositionLevel" type="xs:string" minOccurs="0"/>
+            <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
+            <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
+            <xs:element name="JobSector" type="xs:string" minOccurs="0"/>
             <xs:element name="MinimumTotalExperience" type="xs:integer" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="WorkExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
@@ -125,11 +125,11 @@
 
     <xs:complexType name="ClearanceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
-            <xs:element name="Level" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
+            <xs:element name="Level" type="xs:string" minOccurs="0"/>
             <xs:element name="ExpirationDate" type="xs:date" minOccurs="0"/>
             <xs:element name="AlternativeClearance" type="AlternativeClearanceType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
@@ -144,10 +144,10 @@
 
     <xs:complexType name="SkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="SkillPractice" type="SkillsPracticeType" minOccurs="0"/>
             <xs:element name="AlternativeSkills" type="AlternativeSkillsType" minOccurs="0" maxOccurs="unbounded"/>
@@ -156,29 +156,29 @@
 
     <xs:complexType name="PersonalSkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="AlternativeEducationType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="EducationDegree" type="xs:token" minOccurs="0"/>
-            <xs:element name="SubjectArea" type="xs:token" minOccurs="0"/>
-            <xs:element name="RegistrationType" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="EducationDegree" type="xs:string" minOccurs="0"/>
+            <xs:element name="SubjectArea" type="xs:string" minOccurs="0"/>
+            <xs:element name="RegistrationType" type="xs:string" minOccurs="0"/>
             <xs:element name="RelevantExperience" type="RelevantExperienceType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="AlternativeCourseType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
         </xs:sequence>
@@ -186,10 +186,10 @@
 
     <xs:complexType name="AlternativeCertificationType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="ValidTo" type="xs:date" minOccurs="0"/>
         </xs:sequence>
@@ -197,22 +197,22 @@
 
     <xs:complexType name="AlternativeLanguageSkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="Language" type="xs:token" minOccurs="0"/>
-            <xs:element name="OralSkill" type="xs:token" minOccurs="0"/>
-            <xs:element name="WrittenSkill" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="Language" type="xs:string" minOccurs="0"/>
+            <xs:element name="OralSkill" type="xs:string" minOccurs="0"/>
+            <xs:element name="WrittenSkill" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="AlternativeProjectExperienceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="ExperienceType" type="xs:token" minOccurs="0"/>
-            <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
-            <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
-            <xs:element name="JobSector" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="ExperienceType" type="xs:string" minOccurs="0"/>
+            <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
+            <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
+            <xs:element name="JobSector" type="xs:string" minOccurs="0"/>
             <xs:element name="RequiredTotalExperience" type="RequiredTotalExperienceType" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="ExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
@@ -222,12 +222,12 @@
 
     <xs:complexType name="AlternativeWordExperienceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
-            <xs:element name="PositionLevel" type="xs:token" minOccurs="0"/>
-            <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
-            <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
-            <xs:element name="JobSector" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="PositionLevel" type="xs:string" minOccurs="0"/>
+            <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
+            <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
+            <xs:element name="JobSector" type="xs:string" minOccurs="0"/>
             <xs:element name="MinimumTotalExperience" type="xs:integer" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="WorkExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
@@ -236,21 +236,21 @@
 
     <xs:complexType name="AlternativeClearanceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
-            <xs:element name="Level" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
+            <xs:element name="Level" type="xs:string" minOccurs="0"/>
             <xs:element name="ExpirationDate" type="xs:date" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="AlternativeSkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Requirement" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="SkillPractice" type="SkillsPracticeType" minOccurs="0"/>
         </xs:sequence>
@@ -258,16 +258,16 @@
 
     <xs:complexType name="IdentifierType">
         <xs:simpleContent>
-            <xs:extension base="xs:token">
-                <xs:attribute name="scheme" type="xs:token"/>
+            <xs:extension base="xs:string">
+                <xs:attribute name="schemeID" type="xs:normalizedString"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
 
     <xs:complexType name="CurrencyType">
         <xs:simpleContent>
-            <xs:extension base="xs:token">
-                <xs:attribute name="currencyID" type="xs:token"/>
+            <xs:extension base="xs:string">
+                <xs:attribute name="currencyID" type="xs:string"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -283,14 +283,14 @@
     <xs:complexType name="ContactType">
         <xs:sequence>
             <xs:element name="Name" type="xs:string" minOccurs="0"/>
-            <xs:element name="Telephone" type="xs:token" minOccurs="0"/>
-            <xs:element name="ElectronicMail" type="xs:token" minOccurs="0"/>
+            <xs:element name="Telephone" type="xs:string" minOccurs="0"/>
+            <xs:element name="ElectronicMail" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="RelevantExperienceType">
         <xs:sequence>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="MinYear" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -312,7 +312,7 @@
     <xs:complexType name="ExperienceDescriptionType">
         <xs:sequence>
             <xs:element name="PositionPercent" type="xs:integer" minOccurs="0"/>
-            <xs:element name="Role" type="xs:token" minOccurs="0"/>
+            <xs:element name="Role" type="xs:string" minOccurs="0"/>
             <xs:element name="Activities" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -329,7 +329,7 @@
         <xs:sequence>
             <xs:element name="LastPractice" type="xs:date" minOccurs="0"/>
             <xs:element name="MinimumLengthPractice" type="xs:integer" minOccurs="0"/>
-            <xs:element name="SkillsReference" type="xs:token" minOccurs="0"/>
+            <xs:element name="SkillsReference" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 

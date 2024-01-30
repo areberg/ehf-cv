@@ -4,6 +4,7 @@
     <Title>PersonalSkills codelist</Title>
     <Identifier>PersonalSkills</Identifier>
     <Version>1.0</Version>
+    <!-- tag::PersonalSkills[] -->
     <Agency>DFO</Agency>
 
     <Code>
@@ -320,5 +321,6 @@
         <Id>initiative</Id>
         <Name>Initiative</Name>
     </Code>
+    <!-- end::PersonalSkills[] -->
 
 </CodeList>

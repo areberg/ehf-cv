@@ -60,15 +60,68 @@
                 <Description>The Doffin Reference number.</Description>
 
                 <Attribute>
-                <Term>scheme</Term>
-                <Name>Doffin scheme identifier</Name>
+                <Term>schemeID</Term>
+                <Name>DoffinScheme identifier</Name>
                 <Value type="FIXED">DOFFIN</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">147</Value>
             </Element>
         </Element>
-
+        
+        <Element cardinality="0..1">
+            <Term>cv:SenderParty</Term>
+            <Name>Economic Operator</Name>
+            
+            <Element cardinality="0..1"> <!-- obs obs -->
+                <Term>cv:EndpointID</Term>
+                <Name>Electronic Address Identifier</Name>
+                <Description>The electronic address identifier of the Economic Operator.</Description>
+                <Reference type="RULE">EHF-COMMON-R010</Reference>
+                
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
+                    <Reference type="CODE_LIST">eaid</Reference>
+                    <Value type="EXAMPLE">0192</Value>
+                </Attribute>
+                <Value type="EXAMPLE">987654325</Value>
+            </Element>
+            
+            <Element cardinality="0..1"> <!-- obs obs -->
+                <Term>cv:Name</Term>
+                <Name>Name</Name>
+                <Description>The party name of the Economic Operator.</Description>
+                <Value type="EXAMPLE">Y company</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv:Contact</Term>
+                <Name>Contact Information</Name>
+                
+                <Element>
+                    <Term>cv:Name</Term>
+                    <Name>Contact Name</Name>
+                    <Description>Contact person's name.</Description>
+                    <Value type="EXAMPLE">John Johnsen</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv:Telephone</Term>
+                    <Name>Contact Telephone Number</Name>
+                    <Description>Contact person's telephone number.</Description>
+                    <Value type="EXAMPLE">99998888</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cv:ElectronicMail</Term>
+                    <Name>Contact Email Address</Name>
+                    <Description>Contact person's e-mail address.</Description>
+                    <Value type="EXAMPLE">john.johnsen@y.com</Value>
+                </Element>
+            </Element>
+        </Element>
+        
         <Element cardinality="0..1">
             <Term>cv:ReceiverParty</Term>
             <Name>contracting Authority</Name>
@@ -76,11 +129,11 @@
             <Element>
                 <Term>cv:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
-                <Description>The electronic address identifier of the contracting authority.</Description>
+                <Description>The electronic address identifier of the Contracting Authority.</Description>
                 <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                 <Attribute>
-                    <Term>scheme</Term>
+                    <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Reference type="CODE_LIST">eaid</Reference>
                     <Value type="EXAMPLE">0192</Value>
@@ -91,7 +144,7 @@
             <Element>
                 <Term>cv:Name</Term>
                 <Name>Name</Name>
-                <Description>The name of the contracting authority.</Description>
+                <Description>The name of the Contracting Authority.</Description>
                 <Value type="EXAMPLE">X company</Value>
             </Element>
 
@@ -118,59 +171,6 @@
                     <Name>Contact Email Address</Name>
                     <Description>Contact person's e-mail address.</Description>
                     <Value type="EXAMPLE">ola.nordmann@x.no</Value>
-                </Element>
-            </Element>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cv:ProviderParty</Term>
-            <Name>Economic operator or the candidate</Name>
-
-            <Element cardinality="0..1"> <!-- obs obs -->
-                <Term>cv:EndpointID</Term>
-                <Name>Electronic Address Identifier</Name>
-                <Description>The electronic address identifier of the economic operator or the candidate.</Description>
-                <Reference type="RULE">EHF-COMMON-R010</Reference>
-
-                <Attribute>
-                    <Term>scheme</Term>
-                    <Name>Scheme identifier</Name>
-                    <Reference type="CODE_LIST">eaid</Reference>
-                    <Value type="EXAMPLE">0192</Value>
-                </Attribute>
-                <Value type="EXAMPLE">987654325</Value>
-            </Element>
-
-            <Element cardinality="0..1"> <!-- obs obs -->
-                <Term>cv:Name</Term>
-                <Name>Name</Name>
-                <Description>The party name of the Contracting Authority.</Description>
-                <Value type="EXAMPLE">Y company</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cv:Contact</Term>
-                <Name>Contact Information</Name>
-
-                <Element>
-                    <Term>cv:Name</Term>
-                    <Name>Contact Name</Name>
-                    <Description>Contact person's name.</Description>
-                    <Value type="EXAMPLE">John Johnsen</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cv:Telephone</Term>
-                    <Name>Contact Telephone Number</Name>
-                    <Description>Contact person's telephone number.</Description>
-                    <Value type="EXAMPLE">99998888</Value>
-                </Element>
-
-                <Element>
-                    <Term>cv:ElectronicMail</Term>
-                    <Name>Contact Email Address</Name>
-                    <Description>Contact person's e-mail address.</Description>
-                    <Value type="EXAMPLE">john.johnsen@y.com</Value>
                 </Element>
             </Element>
         </Element>
@@ -388,7 +388,7 @@
                     <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
-                        <Term>scheme</Term>
+                        <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
@@ -416,7 +416,7 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>cv:Country</Term>
+                    <Term>cv:CountryCode</Term>
                     <Name>Supplier party country</Name>
                     <Description>Supplier party's country of registration.</Description>
                     <Reference type="CODE_LIST">ISO3166</Reference>
@@ -521,7 +521,7 @@
                     <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
-                        <Term>scheme</Term>
+                        <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
@@ -549,7 +549,7 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>cv:Country</Term>
+                    <Term>cv:CountryCode</Term>
                     <Name>Supplier party country</Name>
                     <Description>Supplier party's country of registration.</Description>
                     <Reference type="CODE_LIST">ISO3166</Reference>
@@ -737,7 +737,7 @@
                     <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
-                        <Term>scheme</Term>
+                        <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
@@ -958,7 +958,7 @@
                     <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
-                        <Term>scheme</Term>
+                        <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
@@ -1203,7 +1203,7 @@
                     <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                     <Attribute>
-                        <Term>scheme</Term>
+                        <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="CODE_LIST">eaid</Reference>
                         <Value type="EXAMPLE">0192</Value>
@@ -1513,7 +1513,7 @@
                 </Element>
 
                 <Element cardinality="0..1">
-                    <Term>cv:Country</Term>
+                    <Term>cv:CountryCode</Term>
                     <Name>Country</Name>
 
                     <Element>

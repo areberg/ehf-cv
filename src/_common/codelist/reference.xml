@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>SKills reference codelist</Title>
+    <Title>Skills reference codelist</Title>
     <Identifier>SkillReference</Identifier>
     <Version>1.0</Version>
+    <!-- tag::SkillsReference[] -->
     <Agency>DFO</Agency>
 
     <Code>
@@ -15,5 +16,6 @@
         <Id>False</Id>
         <Name>Don't need to provide skill reference.</Name>
     </Code>
+    <!-- end::SkillsReference[] -->
 
 </CodeList>

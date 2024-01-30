@@ -1,23 +1,22 @@
 = Work Experience
 
-Work experience contains information about candidate's employment history.
-This is not similar to project experience.
+Work experience contains information about a candidate's employment history.
+This is not the same as project experience.
 
 == Information specific to CV request
 
-A contracting authority can specify a request for a work experience in several ways. There are many options.
-For each work experience, there must be a position level, i.e. employee, middle level manager or manager. Illustrates
-type of experience a candidate need for this job.
+A Contracting Authority can specify a request for a work experience in several ways.
+For each work experience there must be a position level, i.e. employee, middle level manager or manager to illustrate
+the type of experience a candidate needs for the assignment.
 
-There is always possible to request a work experience specific to a industry or workplace. The job sector need to
-be specified for each work experience, in element `cv-req:JobSector`.
+It is also possible to request a work experience specific to a industry or workplace. The job sector need to
+be specified for each work experience in element `cv-req:JobSector`, e.g. "private".
 
-The minimum total experience need to be specified in element `cv-req:MinimumTotalExperience`. Implies that the candidate
-must fulfill this minimum requirement. This element can be used to differentiate for example a junior or senior candidate.
+The minimum total experience must be specified in element `cv-req:MinimumTotalExperience`. This implies that the candidate
+must fulfill this requirement and it can be used to differentiate a junior from a senior candidate.
 
-In the CV request, the contracting authority can state the requested period for a work experience, using element
-`cv-req:Period`. Implies that the candidate can only refer to work experience from this period. For example, if
-a contracting authority only want candidates with work experience from last seven years.
+In the CV request, the Contracting Authority can state the requested period for a work experience in element
+`cv-req:Period`. This implies that the candidate can only refer to work experience from this period, for example work experience from the last seven years.
 
 The description of experience need to be provided in element `cv-req:WorkExperienceDescription`, where candidate's role must
 be specified in element `cv-req:Role`. It is also possible to describe the project activities and candidate's
@@ -30,15 +29,15 @@ position percent (e.g. must have worked 100%, full-time, with the project).
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=WorkExperienceAlternative]
 ----
 <1> Work experience identifier
-<2> Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement
+<2> Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement. According to codelist Requirement code (chapter 5.11).
 <3> Position level
-<4> Type of industry
-<5> Workplace
-<6> Job sector
+<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.16)
+<5> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.19)
+<6> Job sector according to codelist Sector (chapter 5.12)
 <7> Minimum total year of experience
 <8> Period
 <9> Position percent
-<10> Role in work experience
+<10> Role in work experience according to code list Classification of Occupations (Styrk98) (chapter 5.15)
 <11> Description of work activities
 <12> Alternative work experience
 
@@ -48,11 +47,11 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=WorkExperienceAlternati
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=WorkExperience]
 ----
 <1> Work experience identifier
-<2> Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement
+<2> Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement. According to codelist Requirement code (chapter 5.11).
 <3> Position level
-<4> Type of industry
-<5> Workplace
-<6> Job sector
+<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.16)
+<5> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.19)
+<6> Job sector according to codelist Sector (chapter 5.12)
 <7> Minimum total year of experience
 <8> Period
 <9> Work description
@@ -60,13 +59,9 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=WorkExperience]
 
 == Information specific to CV
 
-Based on the project experience requirement, the economic operator needs to document the candidate's work experience.
-For CV used in the job application, fill in the relevant parts of work experience information.
-
-The element `cv:EducationReference` and `cv:WorkExperienceReference` needs to be used in the procurement process,
-not in the job application process. The education reference corresponds to the educational requirement in the CV request when
-the contracting authority accepts relevant experience. The work experience reference corresponds to work experience in the
-CV request.
+Based on the project experience requirement, the Economic Operator needs to document the candidate's work experience.
+The element `cv:EducationReference` and `cv:WorkExperienceReference` needs to be used. The education reference corresponds to the educational requirement in the CV request when
+the Contracting Authority accepts relevant experience. The work experience in the CV must correspond to the work experience in the CV request.
 
 .Example of a description of work in CV as a response to requested education in CV request
 [source, xml, indent=0]
@@ -74,28 +69,10 @@ CV request.
 include::../{snippet-dir-cv}/cv.xml[tags=WorkExperience-req]
 ----
 <1> Work experience identifier
-<2> Position level
-<3> Information about contracting authority or organisation
+<2> Position level according to codelist Position level (chapter 5.9)
+<3> Information about contracting authority or organisation. schemeID according to codelist Electronic address identifier (EAID) (chapter 5.18)
 <4> Period
 <5> Work experience description: position percent, role, activities
 <6> Contact information
 <7> Education reference
 <8> Project experience reference
-
-
-.Example of a description of work in a CV in the job application
-[source, xml, indent=0]
-----
-include::../{snippet-dir-cv}/cv.xml[tags=WorkExperience]
-----
-<1> Work experience identifier
-<2> Position level
-<3> Type of industry
-<4> Workplace
-<5> Job sector
-<6> Information about contracting authority or organisation
-<7> Period
-<8> Position percent
-<9> Role
-<10> Description of work activities
-<11> Contact information

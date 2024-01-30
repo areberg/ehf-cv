@@ -1,0 +1,2402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc maxdepth="3"?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>EHF CV</title>
+<date>2024-01-04</date>
+<author>
+<personname>
+<firstname>v1.0.0 RC1</firstname>
+</personname>
+</author>
+<authorinitials>v</authorinitials>
+</info>
+<preface>
+<title></title>
+<simpara>This specification describes the EHF CV. The document is part of Norwegian Agency for Public and Financial Management (DFØ) standardization work related to electronic commerce.</simpara>
+</preface>
+<chapter xml:id="_introduction">
+<title>Introduction</title>
+<simpara>Curriculum Vitaes (CV&#8217;s) are created in different ways and with different layouts both in procurement processes
+and other processes where CV&#8217;s are used. Contracting Authorities and Economic Operators must relate to different formats when describing skills and competences.
+This often leads to poor information quality and ambiguity which makes the evaluation of providers and candidates difficult and time consuming.</simpara>
+<simpara>The purpose of this EHF-CV specification is to define and describe a common format for the Curriculum Vitae (CV) messages to be used in a procurement process.
+This includes both the tender process in Pre Award and the follow-up of contract information in Post Award.</simpara>
+<section xml:id="_benefits">
+<title>Benefits</title>
+<simpara>The main benefit with a standardized CV for both Contracting Authorities and Economic Operators is time saved when processing CV-information.
+A standardized CV will also enhance the procurement process by ensuring good quality of CV-information.</simpara>
+<simpara>Benefits for Contracting Authoritites:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>A standardized CV can save time and money through easier and faster specification of requirements and criteria</simpara>
+</listitem>
+<listitem>
+<simpara>Content can be reused in CV-requests</simpara>
+</listitem>
+<listitem>
+<simpara>Parts of the CV-process can be automated and AI may also be used in the process</simpara>
+</listitem>
+</itemizedlist>
+<simpara>Benefits for Economic Operators:</simpara>
+<itemizedlist>
+<listitem>
+<simpara>A standardized CV can save time and money through easier and faster specification of skills and competences</simpara>
+</listitem>
+<listitem>
+<simpara>Content can be reused in CV&#8217;s</simpara>
+</listitem>
+<listitem>
+<simpara>Parts of the CV-process can be automated and AI may also be used in the process</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter xml:id="parties-and-roles">
+<title>Parties and roles</title>
+<simpara>The table below gives the definitions of the parties and roles involved in the EHF-CV process.</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col_1" colwidth="20*"/>
+<colspec colname="col_2" colwidth="80*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Business partners</entry>
+<entry align="left" valign="top">Definition</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Contracting Authority</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>The Contracting Authority (CA) is the organization within the government that is responsible for procurement, as well as the individual within that organization who has been delegated this responsibility.</simpara>
+<simpara>Examples of CA roles: Sender of CV-request and Receiver of CV.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Economic Operator</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>The Economic Operator (EO) is a business or other organisation which supplies goods, works or services within the context of market operations.</simpara>
+<simpara>Examples of EO roles: Sender of CV and Receiver of CV-request.</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col_1" colwidth="18.1818*"/>
+<colspec colname="col_2" colwidth="81.8182*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Role/actor</entry>
+<entry align="left" valign="top">Definition</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Sender of CV-request (cv-req:SenderParty)</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>The role is carried out by the Contracting authority.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Receiver of CV-request (cv-req:ReceiverParty)</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>The role is carried out by the Economic operator.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Sender of CV (cv:SenderParty)</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>The role is carried out by the Economic operator.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Receiver of CV (cv:ReceiverParty)</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>The role is carried out by the Contracting authority.</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<simpara>The diagram below shows the roles in the EHF-CV process.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/rollemodell.png" contentwidth="1000" contentdepth="600"/>
+</imageobject>
+<textobject><phrase>image</phrase></textobject>
+</mediaobject>
+</informalfigure>
+</chapter>
+<chapter xml:id="_process_and_typical_use_cases">
+<title>Process and Typical Use Cases</title>
+<section xml:id="_ehf_cv_in_pre_award">
+<title>EHF-CV in Pre-Award</title>
+<simpara>The following diagram illustrates the use of EHF-CV in a tender process in Pre-Award.</simpara>
+<figure>
+<title>Process diagram</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/pre-award.png" contentwidth="1200" contentdepth="800" align="center"/>
+</imageobject>
+<textobject><phrase>pre award</phrase></textobject>
+</mediaobject>
+</figure>
+<section xml:id="_use_cases">
+<title>Use Cases</title>
+
+</section>
+<section xml:id="_tender_process">
+<title>Tender process</title>
+<simpara>This use case describes a tender process where a Contracting Authority needs several
+IT-developers to develop the company&#8217;s IT-system.</simpara>
+<sidebar>
+<variablelist>
+<varlistentry>
+<term>Description</term>
+<listitem>
+<simpara>The Contracting Authority needs a developer to develop a web portal and specify criterias to be met. The Economic Operator
+provides a summary of the candidate&#8217;s experiences, academic background, skills, personal skills,
+language skills, references, interest, and personal information.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Parties involved</term>
+<listitem>
+<simpara>Contracting Authority<?asciidoc-br?>
+Economic Operator</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Assumptions</term>
+<listitem>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>The Contracting Authority is able to prepare and send an EHF-CV Request</simpara>
+</listitem>
+<listitem>
+<simpara>The Economic Operator is able to receive an EHF-CV Request and to prepare and send an EHF-CV</simpara>
+</listitem>
+<listitem>
+<simpara>The Contracting Authority is able to receive an EHF-CV</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Flow</term>
+<listitem>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>The Contracting Authority creates a CV request document with all the necessary requirements
+and criteria.</simpara>
+</listitem>
+<listitem>
+<simpara>The Contracting Authority sends an EHF-CV Request to the Economic Operators.</simpara>
+</listitem>
+<listitem>
+<simpara>The Economic Operator colletcs CV-information for the relevant candidates based on the requirements.</simpara>
+</listitem>
+<listitem>
+<simpara>The Economic Operator creates an EHF-CV and sends it to the Contracting Authority.</simpara>
+</listitem>
+<listitem>
+<simpara>The Contracting Authority receives the EHF-CV.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Result</term>
+<listitem>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>The Contracting Authority rates EHF-CV&#8217;s from several Economic Operators and choose the best candidate based on the requested requirements.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</varlistentry>
+</variablelist>
+</sidebar>
+</section>
+</section>
+<section xml:id="_ehf_cv_in_post_award">
+<title>EHF-CV in Post-Award</title>
+<simpara>The following diagram illustrates the use of EHF-CV in a contract follow-up process in Post-Award.</simpara>
+<figure>
+<title>Process diagram</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/post-award.png" contentwidth="1200" contentdepth="800" align="center"/>
+</imageobject>
+<textobject><phrase>post award</phrase></textobject>
+</mediaobject>
+</figure>
+<section xml:id="_use_cases_2">
+<title>Use Cases</title>
+
+</section>
+<section xml:id="_update_of_cvs">
+<title>Update of CV&#8217;s</title>
+<simpara>This use case describes the update of CV-information after the contract is awarded.</simpara>
+<sidebar>
+<variablelist>
+<varlistentry>
+<term>Description</term>
+<listitem>
+<simpara>The Economic Operator provides an update of the candidate&#8217;s skills or experiences. As an example this could be a new certification or a renewal of a certification.
+The update can be done regulary based on agreements in the contract or when a change has occured that affects the CV.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Parties involved</term>
+<listitem>
+<simpara>Contracting Authority<?asciidoc-br?>
+Economic Operator</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Assumptions</term>
+<listitem>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>The Economic Operator is able to prepare and send an EHF-CV</simpara>
+</listitem>
+<listitem>
+<simpara>The Contracting Authority is able to receive an EHF-CV</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Flow</term>
+<listitem>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>The Economic Operator creates an EHF-CV with updated CV-information and sends it to the Contracting Authority.</simpara>
+</listitem>
+<listitem>
+<simpara>The Contracting Authority receives the EHF-CV with updated information and stores it as part of the contract.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Result</term>
+<listitem>
+<orderedlist numeration="arabic">
+<listitem>
+<simpara>The relevant CV&#8217;s are updated based on an EHF-CV sent from the Economic Operator to the Contracting Authority.</simpara>
+</listitem>
+</orderedlist>
+</listitem>
+</varlistentry>
+</variablelist>
+</sidebar>
+</section>
+</section>
+</chapter>
+<chapter xml:id="_detailed_descriptions">
+<title>Detailed Descriptions</title>
+<section xml:id="parties">
+<title>Parties</title>
+<simpara>The following parties/roles may be specified in the message.
+The same actor may play more than one role depending on the handling routine.</simpara>
+<section xml:id="sender-party">
+<title>Sender (SenderParty)</title>
+<simpara>Sender is the sender of CV-request or CV.</simpara>
+<formalpara>
+<title>Example of sender in CV-request:</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered"> &lt;cv-req:ProviderParty&gt;
+  &lt;cv-req:EndpointID scheme="0192"&gt;987654325&lt;/cv-req:EndpointID&gt;
+  &lt;cv-req:Name&gt;X company&lt;/cv-req:Name&gt;
+  &lt;cv-req:Contact&gt;
+    &lt;cv-req:Name&gt;John Johnsen&lt;/cv-req:Name&gt;
+    &lt;cv-req:Telephone&gt;99998888&lt;/cv-req:Telephone&gt;
+    &lt;cv-req:ElectronicMail&gt;john.johnsen@x.com&lt;/cv-req:ElectronicMail&gt;
+  &lt;/cv-req:Contact&gt;
+&lt;/cv-req:ProviderParty&gt;</programlisting>
+</para>
+</formalpara>
+</section>
+<section xml:id="receiver-party">
+<title>Receiver (ReceiverParty)</title>
+<simpara>Receiver is the receiver of CV-request or CV.</simpara>
+<formalpara>
+<title>Example of receiver in CV-request:</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">  &lt;cv-req:ReceiverParty&gt;
+  &lt;cv-req:EndpointID scheme="0192"&gt;987654325&lt;/cv-req:EndpointID&gt;
+  &lt;cv-req:Name&gt;Digitaliseringsdirektoratet&lt;/cv-req:Name&gt;
+  &lt;cv-req:Contact&gt;
+    &lt;cv-req:Name&gt;Ola Nordmann&lt;/cv-req:Name&gt;
+    &lt;cv-req:Telephone&gt;22224444&lt;/cv-req:Telephone&gt;
+    &lt;cv-req:ElectronicMail&gt;ola.nordmann@dgidir.no&lt;/cv-req:ElectronicMail&gt;
+  &lt;/cv-req:Contact&gt;
+&lt;/cv-req:ReceiverParty&gt;</programlisting>
+</para>
+</formalpara>
+</section>
+</section>
+<section xml:id="_education">
+<title>Education</title>
+<simpara>Education may be specified in CV request and CV to state the requirements and the level of education of the relevant candidates.</simpara>
+<section xml:id="_information_specific_to_cv_request">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can state both an educational requirement and an alternative requirement for the candidate.
+The alternative requirement is optional, but it might be relevant to accept other educations in some cases.
+The alternative requirements include the same information elements as the original requirement.</simpara>
+<simpara>All educations need to be identified uniquely to ensure that the education can be referenced in the CV.</simpara>
+<simpara>The element <literal>cv-req:Requirement</literal> shall be used to differentiate between educations that <emphasis role="strong">should</emphasis> and <emphasis role="strong">must</emphasis> be present. The Economic Operators
+will only provide qualified candidates to make it easier to do the rating.</simpara>
+<formalpara>
+<title>Example of the requested education in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Education&gt;
+  &lt;cv-req:ID&gt;2&lt;/cv-req:ID&gt;<co xml:id="CO1-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO1-2"/>
+  &lt;cv-req:EducationDegree&gt;master&lt;/cv-req:EducationDegree&gt;<co xml:id="CO1-3"/>
+  &lt;cv-req:SubjectArea&gt;711729&lt;/cv-req:SubjectArea&gt;<co xml:id="CO1-4"/>
+&lt;/cv-req:Education&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO1-1">
+<para>Education identifier</para>
+</callout>
+<callout arearefs="CO1-2">
+<para>Education requirement - indicate whether a candidate needs to fulfill the educational requirement</para>
+</callout>
+<callout arearefs="CO1-3">
+<para>Education degree</para>
+</callout>
+<callout arearefs="CO1-4">
+<para>Classification of education</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested education in the CV request with alternative requirements</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Education&gt;
+  &lt;cv-req:ID&gt;2&lt;/cv-req:ID&gt;<co xml:id="CO2-1"/>
+  &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;<co xml:id="CO2-2"/>
+  &lt;cv-req:EducationDegree&gt;master&lt;/cv-req:EducationDegree&gt;<co xml:id="CO2-3"/>
+  &lt;cv-req:SubjectArea&gt;661104&lt;/cv-req:SubjectArea&gt;<co xml:id="CO2-4"/>
+  &lt;cv-req:RegistrationType&gt;HPR&lt;/cv-req:RegistrationType&gt;<co xml:id="CO2-5"/>
+  &lt;cv-req:AlternativeEducation&gt;<co xml:id="CO2-6"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:EducationDegree&gt;master&lt;/cv-req:EducationDegree&gt;
+    &lt;cv-req:SubjectArea&gt;361202&lt;/cv-req:SubjectArea&gt;
+    &lt;cv-req:RegistrationType&gt;HPR&lt;/cv-req:RegistrationType&gt;
+  &lt;/cv-req:AlternativeEducation&gt;
+&lt;/cv-req:Education&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO2-1">
+<para>Education identifier</para>
+</callout>
+<callout arearefs="CO2-2">
+<para>Education requirement - indicate whether a candidate needs to fulfill the educational requirement</para>
+</callout>
+<callout arearefs="CO2-3">
+<para>Education degree</para>
+</callout>
+<callout arearefs="CO2-4">
+<para>Classification of education</para>
+</callout>
+<callout arearefs="CO2-5">
+<para>Registration type - specify which registration type candidate needs</para>
+</callout>
+<callout arearefs="CO2-6">
+<para>Alternative education requirements</para>
+</callout>
+</calloutlist>
+<simpara>In some cases the Contracting Authorities may accept relevant experiences as a compensation for an education degree. They will then state the type of experience and minimum years of experience. The following example illustrates that. In addition,
+there is also possible to have alternative educations.</simpara>
+<formalpara>
+<title>Example of the requested education in the CV request with relevant experience</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Education&gt;
+  &lt;cv-req:ID&gt;3&lt;/cv-req:ID&gt;<co xml:id="CO3-1"/>
+  &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;<co xml:id="CO3-2"/>
+  &lt;cv-req:EducationDegree&gt;master&lt;/cv-req:EducationDegree&gt;<co xml:id="CO3-3"/>
+  &lt;cv-req:SubjectArea&gt;711729&lt;/cv-req:SubjectArea&gt;<co xml:id="CO3-4"/>
+  &lt;cv-req:RelevantExperience&gt;
+    &lt;cv-req:Type&gt;3120127&lt;/cv-req:Type&gt;<co xml:id="CO3-5"/>
+    &lt;cv-req:MinYear&gt;5&lt;/cv-req:MinYear&gt;<co xml:id="CO3-6"/>
+  &lt;/cv-req:RelevantExperience&gt;
+&lt;/cv-req:Education&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO3-1">
+<para>Education identifier</para>
+</callout>
+<callout arearefs="CO3-2">
+<para>Education requirement - indicate whether a candidate needs to fulfill the educational requirement</para>
+</callout>
+<callout arearefs="CO3-3">
+<para>Education degree</para>
+</callout>
+<callout arearefs="CO3-4">
+<para>Classification of education</para>
+</callout>
+<callout arearefs="CO3-5">
+<para>Relevant experience type</para>
+</callout>
+<callout arearefs="CO3-6">
+<para>Minimum year of relevant experience</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv">
+<title>Information specific to CV</title>
+<simpara>Based on the educational requirement, the Economic Operator needs to document the candidate&#8217;s education.</simpara>
+<simpara>The element <literal>cv:EducationReference</literal> needs to be used as a reference to the corresponding educational requirement in the CV request.</simpara>
+<formalpara>
+<title>Example of a description of education in CV as a response to requested education in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:Education&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO4-1"/>
+  &lt;cv:EducationDegree&gt;bachelor&lt;/cv:EducationDegree&gt;<co xml:id="CO4-2"/>
+  &lt;cv:SubjectArea&gt;661104&lt;/cv:SubjectArea&gt;<co xml:id="CO4-3"/>
+  &lt;cv:Period&gt;<co xml:id="CO4-4"/>
+    &lt;cv:StartDate&gt;2018-08-01&lt;/cv:StartDate&gt;
+    &lt;cv:EndDate&gt;2021-06-30&lt;/cv:EndDate&gt;
+  &lt;/cv:Period&gt;
+  &lt;cv:Documentation&gt;
+    &lt;cv:RegistrationType&gt;HPR&lt;/cv:RegistrationType&gt;<co xml:id="CO4-5"/>
+    &lt;cv:RegistrationNumber&gt;154725&lt;/cv:RegistrationNumber&gt;<co xml:id="CO4-6"/>
+    &lt;cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf"&gt;bnVyc2UgZWR1Y2F0aW9uIGRvY3VtZW50YXRpb24gZnJvbSBYWFg=&lt;/cv:EmbeddedDocumentBinaryObject&gt;<co xml:id="CO4-7"/>
+    &lt;cv:URI&gt;https://www.vitnemalsportalen.no&lt;/cv:URI&gt;<co xml:id="CO4-8"/>
+  &lt;/cv:Documentation&gt;
+  &lt;cv:Contact&gt;<co xml:id="CO4-9"/>
+    &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;
+    &lt;cv:Role&gt;1120131&lt;/cv:Role&gt;
+    &lt;cv:Telephone&gt;2310114&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@x.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:EducationReference&gt;<co xml:id="CO4-10"/>
+    &lt;cv:ID&gt;2&lt;/cv:ID&gt;
+  &lt;/cv:EducationReference&gt;
+&lt;/cv:Education&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO4-1">
+<para>Education identifier</para>
+</callout>
+<callout arearefs="CO4-2">
+<para>Education degree</para>
+</callout>
+<callout arearefs="CO4-3">
+<para>Classification of education</para>
+</callout>
+<callout arearefs="CO4-4">
+<para>Education period</para>
+</callout>
+<callout arearefs="CO4-5">
+<para>Registration type</para>
+</callout>
+<callout arearefs="CO4-6">
+<para>Registration number, connected to the registration type</para>
+</callout>
+<callout arearefs="CO4-7">
+<para>Embedded document as binary object with <literal>mimeCode</literal>. Use Base64.</para>
+</callout>
+<callout arearefs="CO4-8">
+<para>URI to education document, typically <literal>vitnemalsportalen</literal> in Norway</para>
+</callout>
+<callout arearefs="CO4-9">
+<para>Contact information related to candidate&#8217;s education</para>
+</callout>
+<callout arearefs="CO4-10">
+<para>Education reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_course_and_certification">
+<title>Course and Certification</title>
+<simpara>The course information group is used to state relevant courses that the candidate has taken. This information is not mandatory,
+but might be relevant for some assignments.</simpara>
+<simpara>There is a difference between certification and course. Certification has an exam/test that needs to be
+passed, but not so for course.</simpara>
+<section xml:id="_information_specific_to_cv_request_2">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can state both a course/certification requirement (main requirement) and an alternative
+requirement in the CV request. The alternative requirement is optional, but in some cases other
+similar courses can be accepted. As an example the Contracting Authority can accept other versions of the specific course/certification.
+Note that the alternative requirements include the same information elements as the original requirement.</simpara>
+<simpara>All courses and certifications need to be identified uniquely to ensure that the course can be referenced in the
+CV. The element <literal>cv-req:Requirement</literal> shall be used to differentiate between courses that <emphasis role="strong">should</emphasis> and <emphasis role="strong">must</emphasis> be present. The Economic Operators
+will only provide qualified candidates, and this makes it easier to do the rating.</simpara>
+<simpara>A course/certification must include either the element <literal>cv-req:Type</literal> or <literal>cv-req:Title</literal> to identify the specific course or
+certification. Use type if the specific course is defined in the course code list, otherwise use the title. Similarly for certification.</simpara>
+<simpara>In course requirement, the Contacting Authority can specify which period (<literal>cv-req:Period</literal>) the candidate must finish the course. This can
+be a date in the future. In a certification requirement the Contracting Authority can request that the
+certification must be valid to a specific date (<literal>cv-req:ValidTo</literal>).</simpara>
+<formalpara>
+<title>Example of the requested course in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Course&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO5-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO5-2"/>
+  &lt;cv-req:Type&gt;macroeconomic&lt;/cv-req:Type&gt;<co xml:id="CO5-3"/>
+  &lt;cv-req:Period&gt;<co xml:id="CO5-4"/>
+    &lt;cv-req:StartDate&gt;2020-01-10&lt;/cv-req:StartDate&gt;
+    &lt;cv-req:EndDate&gt;2020-05-05&lt;/cv-req:EndDate&gt;
+  &lt;/cv-req:Period&gt;
+&lt;/cv-req:Course&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO5-1">
+<para>Course identifier</para>
+</callout>
+<callout arearefs="CO5-2">
+<para>Course requirement - indicate whether a candidate needs to fulfill the course requirement</para>
+</callout>
+<callout arearefs="CO5-3">
+<para>Course type - code list</para>
+</callout>
+<callout arearefs="CO5-4">
+<para>Period</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested course in the CV request with alternative requirement</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Course&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO6-1"/>
+  &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;<co xml:id="CO6-2"/>
+  &lt;cv-req:Title&gt;HMS security airport&lt;/cv-req:Title&gt;<co xml:id="CO6-3"/>
+  &lt;cv-req:Version&gt;2.0&lt;/cv-req:Version&gt;<co xml:id="CO6-4"/>
+  &lt;cv-req:Period&gt;<co xml:id="CO6-5"/>
+    &lt;cv-req:StartDate&gt;2020-01-10&lt;/cv-req:StartDate&gt;
+    &lt;cv-req:EndDate&gt;2020-05-05&lt;/cv-req:EndDate&gt;
+  &lt;/cv-req:Period&gt;
+  &lt;cv-req:AlternativeCourse&gt;<co xml:id="CO6-6"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:Title&gt;HMS security airport&lt;/cv-req:Title&gt;
+    &lt;cv-req:Version&gt;1.0&lt;/cv-req:Version&gt;
+    &lt;cv-req:Period&gt;
+      &lt;cv-req:StartDate&gt;2019-01-10&lt;/cv-req:StartDate&gt;
+      &lt;cv-req:EndDate&gt;2020-05-05&lt;/cv-req:EndDate&gt;
+    &lt;/cv-req:Period&gt;
+  &lt;/cv-req:AlternativeCourse&gt;
+&lt;/cv-req:Course&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO6-1">
+<para>Course identifier</para>
+</callout>
+<callout arearefs="CO6-2">
+<para>Course requirement - indicate whether a candidate needs to fulfill the course requirement</para>
+</callout>
+<callout arearefs="CO6-3">
+<para>Course title</para>
+</callout>
+<callout arearefs="CO6-4">
+<para>Course version</para>
+</callout>
+<callout arearefs="CO6-5">
+<para>Period</para>
+</callout>
+<callout arearefs="CO6-6">
+<para>Alternative course requirement</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested certification in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Certification&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO7-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO7-2"/>
+  &lt;cv-req:Type&gt;archimate&lt;/cv-req:Type&gt;<co xml:id="CO7-3"/>
+  &lt;cv-req:Version&gt;3.0&lt;/cv-req:Version&gt;<co xml:id="CO7-4"/>
+  &lt;cv-req:ValidTo&gt;2025-05-05&lt;/cv-req:ValidTo&gt;<co xml:id="CO7-5"/>
+&lt;/cv-req:Certification&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO7-1">
+<para>Certification identifier</para>
+</callout>
+<callout arearefs="CO7-2">
+<para>Certification requirement - indicate whether a candidate needs to fulfill the certification requirement</para>
+</callout>
+<callout arearefs="CO7-3">
+<para>Certification type - code list</para>
+</callout>
+<callout arearefs="CO7-4">
+<para>A date certification is valid to</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested certification in the CV request with alternative requirement</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Certification&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO8-1"/>
+  &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;<co xml:id="CO8-2"/>
+  &lt;cv-req:Title&gt;Organization leader&lt;/cv-req:Title&gt;<co xml:id="CO8-3"/>
+  &lt;cv-req:Version&gt;3.0&lt;/cv-req:Version&gt;<co xml:id="CO8-4"/>
+  &lt;cv-req:ValidTo&gt;2020-12-01&lt;/cv-req:ValidTo&gt;<co xml:id="CO8-5"/>
+  &lt;cv-req:AlternativeCertification&gt;<co xml:id="CO8-6"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:Title&gt;Organization leader&lt;/cv-req:Title&gt;
+    &lt;cv-req:Version&gt;2.0&lt;/cv-req:Version&gt;
+    &lt;cv-req:ValidTo&gt;2020-12-01&lt;/cv-req:ValidTo&gt;
+  &lt;/cv-req:AlternativeCertification&gt;
+&lt;/cv-req:Certification&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO8-1">
+<para>Certification identifier</para>
+</callout>
+<callout arearefs="CO8-2">
+<para>Certification requirement - indicate whether a candidate needs to fulfill the certification requirement</para>
+</callout>
+<callout arearefs="CO8-3">
+<para>Certification title</para>
+</callout>
+<callout arearefs="CO8-4">
+<para>Certification version</para>
+</callout>
+<callout arearefs="CO8-5">
+<para>A date certification must be valid to</para>
+</callout>
+<callout arearefs="CO8-6">
+<para>Alternative certification requirement</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_2">
+<title>Information specific to CV</title>
+<simpara>Based on the course/certification requirement, the Economic Operator needs to document the candidate&#8217;s course/certification.
+For CV used in the job application process, fill in the relevant parts of course/certification information.</simpara>
+<simpara>The element <literal>cv:CourseReference</literal> and <literal>cv:CertificationReference</literal> must correspond to the course requirement in the CV request.</simpara>
+<simpara>It is possible to state information about the supplier of the course/certification. This might be relevant for some Contracting
+Authorities, since different suppliers may offer the same course/certification with different content.</simpara>
+<formalpara>
+<title>Example of a description of course in CV as a response to requested course in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:Course&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO9-1"/>
+  &lt;cv:Title&gt;HMS security airport&lt;/cv:Title&gt;<co xml:id="CO9-2"/>
+  &lt;cv:Version&gt;1.0&lt;/cv:Version&gt;<co xml:id="CO9-3"/>
+  &lt;cv:Period&gt;<co xml:id="CO9-4"/>
+    &lt;cv:StartDate&gt;2020-04-01&lt;/cv:StartDate&gt;
+    &lt;cv:EndDate&gt;2020-05-01&lt;/cv:EndDate&gt;
+  &lt;/cv:Period&gt;
+  &lt;cv:SupplierParty&gt;<co xml:id="CO9-5"/>
+    &lt;cv:EndpointID scheme="0192"&gt;123456785&lt;/cv:EndpointID&gt;<co xml:id="CO9-6"/>
+    &lt;cv:Name&gt;Z company&lt;/cv:Name&gt;<co xml:id="CO9-7"/>
+    &lt;cv:Contact&gt;
+      &lt;cv:ElectronicMail&gt;alf.alfsen@z.no&lt;/cv:ElectronicMail&gt;<co xml:id="CO9-8"/>
+    &lt;/cv:Contact&gt;
+    &lt;cv:Country&gt;NO&lt;/cv:Country&gt;<co xml:id="CO9-9"/>
+  &lt;/cv:SupplierParty&gt;
+  &lt;cv:Documentation&gt;
+    &lt;cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf"&gt;a3VycyBkb2t1bWVudGFzam9uCg==&lt;/cv:EmbeddedDocumentBinaryObject&gt;<co xml:id="CO9-10"/>
+    &lt;cv:URI&gt;https://www.kurssportalen.no/&lt;/cv:URI&gt;<co xml:id="CO9-11"/>
+  &lt;/cv:Documentation&gt;
+  &lt;cv:CourseReference&gt;<co xml:id="CO9-12"/>
+    &lt;cv:ID&gt;51&lt;/cv:ID&gt;
+  &lt;/cv:CourseReference&gt;
+&lt;/cv:Course&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO9-1">
+<para>Course identifier</para>
+</callout>
+<callout arearefs="CO9-2">
+<para>Course title</para>
+</callout>
+<callout arearefs="CO9-3">
+<para>Course version</para>
+</callout>
+<callout arearefs="CO9-4">
+<para>Course period</para>
+</callout>
+<callout arearefs="CO9-5">
+<para>Information about the supplier of the course</para>
+</callout>
+<callout arearefs="CO9-6">
+<para>The supplier&#8217;s organisation number</para>
+</callout>
+<callout arearefs="CO9-7">
+<para>The legal name of supplier</para>
+</callout>
+<callout arearefs="CO9-8">
+<para>Contact information of supplier expressed as email address</para>
+</callout>
+<callout arearefs="CO9-9">
+<para>The country where the supplier is registered - expressed as country code from the code list</para>
+</callout>
+<callout arearefs="CO9-10">
+<para>Embedded document as binary object with <literal>mimeCode</literal>. Use Base64.</para>
+</callout>
+<callout arearefs="CO9-11">
+<para>URI to course document</para>
+</callout>
+<callout arearefs="CO9-12">
+<para>Course reference</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of a description of certification in CV as a response to requested course in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:Certification&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO10-1"/>
+  &lt;cv:Title&gt;Organization leader&lt;/cv:Title&gt;<co xml:id="CO10-2"/>
+  &lt;cv:Version&gt;3.0&lt;/cv:Version&gt;<co xml:id="CO10-3"/>
+  &lt;cv:ValidTo&gt;2020-05-14&lt;/cv:ValidTo&gt;<co xml:id="CO10-4"/>
+  &lt;cv:SupplierParty&gt;<co xml:id="CO10-5"/>
+    &lt;cv:EndpointID scheme="0192"&gt;123456785&lt;/cv:EndpointID&gt;<co xml:id="CO10-6"/>
+    &lt;cv:Name&gt;U company&lt;/cv:Name&gt;<co xml:id="CO10-7"/>
+    &lt;cv:Contact&gt;
+      &lt;cv:ElectronicMail&gt;alf.alfsen@u.no&lt;/cv:ElectronicMail&gt;<co xml:id="CO10-8"/>
+    &lt;/cv:Contact&gt;
+    &lt;cv:Country&gt;NO&lt;/cv:Country&gt;<co xml:id="CO10-9"/>
+  &lt;/cv:SupplierParty&gt;
+  &lt;cv:Documentation&gt;
+    &lt;cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf"&gt;c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==&lt;/cv:EmbeddedDocumentBinaryObject&gt;<co xml:id="CO10-10"/>
+    &lt;cv:URI&gt;https://www.sertifiseringsportalen.no/&lt;/cv:URI&gt;<co xml:id="CO10-11"/>
+  &lt;/cv:Documentation&gt;
+  &lt;cv:CertificationReference&gt;<co xml:id="CO10-12"/>
+    &lt;cv:ID&gt;159&lt;/cv:ID&gt;
+  &lt;/cv:CertificationReference&gt;
+&lt;/cv:Certification&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO10-1">
+<para>Certification identifier</para>
+</callout>
+<callout arearefs="CO10-2">
+<para>Certification title</para>
+</callout>
+<callout arearefs="CO10-3">
+<para>Certification version</para>
+</callout>
+<callout arearefs="CO10-4">
+<para>A date certification is valid to</para>
+</callout>
+<callout arearefs="CO10-5">
+<para>Information about the supplier of the certification</para>
+</callout>
+<callout arearefs="CO10-6">
+<para>The supplier&#8217;s organisation number</para>
+</callout>
+<callout arearefs="CO10-7">
+<para>The legal name of supplier</para>
+</callout>
+<callout arearefs="CO10-8">
+<para>Contact information of supplier expressed as email address</para>
+</callout>
+<callout arearefs="CO10-9">
+<para>The country where the supplier is registered - expressed as country code from the code list</para>
+</callout>
+<callout arearefs="CO10-10">
+<para>Embedded document as binary object with <literal>mimeCode</literal>. Use Base64.</para>
+</callout>
+<callout arearefs="CO10-11">
+<para>URI to certification document</para>
+</callout>
+<callout arearefs="CO10-12">
+<para>Certification reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_language_skills">
+<title>Language skills</title>
+<simpara>Language skills may be specified in CV request and CV. For certain assignments the language skill may be of
+great importance.</simpara>
+<section xml:id="_information_specific_to_cv_request_3">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can state both a specific language requirement and an alternative requirement.
+The alternative requirement is optional, but should be used if an alternative language is accepted.
+As an example some Norwegian entities use Norwegian as primarily work language but may accept Swedish and Danish.
+There is also possible to require several languages, for example Norwegian and English.
+Note that the alternative requirements include the same information elements as the original requirement.</simpara>
+<simpara>All language skills need to be identified uniquely, to ensure that the language skill can be referenced in the CV.
+The element <literal>cv-req:Requirement</literal> shall be used to differentiate between languages skills that <emphasis role="strong">should</emphasis> and <emphasis role="strong">must</emphasis> be present.</simpara>
+<simpara>Oral skill and written skill must be provided for each language skill requirement. The skill levels are based on
+EU global standard. Note that the skill level is a minimum requirement. For example, the Contracting Authority wants a candidate
+with a <literal>B1</literal> oral skill level. The candidate has an oral skill level on <literal>A1</literal>, which implies that the candidate is qualified.</simpara>
+<formalpara>
+<title>Example of the requested language skill in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:LanguageSkills&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO11-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO11-2"/>
+  &lt;cv-req:Language&gt;tr&lt;/cv-req:Language&gt;<co xml:id="CO11-3"/>
+  &lt;cv-req:OralSkill&gt;A1&lt;/cv-req:OralSkill&gt;<co xml:id="CO11-4"/>
+  &lt;cv-req:WrittenSkill&gt;A1&lt;/cv-req:WrittenSkill&gt;<co xml:id="CO11-5"/>
+&lt;/cv-req:LanguageSkills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO11-1">
+<para>Language skill identifier</para>
+</callout>
+<callout arearefs="CO11-2">
+<para>Language skill requirement - indicate whether a candidate needs to fulfill the language requirement</para>
+</callout>
+<callout arearefs="CO11-3">
+<para>A specific language - use code list</para>
+</callout>
+<callout arearefs="CO11-4">
+<para>Oral skill</para>
+</callout>
+<callout arearefs="CO11-5">
+<para>Written skill</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested language skill in the CV request with alternative requirements</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:LanguageSkills&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO12-1"/>
+  &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;<co xml:id="CO12-2"/>
+  &lt;cv-req:Language&gt;no&lt;/cv-req:Language&gt;<co xml:id="CO12-3"/>
+  &lt;cv-req:OralSkill&gt;A1&lt;/cv-req:OralSkill&gt;<co xml:id="CO12-4"/>
+  &lt;cv-req:WrittenSkill&gt;A1&lt;/cv-req:WrittenSkill&gt;<co xml:id="CO12-5"/>
+  &lt;cv-req:AlternativeLanguageSkills&gt;<co xml:id="CO12-6"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:Language&gt;sv&lt;/cv-req:Language&gt;
+    &lt;cv-req:OralSkill&gt;A1&lt;/cv-req:OralSkill&gt;
+    &lt;cv-req:WrittenSkill&gt;A1&lt;/cv-req:WrittenSkill&gt;
+  &lt;/cv-req:AlternativeLanguageSkills&gt;
+&lt;/cv-req:LanguageSkills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO12-1">
+<para>Language skill identifier</para>
+</callout>
+<callout arearefs="CO12-2">
+<para>Language skill requirement - indicate whether a candidate needs to fulfill the language requirement</para>
+</callout>
+<callout arearefs="CO12-3">
+<para>A specific language - use code list</para>
+</callout>
+<callout arearefs="CO12-4">
+<para>Oral skill</para>
+</callout>
+<callout arearefs="CO12-5">
+<para>Written skill</para>
+</callout>
+<callout arearefs="CO12-6">
+<para>Alternative language skill requirements</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_3">
+<title>Information specific to CV</title>
+<simpara>Based on the language skill requirements, the Economic Operator needs to document the candidate&#8217;s language skills.
+Oral skill and written skill must be provided for each language. The skill levels must be defined according to the
+EU global standard code list.</simpara>
+<simpara>The element <literal>cv:LanguageSkillsReference</literal> must contain reference to the corresponding language skill requirement in the CV request.</simpara>
+<formalpara>
+<title>Example of a description of language skill in CV as a response to requested language skill in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:LanguageSkills&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO13-1"/>
+  &lt;cv:Language&gt;no&lt;/cv:Language&gt;<co xml:id="CO13-2"/>
+  &lt;cv:OralSkill&gt;A1&lt;/cv:OralSkill&gt;<co xml:id="CO13-3"/>
+  &lt;cv:WrittenSkill&gt;A1&lt;/cv:WrittenSkill&gt;<co xml:id="CO13-4"/>
+  &lt;cv:Contact&gt;<co xml:id="CO13-5"/>
+    &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;
+    &lt;cv:Role&gt;1210102&lt;/cv:Role&gt;
+    &lt;cv:Telephone&gt;22221111&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@x.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:LanguageSkillsReference&gt;<co xml:id="CO13-6"/>
+    &lt;cv:ID&gt;req-65&lt;/cv:ID&gt;
+  &lt;/cv:LanguageSkillsReference&gt;
+&lt;/cv:LanguageSkills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO13-1">
+<para>Language skill identifier</para>
+</callout>
+<callout arearefs="CO13-2">
+<para>A specific language - use code list</para>
+</callout>
+<callout arearefs="CO13-3">
+<para>Oral skill</para>
+</callout>
+<callout arearefs="CO13-4">
+<para>Written skill</para>
+</callout>
+<callout arearefs="CO13-5">
+<para>Contact information related to candidate&#8217;s language skill</para>
+</callout>
+<callout arearefs="CO13-6">
+<para>Language skill reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_project_experience">
+<title>Project Experience</title>
+<simpara>Project experience describes specific projects that the candidate has been a part of.
+Note that this is not the same as work experience.</simpara>
+<section xml:id="_information_specific_to_cv_request_4">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can specify a request for a project experience in several ways.
+For each project experience, there must be an experience type. In some cases it may be relevant to request project experience
+related to a specific industry, workplace (country) or sector.</simpara>
+<simpara>The total years of experience can be specified in element <literal>cv-req:RequiredTotalExperience</literal>. It is also possible to specify a
+minimum number of years (<literal>cv-req:MinimumExperience</literal>) and a maximum number of years (<literal>cv-req:MaximumExperience</literal>). The candidate must fulfill
+the minimum requirement. Another option is to have either minimum or maximum years of project excperience.</simpara>
+<simpara>In the CV request, the Contracting Authority can state the requested period for a project experience using element
+<literal>cv-req:Period</literal>. This implies that the candidate can only refer to project experience from this period. As an example
+a Contracting Authority may request information about project experience from the last five years.</simpara>
+<simpara>The description of experience needs to be provided in element <literal>cv-req:ExperienceDescription</literal>, where the candidate&#8217;s role must
+be specified in element <literal>cv-req:Role</literal>. It is also possible to describe the project activities and candidate&#8217;s project
+position percent (e.g. must have worked 100% with the project).</simpara>
+<simpara>The project value can be stated in element <literal>cv-req:ExperienceValue</literal>, where the Contracting Authority can specify the candidate&#8217;s
+project participation (need to be months), the size of project and the total value of the project.</simpara>
+<formalpara>
+<title>Example of the requested project experience in the CV request with alternative requirement</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:ProjectExperience&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO14-1"/>
+  &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;<co xml:id="CO14-2"/>
+  &lt;cv-req:ExperienceType&gt;2130111&lt;/cv-req:ExperienceType&gt;<co xml:id="CO14-3"/>
+  &lt;cv-req:IndustryType&gt;63120&lt;/cv-req:IndustryType&gt;<co xml:id="CO14-4"/>
+  &lt;cv-req:Workplace&gt;CA&lt;/cv-req:Workplace&gt;<co xml:id="CO14-5"/>
+  &lt;cv-req:JobSector&gt;private&lt;/cv-req:JobSector&gt;<co xml:id="CO14-6"/>
+  &lt;cv-req:RequiredTotalExperience&gt;<co xml:id="CO14-7"/>
+    &lt;cv-req:MinimumExperience&gt;2&lt;/cv-req:MinimumExperience&gt;
+    &lt;cv-req:MaximumExperience&gt;6&lt;/cv-req:MaximumExperience&gt;
+  &lt;/cv-req:RequiredTotalExperience&gt;
+  &lt;cv-req:Period&gt;<co xml:id="CO14-8"/>
+    &lt;cv-req:StartDate&gt;2000-01-19&lt;/cv-req:StartDate&gt;
+    &lt;cv-req:EndDate&gt;2020-10-02&lt;/cv-req:EndDate&gt;
+  &lt;/cv-req:Period&gt;
+  &lt;cv-req:ExperienceDescription&gt;
+    &lt;cv-req:PositionPercent&gt;100&lt;/cv-req:PositionPercent&gt;<co xml:id="CO14-9"/>
+    &lt;cv-req:Role&gt;2130110&lt;/cv-req:Role&gt;<co xml:id="CO14-10"/>
+    &lt;cv-req:Activities&gt;Must coordinate comapnies web-portal.&lt;/cv-req:Activities&gt;<co xml:id="CO14-11"/>
+  &lt;/cv-req:ExperienceDescription&gt;
+  &lt;cv-req:ExperienceValue&gt;
+    &lt;cv-req:ProjectParticipation&gt;5&lt;/cv-req:ProjectParticipation&gt;<co xml:id="CO14-12"/>
+    &lt;cv-req:ProjectSize&gt;20&lt;/cv-req:ProjectSize&gt;<co xml:id="CO14-13"/>
+    &lt;cv-req:ProjectValue currencyID="NOK"&gt;1500000&lt;/cv-req:ProjectValue&gt;<co xml:id="CO14-14"/>
+  &lt;/cv-req:ExperienceValue&gt;
+  &lt;cv-req:AlternativeProjectExperience&gt;<co xml:id="CO14-15"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:ExperienceType&gt;2130111&lt;/cv-req:ExperienceType&gt;
+    &lt;cv-req:IndustryType&gt;63120&lt;/cv-req:IndustryType&gt;
+    &lt;cv-req:Workplace&gt;AI&lt;/cv-req:Workplace&gt;
+    &lt;cv-req:JobSector&gt;private&lt;/cv-req:JobSector&gt;
+    &lt;cv-req:RequiredTotalExperience&gt;
+      &lt;cv-req:MinimumExperience&gt;2&lt;/cv-req:MinimumExperience&gt;
+      &lt;cv-req:MaximumExperience&gt;6&lt;/cv-req:MaximumExperience&gt;
+    &lt;/cv-req:RequiredTotalExperience&gt;
+    &lt;cv-req:Period&gt;
+      &lt;cv-req:StartDate&gt;2000-01-19&lt;/cv-req:StartDate&gt;
+      &lt;cv-req:EndDate&gt;2020-10-02&lt;/cv-req:EndDate&gt;
+    &lt;/cv-req:Period&gt;
+    &lt;cv-req:ExperienceDescription&gt;
+      &lt;cv-req:PositionPercent&gt;100&lt;/cv-req:PositionPercent&gt;
+      &lt;cv-req:Role&gt;2130114&lt;/cv-req:Role&gt;
+      &lt;cv-req:Activities&gt;Developing IT-system.&lt;/cv-req:Activities&gt;
+    &lt;/cv-req:ExperienceDescription&gt;
+    &lt;cv-req:ExperienceValue&gt;
+      &lt;cv-req:ProjectParticipation&gt;5&lt;/cv-req:ProjectParticipation&gt;
+      &lt;cv-req:ProjectSize&gt;15&lt;/cv-req:ProjectSize&gt;
+      &lt;cv-req:ProjectValue currencyID="NOK"&gt;1500000&lt;/cv-req:ProjectValue&gt;
+    &lt;/cv-req:ExperienceValue&gt;
+  &lt;/cv-req:AlternativeProjectExperience&gt;
+&lt;/cv-req:ProjectExperience&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO14-1">
+<para>Project experience identifier</para>
+</callout>
+<callout arearefs="CO14-2">
+<para>Project experience requirement - indicate whether a candidate needs to fulfill the project requirement</para>
+</callout>
+<callout arearefs="CO14-3">
+<para>Type of project experience</para>
+</callout>
+<callout arearefs="CO14-4">
+<para>Type of industry</para>
+</callout>
+<callout arearefs="CO14-5">
+<para>Workplace</para>
+</callout>
+<callout arearefs="CO14-6">
+<para>Job sector</para>
+</callout>
+<callout arearefs="CO14-7">
+<para>Total year of experience</para>
+</callout>
+<callout arearefs="CO14-8">
+<para>Period</para>
+</callout>
+<callout arearefs="CO14-9">
+<para>Candidate&#8217;s position percent</para>
+</callout>
+<callout arearefs="CO14-10">
+<para>Role in project</para>
+</callout>
+<callout arearefs="CO14-11">
+<para>Description of project activities</para>
+</callout>
+<callout arearefs="CO14-12">
+<para>Project participation</para>
+</callout>
+<callout arearefs="CO14-13">
+<para>Total Project size</para>
+</callout>
+<callout arearefs="CO14-14">
+<para>Project value</para>
+</callout>
+<callout arearefs="CO14-15">
+<para>Alternative project experience</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested project experience in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:ProjectExperience&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO15-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO15-2"/>
+  &lt;cv-req:ExperienceType&gt;1141101&lt;/cv-req:ExperienceType&gt;<co xml:id="CO15-3"/>
+  &lt;cv-req:IndustryType&gt;01110&lt;/cv-req:IndustryType&gt;<co xml:id="CO15-4"/>
+  &lt;cv-req:Workplace&gt;AI&lt;/cv-req:Workplace&gt;<co xml:id="CO15-5"/>
+  &lt;cv-req:JobSector&gt;private&lt;/cv-req:JobSector&gt;<co xml:id="CO15-6"/>
+  &lt;cv-req:RequiredTotalExperience&gt;<co xml:id="CO15-7"/>
+    &lt;cv-req:MinimumExperience&gt;2&lt;/cv-req:MinimumExperience&gt;
+    &lt;cv-req:MaximumExperience&gt;5&lt;/cv-req:MaximumExperience&gt;
+  &lt;/cv-req:RequiredTotalExperience&gt;
+  &lt;cv-req:Period&gt;<co xml:id="CO15-8"/>
+    &lt;cv-req:StartDate&gt;2020-01-19&lt;/cv-req:StartDate&gt;
+    &lt;cv-req:EndDate&gt;2020-10-02&lt;/cv-req:EndDate&gt;
+  &lt;/cv-req:Period&gt;
+  &lt;cv-req:ExperienceDescription&gt;<co xml:id="CO15-9"/>
+    &lt;cv-req:PositionPercent&gt;100&lt;/cv-req:PositionPercent&gt;
+    &lt;cv-req:Role&gt;1210178&lt;/cv-req:Role&gt;
+    &lt;cv-req:Activities&gt;Must have done financial analysis by using R.&lt;/cv-req:Activities&gt;
+  &lt;/cv-req:ExperienceDescription&gt;
+  &lt;cv-req:ExperienceValue&gt;<co xml:id="CO15-10"/>
+    &lt;cv-req:ProjectParticipation&gt;5&lt;/cv-req:ProjectParticipation&gt;
+    &lt;cv-req:ProjectSize&gt;5&lt;/cv-req:ProjectSize&gt;
+    &lt;cv-req:ProjectValue currencyID="NOK"&gt;100&lt;/cv-req:ProjectValue&gt;
+  &lt;/cv-req:ExperienceValue&gt;
+&lt;/cv-req:ProjectExperience&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO15-1">
+<para>Project experience identifier</para>
+</callout>
+<callout arearefs="CO15-2">
+<para>Project experience requirement - indicate whether a candidate needs to fulfill the project requirement</para>
+</callout>
+<callout arearefs="CO15-3">
+<para>Type of project experience</para>
+</callout>
+<callout arearefs="CO15-4">
+<para>Type of industry</para>
+</callout>
+<callout arearefs="CO15-5">
+<para>Workplace</para>
+</callout>
+<callout arearefs="CO15-6">
+<para>Job sector</para>
+</callout>
+<callout arearefs="CO15-7">
+<para>Total year of experience</para>
+</callout>
+<callout arearefs="CO15-8">
+<para>Period</para>
+</callout>
+<callout arearefs="CO15-9">
+<para>Project experience description</para>
+</callout>
+<callout arearefs="CO15-10">
+<para>Project experience value</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_4">
+<title>Information specific to CV</title>
+<simpara>Based on the project experience requirement, the Economic Operator needs to document the candidate&#8217;s project experience.
+The element <literal>cv:EducationReference</literal> and <literal>cv:ProjectExperienceReference</literal> needs to be used in the procurement process,
+not in the job application process. The education reference corresponds to the educational requirement in the CV request when
+the contracting authority accepts relevant experience. The project experience reference corresponds to project experience in the
+CV request.</simpara>
+<formalpara>
+<title>Example of a description of project experience in CV as a response to requested education in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:ProjectExperience&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO16-1"/>
+  &lt;cv:ExperienceType&gt;2130111&lt;/cv:ExperienceType&gt;<co xml:id="CO16-2"/>
+  &lt;cv:CompanyParty&gt;<co xml:id="CO16-3"/>
+    &lt;cv:EndpointID scheme="0192"&gt;123456785&lt;/cv:EndpointID&gt;
+    &lt;cv:Name&gt;AZ company&lt;/cv:Name&gt;
+  &lt;/cv:CompanyParty&gt;
+  &lt;cv:Period&gt;<co xml:id="CO16-4"/>
+    &lt;cv:StartDate&gt;2005-01-01&lt;/cv:StartDate&gt;
+    &lt;cv:EndDate&gt;2018-12-01&lt;/cv:EndDate&gt;
+  &lt;/cv:Period&gt;
+  &lt;cv:ExperienceDescription&gt;<co xml:id="CO16-5"/>
+    &lt;cv:PositionPercent&gt;100&lt;/cv:PositionPercent&gt;
+    &lt;cv:Role&gt;2130110&lt;/cv:Role&gt;
+    &lt;cv:Activities&gt;Coordinator of web portal for X company.&lt;/cv:Activities&gt;
+  &lt;/cv:ExperienceDescription&gt;
+  &lt;cv:ExperienceValue&gt;<co xml:id="CO16-6"/>
+    &lt;cv:ProjectParticipation&gt;5&lt;/cv:ProjectParticipation&gt;
+    &lt;cv:ProjectSize&gt;20&lt;/cv:ProjectSize&gt;
+    &lt;cv:ProjectValue currencyID="NOK"&gt;1500000&lt;/cv:ProjectValue&gt;
+  &lt;/cv:ExperienceValue&gt;
+  &lt;cv:Contact&gt;<co xml:id="CO16-7"/>
+    &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;
+    &lt;cv:Role&gt;2130121&lt;/cv:Role&gt;
+    &lt;cv:Telephone&gt;22221111&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@x-company.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:EducationReference&gt;<co xml:id="CO16-8"/>
+    &lt;cv:ID&gt;req-edu-45&lt;/cv:ID&gt;
+  &lt;/cv:EducationReference&gt;
+  &lt;cv:ProjectExperienceReference&gt;<co xml:id="CO16-9"/>
+    &lt;cv:ID&gt;req-25&lt;/cv:ID&gt;
+  &lt;/cv:ProjectExperienceReference&gt;
+&lt;/cv:ProjectExperience&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO16-1">
+<para>Project experience identifier</para>
+</callout>
+<callout arearefs="CO16-2">
+<para>Type of project experience</para>
+</callout>
+<callout arearefs="CO16-3">
+<para>Information about contracting authority or organisation</para>
+</callout>
+<callout arearefs="CO16-4">
+<para>Period</para>
+</callout>
+<callout arearefs="CO16-5">
+<para>Project experience description: position percent, role, activities</para>
+</callout>
+<callout arearefs="CO16-6">
+<para>Value of project experience: total month of project participation, total project size, total project value</para>
+</callout>
+<callout arearefs="CO16-7">
+<para>Contact information</para>
+</callout>
+<callout arearefs="CO16-8">
+<para>Education reference</para>
+</callout>
+<callout arearefs="CO16-9">
+<para>Project experience reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_work_experience">
+<title>Work Experience</title>
+<simpara>Work experience contains information about a candidate&#8217;s employment history.
+This is not the same as project experience.</simpara>
+<section xml:id="_information_specific_to_cv_request_5">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can specify a request for a work experience in several ways.
+For each work experience there must be a position level, i.e. employee, middle level manager or manager to illustrate
+the type of experience a candidate needs for the assignment.</simpara>
+<simpara>It is also possible to request a work experience specific to a industry or workplace. The job sector need to
+be specified for each work experience in element <literal>cv-req:JobSector</literal>, e.g. "private".</simpara>
+<simpara>The minimum total experience must be specified in element <literal>cv-req:MinimumTotalExperience</literal>. This implies that the candidate
+must fulfill this requirement and it can be used to differentiate a junior from a senior candidate.</simpara>
+<simpara>In the CV request, the Contracting Authority can state the requested period for a work experience in element
+<literal>cv-req:Period</literal>. This implies that the candidate can only refer to work experience from this period, for example work experience from the last seven years.</simpara>
+<simpara>The description of experience need to be provided in element <literal>cv-req:WorkExperienceDescription</literal>, where candidate&#8217;s role must
+be specified in element <literal>cv-req:Role</literal>. It is also possible to describe the project activities and candidate&#8217;s
+position percent (e.g. must have worked 100%, full-time, with the project).</simpara>
+<formalpara>
+<title>Example of the requested work experience in the CV request with alternative requirement</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:WorkExperience&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO17-1"/>
+  &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;<co xml:id="CO17-2"/>
+  &lt;cv-req:PositionLevel&gt;employee&lt;/cv-req:PositionLevel&gt;<co xml:id="CO17-3"/>
+  &lt;cv-req:IndustryType&gt;71200&lt;/cv-req:IndustryType&gt;<co xml:id="CO17-4"/>
+  &lt;cv-req:Workplace&gt;AI&lt;/cv-req:Workplace&gt;<co xml:id="CO17-5"/>
+  &lt;cv-req:JobSector&gt;private&lt;/cv-req:JobSector&gt;<co xml:id="CO17-6"/>
+  &lt;cv-req:MinimumTotalExperience&gt;5&lt;/cv-req:MinimumTotalExperience&gt;<co xml:id="CO17-7"/>
+  &lt;cv-req:Period&gt;<co xml:id="CO17-8"/>
+    &lt;cv-req:StartDate&gt;2010-01-19&lt;/cv-req:StartDate&gt;
+    &lt;cv-req:EndDate&gt;2020-10-02&lt;/cv-req:EndDate&gt;
+  &lt;/cv-req:Period&gt;
+  &lt;cv-req:WorkExperienceDescription&gt;
+    &lt;cv-req:PositionPercent&gt;100&lt;/cv-req:PositionPercent&gt;<co xml:id="CO17-9"/>
+    &lt;cv-req:Role&gt;2130161&lt;/cv-req:Role&gt;<co xml:id="CO17-10"/>
+    &lt;cv-req:Activities&gt;Must have done mathemathical analysis by using Python.&lt;/cv-req:Activities&gt;<co xml:id="CO17-11"/>
+  &lt;/cv-req:WorkExperienceDescription&gt;
+  &lt;cv-req:AlternativeWorkExperience&gt;<co xml:id="CO17-12"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;should&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:PositionLevel&gt;employee&lt;/cv-req:PositionLevel&gt;
+    &lt;cv-req:IndustryType&gt;72190&lt;/cv-req:IndustryType&gt;
+    &lt;cv-req:Workplace&gt;AI&lt;/cv-req:Workplace&gt;
+    &lt;cv-req:JobSector&gt;private&lt;/cv-req:JobSector&gt;
+    &lt;cv-req:MinimumTotalExperience&gt;5&lt;/cv-req:MinimumTotalExperience&gt;
+    &lt;cv-req:Period&gt;
+      &lt;cv-req:StartDate&gt;2010-01-19&lt;/cv-req:StartDate&gt;
+      &lt;cv-req:EndDate&gt;2020-10-02&lt;/cv-req:EndDate&gt;
+    &lt;/cv-req:Period&gt;
+    &lt;cv-req:WorkExperienceDescription&gt;
+      &lt;cv-req:PositionPercent&gt;100&lt;/cv-req:PositionPercent&gt;
+      &lt;cv-req:Role&gt;2130161&lt;/cv-req:Role&gt;
+      &lt;cv-req:Activities&gt;Must have done mathemathical analysis by using Python.&lt;/cv-req:Activities&gt;
+    &lt;/cv-req:WorkExperienceDescription&gt;
+  &lt;/cv-req:AlternativeWorkExperience&gt;
+&lt;/cv-req:WorkExperience&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO17-1">
+<para>Work experience identifier</para>
+</callout>
+<callout arearefs="CO17-2">
+<para>Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement</para>
+</callout>
+<callout arearefs="CO17-3">
+<para>Position level</para>
+</callout>
+<callout arearefs="CO17-4">
+<para>Type of industry</para>
+</callout>
+<callout arearefs="CO17-5">
+<para>Workplace</para>
+</callout>
+<callout arearefs="CO17-6">
+<para>Job sector</para>
+</callout>
+<callout arearefs="CO17-7">
+<para>Minimum total year of experience</para>
+</callout>
+<callout arearefs="CO17-8">
+<para>Period</para>
+</callout>
+<callout arearefs="CO17-9">
+<para>Position percent</para>
+</callout>
+<callout arearefs="CO17-10">
+<para>Role in work experience</para>
+</callout>
+<callout arearefs="CO17-11">
+<para>Description of work activities</para>
+</callout>
+<callout arearefs="CO17-12">
+<para>Alternative work experience</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested work experience in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:WorkExperience&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO18-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO18-2"/>
+  &lt;cv-req:PositionLevel&gt;MiddleLevelManager&lt;/cv-req:PositionLevel&gt;<co xml:id="CO18-3"/>
+  &lt;cv-req:IndustryType&gt;01230&lt;/cv-req:IndustryType&gt;<co xml:id="CO18-4"/>
+  &lt;cv-req:Workplace&gt;AI&lt;/cv-req:Workplace&gt;<co xml:id="CO18-5"/>
+  &lt;cv-req:JobSector&gt;private&lt;/cv-req:JobSector&gt;<co xml:id="CO18-6"/>
+  &lt;cv-req:MinimumTotalExperience&gt;5&lt;/cv-req:MinimumTotalExperience&gt;<co xml:id="CO18-7"/>
+  &lt;cv-req:Period&gt;<co xml:id="CO18-8"/>
+    &lt;cv-req:StartDate&gt;2020-01-19&lt;/cv-req:StartDate&gt;
+    &lt;cv-req:EndDate&gt;2020-10-02&lt;/cv-req:EndDate&gt;
+  &lt;/cv-req:Period&gt;
+  &lt;cv-req:WorkExperienceDescription&gt;<co xml:id="CO18-9"/>
+    &lt;cv-req:PositionPercent&gt;100&lt;/cv-req:PositionPercent&gt;
+    &lt;cv-req:Role&gt;1234106&lt;/cv-req:Role&gt;
+    &lt;cv-req:Activities&gt;Must have done mathemathical analysis by using Python.&lt;/cv-req:Activities&gt;
+  &lt;/cv-req:WorkExperienceDescription&gt;
+&lt;/cv-req:WorkExperience&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO18-1">
+<para>Work experience identifier</para>
+</callout>
+<callout arearefs="CO18-2">
+<para>Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement</para>
+</callout>
+<callout arearefs="CO18-3">
+<para>Position level</para>
+</callout>
+<callout arearefs="CO18-4">
+<para>Type of industry</para>
+</callout>
+<callout arearefs="CO18-5">
+<para>Workplace</para>
+</callout>
+<callout arearefs="CO18-6">
+<para>Job sector</para>
+</callout>
+<callout arearefs="CO18-7">
+<para>Minimum total year of experience</para>
+</callout>
+<callout arearefs="CO18-8">
+<para>Period</para>
+</callout>
+<callout arearefs="CO18-9">
+<para>Work description</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_5">
+<title>Information specific to CV</title>
+<simpara>Based on the project experience requirement, the Economic Operator needs to document the candidate&#8217;s work experience.
+The element <literal>cv:EducationReference</literal> and <literal>cv:WorkExperienceReference</literal> needs to be used. The education reference corresponds to the educational requirement in the CV request when
+the Contracting Authority accepts relevant experience. The work experience in the CV must correspond to the work experience in the CV request.</simpara>
+<formalpara>
+<title>Example of a description of work in CV as a response to requested education in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:WorkExperience&gt;
+  &lt;cv:ID&gt;3&lt;/cv:ID&gt;<co xml:id="CO19-1"/>
+  &lt;cv:PositionLevel&gt;employee&lt;/cv:PositionLevel&gt;<co xml:id="CO19-2"/>
+  &lt;cv:CompanyParty&gt;<co xml:id="CO19-3"/>
+    &lt;cv:EndpointID scheme="0192"&gt;123456785&lt;/cv:EndpointID&gt;
+    &lt;cv:Name&gt;X company&lt;/cv:Name&gt;
+  &lt;/cv:CompanyParty&gt;
+  &lt;cv:Period&gt;<co xml:id="CO19-4"/>
+    &lt;cv:StartDate&gt;2013-05-05&lt;/cv:StartDate&gt;
+    &lt;cv:EndDate&gt;2017-08-01&lt;/cv:EndDate&gt;
+  &lt;/cv:Period&gt;
+  &lt;cv:WorkExperienceDescription&gt;<co xml:id="CO19-5"/>
+    &lt;cv:PositionPercent&gt;100&lt;/cv:PositionPercent&gt;
+    &lt;cv:Role&gt;2130161&lt;/cv:Role&gt;
+    &lt;cv:Activities&gt;Mathemathical analysis by using R and Python.&lt;/cv:Activities&gt;
+  &lt;/cv:WorkExperienceDescription&gt;
+  &lt;cv:Contact&gt;<co xml:id="CO19-6"/>
+    &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;
+    &lt;cv:Role&gt;1222169&lt;/cv:Role&gt;
+    &lt;cv:Telephone&gt;22221111&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@x.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:EducationReference&gt;<co xml:id="CO19-7"/>
+    &lt;cv:ID&gt;req-edu-45&lt;/cv:ID&gt;
+  &lt;/cv:EducationReference&gt;
+  &lt;cv:WorkExperienceReference&gt;<co xml:id="CO19-8"/>
+    &lt;cv:ID&gt;req-25&lt;/cv:ID&gt;
+  &lt;/cv:WorkExperienceReference&gt;
+&lt;/cv:WorkExperience&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO19-1">
+<para>Work experience identifier</para>
+</callout>
+<callout arearefs="CO19-2">
+<para>Position level</para>
+</callout>
+<callout arearefs="CO19-3">
+<para>Information about contracting authority or organisation</para>
+</callout>
+<callout arearefs="CO19-4">
+<para>Period</para>
+</callout>
+<callout arearefs="CO19-5">
+<para>Work experience description: position percent, role, activities</para>
+</callout>
+<callout arearefs="CO19-6">
+<para>Contact information</para>
+</callout>
+<callout arearefs="CO19-7">
+<para>Education reference</para>
+</callout>
+<callout arearefs="CO19-8">
+<para>Project experience reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_skills">
+<title>Skills</title>
+<simpara>Skills contains information about candidate&#8217;s abilities related to the specific work.</simpara>
+<section xml:id="_information_specific_to_cv_request_6">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can specify a skill requirement and an alternative requirement in the
+CV request. The alternative requirement is optional, but may be used when different skills can be accepted.</simpara>
+<simpara>The element <literal>cv-req:Requirement</literal> shall be used to differentiate between skills that <emphasis role="strong">should</emphasis> and <emphasis role="strong">must</emphasis> be present. The Economic Operators
+will only provide qualified candidates, and this makes it easier to do the rating.</simpara>
+<simpara>A skill must include either <literal>cv-req:Type</literal> or <literal>cv-req:Title</literal>, not both. Use type if the specific
+skill is defined in the skill code list, otherwise use the title. Each skill can consist of a version
+number.</simpara>
+<simpara>The Contracting Authority can specify details about the skill practices in element <literal>cv-req:SkillPractice</literal>.
+The element contains information about the last practiced date, the skill practice length
+(minimum requirement - must be stated as months) and if the candidate must provide a reference person
+(element <literal>cv-req:SkillsReference</literal> is <literal>true</literal>).</simpara>
+<formalpara>
+<title>Example of the requested skill in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Skills&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO20-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO20-2"/>
+  &lt;cv-req:Type&gt;matlab&lt;/cv-req:Type&gt;<co xml:id="CO20-3"/>
+  &lt;cv-req:Version&gt;2.0&lt;/cv-req:Version&gt;<co xml:id="CO20-4"/>
+  &lt;cv-req:SkillPractice&gt;
+    &lt;cv-req:LastPractice&gt;2019-02-02&lt;/cv-req:LastPractice&gt;<co xml:id="CO20-5"/>
+    &lt;cv-req:MinimumLengthPractice&gt;12&lt;/cv-req:MinimumLengthPractice&gt;<co xml:id="CO20-6"/>
+    &lt;cv-req:SkillsReference&gt;True&lt;/cv-req:SkillsReference&gt;<co xml:id="CO20-7"/>
+  &lt;/cv-req:SkillPractice&gt;
+&lt;/cv-req:Skills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO20-1">
+<para>Skill identifier</para>
+</callout>
+<callout arearefs="CO20-2">
+<para>Skill requirement - indicate whether a candidate needs to fulfill the skill requirement</para>
+</callout>
+<callout arearefs="CO20-3">
+<para>Type of skill</para>
+</callout>
+<callout arearefs="CO20-4">
+<para>Skill version</para>
+</callout>
+<callout arearefs="CO20-5">
+<para>Last practice date</para>
+</callout>
+<callout arearefs="CO20-6">
+<para>Length of practice</para>
+</callout>
+<callout arearefs="CO20-7">
+<para>Skills reference</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested skill in the CV request with alternative requirement</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Skills&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO21-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO21-2"/>
+  &lt;cv-req:Type&gt;java&lt;/cv-req:Type&gt;<co xml:id="CO21-3"/>
+  &lt;cv-req:Version&gt;11&lt;/cv-req:Version&gt;<co xml:id="CO21-4"/>
+  &lt;cv-req:SkillPractice&gt;
+    &lt;cv-req:LastPractice&gt;2020-03-03&lt;/cv-req:LastPractice&gt;<co xml:id="CO21-5"/>
+    &lt;cv-req:MinimumLengthPractice&gt;5&lt;/cv-req:MinimumLengthPractice&gt;<co xml:id="CO21-6"/>
+    &lt;cv-req:SkillsReference&gt;True&lt;/cv-req:SkillsReference&gt;<co xml:id="CO21-7"/>
+  &lt;/cv-req:SkillPractice&gt;
+  &lt;cv-req:AlternativeSkills&gt;<co xml:id="CO21-8"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:Type&gt;java&lt;/cv-req:Type&gt;
+    &lt;cv-req:Version&gt;8&lt;/cv-req:Version&gt;
+    &lt;cv-req:SkillPractice&gt;
+      &lt;cv-req:LastPractice&gt;2020-03-03&lt;/cv-req:LastPractice&gt;
+      &lt;cv-req:MinimumLengthPractice&gt;5&lt;/cv-req:MinimumLengthPractice&gt;
+      &lt;cv-req:SkillsReference&gt;True&lt;/cv-req:SkillsReference&gt;
+    &lt;/cv-req:SkillPractice&gt;
+  &lt;/cv-req:AlternativeSkills&gt;
+&lt;/cv-req:Skills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO21-1">
+<para>Skill identifier</para>
+</callout>
+<callout arearefs="CO21-2">
+<para>Skill requirement - indicate whether a candidate needs to fulfill the skill requirement</para>
+</callout>
+<callout arearefs="CO21-3">
+<para>Type of skill</para>
+</callout>
+<callout arearefs="CO21-4">
+<para>Skill version</para>
+</callout>
+<callout arearefs="CO21-5">
+<para>Last practice date</para>
+</callout>
+<callout arearefs="CO21-6">
+<para>Length of practice</para>
+</callout>
+<callout arearefs="CO21-7">
+<para>Skills reference</para>
+</callout>
+<callout arearefs="CO21-8">
+<para>Alternative skill requirement</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_6">
+<title>Information specific to CV</title>
+<simpara>Based on the skill requirement, the Economic Operator needs to document the candidate&#8217;s
+skill.
+The element <literal>cv:SkillsReference</literal> must be used as a reference to the corresponding skill requirement in the CV request.</simpara>
+<simpara>References to where the skill has been applied can be stated in element <literal>cv:SkillsAppliedReference/cv:ID</literal>.
+For example education, project experience, etc.</simpara>
+<formalpara>
+<title>Example of a description of skill in CV as a response to requested skill in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:Skills&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO22-1"/>
+  &lt;cv:Type&gt;java&lt;/cv:Type&gt;<co xml:id="CO22-2"/>
+  &lt;cv:Version&gt;11&lt;/cv:Version&gt;<co xml:id="CO22-3"/>
+  &lt;cv:LastPractice&gt;2020-05-05&lt;/cv:LastPractice&gt;<co xml:id="CO22-4"/>
+  &lt;cv:MinimumLengthPractice&gt;5&lt;/cv:MinimumLengthPractice&gt;<co xml:id="CO22-5"/>
+  &lt;cv:Contact&gt;<co xml:id="CO22-6"/>
+    &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;
+    &lt;cv:Role&gt;1223122&lt;/cv:Role&gt;
+    &lt;cv:Telephone&gt;22221111&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@x.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:SkillsAppliedReference&gt;<co xml:id="CO22-7"/>
+    &lt;cv:ID&gt;edu-1234&lt;/cv:ID&gt;
+  &lt;/cv:SkillsAppliedReference&gt;
+  &lt;cv:SkillsReference&gt;<co xml:id="CO22-8"/>
+    &lt;cv:ID&gt;1547&lt;/cv:ID&gt;
+  &lt;/cv:SkillsReference&gt;
+&lt;/cv:Skills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO22-1">
+<para>Skill identifier</para>
+</callout>
+<callout arearefs="CO22-2">
+<para>Type of skill</para>
+</callout>
+<callout arearefs="CO22-3">
+<para>Skill version</para>
+</callout>
+<callout arearefs="CO22-4">
+<para>Last practice date</para>
+</callout>
+<callout arearefs="CO22-5">
+<para>Minimum length of practice</para>
+</callout>
+<callout arearefs="CO22-6">
+<para>Contact information</para>
+</callout>
+<callout arearefs="CO22-7">
+<para>Reference to where the skill is applied</para>
+</callout>
+<callout arearefs="CO22-8">
+<para>Skills reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_clearance">
+<title>Clearance</title>
+<simpara>Jobs within certain departments of the government or private sectors require that employees
+have a specific level of clearance. For example are security clearances required by the government
+employers who have access to sensitive information.</simpara>
+<section xml:id="_information_specific_to_cv_request_7">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can state clearance requirement (main requirement) and an alternative
+requirement in the CV request. The alternative requirement is optional, but may be used when an alternative
+clearance can be accepted.</simpara>
+<simpara>All clearances need to be identified uniquely to ensure that the clearance can be referenced to in the
+CV. The element <literal>cv-req:Requirement</literal> shall be used to state if the clerarance <emphasis role="strong">should</emphasis> or <emphasis role="strong">must</emphasis> be present. The Economic Operators
+will only provide qualified candidates, and this makes it easier to do the rating.</simpara>
+<simpara>A clearance must include either element <literal>cv-req:Type</literal> or <literal>cv-req:Title</literal>, not both. Use type if the specific
+clearance is defined in the clearance code list, otherwise use the title.</simpara>
+<simpara>Contracting Authorities must specify the level of clearance (<literal>cv-req:Level</literal>), by using code list
+clearance level. Note that the clearance level is a minimum requirement, which means candidate with
+higher level of clearance is qualified.</simpara>
+<simpara>We often need a candidate that has active clearance through the whole job period. The Contracting
+Authority must specify an expiration date (<literal>cv-req:ExpirationDate</literal>), which defines the time period
+the clearance needs to be active.</simpara>
+<formalpara>
+<title>Example of the requested clearance in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Clearance&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO23-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO23-2"/>
+  &lt;cv-req:Title&gt;AirportXYZ&lt;/cv-req:Title&gt;<co xml:id="CO23-3"/>
+  &lt;cv-req:Level&gt;secret&lt;/cv-req:Level&gt;<co xml:id="CO23-4"/>
+  &lt;cv-req:ExpirationDate&gt;2030-05-05&lt;/cv-req:ExpirationDate&gt;<co xml:id="CO23-5"/>
+&lt;/cv-req:Clearance&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO23-1">
+<para>Clearance identifier</para>
+</callout>
+<callout arearefs="CO23-2">
+<para>Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement</para>
+</callout>
+<callout arearefs="CO23-3">
+<para>Clearance title</para>
+</callout>
+<callout arearefs="CO23-4">
+<para>Expiration date</para>
+</callout>
+</calloutlist>
+<formalpara>
+<title>Example of the requested clearance in the CV request with alternative requirement</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Clearance&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO24-1"/>
+  &lt;cv-req:Requirement&gt;desirable&lt;/cv-req:Requirement&gt;<co xml:id="CO24-2"/>
+  &lt;cv-req:Type&gt;civil&lt;/cv-req:Type&gt;<co xml:id="CO24-3"/>
+  &lt;cv-req:Level&gt;secret&lt;/cv-req:Level&gt;<co xml:id="CO24-4"/>
+  &lt;cv-req:ExpirationDate&gt;2025-05-05&lt;/cv-req:ExpirationDate&gt;<co xml:id="CO24-5"/>
+  &lt;cv-req:AlternativeClearance&gt;<co xml:id="CO24-6"/>
+    &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;
+    &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;
+    &lt;cv-req:Type&gt;police&lt;/cv-req:Type&gt;
+    &lt;cv-req:Level&gt;secret&lt;/cv-req:Level&gt;
+    &lt;cv-req:ExpirationDate&gt;2025-05-05&lt;/cv-req:ExpirationDate&gt;
+  &lt;/cv-req:AlternativeClearance&gt;
+&lt;/cv-req:Clearance&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO24-1">
+<para>Clearance identifier</para>
+</callout>
+<callout arearefs="CO24-2">
+<para>Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement</para>
+</callout>
+<callout arearefs="CO24-3">
+<para>Clearance type</para>
+</callout>
+<callout arearefs="CO24-4">
+<para>Expiration date</para>
+</callout>
+<callout arearefs="CO24-5">
+<para>Alternative clearance requirement</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_7">
+<title>Information specific to CV</title>
+<simpara>Based on the clearance requirement, the Economic Operator needs to document the candidate&#8217;s
+clearance.
+The element <literal>cv:ClearanceReference</literal> must be used as a reference to the corresponding clearance requirement in the CV request.</simpara>
+<simpara>The documentation of clearance can be stated as URI (<literal>cv:URI</literal>) or embedded document (<literal>cv:EmbeddedDocumentBinaryObject</literal>).</simpara>
+<simpara>Candidates who don&#8217;t fulfill the clearance requirement can describe the reason and whether this can
+be done before the job period. Use element <literal>cv:Description</literal>.</simpara>
+<formalpara>
+<title>Example of a description of clearance in CV as a response to requested course in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:Clearance&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO25-1"/>
+  &lt;cv:Type&gt;civil&lt;/cv:Type&gt;<co xml:id="CO25-2"/>
+  &lt;cv:Level&gt;secret&lt;/cv:Level&gt;<co xml:id="CO25-3"/>
+  &lt;cv:ExpirationDate&gt;2025-08-08&lt;/cv:ExpirationDate&gt;<co xml:id="CO25-4"/>
+  &lt;cv:Documentation&gt;
+    &lt;cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf"&gt;c2VydGlmaXNlcmluZyBkb2t1bWVudGFzam9uCg==&lt;/cv:EmbeddedDocumentBinaryObject&gt;<co xml:id="CO25-5"/>
+    &lt;cv:URI&gt;https://www.politiet.no/&lt;/cv:URI&gt;<co xml:id="CO25-6"/>
+  &lt;/cv:Documentation&gt;
+  &lt;cv:Description&gt;Can bli cleared before 2020-05-01.&lt;/cv:Description&gt;<co xml:id="CO25-7"/>
+  &lt;cv:ClearanceReference&gt;<co xml:id="CO25-8"/>
+    &lt;cv:ID&gt;1&lt;/cv:ID&gt;
+  &lt;/cv:ClearanceReference&gt;
+&lt;/cv:Clearance&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO25-1">
+<para>Clearance identifier</para>
+</callout>
+<callout arearefs="CO25-2">
+<para>Clearance type</para>
+</callout>
+<callout arearefs="CO25-3">
+<para>Clearance level</para>
+</callout>
+<callout arearefs="CO25-4">
+<para>Clearance expiration date</para>
+</callout>
+<callout arearefs="CO25-5">
+<para>Embedded document as binary object with <literal>mimeCode</literal>. Use Base64.</para>
+</callout>
+<callout arearefs="CO25-6">
+<para>URI to clearance document</para>
+</callout>
+<callout arearefs="CO25-7">
+<para>Description</para>
+</callout>
+<callout arearefs="CO25-8">
+<para>Clearance reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_personal_skills">
+<title>Personal Skills</title>
+<simpara>Person skills contains information about a candidates abilities and strength.</simpara>
+<section xml:id="_information_specific_to_cv_request_8">
+<title>Information specific to CV request</title>
+<simpara>A Contracting Authority can state personal skill requirement (main requirement) in the CV request.</simpara>
+<simpara>All personal skills need to be identified uniquely to ensure that the personal skill can be
+referenced in the CV.</simpara>
+<simpara>A personal skill must include either element <literal>cv-req:Type</literal> or <literal>cv-req:Title</literal>. Use type if the specific
+personal skill is defined in the person skill code list, otherwise use the title.</simpara>
+<formalpara>
+<title>Example of the requested clearance in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:PersonalSkills&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO26-1"/>
+  &lt;cv-req:Type&gt;leadership&lt;/cv-req:Type&gt;<co xml:id="CO26-2"/>
+&lt;/cv-req:PersonalSkills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO26-1">
+<para>Personal skill identifier</para>
+</callout>
+<callout arearefs="CO26-2">
+<para>Personal skill type</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_8">
+<title>Information specific to CV</title>
+<simpara>Based on the personal skill requirement, the economic operator needs to provide information
+of the candidate&#8217;s personal skill. For CV used in the job application process, fill in the relevant
+parts of personal skill information.</simpara>
+<simpara>The element <literal>cv:PersonalSkillsReference</literal> needs to be used in the procurement process, not in the
+job application process. This is a reference to the corresponding personal skill requirement in the
+CV request.</simpara>
+<simpara>There is possible to state a contact point (to a person) who can confirm the candidate&#8217;s personal
+skills, use the element <literal>cv:Contact</literal>. In some cases, there is relevant that the contracting
+authority needs this confirmation or documentation from an earlier co-worker, leader,
+team leader, etc.</simpara>
+<formalpara>
+<title>Example of a description of personal skill in CV as a response to requested course in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:PersonalSkills&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO27-1"/>
+  &lt;cv:Type&gt;Leadership&lt;/cv:Type&gt;<co xml:id="CO27-2"/>
+  &lt;cv:Contact&gt;<co xml:id="CO27-3"/>
+    &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;
+    &lt;cv:Role&gt;1224127&lt;/cv:Role&gt;
+    &lt;cv:Telephone&gt;22221111&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@x.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:PersonalSkillsReference&gt;<co xml:id="CO27-4"/>
+    &lt;cv:ID&gt;1&lt;/cv:ID&gt;
+  &lt;/cv:PersonalSkillsReference&gt;
+&lt;/cv:PersonalSkills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO27-1">
+<para>Personal skill identifier</para>
+</callout>
+<callout arearefs="CO27-2">
+<para>Type of personal skill</para>
+</callout>
+<callout arearefs="CO27-3">
+<para>Contact information</para>
+</callout>
+<callout arearefs="CO27-4">
+<para>Personal skill reference</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_references">
+<title>References</title>
+<simpara>References that can testify the applicant&#8217;s character, skills and abilities to a Contracting Authority.</simpara>
+<section xml:id="_information_specific_to_cv_request_9">
+<title>Information specific to CV request</title>
+<simpara>The Contracting Authority can require a minimum total references in element <literal>cv-req:MinimumTotalReference</literal>.</simpara>
+<formalpara>
+<title>Example of the requested reference in the CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv-req:Skills&gt;
+  &lt;cv-req:ID&gt;1&lt;/cv-req:ID&gt;<co xml:id="CO28-1"/>
+  &lt;cv-req:Requirement&gt;must&lt;/cv-req:Requirement&gt;<co xml:id="CO28-2"/>
+  &lt;cv-req:Type&gt;matlab&lt;/cv-req:Type&gt;<co xml:id="CO28-3"/>
+  &lt;cv-req:Version&gt;2.0&lt;/cv-req:Version&gt;<co xml:id="CO28-4"/>
+  &lt;cv-req:SkillPractice&gt;
+    &lt;cv-req:LastPractice&gt;2019-02-02&lt;/cv-req:LastPractice&gt;<co xml:id="CO28-5"/>
+    &lt;cv-req:MinimumLengthPractice&gt;12&lt;/cv-req:MinimumLengthPractice&gt;<co xml:id="CO28-6"/>
+    &lt;cv-req:SkillsReference&gt;True&lt;/cv-req:SkillsReference&gt;<co xml:id="CO28-7"/>
+  &lt;/cv-req:SkillPractice&gt;
+&lt;/cv-req:Skills&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO28-1">
+<para>Reference identifier</para>
+</callout>
+<callout arearefs="CO28-2">
+<para>Minimum requirement</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_information_specific_to_cv_9">
+<title>Information specific to CV</title>
+<simpara>Based on the reference requirement, the Economic Operator needs to document the candidate&#8217;s
+references.</simpara>
+<simpara>The element <literal>cv:RequestReference</literal> must be used as a reference to the corresponding reference requirement in the CV request.</simpara>
+<simpara>Party information need to be stated in element <literal>cv:Party</literal>, with the party name and electronic
+address identifier.
+Relationship between the candidate and the reference-person can be stated in element <literal>cv:Relationship</literal>.
+For example school teacher, team leader, etc.</simpara>
+<formalpara>
+<title>Example of a description of skill in CV as a response to requested skill in CV request</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:Reference&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO29-1"/>
+  &lt;cv:Party&gt;
+    &lt;cv:EndpointID scheme="0192"&gt;123456785&lt;/cv:EndpointID&gt;<co xml:id="CO29-2"/>
+    &lt;cv:Name&gt;ABC AS&lt;/cv:Name&gt;<co xml:id="CO29-3"/>
+  &lt;/cv:Party&gt;
+  &lt;cv:Relationship&gt;Team leader&lt;/cv:Relationship&gt;<co xml:id="CO29-4"/>
+  &lt;cv:Contact&gt;<co xml:id="CO29-5"/>
+    &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;
+    &lt;cv:Telephone&gt;22221111&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@abc.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:RequestReference&gt;<co xml:id="CO29-6"/>
+    &lt;cv:ID&gt;1234&lt;/cv:ID&gt;
+  &lt;/cv:RequestReference&gt;
+&lt;/cv:Reference&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO29-1">
+<para>Reference identifier</para>
+</callout>
+<callout arearefs="CO29-2">
+<para>Electronic address identifier</para>
+</callout>
+<callout arearefs="CO29-3">
+<para>Party name</para>
+</callout>
+<callout arearefs="CO29-4">
+<para>Relationship to reference-person</para>
+</callout>
+<callout arearefs="CO29-5">
+<para>Contact information</para>
+</callout>
+<callout arearefs="CO29-6">
+<para>Corresponding reference to cv request</para>
+</callout>
+</calloutlist>
+</section>
+</section>
+<section xml:id="_personal_information">
+<title>Personal Information</title>
+<simpara>Personal details about the applicant. Is only used in CV and not in CV request.</simpara>
+<simpara>Social media must include either element <literal>cv-req:Type</literal> or <literal>cv-req:Title</literal> to identify type of sosial media. Use type if the
+specific social media is defined in the clearance code list, otherwise use the title.</simpara>
+<formalpara>
+<title>Example of a description of personal skill in a CV</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:PersonalInformation&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO30-1"/>
+  &lt;cv:Name&gt;Ola Nordmann&lt;/cv:Name&gt;<co xml:id="CO30-2"/>
+  &lt;cv:DateOfBirth&gt;1991-01-01&lt;/cv:DateOfBirth&gt;<co xml:id="CO30-3"/>
+  &lt;cv:PostalAddress&gt;<co xml:id="CO30-4"/>
+    &lt;cv:StreetName&gt;Oslobukta 20&lt;/cv:StreetName&gt;
+    &lt;cv:AdditionalStreetName&gt;2. building&lt;/cv:AdditionalStreetName&gt;
+    &lt;cv:CityName&gt;Oslo&lt;/cv:CityName&gt;
+    &lt;cv:PostalZone&gt;0342&lt;/cv:PostalZone&gt;
+    &lt;cv:Country&gt;
+      &lt;cv:IdentificationCode&gt;NO&lt;/cv:IdentificationCode&gt;
+    &lt;/cv:Country&gt;
+  &lt;/cv:PostalAddress&gt;
+  &lt;cv:Contact&gt;<co xml:id="CO30-5"/>
+    &lt;cv:Telephone&gt;98989898&lt;/cv:Telephone&gt;
+    &lt;cv:ElectronicMail&gt;ola.nordmann@xxx.no&lt;/cv:ElectronicMail&gt;
+  &lt;/cv:Contact&gt;
+  &lt;cv:SocialMedia&gt;
+    &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO30-6"/>
+    &lt;cv:Type&gt;linkedin&lt;/cv:Type&gt;<co xml:id="CO30-7"/>
+    &lt;cv:Documentation&gt;
+      &lt;cv:URI&gt;https://www.linkedin.no/xxx&lt;/cv:URI&gt;<co xml:id="CO30-8"/>
+    &lt;/cv:Documentation&gt;
+  &lt;/cv:SocialMedia&gt;
+&lt;/cv:PersonalInformation&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO30-1">
+<para>Personal information identifier</para>
+</callout>
+<callout arearefs="CO30-2">
+<para>Personal name</para>
+</callout>
+<callout arearefs="CO30-3">
+<para>Date of birth</para>
+</callout>
+<callout arearefs="CO30-4">
+<para>Postal address</para>
+</callout>
+<callout arearefs="CO30-5">
+<para>Contact information</para>
+</callout>
+<callout arearefs="CO30-6">
+<para>Social media identifier</para>
+</callout>
+<callout arearefs="CO30-7">
+<para>Type of social media</para>
+</callout>
+<callout arearefs="CO30-8">
+<para>Social media URI</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_interest">
+<title>Interest</title>
+<simpara>An applicant&#8217;s personal interest. Is only used in CV and not in CV request.</simpara>
+<simpara>Information about applicant&#8217;s hobbies and interests can be described in element <literal>cv:Description</literal>.</simpara>
+<formalpara>
+<title>Example of a description of interest in a CV</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:Interest&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO31-1"/>
+  &lt;cv:Description&gt;Interest in playing football.&lt;/cv:Description&gt;<co xml:id="CO31-2"/>
+&lt;/cv:Interest&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO31-1">
+<para>Identifier</para>
+</callout>
+<callout arearefs="CO31-2">
+<para>Description</para>
+</callout>
+</calloutlist>
+</section>
+<section xml:id="_additional_information">
+<title>Additional Information</title>
+<simpara>May be used for additional information about the applicant, not provided in other information groups in. Only used in CV, not in CV request.</simpara>
+<simpara>Give a short title of additional information in element <literal>cv:Title</literal> and describe the information
+in element <literal>cv:Description</literal>.
+Documentation of the information can be stated as a URI (<literal>cv:URI</literal>) and/or embedded document
+(<literal>cv:EmbeddedDocumentBinaryObject</literal>).</simpara>
+<formalpara>
+<title>Example of a description of additional information in a CV</title>
+<para>
+<programlisting language="xml" linenumbering="unnumbered">&lt;cv:AdditionalInformation&gt;
+  &lt;cv:ID&gt;1&lt;/cv:ID&gt;<co xml:id="CO32-1"/>
+  &lt;cv:Title&gt;Footballcoach&lt;/cv:Title&gt;<co xml:id="CO32-2"/>
+  &lt;cv:Description&gt;Worked as footballcoach for young girls.&lt;/cv:Description&gt;<co xml:id="CO32-3"/>
+  &lt;cv:Documentation&gt;
+    &lt;cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf"&gt;YXBwcm92ZWQgZm9vdGJhbGwgcmVmZXJlZSBpbiBub3J3YXk=&lt;/cv:EmbeddedDocumentBinaryObject&gt;<co xml:id="CO32-4"/>
+    &lt;cv:URI&gt;https://www.fotballdommer.no/&lt;/cv:URI&gt;<co xml:id="CO32-5"/>
+  &lt;/cv:Documentation&gt;
+&lt;/cv:AdditionalInformation&gt;</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO32-1">
+<para>Identifier</para>
+</callout>
+<callout arearefs="CO32-2">
+<para>Title</para>
+</callout>
+<callout arearefs="CO32-3">
+<para>Description</para>
+</callout>
+<callout arearefs="CO32-4">
+<para>Embedded document as binary object with <literal>mimeCode</literal>. Use Base64.</para>
+</callout>
+<callout arearefs="CO32-5">
+<para>URI to additional information</para>
+</callout>
+</calloutlist>
+</section>
+</chapter>
+<appendix xml:id="_profiles_and_messages">
+<title>Profiles and messages</title>
+<simpara>All messages contains ProfileID and CustomizationID. ProfileID identifies what business process a given message is part of, and CustomizationID identifies the kind of message and the rules applied.</simpara>
+<simpara>Profiles are connected to one business process, and may contain multiple document types. Valid document instances shall contain corresponding ProfileID and CustomizationID.</simpara>
+<important>
+<simpara>CustomizationID is a string without spaces. The list below contains spaces in CustomizationID to make them easier to read. <emphasis role="strong">Make sure to remove any spaces before use.</emphasis></simpara>
+</important>
+<section xml:id="_customization_and_profile_identifiers">
+<title>Customization and Profile identifiers</title>
+<simpara>In the table below you will find the values to be used as the specification identifier and the business process type for this profile</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="33.3333*"/>
+<colspec colname="col_2" colwidth="33.3333*"/>
+<colspec colname="col_3" colwidth="33.3334*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Type</entry>
+<entry align="left" valign="top">Element <literal>cbc:CustomizationID</literal></entry>
+<entry align="left" valign="top">Element <literal>cbc:ProfileID</literal></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">EHF CV Request</emphasis></simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top" morerows="1"></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">EHF CV</emphasis></simpara></entry>
+<entry align="left" valign="top"></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+</appendix>
+<appendix xml:id="_semantic_datatypes">
+<title>Semantic datatypes</title>
+<simpara>Semantic data types are used to bridge the gap between the semantic concepts expressed by the information elements and the technical implementation.
+The semantic data types define the allowed value domain for the content, and any additional information components (attributes) needed in order to ensure its precise interpretation.</simpara>
+<section xml:id="_primitive_types">
+<title>Primitive types</title>
+<simpara>Semantic data type content may be of the following primitive types. These primitive types were taken from {ISO15000}, Annex A.</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="2">
+<colspec colname="col_1" colwidth="12.5*"/>
+<colspec colname="col_2" colwidth="87.5*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Primitive type</entry>
+<entry align="left" valign="top">Definition</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Binary</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>A set of finite-length sequences of binary digits.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Date</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Time point representing a calendar day on a time scale consisting of an origin and a succession of calendar {ISO8601}.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Decimal</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>A subset of the real numbers, which can be represented by decimal numerals.</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">String</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>A finite sequence of characters.</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_semantic_data_types">
+<title>Semantic data types</title>
+<simpara>The different semantic data types are described in the tables below, where various features such as attributes, format, and decimals as well as the basic type are defined for each semantic data type. They are based on {ISO15000}.</simpara>
+<simpara>When used in an instance document, each data element will contain data. In the below tables this is identified as the “content”. Whenever a business term is used this term shall <emphasis role="strong">always</emphasis> have content and therefore the content is always mandatory.</simpara>
+<section xml:id="_percentage">
+<title>Percentage</title>
+<simpara>Percentages are given as fractions of a hundred (per cent) e.g. the value 34,78 % in percentage terms is given as 34,78.</simpara>
+<informalexample>
+<important>
+<simpara>No restriction on number of decimals for percentages.</simpara>
+</important>
+</informalexample>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>Decimal</simpara></entry>
+<entry align="left" valign="top"><simpara>34.7812</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_quantity">
+<title>Quantity</title>
+<simpara>Quantities are used to state a number of units such as for items. The code for the Unit of Measure is defined as a separate business term.</simpara>
+<informalexample>
+<important>
+<simpara>No restriction on number of decimals for quantities.</simpara>
+</important>
+</informalexample>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>Decimal</simpara></entry>
+<entry align="left" valign="top"><simpara>10000.1234</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_code">
+<title>Code</title>
+<simpara>Codes are used to specify allowed values in elements as well as for lists of options. Code is different from Identifier in that allowed values have standardized meanings that can be known by the recipient.</simpara>
+<informalexample>
+<important>
+<simpara>Codes shall be entered exactly as shown in the selected code list</simpara>
+</important>
+</informalexample>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>Abc123</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_identifier">
+<title>Identifier</title>
+<simpara>Identifiers (IDs) are keys that are issued by the sender or recipient of a document or by a third party.</simpara>
+<informalexample>
+<important>
+<simpara>The use of the attributes is specified for each information element.</simpara>
+</important>
+</informalexample>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>abc:123-DEF</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Scheme identifier</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Conditional</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>GLN</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Scheme version identifier</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Conditional</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>1.0</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_date">
+<title>Date</title>
+<simpara>Dates shall be in accordance to the “Calendar date complete representation” as specified by {ISO8601}, format <emphasis role="strong">YYYY-MM-DD</emphasis>.</simpara>
+<informalexample>
+<important>
+<simpara>Dates shall <emphasis role="strong">not</emphasis> include timezone information.</simpara>
+</important>
+</informalexample>
+<table frame="all" rowsep="1" colsep="1">
+<title>EN 16931_ Date. Type</title>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>Date</simpara></entry>
+<entry align="left" valign="top"><simpara>2017-12-01</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section xml:id="_document_reference">
+<title>Document Reference</title>
+<simpara>Document Reference Types are identifiers that were assigned to a document or document line.</simpara>
+<table frame="all" rowsep="1" colsep="1">
+<title>Document Reference. Type</title>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>abc:123-DEF</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section xml:id="_text">
+<title>Text</title>
+<simpara>Text is the actual wording of anything written or printed. Line breaks in the text may be present, and any line breaks should be preserved and respected by the receiver’s system</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>5% allowance when paid within 30 days</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_binary_objects">
+<title>Binary objects</title>
+<simpara>Binary objects can be used to describe files which are transmitted together with the business document.
+Attachments shall be transmitted together with the business document.
+The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename that is provided by (or on behalf of) the sender of the business document.</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>Binary</simpara></entry>
+<entry align="left" valign="top"><simpara>QmFzZTY0IGNvbnRlbnQgZXhhbXBsZQ==</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Mime Code</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>image/jpeg</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Filename</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>drawing5.jpg</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_boolean">
+<title>Boolean</title>
+<simpara>Boolean indicators are used to specify the two allowed values, <emphasis>true</emphasis> or <emphasis>false</emphasis>. All elements of datatype Boolean, must have either <emphasis>true</emphasis> or <emphasis>false</emphasis> as their value.</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="25*"/>
+<colspec colname="col_2" colwidth="25*"/>
+<colspec colname="col_3" colwidth="25*"/>
+<colspec colname="col_4" colwidth="25*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Component</entry>
+<entry align="left" valign="top">Use</entry>
+<entry align="left" valign="top">Primitive Type</entry>
+<entry align="left" valign="top">Example</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><emphasis role="strong">Content</emphasis></simpara></entry>
+<entry align="left" valign="top"><simpara>Mandatory</simpara></entry>
+<entry align="left" valign="top"><simpara>String</simpara></entry>
+<entry align="left" valign="top"><simpara>true</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+</section>
+</appendix>
+</book>

@@ -21,7 +21,7 @@
 
   <rule context="cv:ExperienceDescription | cv:WorkExperienceDescription">
       <assert id="EHF-CV-R004"
-              test="((cv-req:PositionPercent) &gt;= 0) and ((cv-req:PositionPercent) &lt;= 100)"
+              test="((cv:PositionPercent) &gt;= 0) and ((cv:PositionPercent) &lt;= 100)"
               flag="fatal">Position percent shall be a greater than or equal zero, and less than or
               equal 100.</assert>
   </rule>

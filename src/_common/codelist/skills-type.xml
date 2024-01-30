@@ -4,6 +4,7 @@
     <Title>Skills type codelist</Title>
     <Identifier>SkillsType</Identifier>
     <Version>1.0</Version>
+    <!-- tag::SkillsType[] -->
     <Agency>DFO</Agency>
 
     <!-- category : IT -->
@@ -508,5 +509,6 @@
         <Id>marketing</Id>
         <Name>Marketing</Name>
     </Code>
+    <!-- end::SkillsType[] -->
 
 </CodeList>

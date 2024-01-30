@@ -1,0 +1,34 @@
+=== Use case - Tender process
+
+This use case describes a tender process where a Contracting Authority needs several
+IT-developers to develop the company's IT-system.
+
+****
+
+Description::
+The Contracting Authority needs a developer to develop a web portal and specify criterias to be met. The Economic Operator
+provides a summary of the candidate's experiences, academic background, skills, personal skills,
+language skills, references, interest, and personal information.
+
+Parties involved::
+Contracting Authority +
+Economic Operator
+
+Assumptions::
+. The Contracting Authority is able to prepare and send an EHF-CV Request
+. The Economic Operator is able to receive an EHF-CV Request and to prepare and send an EHF-CV
+. The Contracting Authority is able to receive an EHF-CV
+
+Flow::
+. The Contracting Authority creates a CV request document with all the necessary requirements
+and criteria.
+. The Contracting Authority sends an EHF-CV Request to the Economic Operators.
+. The Economic Operator colletcs CV-information for the relevant candidates based on the requirements.
+. The Economic Operator creates an EHF-CV and sends it to the Contracting Authority.
+. The Contracting Authority receives the EHF-CV.
+
+
+Result::
+. The Contracting Authority rates EHF-CV's from several Economic Operators and choose the best candidate based on the requested requirements.
+
+****

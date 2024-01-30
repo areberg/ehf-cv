@@ -4,6 +4,8 @@
     <Title>Clearance level code</Title>
     <Identifier>ClearanceLevel</Identifier>
     <Version>1.0</Version>
+
+    <!-- tag::ClearanceLevel[] -->
     <Agency>DFO</Agency>
 
     <Code>
@@ -59,4 +61,5 @@
         <Name>Extended access card</Name>
         <Description>Extended acess card clearance level</Description>
     </Code>
+    <!-- end::ClearanceLevel[] -->
 </CodeList>

@@ -2,8 +2,9 @@
 <Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
     <Title>CEF Electronic address identifier (EAID)</Title>
     <Identifier>eaid</Identifier>
+    <!-- tag::Eaid[] -->
     <Agency>CEF</Agency>
-    
+
     <Code>
         <Id>0002</Id>
         <Name>System Information et Repertoire des Entreprise et des Etablissements: SIRENE</Name>
@@ -277,6 +278,7 @@
         <Id>9958</Id>
         <Name>German Leitweg ID</Name>
     </Code>
-    
+     <!-- end::Eaid[] -->
+   
 </Codelist>
 

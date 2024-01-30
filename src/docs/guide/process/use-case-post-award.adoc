@@ -1,0 +1,28 @@
+=== Use case - Update of CV's
+
+This use case describes the update of CV-information after the contract is awarded.
+
+****
+
+Description::
+The Economic Operator provides an update of the candidate's skills or experiences. As an example this could be a new certification or a renewal of a certification.
+The update can be done regulary based on agreements in the contract or when a change has occured that affects the CV.
+
+Parties involved::
+Contracting Authority +
+Economic Operator
+
+Assumptions::
+. The Economic Operator is able to prepare and send an EHF-CV
+. The Contracting Authority is able to receive an EHF-CV
+
+
+Flow::
+. The Economic Operator creates an EHF-CV with updated CV-information and sends it to the Contracting Authority.
+. The Contracting Authority receives the EHF-CV with updated information and stores it as part of the contract.
+
+
+Result::
+. The relevant CV's are updated based on an EHF-CV sent from the Economic Operator to the Contracting Authority.
+
+****

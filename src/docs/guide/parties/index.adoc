@@ -43,4 +43,4 @@ The role is carried out by the Contracting authority.
 
 The diagram below shows the roles in the EHF-CV process.
 
-image::images/rollemodell.bmp[image,width=1000,height=600]
+image::images/rollemodell.png[image,width=1000,height=600]

@@ -1,31 +1,28 @@
 = Clearance
 
 Jobs within certain departments of the government or private sectors require that employees
-have a specific level of clearances. For example, security clearances are required by the government
+have a specific level of clearance. For example are security clearances required by the government
 employers who have access to sensitive information.
 
 == Information specific to CV request
 
-A contracting authority can state clearance requirement (main requirement) and an alternative
-requirement in the cv request. The alternative requirement is optional, but in some cases, one can
-accept other clearance.
+A Contracting Authority can state clearance requirement (main requirement) and an alternative
+requirement in the CV request. The alternative requirement is optional, but may be used when an alternative
+clearance can be accepted.
 
-All clearances need to be identified uniquely, to ensure that the clearance can be referenced in the
-CV. To differentiate the different types of clearance requirements use the element `cv-req:Requirement`.
-The economic operators will only provide qualified candidates, and it makes it easier to evaluate the
-candidates.
+All clearances need to be identified uniquely to ensure that the clearance can be referenced to in the
+CV. The element `cv-req:Requirement` shall be used to state if the clerarance *should* or *must* be present. The Economic Operators
+will only provide qualified candidates, and this makes it easier to do the rating.
 
-A clearance can only include either element `cv-req:Type` or `cv-req:Title`. Use type if the specific
-clearance is defined in the clearance code list, otherwise use the title.
-Note that, every clearance needs to consist of either a title or a type that identifies the specific
-clearance.
+A clearance must include either element `cv-req:Type` or `cv-req:Title`, not both. Use type if the specific
+clearance is defined in the clearance codelist, otherwise use the title.
 
-Contracting authority must specify the level of clearance, element `cv-req:Level`, by using code list
-clearance level. Note that, the clearance level is a minimum requirement, which means candidate with
+Contracting Authorities must specify the level of clearance (`cv-req:Level`), by using codelist
+clearance level. Note that the clearance level is a minimum requirement, which means candidate with
 higher level of clearance is qualified.
 
-We often need a candidate that has active clearance through the whole job period. The contracting
-authority must specify an expiration date (`cv-req:ExpirationDate`), which defines the time period
+We often need a candidate that has active clearance through the whole job period. The Contracting
+Authority must specify an expiration date (`cv-req:ExpirationDate`), which defines the time period
 the clearance needs to be active.
 
 .Example of the requested clearance in the CV request
@@ -34,7 +31,7 @@ the clearance needs to be active.
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=Clearance]
 ----
 <1> Clearance identifier
-<2> Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement
+<2> Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement.  According to codelist Requirement code (chapter 5.11).
 <3> Clearance title
 <4> Expiration date
 
@@ -44,26 +41,22 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=Clearance]
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=ClearanceAlternative]
 ----
 <1> Clearance identifier
-<2> Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement
-<3> Clearance type
+<2> Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement.  According to codelist Requirement code (chapter 5.11).
+<3> Clearance type according to codelist Clearance type (chapter 5.3)
 <4> Expiration date
 <5> Alternative clearance requirement
 
 
 == Information specific to CV
 
-Based on the clearance requirement, the economic operator needs to document the candidate's
-clearance. For CV used in the job application process, fill in the relevant parts of
-clearance information.
-
-The element `cv:ClearanceReference` needs to be used in the procurement process, not in the job
-application process. This is a reference to the corresponding clearance requirement in the CV request.
+Based on the clearance requirement, the Economic Operator needs to document the candidate's
+clearance. 
+The element `cv:ClearanceReference` must be used as a reference to the corresponding clearance requirement in the CV request.
 
 The documentation of clearance can be stated as URI (`cv:URI`) or embedded document (`cv:EmbeddedDocumentBinaryObject`).
 
 Candidates who don't fulfill the clearance requirement can describe the reason and whether this can
-be done before the job period. Use element `cv:Description`. This is not relevant in job application
-process.
+be done before the job period. Use element `cv:Description`. 
 
 .Example of a description of clearance in CV as a response to requested course in CV request
 [source, xml, indent=0]
@@ -71,21 +64,10 @@ process.
 include::../{snippet-dir-cv}/cv.xml[tags=Clearance-req]
 ----
 <1> Clearance identifier
-<2> Clearance type
-<3> Clearance level
+<2> Clearance type according to codelist Clearance type (chapter 5.3)
+<3> Clearance level according to codelist Clearance level (chapter 5.2)
 <4> Clearance expiration date
 <5> Embedded document as binary object with `mimeCode`. Use Base64.
 <6> URI to clearance document
 <7> Description
 <8> Clearance reference
-
-.Example of a description of clearance in a CV in the job application
-[source, xml, indent=0]
-----
-include::../{snippet-dir-cv}/cv.xml[tags=Clearance]
-----
-<1> Clearance identifier
-<2> Clearance title
-<3> Clearance level
-<4> Clearance expiration date
-<5> URI to clearance document

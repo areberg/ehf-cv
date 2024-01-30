@@ -4,6 +4,7 @@
     <Title>Language level codelist</Title>
     <Identifier>LanguageLevel</Identifier>
     <Version>1.0</Version>
+     <!-- tag::LanguageLevel[] -->
     <Agency>CEFR</Agency>
 
     <Code>
@@ -62,5 +63,6 @@
           and written sources, reconstructing arguments and accounts in a coherent presentation. Can express him/herself spontaneously,
           very fluently and precisely, differentiating finer shades of meaning even in more complex situations.</Description>
     </Code>
+     <!-- end::LanguageLevel[] -->
 
 </CodeList>

@@ -1,11 +1,9 @@
 = Personal Information
 
-Personal details about the applicant. Only used in EHF CV, not in EHF CV Request.
+Personal details about the applicant. Is only used in CV and not in CV request.
 
-A social media can only include either element `cv-req:Type` or `cv-req:Title`. Use type if the
-specific social media is defined in the clearance code list, otherwise use the title.
-Note that, every social media needs to consist of either a title or a type that identifies the
-specific social media.
+Social media must include either element `cv-req:Type` or `cv-req:Title` to identify type of sosial media. Use type if the
+specific social media is defined in the clearance codelist, otherwise use the title.
 
 .Example of a description of personal skill in a CV
 [source, xml, indent=0]
@@ -18,5 +16,5 @@ include::../{snippet-dir-cv}/cv.xml[tags=PersonalInformation]
 <4> Postal address
 <5> Contact information
 <6> Social media identifier
-<7> Type of social media
+<7> Type of social media according to codelist Social media (chapter 5.14)
 <8> Social media URI

@@ -4,6 +4,8 @@
     <Title>Education degree code list</Title>
     <Identifier>EducationDegree</Identifier>
     <Version>1.0</Version>
+
+    <!-- tag::EducationDegree[] -->
     <Agency>DFO</Agency>
 
     <Code>
@@ -63,5 +65,6 @@
         <Name>Other degree</Name>
         <Description>Other degrees that are not provided in this code list.</Description>
     </Code>
+    <!-- end::EducationDegree[] -->
 
 </CodeList>

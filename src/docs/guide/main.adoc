@@ -20,6 +20,7 @@ v{revision}
 
 {description}
 
+
 //Content
 :leveloffset: +1
 
@@ -27,11 +28,11 @@ include::introduction/index.adoc[]
 
 include::parties/index.adoc[]
 
-//include::benefit/index.adoc[]
-
 include::process/index.adoc[]
 
 include::description/index.adoc[]
+
+include::codes/index.adoc[]
 
 include::appendix/index.adoc[]
 

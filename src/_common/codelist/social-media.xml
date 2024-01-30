@@ -4,6 +4,7 @@
     <Title>Socail media codelist</Title>
     <Identifier>SocialMedia</Identifier>
     <Version>1.0</Version>
+    <!-- tag::SocialMedia[] -->
     <Agency>DFO</Agency>
 
     <Code>
@@ -17,8 +18,8 @@
     </Code>
 
     <Code>
-        <Id>twitter</Id>
-        <Name>Twitter</Name>
+        <Id>x</Id>
+        <Name>X (Twitter)</Name>
     </Code>
 
     <Code>
@@ -90,5 +91,6 @@
         <Id>flickr</Id>
         <Name>flickr</Name>
     </Code>
+    <!-- end::SocialMedia[] -->
 
 </CodeList>

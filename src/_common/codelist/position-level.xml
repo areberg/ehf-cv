@@ -4,6 +4,7 @@
     <Title>Position level codelist</Title>
     <Identifier>PositionLevel</Identifier>
     <Version>1.0</Version>
+    <!-- tag::PositionLevel[] -->
     <Agency>DFO</Agency>
 
     <Code>
@@ -20,5 +21,6 @@
         <Id>manager</Id>
         <Name>Manager</Name>
     </Code>
+    <!-- end::PositionLevel[] -->
 
 </CodeList>

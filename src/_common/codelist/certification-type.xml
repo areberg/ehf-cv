@@ -4,10 +4,13 @@
     <Title>Certification type codelist</Title>
     <Identifier>CerticationType</Identifier>
     <Version>1.0</Version>
-    <Agency>DFO</Agency>
 
-    <!-- category : IT -->
-    <Code>
+   <!-- tag::CertificationType[] -->
+       <Agency>DFO</Agency>
+
+   <!-- category : IT -->
+
+     <Code>
         <Id>TOGAF</Id>
         <Name>TOGAF</Name>
     </Code>
@@ -245,6 +248,6 @@
         <Id>license</Id>
         <Name>Car license</Name>
     </Code>
-
+    <!-- end::CertificationType[] -->
 
 </CodeList>

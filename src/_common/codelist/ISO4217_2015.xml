@@ -3,8 +3,10 @@
     <Title>ISO 4217 Currency codes</Title>
     <Identifier>ISO4217</Identifier>
     <Version>2018-01-01</Version>
+    <!-- tag::CurrencyCodes[] -->
     <Agency>ISO</Agency>
-    
+    <!-- end::CurrencyCodes[] -->
+   
     <Code>
         <Id>AED</Id>
         <Name>UAE Dirham</Name>
@@ -1102,5 +1104,5 @@
         <Id>ZWL</Id>
         <Name>Zimbabwe Dollar</Name>
     </Code>
-</CodeList>
+ </CodeList>
 

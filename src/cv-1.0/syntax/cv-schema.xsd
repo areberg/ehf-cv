@@ -13,15 +13,15 @@
             <xs:element name ="CustomizationID" type="IdentifierType"/>
             <xs:element name ="ProfileID" type="IdentifierType"/>
 
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
 
             <xs:element name="IssueDate" type="xs:date" minOccurs="0"/>
             <xs:element name="IssueTime" type="xs:time" minOccurs="0"/>
 
             <xs:element name="FolderReference" type="ReferenceType" minOccurs="0"/>
 
+            <xs:element name="SenderParty" type="PartyType" minOccurs="0"/>
             <xs:element name="ReceiverParty" type="PartyType" minOccurs="0"/>
-            <xs:element name="ProviderParty" type="PartyType" minOccurs="0"/>
 
             <xs:element name="Education" type="EducationType" minOccurs="0" maxOccurs="unbounded"/>
 
@@ -31,9 +31,9 @@
 
             <xs:element name="LanguageSkills" type="LanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
 
-            <xs:element name="ProjectExperience" type="ProjectExperinceType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="ProjectExperience" type="ProjectExperienceType" minOccurs="0" maxOccurs="unbounded"/>
 
-            <xs:element name="WorkExperience" type="WorkExperinceType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="WorkExperience" type="WorkExperienceType" minOccurs="0" maxOccurs="unbounded"/>
 
             <xs:element name="Clearance" type="ClearanceType" minOccurs="0" maxOccurs="unbounded"/>
 
@@ -41,7 +41,7 @@
 
             <xs:element name="Skills" type="SkillsType" minOccurs="0" maxOccurs="unbounded"/>
 
-            <xs:element name="PersonalSkills" type="PersonalSkillsType" minOccurs="0" maxOccurs="unbounded"/> <!-- personal skills eller personal qualities? -->
+            <xs:element name="PersonalSkills" type="PersonalSkillsType" minOccurs="0" maxOccurs="unbounded"/>
 
             <xs:element name="PersonalInformation" type="PersonalInformationType" minOccurs="0"/>
 
@@ -53,9 +53,9 @@
 
     <xs:complexType name="EducationType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="EducationDegree" type="xs:token" minOccurs="0"/>
-            <xs:element name="SubjectArea" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="EducationDegree" type="xs:string" minOccurs="0"/>
+            <xs:element name="SubjectArea" type="xs:string" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="Documentation" type="DocumentationType" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
@@ -65,9 +65,9 @@
 
     <xs:complexType name="CourseType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="SupplierParty" type="PartyType" minOccurs="0"/>
@@ -78,7 +78,7 @@
 
     <xs:complexType name="CertificationType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
             <xs:element name="Type" type="xs:token" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
@@ -91,22 +91,22 @@
 
     <xs:complexType name="LanguageSkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="Language" type="xs:token" minOccurs="0"/>
-            <xs:element name="OralSkill" type="xs:token" minOccurs="0"/>
-            <xs:element name="WrittenSkill" type="xs:token" minOccurs="0"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Language" type="xs:string" minOccurs="0"/>
+            <xs:element name="OralSkill" type="xs:string" minOccurs="0"/>
+            <xs:element name="WrittenSkill" type="xs:string" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
             <xs:element name="LanguageSkillsReference" type="ReferenceType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="ProjectExperinceType">
+    <xs:complexType name="ProjectExperienceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="ExperienceType" type="xs:token" minOccurs="0"/>
-            <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
-            <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
-            <xs:element name="JobSector" type="xs:token" minOccurs="0"/> <!-- Skal vi ta dette med? -->
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="ExperienceType" type="xs:string" minOccurs="0"/>
+            <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
+            <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
+            <xs:element name="JobSector" type="xs:string" minOccurs="0"/> <!-- Skal vi ta dette med? -->
             <xs:element name="CompanyParty" type="PartyType" minOccurs="0"/> <!-- Navn og endpointID -->
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="ExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
@@ -117,13 +117,13 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="WorkExperinceType">
+    <xs:complexType name="WorkExperienceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
-            <xs:element name="PositionLevel" type="xs:token" minOccurs="0"/>
-            <xs:element name="IndustryType" type="xs:token" minOccurs="0"/>
-            <xs:element name="Workplace" type="xs:token" minOccurs="0"/>
-            <xs:element name="JobSector" type="xs:token" minOccurs="0"/> <!-- Skal vi ta dette med? -->
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="PositionLevel" type="xs:string" minOccurs="0"/>
+            <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
+            <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
+            <xs:element name="JobSector" type="xs:string" minOccurs="0"/> <!-- Skal vi ta dette med? -->
             <xs:element name="CompanyParty" type="PartyType" minOccurs="0"/> <!-- Navn og endpointID -->
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="WorkExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
@@ -135,10 +135,10 @@
 
     <xs:complexType name="ClearanceType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
-            <xs:element name="Level" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
+            <xs:element name="Level" type="xs:string" minOccurs="0"/>
             <xs:element name="ExpirationDate" type="xs:date" minOccurs="0"/>
             <xs:element name="Documentation" type="DocumentationType" minOccurs="0"/>
             <xs:element name="Description" type="xs:string" minOccurs="0"/>
@@ -158,9 +158,9 @@
 
     <xs:complexType name="SkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="LastPractice" type="xs:date" minOccurs="0"/>
             <xs:element name="MinimumLengthPractice" type="xs:integer" minOccurs="0"/>
@@ -172,9 +172,9 @@
 
     <xs:complexType name="PersonalSkillsType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Description" type="xs:string" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
             <xs:element name="PersonalSkillsReference" type="ReferenceType" minOccurs="0"/>
@@ -183,7 +183,7 @@
 
     <xs:complexType name="PersonalInformationType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Name" type="xs:string"/>
             <xs:element name="DateOfBirth" type="xs:date"/>
             <xs:element name="PostalAddress" type="PostalAdressType"/>
@@ -194,9 +194,9 @@
 
     <xs:complexType name="SocialMediaType">
         <xs:sequence>
-            <xs:element name="ID" type="xs:token"/>
+            <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Title" type="xs:string" minOccurs="0"/>
-            <xs:element name="Type" type="xs:token" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Documentation" type="DocumentationType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -219,8 +219,8 @@
 
     <xs:complexType name="IdentifierType">
         <xs:simpleContent>
-            <xs:extension base="xs:token">
-                <xs:attribute name="scheme" type="xs:token"/>
+            <xs:extension base="xs:normalizedString">
+                <xs:attribute name="schemeID" type="xs:string"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -230,22 +230,22 @@
             <xs:element name="EndpointID" type="IdentifierType" minOccurs="0"/>
             <xs:element name="Name" type="xs:string" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
-            <xs:element name="Country" type="xs:token" minOccurs="0"/>
+            <xs:element name="CountryCode" type="xs:normalizedString" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="ContactType">
         <xs:sequence>
             <xs:element name="Name" type="xs:string" minOccurs="0"/>
-            <xs:element name="Role" type="xs:token" minOccurs="0"/>
-            <xs:element name="Telephone" type="xs:token" minOccurs="0"/>
-            <xs:element name="ElectronicMail" type="xs:token" minOccurs="0"/>
+            <xs:element name="Role" type="xs:string" minOccurs="0"/>
+            <xs:element name="Telephone" type="xs:string" minOccurs="0"/>
+            <xs:element name="ElectronicMail" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="DocumentationType">
         <xs:sequence>
-            <xs:element name="RegistrationType" type="xs:token" minOccurs="0"/>
+            <xs:element name="RegistrationType" type="xs:string" minOccurs="0"/>
             <xs:element name="RegistrationNumber" type="xs:integer" minOccurs="0"/>
             <xs:element name="EmbeddedDocumentBinaryObject" type="EmbeddedDocumentBinaryObjectType" minOccurs="0"/> <!-- Embedded Document -->
             <xs:element name="CandidateNumber" type="xs:integer" minOccurs="0"/>
@@ -255,7 +255,7 @@
 
     <xs:complexType name="EmbeddedDocumentBinaryObjectType">
         <xs:simpleContent>
-            <xs:extension base="xs:token">
+            <xs:extension base="xs:normalizedString">
                 <xs:attribute name="mimeCode" type="xs:normalizedString"/>
             </xs:extension>
         </xs:simpleContent>
@@ -271,7 +271,7 @@
     <xs:complexType name="ExperienceDescriptionType">
         <xs:sequence>
             <xs:element name="PositionPercent" type="xs:integer" minOccurs="0"/>
-            <xs:element name="Role" type="xs:token" minOccurs="0"/>
+            <xs:element name="Role" type="xs:string" minOccurs="0"/>
             <xs:element name="Activities" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -286,7 +286,7 @@
 
     <xs:complexType name="ValueType">
         <xs:simpleContent>
-            <xs:extension base="xs:token">
+            <xs:extension base="xs:normalizedString">
                 <xs:attribute name="currencyID" type="xs:normalizedString"/>
             </xs:extension>
         </xs:simpleContent>
@@ -298,13 +298,7 @@
             <xs:element name="AdditionalStreetName" type="xs:string" minOccurs="0"></xs:element>
             <xs:element name="CityName" type="xs:string" minOccurs="0"></xs:element>
             <xs:element name="PostalZone" type="xs:string" minOccurs="0"></xs:element>
-            <xs:element name="Country" type="CountryType" minOccurs="0"></xs:element>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="CountryType">
-        <xs:sequence>
-            <xs:element name="IdentificationCode" type="xs:token"/> <!-- xs:normalizedString ? -->
+            <xs:element name="CountryCode" type="xs:normalizedString" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 

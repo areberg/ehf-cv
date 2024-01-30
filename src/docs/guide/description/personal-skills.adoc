@@ -1,18 +1,16 @@
 = Personal Skills
 
-Person skills is about our abilities and strength.
+Person skills contains information about a candidates abilities and strength.
 
 == Information specific to CV request
 
-A contracting authority can state personal skill requirement (main requirement) in the cv request.
+A Contracting Authority can state personal skill requirement (main requirement) in the CV request.
 
-All personal skills need to be identified uniquely, to ensure that the personal skill can be
+All personal skills need to be identified uniquely to ensure that the personal skill can be
 referenced in the CV.
 
-A personal skill can only include either element `cv-req:Type` or `cv-req:Title`. Use type if the specific
-personal skill is defined in the person skill code list, otherwise use the title.
-Note that, every clearance needs to consist of either a title or a type that identifies the specific
-personal skill.
+A personal skill must include either element `cv-req:Type` or `cv-req:Title`. Use type if the specific
+personal skill is defined in the person skill codelist, otherwise use the title.
 
 .Example of the requested clearance in the CV request
 [source, xml, indent=0]
@@ -46,13 +44,4 @@ include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills-req]
 <1> Personal skill identifier
 <2> Type of personal skill
 <3> Contact information
-<4> Personal skill reference
-
-.Example of a description of personal skill in a CV in the job application
-[source, xml, indent=0]
-----
-include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills]
-----
-<1> Personal skill identifier
-<2> Type of personal skill
-<3> Contact information
+<4> Personal skill reference according to codelist Personal skills (chapter 5.8)

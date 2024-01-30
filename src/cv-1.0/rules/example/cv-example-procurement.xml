@@ -3,32 +3,32 @@
   <cv:CustomizationID>...</cv:CustomizationID>
   <cv:ProfileID>...</cv:ProfileID>
   <cv:ID>1</cv:ID>
-  <cv:IssueDate>2020-10-05</cv:IssueDate>
+  <cv:IssueDate>2024-01-05</cv:IssueDate>
   <cv:IssueTime>10:30:00</cv:IssueTime>
 
   <cv:FolderReference>
-    <cv:ID scheme="DOFFIN">147</cv:ID>
+    <cv:ID schemeID="DOFFIN">147</cv:ID>
   </cv:FolderReference>
-
-  <cv:ReceiverParty>
-    <cv:EndpointID scheme="0192">987654325</cv:EndpointID>
+  
+  <cv:SenderParty>
+    <cv:EndpointID schemeID="0192">987654325</cv:EndpointID>
     <cv:Name>X company</cv:Name>
-    <cv:Contact>
-      <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Telephone>22221111</cv:Telephone>
-      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
-    </cv:Contact>
-  </cv:ReceiverParty>
-
-  <cv:ProviderParty>
-    <cv:EndpointID scheme="0192">987654325</cv:EndpointID>
-    <cv:Name>Y company</cv:Name>
     <cv:Contact>
       <cv:Name>John Johnsen</cv:Name>
       <cv:Telephone>99998888</cv:Telephone>
-      <cv:ElectronicMail>john.johnsen@y.com</cv:ElectronicMail>
+      <cv:ElectronicMail>john.johnsen@x.com</cv:ElectronicMail>
     </cv:Contact>
-  </cv:ProviderParty>
+  </cv:SenderParty>
+  
+  <cv:ReceiverParty>
+    <cv:EndpointID schemeID="0192">987654325</cv:EndpointID>
+    <cv:Name>Digitaliseringsdirektoratet</cv:Name>
+    <cv:Contact>
+      <cv:Name>Ola Nordmann</cv:Name>
+      <cv:Telephone>22224444</cv:Telephone>
+      <cv:ElectronicMail>ola.nordmann@direktorat.no</cv:ElectronicMail>
+    </cv:Contact>
+  </cv:ReceiverParty>
 
   <cv:Education>
     <cv:ID>1</cv:ID>
@@ -83,12 +83,12 @@
       <cv:EndDate>2020-05-05</cv:EndDate>
     </cv:Period>
     <cv:SupplierParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>X company</cv:Name>
       <cv:Contact>
         <cv:ElectronicMail>ola.nordmann@xcompany.no</cv:ElectronicMail>
       </cv:Contact>
-      <cv:Country>ES</cv:Country>
+      <cv:CountryCode>ES</cv:CountryCode>
     </cv:SupplierParty>
     <cv:Documentation>
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">cHl0aG9uIGNvdXJzZSB4eXo===</cv:EmbeddedDocumentBinaryObject>
@@ -105,12 +105,12 @@
     <cv:Version>3.0</cv:Version>
     <cv:ValidTo>2050-05-05</cv:ValidTo>
     <cv:SupplierParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>U company</cv:Name>
       <cv:Contact>
         <cv:ElectronicMail>company@u.no</cv:ElectronicMail>
       </cv:Contact>
-      <cv:Country>NO</cv:Country>
+      <cv:CountryCode>NO</cv:CountryCode>
     </cv:SupplierParty>
     <cv:Documentation>
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">YXJjaGltYXRlIGNlcnRpZmljYXRpb24=</cv:EmbeddedDocumentBinaryObject>
@@ -141,7 +141,7 @@
     <cv:ID>1</cv:ID>
     <cv:ExperienceType>2130111</cv:ExperienceType>
     <cv:CompanyParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>AZ company</cv:Name>
     </cv:CompanyParty>
     <cv:Period>
@@ -176,7 +176,7 @@
     <cv:ID>1</cv:ID>
     <cv:PositionLevel>employee</cv:PositionLevel>
     <cv:CompanyParty>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>X company</cv:Name>
     </cv:CompanyParty>
     <cv:Period>
@@ -219,7 +219,7 @@
   <cv:Reference>
     <cv:ID>1</cv:ID>
     <cv:Party>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>ABC AS</cv:Name>
     </cv:Party>
     <cv:Relationship>Team leader</cv:Relationship>
@@ -236,7 +236,7 @@
   <cv:Reference>
     <cv:ID>2</cv:ID>
     <cv:Party>
-      <cv:EndpointID scheme="0192">123456785</cv:EndpointID>
+      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>X school</cv:Name>
     </cv:Party>
     <cv:Relationship>Math teacher</cv:Relationship>
@@ -293,9 +293,7 @@
       <cv:AdditionalStreetName>2.building</cv:AdditionalStreetName>
       <cv:CityName>Oslo</cv:CityName>
       <cv:PostalZone>0342</cv:PostalZone>
-      <cv:Country>
-        <cv:IdentificationCode>NO</cv:IdentificationCode>
-      </cv:Country>
+      <cv:CountryCode>NO</cv:CountryCode>
     </cv:PostalAddress>
     <cv:Contact>
       <cv:Telephone>98989898</cv:Telephone>
@@ -314,7 +312,6 @@
     <cv:ID>1</cv:ID>
     <cv:Description>Coding projects</cv:Description>
   </cv:Interest>
-
 
   <cv:AdditionalInformation>
     <cv:ID>1</cv:ID>

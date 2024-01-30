@@ -4,6 +4,7 @@
     <Title>Sector code list</Title>
     <Identifier>sector</Identifier>
     <Version>1.0</Version>
+    <!-- tag::Sector[] -->
     <Agency>DFO</Agency>
 
     <Code>
@@ -29,4 +30,5 @@
         <Name>All</Name>
         <Description>All type of sectors and organisaton.</Description>
     </Code>
+    <!-- end::Sector[] -->
 </CodeList>

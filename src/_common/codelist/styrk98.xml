@@ -1,16 +1,16 @@
-<!--
-  https://www.ssb.no/arbeid-og-lonn/yrkeskatalogen
-  https://www.ssb.no/klass/klassifikasjoner/145/
-
--->
-
 <?xml version="1.0" encoding="UTF-8"?>
 <Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
     <Title>Classification of Occupations Codelist</Title>
-    <Identifier>stryk98</Identifier>
+    <Identifier>styrk98</Identifier>
     <Version>1.0</Version>
+    <!-- tag::Styrk98[] -->
     <Agency>SSB</Agency>
 
+  <!--
+    https://www.ssb.no/arbeid-og-lonn/yrkeskatalogen
+    https://www.ssb.no/klass/klassifikasjoner/145/
+  -->
+    <!-- end::Styrk98[] -->
     <Code>
       <Id>0111101</Id>
       <Name>MENIG (FORSVARET)</Name>

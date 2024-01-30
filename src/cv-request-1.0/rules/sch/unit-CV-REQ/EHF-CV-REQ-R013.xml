@@ -2,7 +2,7 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
 	configuration="ehf-cv-request-1.0">
 	<assert>
-		<description>Verify personal skill type or title is specified</description>
+		<description>Verify that either personal skill type or title is specified</description>
 		<scope>EHF-CV-REQ-R013</scope>
 	</assert>
 

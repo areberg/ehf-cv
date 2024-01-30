@@ -1,15 +1,15 @@
 = Benefits
 
-The purpose of standardizing the CV is to save time for Contracting authorities, Economic operator, and Job seekers. 
-A standardized CV will also enhance the procurement processes and job application processes by ensuring good quality of CV-information. 
+The main benefit with a standardized CV for both Contracting Authorities and Economic Operators is time saved when processing CV-information. 
+A standardized CV will also enhance the procurement process by ensuring good quality of CV-information. 
 
-Benefits for Contracting authoritites:
+Benefits for Contracting Authoritites:
 
 * A standardized CV can save time and money through easier and faster specification of requirements and criteria
 * Content can be reused in CV-requests
 * Parts of the CV-process can be automated and AI may also be used in the process
 
-Benefits for Economic operators:
+Benefits for Economic Operators:
 
 * A standardized CV can save time and money through easier and faster specification of skills and competences
 * Content can be reused in CV's 

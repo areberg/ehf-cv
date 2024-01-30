@@ -1,6 +1,6 @@
 = Interest
 
-An applicant's personal interest. Only used in EHF CV, not in EHF CV Request.
+An applicant's personal interest. Is only used in CV and not in CV request.
 
 Information about applicant's hobbies and interests can be described in element `cv:Description`.
 

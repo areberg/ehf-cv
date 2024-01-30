@@ -1,56 +1,40 @@
 = References
 
-References that can testify the applicant's character, skills and abilities to a contracting authority
-or an employer.
+References that can testify the applicant's character, skills and abilities to a Contracting Authority.
 
 == Information specific to CV request
 
-The contracting authority can require a minimum total references, i.e. a lower bound limit.
-Use element `cv-req:MinimumTotalReference`.
+The Contracting Authority can require a minimum total references in element `cv-req:MinimumTotalReference`.
 
 
 .Example of the requested reference in the CV request
 [source, xml, indent=0]
 ----
-include::../{snippet-dir-cv-request}/cv-request.xml[tags=Skills]
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=Reference]
 ----
 <1> Reference identifier
-<2> Minimum requirement
-
+<2> Total number of references required
 
 == Information specific to CV
 
-Based on the reference requirement, the economic operator needs to document the candidate's
-references. For CV used in the job application process, fill in the relevant parts of
-skill information.
+Based on the reference requirement, the Economic Operator needs to document the candidate's
+references. 
 
-The element `cv:RequestReference` needs to be used in the procurement process, not in the job
-application process. This is a reference to the corresponding reference requirement in the CV request.
+The element `cv:RequestReference` must be used as a reference to the corresponding reference requirement in the CV request.
 
 Party information need to be stated in element `cv:Party`, with the party name and electronic
 address identifier.
 Relationship between the candidate and the reference-person can be stated in element `cv:Relationship`.
 For example school teacher, team leader, etc.
 
-.Example of a description of skill in CV as a response to requested skill in CV request
+.Example of a description of references in CV as a response to requested number of references in CV request
 [source, xml, indent=0]
 ----
 include::../{snippet-dir-cv}/cv.xml[tags=Reference-req]
 ----
 <1> Reference identifier
-<2> Electronic address identifier
+<2> Electronic address identifier. schemeID according to codelist Electronic address identifier (EAID) (chapter 5.18)
 <3> Party name
 <4> Relationship to reference-person
 <5> Contact information
 <6> Corresponding reference to cv request
-
-.Example of a description of skills in a CV in the job application
-[source, xml, indent=0]
-----
-include::../{snippet-dir-cv}/cv.xml[tags=Reference]
-----
-<1> Reference identifier
-<2> Electronic address identifier
-<3> Party name
-<4> Relationship to reference-person
-<5> Contact information

@@ -58,15 +58,69 @@
                 <Description>The Doffin Reference number.</Description>
 
                 <Attribute>
-                <Term>scheme</Term>
-                <Name>Doffin scheme identifier</Name>
+                <Term>schemeID</Term>
+                <Name>Doffin Scheme identifier</Name>
                 <Value type="FIXED">DOFFIN</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">14789</Value>
             </Element>
         </Element>
-
+        
+        <Element cardinality="0..1">
+            <Term>cv-req:SenderParty</Term>
+            <Name>Contracting Authority</Name>
+            
+            <Element>
+                <Term>cv-req:EndpointID</Term>
+                <Name>Electronic Address Identifier</Name>
+                <Description>The electronic address identifier of the Contracting Authority.</Description>
+                <Reference type="RULE">EHF-COMMON-R011</Reference>
+                
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
+                    <Reference type="CODE_LIST">eaid</Reference>
+                    <Value type="EXAMPLE">0192</Value>
+                </Attribute>
+                
+                <Value type="EXAMPLE">987654325</Value>
+            </Element>
+            
+            <Element>
+                <Term>cv-req:Name</Term>
+                <Name>Name</Name>
+                <Description>The name of the Contracting Authority.</Description>
+                <Value type="EXAMPLE">X company</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cv-req:Contact</Term>
+                <Name>Contact Information</Name>
+                
+                <Element>
+                    <Term>cv-req:Name</Term>
+                    <Name>Contact Name</Name>
+                    <Description>Contact person's name.</Description>
+                    <Value type="EXAMPLE">John Johnsen</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cv-req:Telephone</Term>
+                    <Name>Contact Telephone Number</Name>
+                    <Description>Contact person's telephone number.</Description>
+                    <Value type="EXAMPLE">99998888</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cv-req:ElectronicMail</Term>
+                    <Name>Contact Email Address</Name>
+                    <Description>Contact person's e-mail address.</Description>
+                    <Value type="EXAMPLE">john.johnsen@x.com</Value>
+                </Element>
+            </Element>
+        </Element>
+        
         <Element cardinality="0..1">
             <Term>cv-req:ReceiverParty</Term>
             <Name>Economic operator</Name>
@@ -74,11 +128,11 @@
             <Element>
                 <Term>cv-req:EndpointID</Term>
                 <Name>Electronic Address Identifier</Name>
-                <Description>The electronic address identifier of the economic operator.</Description>
+                <Description>The electronic address identifier of the Economic Operator.</Description>
                 <Reference type="RULE">EHF-COMMON-R011</Reference>
 
                 <Attribute>
-                    <Term>scheme</Term>
+                    <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Reference type="CODE_LIST">eaid</Reference>
                     <Value type="EXAMPLE">0192</Value>
@@ -117,60 +171,6 @@
                     <Name>Contact Email Address</Name>
                     <Description>Contact person's e-mail address.</Description>
                     <Value type="EXAMPLE">ola.nordmann@digdir.no</Value>
-                </Element>
-            </Element>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cv-req:ProviderParty</Term>
-            <Name>Contracting Authority</Name>
-
-            <Element>
-                <Term>cv-req:EndpointID</Term>
-                <Name>Electronic Address Identifier</Name>
-                <Description>The electronic address identifier of the Contracting Authority.</Description>
-                <Reference type="RULE">EHF-COMMON-R011</Reference>
-
-                <Attribute>
-                    <Term>scheme</Term>
-                    <Name>Scheme identifier</Name>
-                    <Reference type="CODE_LIST">eaid</Reference>
-                    <Value type="EXAMPLE">0192</Value>
-                </Attribute>
-
-                <Value type="EXAMPLE">987654325</Value>
-            </Element>
-
-            <Element>
-                <Term>cv-req:Name</Term>
-                <Name>Name</Name>
-                <Description>The name of the Contracting Authority.</Description>
-                <Value type="EXAMPLE">X company</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cv-req:Contact</Term>
-                <Name>Contact Information</Name>
-
-                <Element>
-                    <Term>cv-req:Name</Term>
-                    <Name>Contact Name</Name>
-                    <Description>Contact person's name.</Description>
-                    <Value type="EXAMPLE">John Johnsen</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cv-req:Telephone</Term>
-                    <Name>Contact Telephone Number</Name>
-                    <Description>Contact person's telephone number.</Description>
-                    <Value type="EXAMPLE">99998888</Value>
-                </Element>
-
-                <Element>
-                    <Term>cv-req:ElectronicMail</Term>
-                    <Name>Contact Email Address</Name>
-                    <Description>Contact person's e-mail address.</Description>
-                    <Value type="EXAMPLE">john.johnsen@x.com</Value>
                 </Element>
             </Element>
         </Element>
@@ -285,8 +285,8 @@
 
                 <Element cardinality="0..n">
                     <Term>cv-req:RelevantExperience</Term>
-                    <Name>Relavant experience</Name>
-                    <Description>If formel education is not necessary and accept relevant experiences.</Description>
+                    <Name>Relevant experience</Name>
+                    <Description>If formal education is not necessary and accept relevant experiences.</Description>
 
                     <Element>
                         <Term>cv-req:Type</Term>
@@ -540,7 +540,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cv-req:Version</Term>
-                    <Name>Cerrtification version</Name>
+                    <Name>Certification version</Name>
                     <Description>The version of the certfication.</Description>
                     <Value type="EXAMPLE">2.0</Value>
                 </Element>

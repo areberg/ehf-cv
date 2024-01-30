@@ -1,12 +1,13 @@
-<!--
-https://www.ssb.no/en/klass/klassifikasjoner/36/koder
--->
 <?xml version="1.0" encoding="UTF-8"?>
 <Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
     <Title>Classification of Edcuation (NUS) Codelist</Title>
     <Identifier>NUS</Identifier>
     <Version>1.0</Version>
+    <!-- tag::Nus[] -->
     <Agency>SSB</Agency>
+
+    <!-- https://www.ssb.no/en/klass/klassifikasjoner/36/koder -->
+    <!-- end::Nus[] -->
 
     <Code>
         <Id>099901</Id>

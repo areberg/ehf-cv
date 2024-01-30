@@ -4,9 +4,10 @@
     <Title>Course type code list</Title>
     <Identifier>CourseType</Identifier>
     <Version>1.0</Version>
+    <!-- tag::CourseType[] -->
     <Agency>DFO</Agency>
 
-    <!-- cateory: IT -->
+    <!-- category: IT -->
     <Code>
         <Id>java</Id>
         <Name>Java</Name>
@@ -311,5 +312,6 @@
         <Id>marketing</Id>
         <Name>Marketing</Name>
     </Code>
+    <!-- end::CourseType[] -->
 
 </CodeList>
