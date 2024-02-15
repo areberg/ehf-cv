@@ -58,7 +58,7 @@ The documentation of clearance can be stated as URI (`cv:URI`) or embedded docum
 Candidates who don't fulfill the clearance requirement can describe the reason and whether this can
 be done before the job period. Use element `cv:Description`. 
 
-.Example of a description of clearance in CV as a response to requested course in CV request
+.Example of a description of clearance in CV as a response to requested clearance in CV request
 [source, xml, indent=0]
 ----
 include::../{snippet-dir-cv}/cv.xml[tags=Clearance-req]

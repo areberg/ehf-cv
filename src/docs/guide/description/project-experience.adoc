@@ -24,6 +24,22 @@ position percent (e.g. must have worked 100% with the project).
 The project value can be stated in element `cv-req:ExperienceValue`, where the Contracting Authority can specify the candidate's
 project participation (need to be months), the size of project and the total value of the project.
 
+.Example of the requested project experience in the CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperience]
+----
+<1> Project experience identifier
+<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement. According to codelist Requirement code (chapter 5.11).
+<3> Type of project experience according to codelist Classification of Occupations (Styrk98) (chapter 5.15)
+<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.16)
+<5> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.19)
+<6> Job sector according to codelist Sector (chapter 5.12)
+<7> Total year of experience
+<8> Period
+<9> Project experience description
+<10> Project experience value. Currency according to code list ISO 4217 Currency codes (chapter 5.20)
+
 .Example of the requested project experience in the CV request with alternative requirement
 [source, xml, indent=0]
 ----
@@ -45,22 +61,6 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperienceAltern
 <14> Project value
 <15> Alternative project experience
 
-.Example of the requested project experience in the CV request
-[source, xml, indent=0]
-----
-include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperience]
-----
-<1> Project experience identifier
-<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement. According to codelist Requirement code (chapter 5.11).
-<3> Type of project experience according to codelist Classification of Occupations (Styrk98) (chapter 5.15)
-<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.16)
-<5> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.19)
-<6> Job sector according to codelist Sector (chapter 5.12)
-<7> Total year of experience
-<8> Period
-<9> Project experience description
-<10> Project experience value. Currency according to code list ISO 4217 Currency codes (chapter 5.20)
-
 
 == Information specific to CV
 
@@ -70,7 +70,7 @@ not in the job application process. The education reference corresponds to the e
 the contracting authority accepts relevant experience. The project experience reference corresponds to project experience in the
 CV request.
 
-.Example of a description of project experience in CV as a response to requested education in CV request
+.Example of a description of project experience in CV as a response to requested project experience in CV request
 [source, xml, indent=0]
 ----
 include::../{snippet-dir-cv}/cv.xml[tags=ProjectExperience-req]

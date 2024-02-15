@@ -27,8 +27,7 @@ Based on the personal skill requirement, the economic operator needs to provide 
 of the candidate's personal skill. For CV used in the job application process, fill in the relevant
 parts of personal skill information.
 
-The element `cv:PersonalSkillsReference` needs to be used in the procurement process, not in the
-job application process. This is a reference to the corresponding personal skill requirement in the
+The element `cv:PersonalSkillsReference` needs to be used as a reference to the corresponding personal skill requirement in the
 CV request.
 
 There is possible to state a contact point (to a person) who can confirm the candidate's personal
@@ -36,7 +35,7 @@ skills, use the element `cv:Contact`. In some cases, there is relevant that the 
 authority needs this confirmation or documentation from an earlier co-worker, leader,
 team leader, etc.
 
-.Example of a description of personal skill in CV as a response to requested course in CV request
+.Example of a description of personal skill in CV as a response to requested personal skills in CV request
 [source, xml, indent=0]
 ----
 include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills-req]
