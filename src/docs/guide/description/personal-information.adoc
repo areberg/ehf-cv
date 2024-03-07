@@ -2,9 +2,6 @@
 
 Personal details about the applicant. Is only used in CV and not in CV request.
 
-Social media must include either element `cv-req:Type` or `cv-req:Title` to identify type of sosial media. Use type if the
-specific social media is defined in the clearance codelist, otherwise use the title.
-
 .Example of a description of personal skill in a CV
 [source, xml, indent=0]
 ----
@@ -15,6 +12,3 @@ include::../{snippet-dir-cv}/cv.xml[tags=PersonalInformation]
 <3> Date of birth
 <4> Postal address
 <5> Contact information
-<6> Social media identifier
-<7> Type of social media according to codelist Social media (chapter 5.14)
-<8> Social media URI

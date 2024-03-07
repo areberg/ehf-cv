@@ -1,69 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>Education degree code list</Title>
+
     <Identifier>EducationDegree</Identifier>
     <Version>1.0</Version>
 
     <!-- tag::EducationDegree[] -->
-    <Agency>DFO</Agency>
+    <Title>NUS2000</Title>
+    <Agency>SSB</Agency>
 
     <Code>
-        <Id>primary</Id>
-        <Name>Primary School</Name>
+        <Id>0</Id>
+        <Name>No education and pre-school education</Name>
+        <Navn>Ingen utdanning og førskoleutdanning</Navn>
     </Code>
 
     <Code>
-        <Id>secondary</Id>
-        <Name>Lower scondary school</Name>
+        <Id>1</Id>
+        <Name>Primary education</Name>
+        <Navn>Barneskoleutdanning</Navn>
     </Code>
 
     <Code>
-        <Id>HighSchool</Id>
-        <Name>High School</Name>
+        <Id>2</Id>
+        <Name>Lower secondary education</Name>
+        <Navn>Ungdomsskoleutdanning</Navn>
     </Code>
 
     <Code>
-        <Id>bachelor</Id>
-        <Name>Bachelor degree</Name>
+        <Id>3</Id>
+        <Name>Upper secondary education, basic education</Name>
+        <Navn>Videregående, grunnutdanning</Navn>
     </Code>
 
     <Code>
-        <Id>master</Id>
-        <Name>Master degree</Name>
+        <Id>4</Id>
+        <Name>Upper secondary, final year</Name>
+        <Navn>Videregående, avsluttende utdanning</Navn>
     </Code>
 
     <Code>
-        <Id>phd</Id>
-        <Name>PhD degree - Doctor of Philosophy</Name>
+        <Id>5</Id>
+        <Name>Post secondary, non-tertiary education</Name>
+        <Navn>Påbygning til videregående utdanning</Navn>
     </Code>
 
     <Code>
-        <Id>candidate</Id>
-        <Name>Candidate degree</Name>
+        <Id>6</Id>
+        <Name>First stage of tertiary education, undergraduate level</Name>
+        <Navn>Universitets- og høgskoleutdanning, lavere nivå</Navn>
     </Code>
 
     <Code>
-        <Id>apprentice</Id>
-        <Name>Apprentice degree</Name>
+        <Id>7</Id>
+        <Name>First stage of tertiary education, graduate level</Name>
+        <Navn>Universitets- og høgskoleutdanning, høyere nivå</Navn>
     </Code>
 
     <Code>
-        <Id>skilled</Id>
-        <Name>Skilled degree (faglært)</Name>
+        <Id>8</Id>
+        <Name>Second stage of tertiary education (postgraduate education)</Name>
+        <Navn>Forskerutdanning</Navn>
     </Code>
 
     <Code>
-        <Id>TradeCertificate</Id>
-        <Name>Trade certificate</Name>
-        <Description>certificate awarded on successful completion of a vocational training course, and entitling the
-          holder to practise the trade concerned.</Description>
-    </Code>
-
-    <Code>
-        <Id>other</Id>
-        <Name>Other degree</Name>
-        <Description>Other degrees that are not provided in this code list.</Description>
+        <Id>9</Id>
+        <Name>Unspecified</Name>
+        <Navn>Uoppgitt</Navn>
     </Code>
     <!-- end::EducationDegree[] -->
 

@@ -174,6 +174,73 @@
                 </Element>
             </Element>
         </Element>
+       
+        <Element cardinality="0..1">
+            <Term>cv:PoliceCertificate</Term>
+            <Name>PoliceCertificate requirement</Name>
+
+            <Element>
+                <Term>cv:ID</Term>
+                <Name>Police certificate identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to
+                  positively reference the line. For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+
+            <Element>
+                <Term>cv:Type</Term>
+                <Name>Police certificate type</Name>
+                <Description>The type of the certificate.</Description>
+                <Reference type="CODE_LIST">police-certificate</Reference>
+                <Value type="Ordinær">Begrenset</Value>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cv:ValidTo</Term>
+                <Name>Valid to date</Name>
+                <Description>A date to which the certificate is valid</Description>
+                <Value type="EXAMPLE">2024-12-31</Value>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cv:Documentation</Term>
+                <Name>Educational documentation</Name>
+                <Description>The candidate's educational documentation</Description>
+
+                <Element cardinality="0..1">
+                    <Term>cv:RegistrationType</Term>
+                    <Name>Registration type</Name>
+                    <Description>The type of registration required from EHF CV-request, e.g. HPR-number.</Description>
+                    <Value type="EXAMPLE">HPR</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cv:RegistrationNumber</Term>
+                    <Name>Registration number</Name>
+                    <Description>Specific number of the registration type.</Description>
+                    <Value type="EXAMPLE">154725</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cv:EmbeddedDocumentBinaryObject</Term>
+                    <Name>Attached document</Name>
+                    <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
+                    <Attribute>
+                        <Term>mimeCode</Term>
+                        <Name>Mime code</Name>
+                        <Reference type="CODE_LIST">MimeCode</Reference>
+                        <Value type="EXAMPLE">application/pdf</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">bWFzdGVyIG9mIHNjaWVuY2Ugdml0bmVtw6VsCg==</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cv:URI</Term>
+                    <Name>Education documentation URI</Name>
+                    <Description>Education documentation URI reference, e.g. from vitnemålsportalen</Description>
+                    <Value type="EXAMPLE">https://www.vitnemalsportalen.no/</Value>
+                </Element>
+            </Element>        </Element>
 
         <Element cardinality="0..n">
             <Term>cv:Education</Term>
@@ -188,6 +255,14 @@
             </Element>
 
             <Element>
+                <Term>cv:Title</Term>
+                <Name>Education title</Name>
+                <Description>The name of the education.</Description>
+                <Value type="High School">HMS</Value>
+                <Reference type="RULE">EHF-CV-REQ-R001</Reference>
+            </Element>
+
+            <Element cardinality="0..1">
                 <Term>cv:EducationDegree</Term>
                 <Name>Education degree</Name>
                 <Description>The candidate's education degree. Use codelist eduDegree.</Description>
@@ -195,7 +270,7 @@
                 <Value type="EXAMPLE">bachelor</Value>
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cv:SubjectArea</Term>
                 <Name>Educational Subject Area</Name>
                 <Description>The candidate's educational subject area. Use codelist subArea.</Description>
@@ -616,6 +691,13 @@
                 <Description>The specific language. Use code list ISO639.</Description>
                 <Reference type="CODE_LIST">ISO639</Reference>
                 <Value type="EXAMPLE">sq</Value>
+            </Element>
+
+            <Element>
+                <Term>cv:Scandinavian</Term>
+                <Name>Scandinavian</Name>
+                <Description>Set to true if language is no, sv or dk (scandinavian language)</Description>
+                <Value type="EXAMPLE">true</Value>
             </Element>
 
             <Element>

@@ -23,6 +23,8 @@
             <xs:element name="SenderParty" type="PartyType" minOccurs="0"/>
             <xs:element name="ReceiverParty" type="PartyType" minOccurs="0"/>
 
+            <xs:element name="PoliceCertificate" type="PoliceCertificateType" minOccurs="0"/>
+
             <xs:element name="Education" type="EducationType" minOccurs="0" maxOccurs="unbounded"/>
 
             <xs:element name="Course" type="CourseType" minOccurs="0" maxOccurs="unbounded"/>
@@ -31,9 +33,9 @@
 
             <xs:element name="LanguageSkills" type="LanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
 
-            <xs:element name="ProjectExperience" type="ProjectExperinceType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="ProjectExperience" type="ProjectExperienceType" minOccurs="0" maxOccurs="unbounded"/>
 
-            <xs:element name="WorkExperience" type="WorkExperinceType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="WorkExperience" type="WorkExperienceType" minOccurs="0" maxOccurs="unbounded"/>
 
             <xs:element name="Clearance" type="ClearanceType" minOccurs="0" maxOccurs="unbounded"/>
 
@@ -45,10 +47,20 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="PoliceCertificateType">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:normalizedString"/>
+            <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="Type" type="xs:string" minOccurs="0"/>
+            <xs:element name="ValidTo" type="xs:date" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="EducationType">
         <xs:sequence>
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="Title" type="xs:string" minOccurs="0"/>
             <xs:element name="EducationDegree" type="xs:string" minOccurs="0"/>
             <xs:element name="SubjectArea" type="xs:string" minOccurs="0"/>
             <xs:element name="RegistrationType" type="xs:string" minOccurs="0"/>
@@ -61,7 +73,7 @@
         <xs:sequence>
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
-            <xs:element name="Title" type="xs:string" minOccurs="0"/>
+            <xs:element name="Title" type="xs:string"/>
             <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
@@ -73,7 +85,7 @@
         <xs:sequence>
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
-            <xs:element name="Title" type="xs:string" minOccurs="0"/>
+            <xs:element name="Title" type="xs:string"/>
             <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="ValidTo" type="xs:date" minOccurs="0"/>
@@ -86,13 +98,14 @@
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
             <xs:element name="Language" type="xs:string" minOccurs="0"/>
+            <xs:element name="Scandinavian" type="xs:boolean" minOccurs="0"/>
             <xs:element name="OralSkill" type="xs:string" minOccurs="0"/>
             <xs:element name="WrittenSkill" type="xs:string" minOccurs="0"/>
             <xs:element name="AlternativeLanguageSkills" type="AlternativeLanguageSkillsType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="ProjectExperinceType">
+    <xs:complexType name="ProjectExperienceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
@@ -108,7 +121,7 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="WorkExperinceType">
+    <xs:complexType name="WorkExperienceType">
         <xs:sequence>
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Requirement" type="xs:string" minOccurs="0"/>

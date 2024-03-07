@@ -19,9 +19,6 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=Reference]
 
 Based on the reference requirement, the Economic Operator needs to document the candidate's
 references. 
-
-The element `cv:RequestReference` must be used as a reference to the corresponding reference requirement in the CV request.
-
 Party information need to be stated in element `cv:Party`, with the party name and electronic
 address identifier.
 Relationship between the candidate and the reference-person can be stated in element `cv:Relationship`.
@@ -30,11 +27,10 @@ For example school teacher, team leader, etc.
 .Example of a description of references in CV as a response to requested number of references in CV request
 [source, xml, indent=0]
 ----
-include::../{snippet-dir-cv}/cv.xml[tags=Reference-req]
+include::../{snippet-dir-cv}/cv.xml[tags=Reference]
 ----
 <1> Reference identifier
-<2> Electronic address identifier. schemeID according to codelist Electronic address identifier (EAID) (chapter 5.18)
+<2> Electronic address identifier. schemeID according to codelist Electronic address identifier (EAID) (chapter 5.11)
 <3> Party name
-<4> Relationship to reference-person
-<5> Contact information
-<6> Corresponding reference to cv request
+<4> Relationship to reference-person, e.g. school teacher, team leader or colleague
+<5> Contact information to reference person

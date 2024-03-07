@@ -16,7 +16,8 @@ v{revision}
 //Variables
 :snippet-dir-cv: ../../cv-1.0/rules/snippets
 :snippet-dir-cv-request: ../../cv-request-1.0/rules/snippets
-
+:example-dir-cv-request: ../../cv-request-1.0/rules/example
+:example-dir-cv: ../../cv-1.0/rules/example
 
 {description}
 
@@ -33,6 +34,8 @@ include::process/index.adoc[]
 include::description/index.adoc[]
 
 include::codes/index.adoc[]
+
+include::examples/index.adoc[]
 
 include::appendix/index.adoc[]
 

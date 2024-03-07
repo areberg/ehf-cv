@@ -1,3 +1,4 @@
+<!-- tag::Complete[] -->
 <?xml version="1.0" encoding="UTF-8"?>
 <cv-req:CVRequest xmlns:cv-req="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
   <cv-req:CustomizationID>...</cv-req:CustomizationID>
@@ -29,23 +30,30 @@
     </cv-req:Contact>
   </cv-req:ReceiverParty>
   
+  <cv-req:PoliceCertificate>
+    <cv-req:ID>1</cv-req:ID>
+    <cv-req:Requirement>must</cv-req:Requirement>
+    <cv-req:Type>Begrenset</cv-req:Type>
+    <cv-req:ValidTo>2024-12-31</cv-req:ValidTo>
+  </cv-req:PoliceCertificate>
+
   <cv-req:Education>
     <cv-req:ID>2</cv-req:ID>
     <cv-req:Requirement>should</cv-req:Requirement>
-    <cv-req:EducationDegree>bachelor</cv-req:EducationDegree>
-    <cv-req:SubjectArea>654122</cv-req:SubjectArea>
+    <cv-req:Title>Master</cv-req:Title>
+    <cv-req:EducationDegree>7</cv-req:EducationDegree>
     <cv-req:AlternativeEducation>
       <cv-req:ID>1</cv-req:ID>
-      <cv-req:Requirement>should</cv-req:Requirement>
-      <cv-req:EducationDegree>bachelor</cv-req:EducationDegree>
-      <cv-req:SubjectArea>654124</cv-req:SubjectArea>
+      <cv-req:Requirement>must</cv-req:Requirement>
+      <cv-req:Title>Bachelor</cv-req:Title>
+      <cv-req:EducationDegree>6</cv-req:EducationDegree>
     </cv-req:AlternativeEducation>
   </cv-req:Education>
 
   <cv-req:Course>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:Type>python</cv-req:Type>
+    <cv-req:Title>python</cv-req:Title>
     <cv-req:Version>3.0</cv-req:Version>
     <cv-req:Period>
       <cv-req:StartDate>2019-01-10</cv-req:StartDate>
@@ -54,7 +62,7 @@
     <cv-req:AlternativeCourse>
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>must</cv-req:Requirement>
-      <cv-req:Type>python</cv-req:Type>
+      <cv-req:Title>python</cv-req:Title>
       <cv-req:Version>2.0</cv-req:Version>
       <cv-req:Period>
         <cv-req:StartDate>2019-01-10</cv-req:StartDate>
@@ -82,12 +90,13 @@
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>should</cv-req:Requirement>
     <cv-req:Language>no</cv-req:Language>
-    <cv-req:OralSkill>A1</cv-req:OralSkill>
-    <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
+    <cv-req:Scandinavian>true</cv-req:Scandinavian>
+    <cv-req:OralSkill>B1</cv-req:OralSkill>
+    <cv-req:WrittenSkill>B1</cv-req:WrittenSkill>
     <cv-req:AlternativeLanguageSkills>
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>should</cv-req:Requirement>
-      <cv-req:Language>sv</cv-req:Language>
+      <cv-req:Language>en</cv-req:Language>
       <cv-req:OralSkill>A1</cv-req:OralSkill>
       <cv-req:WrittenSkill>A1</cv-req:WrittenSkill>
     </cv-req:AlternativeLanguageSkills>
@@ -149,7 +158,7 @@
   <cv-req:WorkExperience>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
-    <cv-req:PositionLevel>employee</cv-req:PositionLevel>
+    <cv-req:PositionLevel>Professionals</cv-req:PositionLevel>
     <cv-req:IndustryType>71200</cv-req:IndustryType>
     <cv-req:Workplace>AI</cv-req:Workplace>
     <cv-req:JobSector>private</cv-req:JobSector>
@@ -166,7 +175,7 @@
     <cv-req:AlternativeWorkExperience>
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>must</cv-req:Requirement>
-      <cv-req:PositionLevel>employee</cv-req:PositionLevel>
+      <cv-req:PositionLevel>Professionals</cv-req:PositionLevel>
       <cv-req:IndustryType>71129</cv-req:IndustryType>
       <cv-req:Workplace>AI</cv-req:Workplace>
       <cv-req:JobSector>private</cv-req:JobSector>
@@ -243,3 +252,4 @@
   </cv-req:PersonalSkills>
 
 </cv-req:CVRequest>
+<!-- end::Complete[] -->

@@ -7,9 +7,11 @@ This often leads to poor information quality and ambiguity which makes the evalu
 The purpose of this EHF-CV specification is to define and describe a common format for the Curriculum Vitae (CV) messages to be used in a procurement process. 
 This includes both the tender process in Pre Award and the follow-up of contract information in Post Award.
 
-:leveloffset: +1
+Europass CV is a specification to be used by employees and job-seekers to register CV-information in a structured way. Europass CV also includes an XML-format which can be used to store and exchange information. 
+EHF-CV is aligned with Europass CV to a certain extent. But since the scope for EHF-CV is to support the procurement process and Europass CV is directed towards job-seeking, they will have different information requirements.
+As part of the alignment we have used official codelists in EHF-CV when it has been assessed as appropriate.  
 
-//include::definitions.adoc[]
+:leveloffset: +1
 
 include::benefits.adoc[]
 

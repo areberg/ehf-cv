@@ -5,11 +5,9 @@
     <Version>1.0</Version>
     <!-- tag::Styrk98[] -->
     <Agency>SSB</Agency>
+    <URI>https://www.ssb.no/klass/klassifikasjoner/145/</URI>
+    <Description>https://www.ssb.no/arbeid-og-lonn/yrkeskatalogen</Description>
 
-  <!--
-    https://www.ssb.no/arbeid-og-lonn/yrkeskatalogen
-    https://www.ssb.no/klass/klassifikasjoner/145/
-  -->
     <!-- end::Styrk98[] -->
     <Code>
       <Id>0111101</Id>

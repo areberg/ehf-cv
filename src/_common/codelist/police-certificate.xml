@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Police Certificate codelist</Title>
+    <Identifier>PoliceCerticate</Identifier>
+    <Version>1.0</Version>
+    
+    <!-- tag::PoliceCertificate[] -->
+
+    <Agency>Politiet</Agency>
+    
+    <Code>
+        <Id>Ordinær</Id>
+        <Name>Ordinær</Name>
+    </Code>
+
+    <Code>
+        <Id>Barneomsorgsattest</Id>
+        <Name>Barneomsorgsattest</Name>
+    </Code>
+
+    <Code>
+        <Id>Begrenset</Id>
+        <Name>Begrenset</Name>
+    </Code>
+
+    <Code>
+        <Id>Uttømmende</Id>
+        <Name>Uttømmende</Name>
+    </Code>
+
+    <Code>
+        <Id>UttømmendeUtvidet</Id>
+        <Name>Uttømmende og utvidet</Name>
+    </Code>
+    <!-- end::PoliceCertificate[] -->
+

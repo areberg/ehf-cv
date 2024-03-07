@@ -174,6 +174,42 @@
                 </Element>
             </Element>
         </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cv-req:PoliceCertificate</Term>
+            <Name>PoliceCertificate requirement</Name>
+
+            <Element>
+                <Term>cv-req:ID</Term>
+                <Name>Police certificate identifier</Name>
+                <Description>Each line must have an identifier that is unique within the document to make it possible to
+                  positively reference the line. For example, from other documents.</Description>
+                <Value type="EXAMPLE">1</Value>
+            </Element>
+
+            <Element>
+                <Term>cv-req:Requirement</Term>
+                <Name>Police certificate requirement</Name>
+                <Description>Requirement related to the Police certificate</Description>
+                <Reference type="CODE_LIST">requirement</Reference>
+                <Value type="EXAMPLE">must</Value>
+            </Element>
+
+            <Element>
+                <Term>cv-req:Type</Term>
+                <Name>Police certificate type</Name>
+                <Description>The type of the certificate.</Description>
+                <Reference type="CODE_LIST">police-certificate</Reference>
+                <Value type="High School">Begrenset</Value>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cv-req:ValidTo</Term>
+                <Name>Valid to date</Name>
+                <Description>A date to which the certificate must be valid</Description>
+                <Value type="EXAMPLE">2024-12-31</Value>
+            </Element>
+        </Element>
 
         <Element cardinality="0..n">
             <Term>cv-req:Education</Term>
@@ -196,6 +232,14 @@
             </Element>
 
             <Element>
+                <Term>cv-req:Title</Term>
+                <Name>Education title</Name>
+                <Description>The name of the education.</Description>
+                <Value type="High School">HMS</Value>
+                <Reference type="RULE">EHF-CV-REQ-R001</Reference>
+            </Element>
+
+            <Element cardinality="0..1">
                 <Term>cv-req:EducationDegree</Term>
                 <Name>Education degree</Name>
                 <Description>A specific requirement of education degree. Use codelist educationDegree.</Description>
@@ -203,7 +247,7 @@
                 <Value type="EXAMPLE">master</Value>
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cv-req:SubjectArea</Term>
                 <Name>Educational Subject Area</Name>
                 <Description>A specific requirement of educational subject area. Use codelist subArea.</Description>
@@ -304,7 +348,6 @@
                     </Element>
                 </Element>
             </Element>
-
         </Element>
 
         <Element cardinality="0..n">
@@ -582,6 +625,13 @@
                 <Description>The specific language. Use code list ISO639.</Description>
                 <Reference type="CODE_LIST">ISO639</Reference>
                 <Value type="EXAMPLE">no</Value>
+            </Element>
+
+            <Element>
+                <Term>cv-req:Scandinavian</Term>
+                <Name>Scandinavian</Name>
+                <Description>Set to true if language is no, sv or dk (scandinavian language)</Description>
+                <Value type="EXAMPLE">true</Value>
             </Element>
 
             <Element>

@@ -9,27 +9,14 @@
     
     <Code>
         <Id>must</Id>
-        <Name>Must requirement</Name>
-        <Description>This requirement need to be fullfilled.</Description>
+        <Description>This requirement must be fullfilled.</Description>
     </Code>
     
     <Code>
         <Id>should</Id>
-        <Name>Should requirement</Name>
         <Description>This requirement should be fullfilled.</Description>
     </Code>
-    
-    <Code>
-        <Id>desirable</Id>
-        <Name>Desirable requirement</Name>
-        <Description>Positive score if the requirement is fullfilled.</Description>
-    </Code>
-    
-    <Code>
-        <Id>advantage</Id>
-        <Name>Advantage requirement</Name>
-        <Description>An advantage in evaluation process if this requirement is fullfilled.</Description>
-    </Code>
+
     <!-- end::Requirement[] -->
 
 </CodeList>

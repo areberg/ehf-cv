@@ -30,15 +30,19 @@ project participation (need to be months), the size of project and the total val
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperience]
 ----
 <1> Project experience identifier
-<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement. According to codelist Requirement code (chapter 5.11).
-<3> Type of project experience according to codelist Classification of Occupations (Styrk98) (chapter 5.15)
-<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.16)
-<5> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.19)
-<6> Job sector according to codelist Sector (chapter 5.12)
+<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement. According to codelist Requirement code (chapter 5.5).
+<3> Type of project experience according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
+<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.9)
+<5> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.12)
+<6> Job sector (private, public or other)
 <7> Total year of experience
-<8> Period
-<9> Project experience description
-<10> Project experience value. Currency according to code list ISO 4217 Currency codes (chapter 5.20)
+<8> Period for the experience
+<9> Candidate's position percent
+<10> Role in project according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
+<11> Description of project activities
+<12> Project participation in months
+<13> Total Project size in months
+<14> Project value in money. Currency according to code list ISO 4217 Currency codes (chapter 5.13)
 
 .Example of the requested project experience in the CV request with alternative requirement
 [source, xml, indent=0]
@@ -46,25 +50,24 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperience]
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperienceAlternative]
 ----
 <1> Project experience identifier
-<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement.  According to codelist Requirement code (chapter 5.11).
-<3> Type of project experience according to codelist Classification of Occupations (Styrk98) (chapter 5.15)
-<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.16)
-<5> Workplace according to code list ISO 3166-1:Alpha2 Country codes (chapter 5.19)
-<6> Job sector according to code list Sector (chapter 5.12)
+<2> Project experience requirement - indicate whether a candidate needs to fulfill the project requirement.  According to codelist Requirement code (chapter 5.5).
+<3> Type of project experience according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
+<4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.9)
+<5> Workplace according to code list ISO 3166-1:Alpha2 Country codes (chapter 5.12)
+<6> Job sector (private, public or other)
 <7> Total year of experience
-<8> Period
+<8> Period for the experience
 <9> Candidate's position percent
-<10> Role in project according to codelist Classification of Occupations (Styrk98) (chapter 5.15)
+<10> Role in project according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
 <11> Description of project activities
-<12> Project participation
-<13> Total Project size
-<14> Project value
+<12> Project participation in months
+<13> Total Project size in months
+<14> Project value in money. Currency according to code list ISO 4217 Currency codes (chapter 5.13)
 <15> Alternative project experience
-
 
 == Information specific to CV
 
-Based on the project experience requirement, the Economic Operator needs to document the candidate's project experience.
+Based on the project experience requirement from CV request, the Economic Operator must document the candidate's project experience.
 The element `cv:EducationReference` and `cv:ProjectExperienceReference` needs to be used in the procurement process,
 not in the job application process. The education reference corresponds to the educational requirement in the CV request when
 the contracting authority accepts relevant experience. The project experience reference corresponds to project experience in the
@@ -73,14 +76,19 @@ CV request.
 .Example of a description of project experience in CV as a response to requested project experience in CV request
 [source, xml, indent=0]
 ----
-include::../{snippet-dir-cv}/cv.xml[tags=ProjectExperience-req]
+include::../{snippet-dir-cv}/cv.xml[tags=ProjectExperience]
 ----
 <1> Project experience identifier
-<2> Type of project experience
-<3> Information about contracting authority or organisation. schemeID according to codelist Electronic address identifier (EAID) (chapter 5.18)
-<4> Period
-<5> Project experience description: position percent, role, activities
-<6> Value of project experience: total month of project participation, total project size, total project value. Currency according to code list ISO 4217 Currency codes (chapter 5.19)
-<7> Contact information
-<8> Education reference
-<9> Project experience reference
+<2> Type of project experience according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
+<3> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.9)
+<4> Workplace according to code list ISO 3166-1:Alpha2 Country codes (chapter 5.12)
+<5> Job sector (private, public or other)
+<6> Company information
+<7> Period for the experience
+<8> Position percent in the project
+<9> Role in project according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
+<10> Description of project activities
+<11> Project participation in months
+<12> Total Project size in months
+<13> Project value in money. Currency according to code list ISO 4217 Currency codes (chapter 5.13)
+<14> Project contact person

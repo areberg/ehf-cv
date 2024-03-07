@@ -7,12 +7,9 @@ Skills contains information about candidate's abilities related to the specific 
 A Contracting Authority can specify a skill requirement and an alternative requirement in the
 CV request. The alternative requirement is optional, but may be used when different skills can be accepted.
 
-The element `cv-req:Requirement` shall be used to differentiate between skills that *should* and *must* be present. The Economic Operators
-will only provide qualified candidates, and this makes it easier to do the rating.
+The element `cv-req:Requirement` shall be used to differentiate between skills that *should* and *must* be present.
 
-A skill must include either `cv-req:Type` or `cv-req:Title`, not both. Use type if the specific
-skill is defined in the skill codelist, otherwise use the title. Each skill can consist of a version
-number.
+A description of the relevant skill must be provided in `cv-req:Type`, ref. examples in chapter below.
 
 The Contracting Authority can specify details about the skill practices in element `cv-req:SkillPractice`.
 The element contains information about the last practiced date, the skill practice length
@@ -25,12 +22,11 @@ The element contains information about the last practiced date, the skill practi
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=Skills]
 ----
 <1> Skill identifier
-<2> Skill requirement - indicate whether a candidate needs to fulfill the skill requirement.  According to codelist Requirement code (chapter 5.11).
-<3> Type of skill according to codelist Skills type (chapter 5.13)
-<4> Skill version
-<5> Last practice date
-<6> Length of practice
-<7> Skills reference (true or false)
+<2> Skill requirement - indicate whether a candidate needs to fulfill the skill requirement.  According to codelist Requirement code (chapter 5.5).
+<3> Type of skill, see examples below
+<4> Last practice date
+<5> Length of practice
+<6> Skills reference to specify the need for a reference person (true or false)
 
 
 .Example of the requested skill in the CV request with alternative requirement
@@ -40,34 +36,34 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=SkillsAlternative]
 ----
 <1> Skill identifier
 <2> Skill requirement - indicate whether a candidate needs to fulfill the skill requirement.  According to codelist Requirement code (chapter 5.11).
-<3> Type of skill according to codelist Skills type (chapter 5.13)
-<4> Skill version
-<5> Last practice date
-<6> Length of practice
-<7> Skills reference (true or false)
-<8> Alternative skill requirement
+<3> Type of skill, see examples below
+<4> Last practice date
+<5> Length of practice
+<6> Skills reference to specify the need for a reference/contact person (true or false)
+<7> Alternative skill requirement
 
 
 == Information specific to CV
 
-Based on the skill requirement, the Economic Operator needs to document the candidate's
-skill. 
-The element `cv:SkillsReference` must be used as a reference to the corresponding skill requirement in the CV request.
-
-References to where the skill has been applied can be stated in element `cv:SkillsAppliedReference/cv:ID`.
-For example education, project experience, etc.
+Based on the skill requirement, the Economic Operator must document the candidate's skill. 
+The element `cv:Contact` must be used to provide contact information to a reference person.
 
 .Example of a description of skill in CV as a response to requested skill in CV request
 [source, xml, indent=0]
 ----
-include::../{snippet-dir-cv}/cv.xml[tags=Skills-req]
+include::../{snippet-dir-cv}/cv.xml[tags=Skills]
 ----
 <1> Skill identifier
-<2> Type of skill according to codelist Skills type (chapter 5.13)
-<3> Skill version
-<4> Last practice date
-<5> Minimum length of practice
-<6> Contact information.
-    Role according to codelist Classification of Occupations (Styrk98) (chapter 5.15)
-<7> Reference to where the skill is applied
-<8> Skills reference
+<2> Type of skill, see examples below
+<3> Last practice date
+<4> Minimum length of practice
+<5> Contact information to reference person
+
+== Examples of skills
+
+The list below gives examples of skills that can be requested.
+
+[source, xml, indent=0]
+----
+include::../../../_common/examples/skills-type.xml[tags=SkillsType]
+----

@@ -1,8 +1,7 @@
 [[parties]]
 = Parties
 
-The following parties/roles may be specified in the message.
-The same actor may play more than one role depending on the handling routine.
+The following parties/roles may be specified in EHF CV. These are only relevant to use when CV request and CV are exchanged as messages via a network such as Peppol.
 
 [[sender-party]]
 == Sender (SenderParty)

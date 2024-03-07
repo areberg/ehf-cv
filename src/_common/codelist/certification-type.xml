@@ -5,9 +5,9 @@
     <Identifier>CerticationType</Identifier>
     <Version>1.0</Version>
 
-   <!-- tag::CertificationType[] -->
        <Agency>DFO</Agency>
-
+    <!-- tag::CertificationType[] -->
+    
    <!-- category : IT -->
 
      <Code>

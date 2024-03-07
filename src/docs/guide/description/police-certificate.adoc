@@ -1,0 +1,33 @@
+= Police certificate
+
+Information about a Police certifiate can be specified in CV request and CV.
+The type of certificate must be according to legal types in the code list Police certificate.
+
+== Information specific to CV request
+
+A Contracting Authority can specify the requirement for a Police certificate of a certain type.
+The Contracting Authority can request that the Police certificate must be valid to a specific date (`cv-req:ValidTo`).
+
+.Example of the request for Police certificate in the CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv-request}/cv-request.xml[tags=PoliceCertificate]
+----
+<1> Police certificate identifier.
+<2> Certificate requirement - indicates whether a candidate needs to fulfill the requirement.  According to codelist Requirement code (chapter 5.5).
+<3> Certificate type according to code list Police certificate (chapter 5.6).
+<4> The date that the Police certificate must be valid to.
+
+== Information specific to CV
+
+Based on the requirement, the Economic Operator must document the candidate's Police certificate and validity date.
+
+.Example of a description of Police certificate in CV as a response to the request in CV request
+[source, xml, indent=0]
+----
+include::../{snippet-dir-cv}/cv.xml[tags=PoliceCertificate]
+----
+<1> Police certificate identifier.
+<2> Certificate type according to code list Police certificate (chapter 5.6).
+<3> The date that the Police certificate is valid to.
+<4> The Police certificate as an embedded attachment.

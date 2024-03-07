@@ -9,8 +9,7 @@ A Contracting Authority can state personal skill requirement (main requirement) 
 All personal skills need to be identified uniquely to ensure that the personal skill can be
 referenced in the CV.
 
-A personal skill must include either element `cv-req:Type` or `cv-req:Title`. Use type if the specific
-personal skill is defined in the person skill codelist, otherwise use the title.
+Personal skills must include the element `cv-req:Type` to specify the type of personal skill requested.
 
 .Example of the requested clearance in the CV request
 [source, xml, indent=0]
@@ -18,29 +17,31 @@ personal skill is defined in the person skill codelist, otherwise use the title.
 include::../{snippet-dir-cv-request}/cv-request.xml[tags=PersonalSkills]
 ----
 <1> Personal skill identifier
-<2> Personal skill type
+<2> Personal skill type, see examples below
 
 
 == Information specific to CV
 
-Based on the personal skill requirement, the economic operator needs to provide information
-of the candidate's personal skill. For CV used in the job application process, fill in the relevant
-parts of personal skill information.
+Based on the personal skill requirement, the economic operator must provide information
+about the candidate's personal skills. 
 
-The element `cv:PersonalSkillsReference` needs to be used as a reference to the corresponding personal skill requirement in the
-CV request.
+It is possible to provide contact information to a person who can confirm the candidate's personal
+skills.
 
-There is possible to state a contact point (to a person) who can confirm the candidate's personal
-skills, use the element `cv:Contact`. In some cases, there is relevant that the contracting
-authority needs this confirmation or documentation from an earlier co-worker, leader,
-team leader, etc.
-
-.Example of a description of personal skill in CV as a response to requested personal skills in CV request
+.Example of a description of personal skills in CV as a response to requested personal skills in CV request
 [source, xml, indent=0]
 ----
-include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills-req]
+include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills]
 ----
 <1> Personal skill identifier
-<2> Type of personal skill
+<2> Type of personal skill, see examples below
 <3> Contact information
-<4> Personal skill reference according to codelist Personal skills (chapter 5.8)
+
+== Examples of Personal skills
+
+The list below gives examples of Peronal skills that can be requested.
+
+[source, xml, indent=0]
+----
+include::../../../_common/examples/personal-skills.xml[tags=PersonalSkills]
+----

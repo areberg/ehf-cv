@@ -1,13 +1,6 @@
 [[codes]]
 = Code lists
 
-== Certification Type
-
-.Codelist Certification Type
-[source, xml, indent=0]
-----
-include::../../../_common/codelist/certification-type.xml[tags=CertificationType]
-----
 == Clearance level
 
 .Codelist Clearance level
@@ -15,20 +8,7 @@ include::../../../_common/codelist/certification-type.xml[tags=CertificationType
 ----
 include::../../../_common/codelist/clearance-level.xml[tags=ClearanceLevel]
 ----
-== Clearance type
 
-.Codelist Clearance type
-[source, xml, indent=0]
-----
-include::../../../_common/codelist/clearance-type.xml[tags=ClearanceType]
-----
-== Course type
-
-.Codelist Course type
-[source, xml, indent=0]
-----
-include::../../../_common/codelist/course-type.xml[tags=CourseType]
-----
 == Education degree
 
 .Codelist Education degree
@@ -36,6 +16,7 @@ include::../../../_common/codelist/course-type.xml[tags=CourseType]
 ----
 include::../../../_common/codelist/education-degree.xml[tags=EducationDegree]
 ----
+
 == Language level
 
 .Codelist Language level
@@ -43,6 +24,7 @@ include::../../../_common/codelist/education-degree.xml[tags=EducationDegree]
 ----
 include::../../../_common/codelist/language-level.xml[tags=LanguageLevel]
 ----
+
 == Mime code
 
 .Codelist Mime codes
@@ -50,27 +32,7 @@ include::../../../_common/codelist/language-level.xml[tags=LanguageLevel]
 ----
 include::../../../_common/codelist/MimeCode.xml[tags=MimeCode]
 ----
-== Personal skills
 
-.Codelist Personal skills
-[source, xml, indent=0]
-----
-include::../../../_common/codelist/personal-skills.xml[tags=PersonalSkills]
-----
-== Position level
-
-.Codelist Position level
-[source, xml, indent=0]
-----
-include::../../../_common/codelist/position-level.xml[tags=PositionLevel]
-----
-== Skills reference
-
-.Codelist Skills reference
-[source, xml, indent=0]
-----
-include::../../../_common/codelist/reference.xml[tags=SkillsReference]
-----
 == Requirement code
 
 .Codelist Requirement
@@ -78,27 +40,23 @@ include::../../../_common/codelist/reference.xml[tags=SkillsReference]
 ----
 include::../../../_common/codelist/requirement.xml[tags=Requirement]
 ----
-== Sector
 
-.Codelist Sector
+== Police certificate
+
+.Codelist Police certificate
 [source, xml, indent=0]
 ----
-include::../../../_common/codelist/sector.xml[tags=Sector]
+include::../../../_common/codelist/police-certificate.xml[tags=PoliceCertificate]
 ----
-== Skills type
 
-.Codelist Skills type
+== International Classification of Occupations (ISCO/Styrk08)
+
+.Codelist Classification of Occupations
 [source, xml, indent=0]
 ----
-include::../../../_common/codelist/skills-type.xml[tags=SkillsType]
+include::../../../_common/codelist/isco.xml[tags=Isco]
 ----
-== Social media
 
-.Codelist Social media
-[source, xml, indent=0]
-----
-include::../../../_common/codelist/social-media.xml[tags=SocialMedia]
-----
 == Classification of Occupations (Styrk98)
 
 .Codelist Classification of Occupations
@@ -106,6 +64,7 @@ include::../../../_common/codelist/social-media.xml[tags=SocialMedia]
 ----
 include::../../../_common/codelist/styrk98.xml[tags=Styrk98]
 ----
+
 == Classification of standard industrial classification (NACE)
 
 .Codelist NACE
@@ -134,6 +93,7 @@ include::../../../_common/codelist/eaid.xml[tags=Eaid]
 ----
 include::../../../_common/codelist/ISO3166-1_Alpha2.xml[tags=CountryCodes]
 ----
+
 == ISO 4217 Currency codes
 
 .Codelist Currency codes
@@ -141,6 +101,7 @@ include::../../../_common/codelist/ISO3166-1_Alpha2.xml[tags=CountryCodes]
 ----
 include::../../../_common/codelist/ISO4217_2015.xml[tags=CurrencyCodes]
 ----
+
 == ISO639 Language Code
 
 .Codelist Language codes
@@ -148,10 +109,53 @@ include::../../../_common/codelist/ISO4217_2015.xml[tags=CurrencyCodes]
 ----
 include::../../../_common/codelist/language-code.xml[tags=LanguageCodes]
 ----
+
+//== Personal skills
+//
+//.Codelist Personal skills
+//[source, xml, indent=0]
+//----
+//include::../../../_common/codelist/personal-skills.xml[tags=PersonalSkills]
+//----
+//== Position level
+//
+//.Codelist Position level
+//[source, xml, indent=0]
+//----
+//include::../../../_common/codelist/position-level.xml[tags=PositionLevel]
+//----
+//== Skills reference
+//
+//.Codelist Skills reference
+//[source, xml, indent=0]
+//----
+//include::../../../_common/codelist/reference.xml[tags=SkillsReference]
+//----
 //== ISO 6523 ICD list
 //
 //.Codelist Icd
 //[source, xml, indent=0]
 //----
 //include::../../../_common/codelist/icd.xml[tags=Icd]
+//----
+//== Sector
+//
+//.Codelist Sector
+//[source, xml, indent=0]
+//----
+//include::../../../_common/codelist/sector.xml[tags=Sector]
+//----
+//== Skills type
+//
+//.Codelist Skills type
+//[source, xml, indent=0]
+//----
+//include::../../../_common/codelist/skills-type.xml[tags=SkillsType]
+//----
+//== Social media
+//
+//.Codelist Social media
+//[source, xml, indent=0]
+//----
+//include::../../../_common/codelist/social-media.xml[tags=SocialMedia]
 //----

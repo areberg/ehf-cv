@@ -4,9 +4,8 @@
     <Title>Course type code list</Title>
     <Identifier>CourseType</Identifier>
     <Version>1.0</Version>
-    <!-- tag::CourseType[] -->
     <Agency>DFO</Agency>
-
+    <!-- tag::CourseType[] -->
     <!-- category: IT -->
     <Code>
         <Id>java</Id>

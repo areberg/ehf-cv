@@ -1,3 +1,4 @@
+<!-- tag::Complete[] -->
 <?xml version="1.0" encoding="UTF-8"?>
 <cv:CV xmlns:cv="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
   <cv:CustomizationID>...</cv:CustomizationID>
@@ -29,10 +30,19 @@
       <cv:ElectronicMail>ola.nordmann@direktorat.no</cv:ElectronicMail>
     </cv:Contact>
   </cv:ReceiverParty>
+  
+  <cv:PoliceCertificate>
+    <cv:ID>1</cv:ID>
+    <cv:Type>Ordinær</cv:Type>
+    <cv:ValidTo>2025-12-31</cv:ValidTo>
+    <cv:Documentation>
+      <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">YXBwcm92ZWQgZm9vdGJhbGwgcmVmZXJlZSBpbiBub3J3YXk=</cv:EmbeddedDocumentBinaryObject>
+    </cv:Documentation>
+  </cv:PoliceCertificate>
 
   <cv:Education>
     <cv:ID>1</cv:ID>
-    <cv:EducationDegree>bachelor</cv:EducationDegree>
+    <cv:EducationDegree>6</cv:EducationDegree>
     <cv:SubjectArea>661104</cv:SubjectArea>
     <cv:Period>
       <cv:StartDate>2018-08-01</cv:StartDate>
@@ -57,7 +67,7 @@
 
   <cv:Education>
     <cv:ID>2</cv:ID>
-    <cv:EducationDegree>bachelor</cv:EducationDegree>
+    <cv:EducationDegree>6</cv:EducationDegree>
     <cv:SubjectArea>654122</cv:SubjectArea>
     <cv:Period>
       <cv:StartDate>2017-08-01</cv:StartDate>
@@ -77,7 +87,7 @@
 
   <cv:Course>
     <cv:ID>1</cv:ID>
-    <cv:Type>python</cv:Type>
+    <cv:Title>python</cv:Title>
     <cv:Period>
       <cv:StartDate>2019-01-10</cv:StartDate>
       <cv:EndDate>2020-05-05</cv:EndDate>
@@ -124,17 +134,15 @@
   <cv:LanguageSkills>
     <cv:ID>1</cv:ID>
     <cv:Language>no</cv:Language>
-    <cv:OralSkill>A1</cv:OralSkill>
-    <cv:WrittenSkill>A1</cv:WrittenSkill>
+    <cv:Scandinavian>true</cv:Scandinavian>
+    <cv:OralSkill>C1</cv:OralSkill>
+    <cv:WrittenSkill>C1</cv:WrittenSkill>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1210102</cv:Role>
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@bbb.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:LanguageSkillsReference>
-      <cv:ID>req-65</cv:ID>
-    </cv:LanguageSkillsReference>
   </cv:LanguageSkills>
 
   <cv:ProjectExperience>
@@ -164,17 +172,11 @@
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x-company.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:EducationReference>
-      <cv:ID>123</cv:ID>
-    </cv:EducationReference>
-    <cv:ProjectExperienceReference>
-      <cv:ID>1</cv:ID>
-    </cv:ProjectExperienceReference>
   </cv:ProjectExperience>
 
   <cv:WorkExperience>
     <cv:ID>1</cv:ID>
-    <cv:PositionLevel>employee</cv:PositionLevel>
+    <cv:PositionLevel>Managers</cv:PositionLevel>
     <cv:CompanyParty>
       <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>X company</cv:Name>
@@ -324,3 +326,4 @@
   </cv:AdditionalInformation>
 
 </cv:CV>
+<!-- end::Complete[] -->
