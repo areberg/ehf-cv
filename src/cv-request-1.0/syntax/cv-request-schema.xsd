@@ -10,8 +10,8 @@
 
     <xs:complexType name="CVRequestType">
         <xs:sequence>
-            <xs:element name ="CustomizationID" type="IdentifierType"/>
-            <xs:element name ="ProfileID" type="IdentifierType"/>
+            <xs:element name ="CustomizationID" type="IdentifierType" minOccurs="0"/>
+            <xs:element name ="ProfileID" type="IdentifierType" minOccurs="0"/>
 
             <xs:element name="ID" type="xs:normalizedString"/>
 
@@ -179,6 +179,7 @@
         <xs:sequence>
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Requirement" type="xs:string" minOccurs="0"/>
+            <xs:element name="Title" type="xs:string" minOccurs="0"/>
             <xs:element name="EducationDegree" type="xs:string" minOccurs="0"/>
             <xs:element name="SubjectArea" type="xs:string" minOccurs="0"/>
             <xs:element name="RegistrationType" type="xs:string" minOccurs="0"/>
@@ -332,8 +333,8 @@
 
     <xs:complexType name="ExperienceValueType">
         <xs:sequence>
-            <xs:element name="ProjectParticipation" type="xs:integer" minOccurs="0"/>
-            <xs:element name="ProjectSize" type="xs:integer" minOccurs="0"/>
+            <xs:element name="ProjectParticipation" type="UomType" minOccurs="0"/>
+            <xs:element name="ProjectSize" type="UomType" minOccurs="0"/>
             <xs:element name="ProjectValue" type="CurrencyType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -341,9 +342,18 @@
     <xs:complexType name="SkillsPracticeType">
         <xs:sequence>
             <xs:element name="LastPractice" type="xs:date" minOccurs="0"/>
-            <xs:element name="MinimumLengthPractice" type="xs:integer" minOccurs="0"/>
+            <xs:element name="MinimumLengthPractice" type="UomType" minOccurs="0"/>
             <xs:element name="SkillsReference" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
+
+    <xs:complexType name="UomType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="unitOfMeasure" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
 </xs:schema>

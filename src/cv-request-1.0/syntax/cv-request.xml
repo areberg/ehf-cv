@@ -834,18 +834,30 @@
                 <Element>
                     <Term>cv-req:ProjectParticipation</Term>
                     <Name>Project participation</Name>
-                    <Description>A specific requirement about candidate's project participation, stated as months.</Description>
+                    <Description>A specific requirement about candidate's project participation.</Description>
                     <Value type="EXAMPLE">5</Value>
                     <Reference type="RULE">EHF-CV-REQ-R006</Reference>
+
+                    <Attribute>
+                        <Term>unitOfMeasure</Term>
+                        <Name>Unit of measure</Name>
+                        <Value type="EXAMPLE">MON</Value>
+                    </Attribute>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv-req:ProjectSize</Term>
                     <Name>Project size</Name>
-                    <Description>A specific requirement about the total size of the project, stated as months.</Description>
+                    <Description>A specific requirement about the total size of the project.</Description>
                     <Value type="EXAMPLE">5</Value>
                     <Reference type="RULE">EHF-CV-REQ-R007</Reference>
-                </Element>
+ 
+                    <Attribute>
+                        <Term>Uom</Term>
+                        <Name>UnitOfMeasure</Name>
+                        <Value type="EXAMPLE">MON</Value>
+                    </Attribute>
+               </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv-req:ProjectValue</Term>
@@ -854,8 +866,8 @@
                     <Reference type="RULE">EHF-CV-REQ-R008</Reference>
 
                     <Attribute>
-                        <Term>currencyID</Term>
-                        <Name>Currencyidentifier</Name>
+                        <Term>unitOfMeasure</Term>
+                        <Name>Unit of measure</Name>
                         <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">NOK</Value>
                     </Attribute>
@@ -1455,6 +1467,12 @@
                     <Description>How long the skill need to be practiced continously, state the minimum length as months.</Description>
                     <Value type="EXAMPLE">5</Value>
                     <Reference type="RULE">EHF-CV-REQ-R012</Reference>
+ 
+                    <Attribute>
+                        <Term>unitOfMeasure</Term>
+                        <Name>Unit of Measure</Name>
+                        <Value type="EXAMPLE">MON</Value>
+                    </Attribute>
                 </Element>
 
                 <Element>

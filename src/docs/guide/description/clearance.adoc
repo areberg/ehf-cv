@@ -14,8 +14,6 @@ All clearances need to be identified uniquely to ensure that the clearance can b
 CV. The element `cv-req:Requirement` shall be used to state if the clerarance *should* or *must* be present. The Economic Operators
 will only provide qualified candidates, and this makes it easier to do the rating.
 
-A clearance must include the element `cv-req:Type`to specify the type of clearance requested.
-
 Contracting Authorities must specify the level of clearance (`cv-req:Level`) by using codelist
 clearance level. Note that the clearance level is a minimum requirement, which means candidate with
 higher level of clearance is qualified.
@@ -31,7 +29,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=Clearance]
 ----
 <1> Clearance identifier
 <2> Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement.  According to codelist Requirement code (chapter 5.5).
-<3> Clearance title, see examples below
+<3> Clearance type, see examples below
 <4> Clearance level according to codelist Clearance level (chapter 5.1)
 <5> Expiration date
 
@@ -42,7 +40,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ClearanceAlternative]
 ----
 <1> Clearance identifier
 <2> Clearance requirement - indicate whether a candidate needs to fulfill the clearance requirement.  According to codelist Requirement code (chapter 5.5).
-<3> Clearance title, see examples below
+<3> Clearance type, see examples below
 <4> Clearance level according to codelist Clearance level (chapter 5.1)
 <5> Expiration date
 <6> Alternative clearance requirement
@@ -63,7 +61,7 @@ be done before the job period. Use element `cv:Description`.
 include::../{snippet-dir-cv}/cv.xml[tags=Clearance]
 ----
 <1> Clearance identifier
-<2> Clearance title, see examples below
+<2> Clearance type, see examples below
 <3> Clearance level according to codelist Clearance level (chapter 5.1)
 <4> Clearance expiration date
 <5> Embedded document as binary object with `mimeCode`. Use Base64.

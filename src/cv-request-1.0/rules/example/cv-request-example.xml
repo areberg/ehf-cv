@@ -148,8 +148,8 @@
         <cv-req:Activities>Developing IT-system.</cv-req:Activities>
       </cv-req:ExperienceDescription>
       <cv-req:ExperienceValue>
-        <cv-req:ProjectParticipation>5</cv-req:ProjectParticipation>
-        <cv-req:ProjectSize>15</cv-req:ProjectSize>
+        <cv-req:ProjectParticipation unitOfMeasure="MON">5</cv-req:ProjectParticipation>
+        <cv-req:ProjectSize unitOfMeasure="MON">15</cv-req:ProjectSize>
         <cv-req:ProjectValue currencyID="NOK">1500000</cv-req:ProjectValue>
       </cv-req:ExperienceValue>
     </cv-req:AlternativeProjectExperience>
@@ -207,11 +207,6 @@
     </cv-req:AlternativeClearance>
   </cv-req:Clearance>
 
-  <cv-req:Reference>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:MinimumTotalReference>1</cv-req:MinimumTotalReference>
-  </cv-req:Reference>
-
   <cv-req:Skills>
     <cv-req:ID>1</cv-req:ID>
     <cv-req:Requirement>must</cv-req:Requirement>
@@ -229,7 +224,7 @@
       <cv-req:Version>8</cv-req:Version>
       <cv-req:SkillPractice>
         <cv-req:LastPractice>2020-03-03</cv-req:LastPractice>
-        <cv-req:MinimumLengthPractice>5</cv-req:MinimumLengthPractice>
+        <cv-req:MinimumLengthPractice unitOfMeasure="MON">5</cv-req:MinimumLengthPractice>
         <cv-req:SkillsReference>True</cv-req:SkillsReference>
       </cv-req:SkillPractice>
     </cv-req:AlternativeSkills>
@@ -245,11 +240,5 @@
       <cv-req:SkillsReference>True</cv-req:SkillsReference>
     </cv-req:SkillPractice>
   </cv-req:Skills>
-
-  <cv-req:PersonalSkills>
-    <cv-req:ID>1</cv-req:ID>
-    <cv-req:Type>problemsolving</cv-req:Type>
-  </cv-req:PersonalSkills>
-
 </cv-req:CVRequest>
 <!-- end::Complete[] -->

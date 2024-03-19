@@ -6,10 +6,10 @@
     <Version>1.0</Version>
 
     <!-- tag::ClearanceLevel[] -->
-    <Agency>DFO</Agency>
+    <Agency>Nasjonal sikkerhetsmyndighet (NSM)</Agency>
 
     <Code>
-        <Id>confidential</Id>
+        <Id>Confidential</Id>
         <Name>Confidential</Name>
         <Description>Confidentail clearance level</Description>
     </Code>
@@ -21,7 +21,7 @@
     </Code>
 
     <Code>
-        <Id>secret</Id>
+        <Id>Secret</Id>
         <Name>Secret</Name>
         <Description>Secret clearance level</Description>
     </Code>
@@ -44,22 +44,5 @@
         <Description>Cosmic top secret clearance level</Description>
     </Code>
 
-    <Code>
-        <Id>atomal</Id>
-        <Name>Atomal</Name>
-        <Description>Atomal clearance level</Description>
-    </Code>
-
-    <Code>
-        <Id>crypto</Id>
-        <Name>Crypto</Name>
-        <Description>Crypto clearance level</Description>
-    </Code>
-
-    <Code>
-        <Id>extendedAccessCard</Id>
-        <Name>Extended access card</Name>
-        <Description>Extended acess card clearance level</Description>
-    </Code>
     <!-- end::ClearanceLevel[] -->
 </CodeList>

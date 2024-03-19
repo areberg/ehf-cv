@@ -176,7 +176,7 @@
             <xs:element name="Type" type="xs:string" minOccurs="0"/>
             <xs:element name="Version" type="xs:decimal" minOccurs="0"/>
             <xs:element name="LastPractice" type="xs:date" minOccurs="0"/>
-            <xs:element name="MinimumLengthPractice" type="xs:integer" minOccurs="0"/>
+            <xs:element name="MinimumLengthPractice" type="UomType" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
             <xs:element name="SkillsAppliedReference" type="ReferenceType" minOccurs="0"/>
             <xs:element name="SkillsReference" type="ReferenceType" minOccurs="0"/>
@@ -291,12 +291,20 @@
 
     <xs:complexType name="ExperienceValueType">
         <xs:sequence>
-            <xs:element name="ProjectParticipation" type="xs:integer" minOccurs="0"/>
-            <xs:element name="ProjectSize" type="xs:integer" minOccurs="0"/>
+            <xs:element name="ProjectParticipation" type="UomType" minOccurs="0"/>
+            <xs:element name="ProjectSize" type="UomType" minOccurs="0"/>
             <xs:element name="ProjectValue" type="ValueType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-
+    
+    <xs:complexType name="UomType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="unitOfMeasure" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
     <xs:complexType name="ValueType">
         <xs:simpleContent>
             <xs:extension base="xs:normalizedString">

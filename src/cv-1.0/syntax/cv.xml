@@ -895,18 +895,30 @@
                 <Element>
                     <Term>cv:ProjectParticipation</Term>
                     <Name>Project participation</Name>
-                    <Description>The candidate's project participation, stated as months.</Description>
+                    <Description>The candidate's project participation.</Description>
                     <Value type="EXAMPLE">5</Value>
                     <Reference type="RULE">EHF-CV-R005</Reference>
-                </Element>
+  
+                    <Attribute>
+                        <Term>Uom</Term>
+                        <Name>UnitOfMeasure</Name>
+                        <Value type="EXAMPLE">MON</Value>
+                    </Attribute>
+               </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv:ProjectSize</Term>
                     <Name>Project size</Name>
-                    <Description>The total size of the project, stated as months.</Description>
+                    <Description>The total size of the project.</Description>
                     <Value type="EXAMPLE">5</Value>
                     <Reference type="RULE">EHF-CV-R006</Reference>
-                </Element>
+  
+                    <Attribute>
+                        <Term>Uom</Term>
+                        <Name>UnitOfMeasure</Name>
+                        <Value type="EXAMPLE">MON</Value>
+                    </Attribute>
+               </Element>
 
                 <Element cardinality="0..1">
                     <Term>cv:ProjectValue</Term>
@@ -1397,6 +1409,12 @@
                 <Description>How long the skill was practiced continously, state the minimum length as months.</Description>
                 <Value type="EXAMPLE">5</Value>
                 <Reference type="RULE">EHF-CV-R010</Reference>
+ 
+                    <Attribute>
+                        <Term>unitOfMeasure</Term>
+                        <Name>Unit of Measure</Name>
+                        <Value type="EXAMPLE">MON</Value>
+                    </Attribute>
             </Element>
 
             <Element cardinality="0..1">

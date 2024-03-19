@@ -24,13 +24,13 @@ include::skills.adoc[]
 
 include::clearance.adoc[]
 
-include::personal-skills.adoc[]
+//include::personal-skills.adoc[]
 
-include::references.adoc[]
+//include::references.adoc[]
 
 include::personal-information.adoc[]
 
-include::interest.adoc[]
+//include::interest.adoc[]
 
 include::additional-information.adoc[]
 

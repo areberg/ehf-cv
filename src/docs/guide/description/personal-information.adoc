@@ -9,6 +9,5 @@ include::../{snippet-dir-cv}/cv.xml[tags=PersonalInformation]
 ----
 <1> Personal information identifier
 <2> Personal name
-<3> Date of birth
-<4> Postal address
-<5> Contact information
+<3> Postal address
+<4> Contact information

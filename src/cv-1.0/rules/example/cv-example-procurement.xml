@@ -60,9 +60,6 @@
       <cv:Telephone>2310114</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:EducationReference>
-      <cv:ID>2</cv:ID>
-    </cv:EducationReference>
   </cv:Education>
 
   <cv:Education>
@@ -104,9 +101,6 @@
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">cHl0aG9uIGNvdXJzZSB4eXo===</cv:EmbeddedDocumentBinaryObject>
       <cv:URI>https://www.kurssportalen.no/</cv:URI>
     </cv:Documentation>
-    <cv:CourseReference>
-      <cv:ID>1</cv:ID>
-    </cv:CourseReference>
   </cv:Course>
 
   <cv:Certification>
@@ -126,9 +120,6 @@
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">YXJjaGltYXRlIGNlcnRpZmljYXRpb24=</cv:EmbeddedDocumentBinaryObject>
       <cv:URI>https://www.sertifiseringsportalen.no/</cv:URI>
     </cv:Documentation>
-    <cv:CertificationReference>
-      <cv:ID>1</cv:ID>
-    </cv:CertificationReference>
   </cv:Certification>
 
   <cv:LanguageSkills>
@@ -162,8 +153,8 @@
       <cv:Activities>Developing web portal for X company.</cv:Activities>
     </cv:ExperienceDescription>
     <cv:ExperienceValue>
-      <cv:ProjectParticipation>5</cv:ProjectParticipation>
-      <cv:ProjectSize>20</cv:ProjectSize>
+      <cv:ProjectParticipation unitOfMeasure="MON">5</cv:ProjectParticipation>
+      <cv:ProjectSize unitOfMeasure="MON">20</cv:ProjectSize>
       <cv:ProjectValue currencyID="NOK">1500000</cv:ProjectValue>
     </cv:ExperienceValue>
     <cv:Contact>
@@ -196,12 +187,6 @@
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:EducationReference>
-      <cv:ID>123</cv:ID>
-    </cv:EducationReference>
-    <cv:WorkExperienceReference>
-      <cv:ID>1</cv:ID>
-    </cv:WorkExperienceReference>
   </cv:WorkExperience>
 
   <cv:Clearance>
@@ -213,51 +198,14 @@
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">Y2xlYXJhbmNlIGRvY3VtZW50YXRpb24=</cv:EmbeddedDocumentBinaryObject>
       <cv:URI>https://www.politiet.no/</cv:URI>
     </cv:Documentation>
-    <cv:ClearanceReference>
-      <cv:ID>1</cv:ID>
-    </cv:ClearanceReference>
   </cv:Clearance>
-
-  <cv:Reference>
-    <cv:ID>1</cv:ID>
-    <cv:Party>
-      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
-      <cv:Name>ABC AS</cv:Name>
-    </cv:Party>
-    <cv:Relationship>Team leader</cv:Relationship>
-    <cv:Contact>
-      <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Telephone>22221111</cv:Telephone>
-      <cv:ElectronicMail>ola.nordmann@abc.no</cv:ElectronicMail>
-    </cv:Contact>
-    <cv:RequestReference>
-      <cv:ID>1</cv:ID>
-    </cv:RequestReference>
-  </cv:Reference>
-
-  <cv:Reference>
-    <cv:ID>2</cv:ID>
-    <cv:Party>
-      <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
-      <cv:Name>X school</cv:Name>
-    </cv:Party>
-    <cv:Relationship>Math teacher</cv:Relationship>
-    <cv:Contact>
-      <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Telephone>22441111</cv:Telephone>
-      <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
-    </cv:Contact>
-    <cv:RequestReference>
-      <cv:ID>1</cv:ID>
-    </cv:RequestReference>
-  </cv:Reference>
 
   <cv:Skills>
     <cv:ID>1</cv:ID>
     <cv:Type>java</cv:Type>
     <cv:Version>11</cv:Version>
     <cv:LastPractice>2020-05-05</cv:LastPractice>
-    <cv:MinimumLengthPractice>5</cv:MinimumLengthPractice>
+    <cv:MinimumLengthPractice unitOfMeasure="MON">5</cv:MinimumLengthPractice>
     <cv:Contact>
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>1223122</cv:Role>
@@ -267,29 +215,11 @@
     <cv:SkillsAppliedReference>
       <cv:ID>edu-1234</cv:ID>
     </cv:SkillsAppliedReference>
-    <cv:SkillsReference>
-      <cv:ID>1</cv:ID>
-    </cv:SkillsReference>
   </cv:Skills>
-
-  <cv:PersonalSkills>
-    <cv:ID>1</cv:ID>
-    <cv:Type>problemsolving</cv:Type>
-    <cv:Contact>
-      <cv:Name>Ola Nordmann</cv:Name>
-      <cv:Role>1224127</cv:Role>
-      <cv:Telephone>22221111</cv:Telephone>
-      <cv:ElectronicMail>ola.nordmann@abc.no</cv:ElectronicMail>
-    </cv:Contact>
-    <cv:PersonalSkillsReference>
-      <cv:ID>1</cv:ID>
-    </cv:PersonalSkillsReference>
-  </cv:PersonalSkills>
 
   <cv:PersonalInformation>
     <cv:ID>1</cv:ID>
     <cv:Name>Ola Nordmann</cv:Name>
-    <cv:DateOfBirth>1991-01-01</cv:DateOfBirth>
     <cv:PostalAddress>
       <cv:StreetName>Oslobukta 20</cv:StreetName>
       <cv:AdditionalStreetName>2.building</cv:AdditionalStreetName>
@@ -310,18 +240,13 @@
     </cv:SocialMedia>
   </cv:PersonalInformation>
 
-  <cv:Interest>
-    <cv:ID>1</cv:ID>
-    <cv:Description>Coding projects</cv:Description>
-  </cv:Interest>
-
   <cv:AdditionalInformation>
     <cv:ID>1</cv:ID>
-    <cv:Title>Footballcoach</cv:Title>
-    <cv:Description>Worked as footballcoach for young girls.</cv:Description>
+    <cv:Title>Chairman</cv:Title>
+    <cv:Description>Chairman of the lawyers association for five years</cv:Description>
     <cv:Documentation>
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">YXBwcm92ZWQgZm9vdGJhbGwgcmVmZXJlZSBpbiBub3J3YXk=</cv:EmbeddedDocumentBinaryObject>
-      <cv:URI>https://www.fotballdommer.no/</cv:URI>
+      <cv:URI>https://www.advokatforeningen.no/</cv:URI>
     </cv:Documentation>
   </cv:AdditionalInformation>
 

@@ -125,7 +125,7 @@
   <cv-req:Certification>
     <cv-req:ID>2</cv-req:ID><!--1-->
     <cv-req:Requirement>must</cv-req:Requirement><!--2-->
-    <cv-req:Title>Svanemerket</cv-req:Tile><!--3-->
+    <cv-req:Title>Svanemerket</cv-req:Title><!--3-->
     <cv-req:Type>Environmental</cv-req:Type><!--4-->
   </cv-req:Certification>
   <!-- end::Certification-2[] -->
@@ -198,8 +198,8 @@
       <cv-req:Activities>Must have done financial analysis by using R.</cv-req:Activities><!--11-->
     </cv-req:ExperienceDescription>
     <cv-req:ExperienceValue>
-      <cv-req:ProjectParticipation>5</cv-req:ProjectParticipation><!--12-->
-      <cv-req:ProjectSize>5</cv-req:ProjectSize><!--13-->
+      <cv-req:ProjectParticipation unitOfMeasure="MON">5</cv-req:ProjectParticipation><!--12-->
+      <cv-req:ProjectSize unitOfMeasure="MON">5</cv-req:ProjectSize><!--13-->
       <cv-req:ProjectValue currencyID="NOK">100</cv-req:ProjectValue><!--14-->
     </cv-req:ExperienceValue>
   </cv-req:ProjectExperience>
@@ -374,7 +374,7 @@
     <cv-req:Type>java</cv-req:Type><!--3-->
     <cv-req:SkillPractice>
       <cv-req:LastPractice>2020-03-03</cv-req:LastPractice><!--4-->
-      <cv-req:MinimumLengthPractice>5</cv-req:MinimumLengthPractice><!--5-->
+      <cv-req:MinimumLengthPractice unitOfMeasure="MON">5</cv-req:MinimumLengthPractice><!--5-->
       <cv-req:SkillsReference>True</cv-req:SkillsReference><!--6-->
     </cv-req:SkillPractice>
     <cv-req:AlternativeSkills><!--7-->

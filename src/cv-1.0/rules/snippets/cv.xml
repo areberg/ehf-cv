@@ -162,8 +162,8 @@
       <cv:Activities>Financial analysis by using R.</cv:Activities><!--10-->
     </cv:ExperienceDescription>
     <cv:ExperienceValue>
-      <cv:ProjectParticipation>5</cv:ProjectParticipation><!--11-->
-      <cv:ProjectSize>5</cv:ProjectSize><!--12-->
+      <cv:ProjectParticipation unitOfMeasure="MON">5</cv:ProjectParticipation><!--11-->
+      <cv:ProjectSize unitOfMeasure="MON">5</cv:ProjectSize><!--12-->
       <cv:ProjectValue currencyID="NOK">100</cv:ProjectValue><!--13-->
     </cv:ExperienceValue>
     <cv:Contact><!--14-->
@@ -207,7 +207,7 @@
   <!-- tag::Clearance[] -->
   <cv:Clearance>
     <cv:ID>1</cv:ID><!--1-->
-    <cv:Type>Airport</cv:Type><!--2-->
+    <cv:Type>military</cv:Type><!--2-->
     <cv:Level>secret</cv:Level><!--3-->
     <cv:ExpirationDate>2025-08-08</cv:ExpirationDate><!--4-->
     <cv:Documentation>
@@ -238,7 +238,7 @@
     <cv:ID>1</cv:ID><!--1-->
     <cv:Type>PublicProcurement</cv:Type><!--2-->
     <cv:LastPractice>2020-03-03</cv:LastPractice><!--3-->
-    <cv:MinimumLengthPractice>20</cv:MinimumLengthPractice><!--4-->
+    <cv:MinimumLengthPractice unitOfMeasure="MON">20</cv:MinimumLengthPractice><!--4-->
     <cv:Contact><!--5-->
       <cv:Name>Ola Nordmann</cv:Name>
       <cv:Role>Personnel manager</cv:Role>
@@ -265,15 +265,14 @@
   <cv:PersonalInformation>
     <cv:ID>1</cv:ID><!--1-->
     <cv:Name>Ola Nordmann</cv:Name><!--2-->
-    <cv:DateOfBirth>1991-01-01</cv:DateOfBirth><!--3-->
-    <cv:PostalAddress><!--4-->
+    <cv:PostalAddress><!--3-->
       <cv:StreetName>Oslobukta 20</cv:StreetName>
       <cv:AdditionalStreetName>2. building</cv:AdditionalStreetName>
       <cv:CityName>Oslo</cv:CityName>
       <cv:PostalZone>0342</cv:PostalZone>
       <cv:CountryCode>NO</cv:CountryCode>
     </cv:PostalAddress>
-    <cv:Contact><!--5-->
+    <cv:Contact><!--4-->
       <cv:Telephone>98989898</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@xxx.no</cv:ElectronicMail>
     </cv:Contact>
@@ -290,11 +289,11 @@
   <!-- tag::AdditionalInformation[] -->
   <cv:AdditionalInformation>
     <cv:ID>1</cv:ID><!--1-->
-    <cv:Title>Footballcoach</cv:Title><!--2-->
-    <cv:Description>Worked as footballcoach for young girls.</cv:Description><!--3-->
+    <cv:Title>Chairman</cv:Title><!--2-->
+    <cv:Description>Chairman of the lawyers association for five years</cv:Description><!--3-->
     <cv:Documentation>
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">YXBwcm92ZWQgZm9vdGJhbGwgcmVmZXJlZSBpbiBub3J3YXk=</cv:EmbeddedDocumentBinaryObject><!--4-->
-      <cv:URI>https://www.fotballdommer.no/</cv:URI><!--5-->
+      <cv:URI>https://www.advokatforeningen.no/</cv:URI><!--5-->
     </cv:Documentation>
   </cv:AdditionalInformation>
   <!-- end::AdditionalInformation[] -->

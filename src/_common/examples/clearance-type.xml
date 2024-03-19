@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ClearanceList xmlns="urn:fdc:difi.no:2017:vefa:structure:ClearanceList-1">
    
-    <Title>Clearance examples</Title>
+    <Type>Clearance examples</Type>
     <Identifier>ClearanceType</Identifier>
     <Version>1.0</Version>
 
     <Agency>DFO</Agency>
     <!-- tag::ClearanceType[] -->    
     <Clearance>
-        <Title>civil</Title>
+        <Type>civil</Type>
         <Description>Civil clearance</Description>
     </Clearance>
 
     <Clearance>
-        <Title>police</Title>
+        <Type>police</Type>
         <Description>Police clearance</Description>
     </Clearance>
 
     <Clearance>
-        <Title>military</Title>
+        <Type>military</Type>
         <Description>Military clearance</Description>
     </Clearance>
    <!-- end::ClearanceType[] -->

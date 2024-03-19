@@ -1,6 +1,6 @@
 = Personal Skills
 
-Person skills contains information about a candidates abilities and strength.
+Personal skills contains information about a candidates abilities and strength.
 
 == Information specific to CV request
 
@@ -39,7 +39,7 @@ include::../{snippet-dir-cv}/cv.xml[tags=PersonalSkills]
 
 == Examples of Personal skills
 
-The list below gives examples of Peronal skills that can be requested.
+The list below gives examples of Personal skills that can be requested.
 
 [source, xml, indent=0]
 ----

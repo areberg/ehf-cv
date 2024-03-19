@@ -22,7 +22,7 @@ be specified in element `cv-req:Role`. It is also possible to describe the proje
 position percent (e.g. must have worked 100% with the project).
 
 The project value can be stated in element `cv-req:ExperienceValue`, where the Contracting Authority can specify the candidate's
-project participation (need to be months), the size of project and the total value of the project.
+project participation (normally months), the size of project and the total value of the project.
 
 .Example of the requested project experience in the CV request
 [source, xml, indent=0]
@@ -60,8 +60,8 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperienceAltern
 <9> Candidate's position percent
 <10> Role in project according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
 <11> Description of project activities
-<12> Project participation in months
-<13> Total Project size in months
+<12> Project participation including unit of measure
+<13> Total Project size including unit of measure
 <14> Project value in money. Currency according to code list ISO 4217 Currency codes (chapter 5.13)
 <15> Alternative project experience
 
@@ -88,7 +88,7 @@ include::../{snippet-dir-cv}/cv.xml[tags=ProjectExperience]
 <8> Position percent in the project
 <9> Role in project according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
 <10> Description of project activities
-<11> Project participation in months
-<12> Total Project size in months
+<11> Project participation including unit of measure
+<12> Total Project size including unit of measure
 <13> Project value in money. Currency according to code list ISO 4217 Currency codes (chapter 5.13)
 <14> Project contact person
