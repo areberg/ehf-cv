@@ -198,7 +198,6 @@
         <xs:sequence>
             <xs:element name="ID" type="xs:normalizedString"/>
             <xs:element name="Name" type="xs:string"/>
-            <xs:element name="DateOfBirth" type="xs:date"/>
             <xs:element name="PostalAddress" type="PostalAdressType"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
             <xs:element name="SocialMedia" type="SocialMediaType" minOccurs="0" maxOccurs="unbounded"/>

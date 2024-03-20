@@ -5,7 +5,6 @@
     <Version>2018-01-01</Version>
     <!-- tag::CurrencyCodes[] -->
     <Agency>ISO</Agency>
-    <!-- end::CurrencyCodes[] -->
    
     <Code>
         <Id>AED</Id>
@@ -1104,5 +1103,6 @@
         <Id>ZWL</Id>
         <Name>Zimbabwe Dollar</Name>
     </Code>
- </CodeList>
+     <!-- end::CurrencyCodes[] -->
+</CodeList>
 

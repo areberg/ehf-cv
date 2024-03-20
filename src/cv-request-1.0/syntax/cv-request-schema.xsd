@@ -129,7 +129,7 @@
             <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
             <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
             <xs:element name="JobSector" type="xs:string" minOccurs="0"/>
-            <xs:element name="MinimumTotalExperience" type="xs:integer" minOccurs="0"/>
+            <xs:element name="MinimumYearsExperience" type="xs:integer" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="WorkExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
             <xs:element name="AlternativeWorkExperience" type="AlternativeWordExperienceType" minOccurs="0" maxOccurs="unbounded"/>
@@ -242,7 +242,7 @@
             <xs:element name="IndustryType" type="xs:string" minOccurs="0"/>
             <xs:element name="Workplace" type="xs:string" minOccurs="0"/>
             <xs:element name="JobSector" type="xs:string" minOccurs="0"/>
-            <xs:element name="MinimumTotalExperience" type="xs:integer" minOccurs="0"/>
+            <xs:element name="MinimumYearsExperience" type="xs:integer" minOccurs="0"/>
             <xs:element name="Period" type="PeriodType" minOccurs="0"/>
             <xs:element name="WorkExperienceDescription" type="ExperienceDescriptionType" minOccurs="0"/>
         </xs:sequence>
@@ -318,8 +318,8 @@
 
     <xs:complexType name="RequiredTotalExperienceType">
         <xs:sequence>
-            <xs:element name="MinimumExperience" type="xs:integer" minOccurs="0"/>
-            <xs:element name="MaximumExperience" type="xs:integer" minOccurs="0"/>
+            <xs:element name="MinimumYearsExperience" type="xs:integer" minOccurs="0"/>
+            <xs:element name="MaximumYearsExperience" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 

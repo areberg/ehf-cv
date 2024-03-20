@@ -191,8 +191,7 @@
 
   <cv:Clearance>
     <cv:ID>1</cv:ID>
-    <cv:Type>civil</cv:Type>
-    <cv:Level>secret</cv:Level>
+    <cv:Level>CONFIDENTIAL</cv:Level>
     <cv:ExpirationDate>2025-08-08</cv:ExpirationDate>
     <cv:Documentation>
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">Y2xlYXJhbmNlIGRvY3VtZW50YXRpb24=</cv:EmbeddedDocumentBinaryObject>

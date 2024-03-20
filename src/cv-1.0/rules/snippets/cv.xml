@@ -207,13 +207,12 @@
   <!-- tag::Clearance[] -->
   <cv:Clearance>
     <cv:ID>1</cv:ID><!--1-->
-    <cv:Type>military</cv:Type><!--2-->
-    <cv:Level>secret</cv:Level><!--3-->
-    <cv:ExpirationDate>2025-08-08</cv:ExpirationDate><!--4-->
+    <cv:Level>CONFIDENTIAL</cv:Level><!--2-->
+    <cv:ExpirationDate>2025-08-08</cv:ExpirationDate><!--3-->
     <cv:Documentation>
-      <cv:URI>https://www.politiet.no/</cv:URI><!--5-->
+      <cv:URI>https://www.politiet.no/</cv:URI><!--4-->
     </cv:Documentation>
-    <cv:Description>Additional description</cv:Description><!--6-->
+    <cv:Description>Will be renewed if required</cv:Description><!--5-->
   </cv:Clearance>
   <!-- end::Clearance[] -->
 

@@ -40,8 +40,8 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=ProjectExperience]
 <9> Candidate's position percent
 <10> Role in project according to codelist Classification of Occupations (Styrk98) (chapter 5.8)
 <11> Description of project activities
-<12> Project participation in months
-<13> Total Project size in months
+<12> Project participation including unit of measure
+<13> Total Project size including unit of measure
 <14> Project value in money. Currency according to code list ISO 4217 Currency codes (chapter 5.13)
 
 .Example of the requested project experience in the CV request with alternative requirement

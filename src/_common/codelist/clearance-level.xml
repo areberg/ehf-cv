@@ -6,43 +6,30 @@
     <Version>1.0</Version>
 
     <!-- tag::ClearanceLevel[] -->
-    <Agency>Nasjonal sikkerhetsmyndighet (NSM)</Agency>
+    <Agency>EU</Agency>
 
     <Code>
-        <Id>Confidential</Id>
-        <Name>Confidential</Name>
-        <Description>Confidentail clearance level</Description>
+        <Id>TOPSECRET</Id>
+        <Name>STRENGT HEMMELIG</Name>
+        <Description>Dersom det kan få helt avgjørende skadefølger dersom informasjon blir kjent for uvedkommende.</Description>
+    </Code>
+    
+    <Code>
+        <Id>SECRET</Id>
+        <Name>HEMMELIG</Name>
+        <Description>Dersom det kan få alvorlige skadefølger dersom informasjon blir kjent for uvedkommende.</Description>
+    </Code>
+    
+    <Code>
+        <Id>CONFIDENTIAL</Id>
+        <Name>KONFIDENSIELT</Name>
+        <Description>Dersom det kan få skadefølger dersom informasjon blir kjent for uvedkommende.</Description>
     </Code>
 
     <Code>
-        <Id>NATOConfidential</Id>
-        <Name>NATO Confidential</Name>
-        <Description>NATO Confidential clearance level</Description>
+        <Id>RESTRICTED</Id>
+        <Name>BEGRENSET</Name>
+        <Description>Dersom det i noen grad kan få skadefølger dersom informasjon blir kjent for uvedkommende.</Description>
     </Code>
-
-    <Code>
-        <Id>Secret</Id>
-        <Name>Secret</Name>
-        <Description>Secret clearance level</Description>
-    </Code>
-
-    <Code>
-        <Id>NATOSecret</Id>
-        <Name>NATO secret</Name>
-        <Description>NATO secret clearance level</Description>
-    </Code>
-
-    <Code>
-        <Id>TopSecret</Id>
-        <Name>Top Secret</Name>
-        <Description>Top secret clearance level</Description>
-    </Code>
-
-    <Code>
-        <Id>CosmicTopSecret</Id>
-        <Name>Cosmic Top Secret</Name>
-        <Description>Cosmic top secret clearance level</Description>
-    </Code>
-
-    <!-- end::ClearanceLevel[] -->
+   <!-- end::ClearanceLevel[] -->
 </CodeList>

@@ -6,7 +6,6 @@
     <Version>2013</Version>
     <!-- tag::CountryCodes[] -->
     <Agency>ISO</Agency>
-    <!-- end::CountryCodes[] -->
 
     <Code>
         <Id>AD</Id>
@@ -1004,5 +1003,6 @@
         <Id>ZW</Id>
         <Name>Zimbabwe</Name>
     </Code>
+    <!-- end::CountryCodes[] -->
 
 </CodeList>

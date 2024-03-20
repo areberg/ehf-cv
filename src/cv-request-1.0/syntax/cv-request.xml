@@ -757,16 +757,16 @@
                 <Description>A requirement about total exeperience. Need to provide a amount of either minimum or maximum experience.</Description>
 
                 <Element>
-                    <Term>cv-req:MinimumExperience</Term>
-                    <Name>Minimum experience</Name>
+                    <Term>cv-req:MinimumYearsExperience</Term>
+                    <Name>Minimum years experience</Name>
                     <Description>A specific requirement about minimum year of experience.</Description>
                     <Value type="EXAMPLE">2</Value>
                     <Reference type="RULE">EHF-CV-REQ-R004</Reference>
                 </Element>
 
                 <Element>
-                    <Term>cv-req:MaximumExperience</Term>
-                    <Name>Maximum experience</Name>
+                    <Term>cv-req:MaximumYearsExperience</Term>
+                    <Name>Maximum years experience</Name>
                     <Description>A specific requirement about maximum year of experience.</Description>
                     <Value type="EXAMPLE">10</Value>
                     <Reference type="RULE">EHF-CV-REQ-R004</Reference>
@@ -935,16 +935,16 @@
                     <Description>A requirement about total exeperience. Need to provide a amount of either minimum or maximum experience.</Description>
 
                     <Element>
-                        <Term>cv-req:MinimumExperience</Term>
-                        <Name>Minimum experience</Name>
+                        <Term>cv-req:MinimumYearsExperience</Term>
+                        <Name>Minimum years experience</Name>
                         <Description>A specific requirement about minimum year of experience.</Description>
                         <Value type="EXAMPLE">2</Value>
                         <Reference type="RULE">EHF-CV-REQ-R004</Reference>
                     </Element>
 
                     <Element>
-                        <Term>cv-req:MaximumExperience</Term>
-                        <Name>Maximum experience</Name>
+                        <Term>cv-req:MaximumYearsExperience</Term>
+                        <Name>Maximum years experience</Name>
                         <Description>A specific requirement about maximum year of experience.</Description>
                         <Value type="EXAMPLE">6</Value>
                         <Reference type="RULE">EHF-CV-REQ-R004</Reference>
@@ -1098,8 +1098,8 @@
             </Element>
 
             <Element>
-                <Term>cv-req:MinimumTotalExperience</Term>
-                <Name>Minimum total experience</Name>
+                <Term>cv-req:MinimumYearsExperience</Term>
+                <Name>Minimum years experience</Name>
                 <Description>Requirement about minum total year of work experience.</Description>
                 <Value type="EXAMPLE">5</Value>
             </Element>
