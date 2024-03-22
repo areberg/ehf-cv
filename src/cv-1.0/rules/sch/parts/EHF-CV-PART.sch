@@ -41,12 +41,6 @@
               flag="fatal">The project value shall be greater than zero.</assert>
   </rule>
 
-  <rule context="cv:Clearance">
-      <assert id="EHF-CV-R008"
-              test="(cv:Title) or (cv:Type)"
-              flag="fatal">A clearance shall include either a title or a type.</assert>
-  </rule>
-
   <rule context="cv:Skills">
       <assert id="EHF-CV-R009"
               test="(cv:Title) or (cv:Type)"
@@ -55,7 +49,14 @@
               test="(cv:MinimumLengthPractice) &gt;= 0"
               flag="fatal">Minimum length of practice shall be a greater than or equal zero.</assert>
   </rule>
-
+  
+  <!-- 
+  <rule context="cv:Clearance">
+      <assert id="EHF-CV-R008"
+              test="(cv:Title) or (cv:Type)"
+              flag="fatal">A clearance shall include either a title or a type.</assert>
+  </rule>
+  
   <rule context="cv:PersonalSkills">
       <assert id="EHF-CV-R011"
               test="(cv:Title) or (cv:Type)"
@@ -67,5 +68,5 @@
               test="(cv:Title) or (cv:Type)"
               flag="fatal">A social media shall include either a title or a type.</assert>
   </rule>
-
+-->
 </pattern>

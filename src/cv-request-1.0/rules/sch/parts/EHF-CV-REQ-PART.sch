@@ -47,18 +47,6 @@
               flag="fatal">The project value shall be greater than zero.</assert>
   </rule>
 
-  <rule context="cv-req:Clearance | cv-req:AlternativeClearance">
-      <assert id="EHF-CV-REQ-R009"
-              test="(cv-req:Title) or (cv-req:Type)"
-              flag="fatal">A clearance shall include either a title or a type.</assert>
-  </rule>
-
-  <rule context="cv-req:Reference">
-      <assert id="EHF-CV-REQ-R010"
-              test="(cv-req:MinimumTotalReference) &gt; 0"
-              flag="fatal">Total minimum reference number shall be greater than zero.</assert>
-  </rule>
-
   <rule context="cv-req:Skills | cv-req:AlternativeSkills">
       <assert id="EHF-CV-REQ-R011"
               test="(cv-req:Title) or (cv-req:Type)"
@@ -71,10 +59,23 @@
               flag="fatal">Minimum length of practice shall be a greater than or equal zero.</assert>
   </rule>
 
+ <!-- 
+  <rule context="cv-req:Clearance | cv-req:AlternativeClearance">
+      <assert id="EHF-CV-REQ-R009"
+              test="(cv-req:Title) or (cv-req:Type)"
+              flag="fatal">A clearance shall include either a title or a type.</assert>
+  </rule>
+
+  <rule context="cv-req:Reference">
+      <assert id="EHF-CV-REQ-R010"
+              test="(cv-req:MinimumTotalReference) &gt; 0"
+              flag="fatal">Total minimum reference number shall be greater than zero.</assert>
+  </rule>
+  
   <rule context="cv-req:PersonalSkills">
       <assert id="EHF-CV-REQ-R013"
               test="(cv-req:Title) or (cv-req:Type)"
               flag="fatal">A personal skill shall include either a title or a type.</assert>
   </rule>
-
+-->
 </pattern>
