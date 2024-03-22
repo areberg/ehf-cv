@@ -6,9 +6,6 @@
   <cv-req:ID>1</cv-req:ID>
   <cv-req:IssueDate>2024-10-02</cv-req:IssueDate>
   <cv-req:IssueTime>10:30:00</cv-req:IssueTime>
-  <cv-req:FolderReference>
-    <cv-req:ID schemeID="DOFFIN">123</cv-req:ID>
-  </cv-req:FolderReference>
   
   <cv-req:SenderParty>
     <cv-req:EndpointID schemeID="0192">987654325</cv-req:EndpointID>

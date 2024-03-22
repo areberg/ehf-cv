@@ -5,9 +5,6 @@
   <cv:ID>1</cv:ID>
   <cv:IssueDate>2024-01-05</cv:IssueDate>
   <cv:IssueTime>10:30:00</cv:IssueTime>
-  <cv:FolderReference>
-    <cv:ID schemeID="DOFFIN">147</cv:ID>
-  </cv:FolderReference>
   <!-- tag::Sender[] -->
   <cv:SenderParty>
     <cv:EndpointID schemeID="0192">987654325</cv:EndpointID><!--1-->

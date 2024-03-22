@@ -3,9 +3,6 @@
   <cv-req:ID>1</cv-req:ID>
   <cv-req:IssueDate>2024-02-02</cv-req:IssueDate>
   <cv-req:IssueTime>08:30:00</cv-req:IssueTime>
-  <cv-req:FolderReference>
-    <cv-req:ID schemeID="DOFFIN">14789</cv-req:ID>
-  </cv-req:FolderReference>
  
   <!-- tag::Sender[] -->
   <cv-req:SenderParty>

@@ -6,10 +6,6 @@
   <cv:ID>1</cv:ID>
   <cv:IssueDate>2024-01-05</cv:IssueDate>
   <cv:IssueTime>10:30:00</cv:IssueTime>
-
-  <cv:FolderReference>
-    <cv:ID schemeID="DOFFIN">147</cv:ID>
-  </cv:FolderReference>
   
   <cv:SenderParty>
     <cv:EndpointID schemeID="0192">987654325</cv:EndpointID>
@@ -49,8 +45,6 @@
       <cv:EndDate>2021-06-30</cv:EndDate>
     </cv:Period>
     <cv:Documentation>
-      <cv:RegistrationType>HPR</cv:RegistrationType>
-      <cv:RegistrationNumber>154725</cv:RegistrationNumber>
       <cv:EmbeddedDocumentBinaryObject mimeCode="application/pdf">YmFjaGVsb3IgbnVyc2U=</cv:EmbeddedDocumentBinaryObject>
       <cv:URI>https://www.vitnemalsportalen.no</cv:URI>
     </cv:Documentation>
@@ -211,9 +205,6 @@
       <cv:Telephone>22221111</cv:Telephone>
       <cv:ElectronicMail>ola.nordmann@x.no</cv:ElectronicMail>
     </cv:Contact>
-    <cv:SkillsAppliedReference>
-      <cv:ID>edu-1234</cv:ID>
-    </cv:SkillsAppliedReference>
   </cv:Skills>
 
   <cv:PersonalInformation>
