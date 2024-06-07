@@ -1,11 +1,12 @@
 <!-- tag::Complete[] -->
 <?xml version="1.0" encoding="UTF-8"?>
 <cv:CV xmlns:cv="urn:fdc:anskaffelser.no:2019:ehf:schema:CV-1">
-  <cv:CustomizationID>...</cv:CustomizationID>
-  <cv:ProfileID>...</cv:ProfileID>
-  <cv:ID>1</cv:ID>
-  <cv:IssueDate>2024-01-05</cv:IssueDate>
-  <cv:IssueTime>10:30:00</cv:IssueTime>
+  <cv:CustomizationID>urn:fdc:anskaffelser.no:2019:ehf:cv:1</cv:CustomizationID>
+  <cv:ProfileID>urn:fdc:anskaffelser.no:2019:ehf-cv:1</cv:ProfileID>
+  <cv:ID>4b2fd73e-f9c8-4465-8e63-4c5edae48057</cv:ID>
+  <cv:Role>Developer</cv:Role>
+  <cv:IssueDate>2024-02-02</cv:IssueDate>
+  <cv:IssueTime>08:30:00</cv:IssueTime>
   
   <cv:SenderParty>
     <cv:EndpointID schemeID="0192">987654325</cv:EndpointID>
@@ -38,6 +39,7 @@
 
   <cv:Education>
     <cv:ID>1</cv:ID>
+    <cv:Title>Master</cv:Title>
     <cv:EducationDegree>6</cv:EducationDegree>
     <cv:SubjectArea>661104</cv:SubjectArea>
     <cv:Period>
@@ -161,7 +163,7 @@
 
   <cv:WorkExperience>
     <cv:ID>1</cv:ID>
-    <cv:PositionLevel>Managers</cv:PositionLevel>
+    <cv:PositionLevel>1</cv:PositionLevel>
     <cv:CompanyParty>
       <cv:EndpointID schemeID="0192">123456785</cv:EndpointID>
       <cv:Name>X company</cv:Name>

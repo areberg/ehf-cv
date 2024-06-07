@@ -2,7 +2,7 @@
 
 :leveloffset: +1
 
-//include::general.adoc[]
+include::header.adoc[]
 
 include::parties.adoc[]
 

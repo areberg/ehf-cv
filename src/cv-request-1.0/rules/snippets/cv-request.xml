@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cv-req:CVRequest xmlns:cv-req="urn:fdc:anskaffelser.no:2019:ehf:schema:CVRequest-1">
-  <cv-req:ID>1</cv-req:ID>
-  <cv-req:IssueDate>2024-02-02</cv-req:IssueDate>
-  <cv-req:IssueTime>08:30:00</cv-req:IssueTime>
- 
+  <!-- tag::Header[] -->
+  <cv-req:CustomizationID>urn:fdc:anskaffelser.no:2019:ehf:cvrequest:1</cv-req:CustomizationID><!--1-->
+  <cv-req:ProfileID>urn:fdc:anskaffelser.no:2019:ehf-cv:1</cv-req:ProfileID><!--2-->
+  <cv-req:ID>9663138b-44ed-42c9-bbbb-ac852d079f866</cv-req:ID><!--3-->
+  <cv-req:Role>Developer</cv-req:Role><!--4-->
+  <cv-req:IssueDate>2024-02-02</cv-req:IssueDate><!--5-->
+  <cv-req:IssueTime>08:30:00</cv-req:IssueTime><!--6-->
+   <!-- end::Header[] -->
+
   <!-- tag::Sender[] -->
   <cv-req:SenderParty>
     <cv-req:EndpointID schemeID="0192">987654325</cv-req:EndpointID><!--1-->
@@ -261,7 +266,7 @@
   <cv-req:WorkExperience>
     <cv-req:ID>1</cv-req:ID><!--1-->
     <cv-req:Requirement>must</cv-req:Requirement><!--2-->
-    <cv-req:PositionLevel>Managers</cv-req:PositionLevel><!--3-->
+    <cv-req:PositionLevel>1</cv-req:PositionLevel><!--3-->
     <cv-req:IndustryType>01230</cv-req:IndustryType><!--4-->
     <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
     <cv-req:JobSector>private</cv-req:JobSector><!--6-->
@@ -282,7 +287,7 @@
   <cv-req:WorkExperience>
     <cv-req:ID>1</cv-req:ID><!--1-->
     <cv-req:Requirement>should</cv-req:Requirement><!--2-->
-    <cv-req:PositionLevel>Professionals</cv-req:PositionLevel><!--3-->
+    <cv-req:PositionLevel>1</cv-req:PositionLevel><!--3-->
     <cv-req:IndustryType>71200</cv-req:IndustryType><!--4-->
     <cv-req:Workplace>AI</cv-req:Workplace><!--5-->
     <cv-req:JobSector>private</cv-req:JobSector><!--6-->
@@ -299,7 +304,7 @@
     <cv-req:AlternativeWorkExperience><!--12-->
       <cv-req:ID>1</cv-req:ID>
       <cv-req:Requirement>should</cv-req:Requirement>
-      <cv-req:PositionLevel>Professionals</cv-req:PositionLevel>
+      <cv-req:PositionLevel>2</cv-req:PositionLevel>
       <cv-req:IndustryType>72190</cv-req:IndustryType>
       <cv-req:Workplace>AI</cv-req:Workplace>
       <cv-req:JobSector>private</cv-req:JobSector>
@@ -330,7 +335,7 @@
   <cv-req:Clearance>
     <cv-req:ID>1</cv-req:ID><!--1-->
     <cv-req:Requirement>should</cv-req:Requirement><!--2-->
-    <cv-req:Level>TopSecret</cv-req:Level><!--3-->
+    <cv-req:Level>TOPSECRET</cv-req:Level><!--3-->
     <cv-req:ExpirationDate>2025-05-05</cv-req:ExpirationDate><!--4-->
     <cv-req:AlternativeClearance><!--5-->
       <cv-req:ID>1</cv-req:ID>

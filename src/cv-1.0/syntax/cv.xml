@@ -36,6 +36,13 @@
         </Element>
 
         <Element>
+            <Term>cv-req:Role</Term>
+            <Name>CV role</Name>
+            <Description>Role of the CV being submitted.</Description>
+            <Value type="Utvikler">1</Value>
+        </Element>
+
+        <Element>
             <Term>cv:IssueDate</Term>
             <Name>Issue Date</Name>
             <Description>The date on which the transaction instance was issued, format YYYY-MM-DD.</Description>

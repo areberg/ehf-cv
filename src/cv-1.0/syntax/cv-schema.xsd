@@ -10,12 +10,12 @@
 
     <xs:complexType name="CVType">
         <xs:sequence>
-            <xs:element name ="CustomizationID" type="IdentifierType"/>
-            <xs:element name ="ProfileID" type="IdentifierType"/>
+            <xs:element name ="CustomizationID" type="IdentifierType" minOccurs="0"/>
+            <xs:element name ="ProfileID" type="IdentifierType" minOccurs="0"/>
 
             <xs:element name="ID" type="xs:normalizedString"/>
 
-            <xs:element name="IssueDate" type="xs:date" minOccurs="0"/>
+            <xs:element name="IssueDate" type="xs:date"/>
             <xs:element name="IssueTime" type="xs:time" minOccurs="0"/>
 
             <xs:element name="FolderReference" type="ReferenceType" minOccurs="0"/>
@@ -37,17 +37,11 @@
 
             <xs:element name="WorkExperience" type="WorkExperienceType" minOccurs="0" maxOccurs="unbounded"/>
 
-            <xs:element name="Clearance" type="ClearanceType" minOccurs="0" maxOccurs="unbounded"/>
-
-            <xs:element name="Reference" type="ReferenceType" minOccurs="0" maxOccurs="unbounded"/>
-
             <xs:element name="Skills" type="SkillsType" minOccurs="0" maxOccurs="unbounded"/>
 
-            <xs:element name="PersonalSkills" type="PersonalSkillsType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Clearance" type="ClearanceType" minOccurs="0" maxOccurs="unbounded"/>
 
             <xs:element name="PersonalInformation" type="PersonalInformationType" minOccurs="0"/>
-
-            <xs:element name="Interest" type="InterestType" minOccurs="0" maxOccurs="unbounded"/>
 
             <xs:element name="AdditionalInformation" type="AdditionalInformationType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
@@ -200,7 +194,6 @@
             <xs:element name="Name" type="xs:string"/>
             <xs:element name="PostalAddress" type="PostalAdressType"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
-            <xs:element name="SocialMedia" type="SocialMediaType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -239,7 +232,7 @@
 
     <xs:complexType name="PartyType">
         <xs:sequence>
-            <xs:element name="EndpointID" type="IdentifierType" minOccurs="0"/>
+            <xs:element name="EndpointID" type="IdentifierType"/>
             <xs:element name="Name" type="xs:string" minOccurs="0"/>
             <xs:element name="Contact" type="ContactType" minOccurs="0"/>
             <xs:element name="CountryCode" type="xs:normalizedString" minOccurs="0"/>

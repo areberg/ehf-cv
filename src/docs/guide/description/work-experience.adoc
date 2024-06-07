@@ -46,7 +46,7 @@ include::../{snippet-dir-cv-request}/cv-request.xml[tags=WorkExperienceAlternati
 ----
 <1> Work experience identifier
 <2> Work experience requirement - indicate whether a candidate needs to fulfill the work experience requirement. According to codelist Requirement code (chapter 5.5).
-<3> Position level according to codelist International Classification of Occupations (Isco/Styrk08) (chapter 5.6)
+<3> Position level according to codelist International Classification of Occupations (Isco/Styrk08) (chapter 5.7)
 <4> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.9)
 <5> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.12)
 <6> Job sector (private, public or other)
@@ -69,7 +69,7 @@ the Contracting Authority accepts relevant experience. The work experience in th
 include::../{snippet-dir-cv}/cv.xml[tags=WorkExperience]
 ----
 <1> Work experience identifier
-<2> Position level according to codelist International Classification of Occupations (Isco/Styrk08) (chapter 5.6)
+<2> Position level according to codelist International Classification of Occupations (Isco/Styrk08) (chapter 5.7)
 <3> Type of industry according to codelist Classification of standard industrial classification (NACE) (chapter 5.9)
 <4> Workplace according to codelist ISO 3166-1:Alpha2 Country codes (chapter 5.12)
 <5> Job sector (private, public or other)
